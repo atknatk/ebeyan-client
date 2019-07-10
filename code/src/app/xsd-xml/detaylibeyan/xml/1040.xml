@@ -1,0 +1,967 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Gelen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <RefID>*****</RefID>
+  <KullaniciAdi>*****</KullaniciAdi>
+  <Sifre>*****</Sifre>
+  <BeyannameBilgi xmlns="http://tempuri.org/">
+    <Beyanname_no />
+    <Rejim>1040</Rejim>
+    <GUMRUK>351900</GUMRUK>
+    <Basitlestirilmis_usul />
+    <Yuk_belgeleri_sayisi>0</Yuk_belgeleri_sayisi>
+    <Kap_adedi>137</Kap_adedi>
+    <Ticaret_ulkesi>628</Ticaret_ulkesi>
+    <Referans_no>IHR1729271</Referans_no>
+    <Birlik_kayit_numarasi>2017-12-00378685</Birlik_kayit_numarasi>
+    <Birlik_kripto_numarasi>9424 7029 6332 0520</Birlik_kripto_numarasi>
+    <Cikis_ulkesi />
+    <Gidecegi_ulke>628</Gidecegi_ulke>
+    <Gidecegi_sevk_ulkesi>628</Gidecegi_sevk_ulkesi>
+    <Cikistaki_aracin_tipi>3</Cikistaki_aracin_tipi>
+    <Cikistaki_aracin_kimligi>ANALISA P</Cikistaki_aracin_kimligi>
+    <Cikistaki_aracin_ulkesi>268</Cikistaki_aracin_ulkesi>
+    <Teslim_sekli>FOB</Teslim_sekli>
+    <Teslim_yeri>ÝZMÝR</Teslim_yeri>
+    <Konteyner>EVET</Konteyner>
+    <Sinirdaki_aracin_tipi>3</Sinirdaki_aracin_tipi>
+    <Sinirdaki_aracin_kimligi>ANALISA P</Sinirdaki_aracin_kimligi>
+    <Sinirdaki_aracin_ulkesi>268</Sinirdaki_aracin_ulkesi>
+    <Toplam_fatura>4943.17</Toplam_fatura>
+    <Toplam_fatura_dovizi>USD</Toplam_fatura_dovizi>
+    <Toplam_navlun>0.00</Toplam_navlun>
+    <Toplan_navlun_dovizi />
+    <Sinirdaki_tasima_sekli>10</Sinirdaki_tasima_sekli>
+    <Alici_satici_iliskisi>6</Alici_satici_iliskisi>
+    <Toplam_sigorta>0.00</Toplam_sigorta>
+    <Toplam_sigorta_dovizi />
+    <Yukleme_bosaltma_yeri>ALÝAÐA GÜMRÜK MÜDÜRLÜÐÜ</Yukleme_bosaltma_yeri>
+    <Toplam_yurt_disi_harcamalar>0</Toplam_yurt_disi_harcamalar>
+    <Toplam_yurt_disi_harcamalarin_dovizi />
+    <Toplam_yurt_ici_harcamalar>0.00</Toplam_yurt_ici_harcamalar>
+    <Odeme_sekli>1</Odeme_sekli>
+    <Banka_kodu>013403020035</Banka_kodu>
+    <Esyanin_bulundugu_yer>APMT</Esyanin_bulundugu_yer>
+    <Varis_gumruk_idaresi />
+    <Antrepo_kodu />
+    <Tasarlanan_guzergah />
+    <Telafi_edici_vergi>0</Telafi_edici_vergi>
+    <Giris_gumruk_idaresi>351900</Giris_gumruk_idaresi>
+    <Islemin_niteligi>90</Islemin_niteligi>
+    <Aciklamalar>VEKALET:BEYOÐLU 56.NOT.-04.01.2017-00214/ÝML.*: VESTEL BEYAZ EÞYA SAN.VE TÝC.A.Þ.-BÜYÜKMÜKELLEFLER 9250067278/\A SINIFI ONAYLANMIÞ STATÜ BELGESÝ EKLÝDÝR.*ÇEKÝ LÝST</Aciklamalar>
+    <Kullanici_kodu>*****</Kullanici_kodu>
+    <Referans_tarihi />
+    <Odeme />
+    <Odeme_araci />
+    <Musavir_referansi>MVBIHR1729271</Musavir_referansi>
+    <Gonderici_vergi_no>9250002626</Gonderici_vergi_no>
+    <Alici_vergi_no />
+    <Beyan_sahibi_vergi_no>4620286953</Beyan_sahibi_vergi_no>
+    <Musavir_vergi_no>9250002626</Musavir_vergi_no>
+    <Asil_sorumlu_vergi_no />
+    <Firma_bilgi>
+      <firma>
+        <Tip>Alici</Tip>
+        <Ulke_kodu>628</Ulke_kodu>
+        <Posta_kodu />
+        <Faks />
+        <No>MIDLE-</No>
+        <Adi_unvani>MIDDLE EASTERN COMPANY FOR TRADE INVESTMENT LTD. PO BOX</Adi_unvani>
+        <Cadde_s_no>140351 KNALDA 183 KNING ABDULLAHII ST AMMAN</Cadde_s_no>
+        <Telefon />
+        <Il_ilce>.</Il_ilce>
+      </firma>
+    </Firma_bilgi>
+    <Teminat />
+    <Ozetbeyanlar />
+    <Kalemler>
+      <kalem>
+        <tamamlayici_bilgi />
+        <tcgbacmakapatma_bilgi />
+        <marka_model_bilgi>
+          <Marka>
+            <Marka_Turu>0</Marka_Turu>
+            <Marka_Adi>MARKASIZ</Marka_Adi>
+            <Marka_Kiymeti>675.65</Marka_Kiymeti>
+            <Silindir_adedi>0</Silindir_adedi>
+          </Marka>
+        </marka_model_bilgi>
+        <konteyner_Bilgi>
+          <Konteyner>
+            <Konteyner_No>MRKU3605196</Konteyner_No>
+            <Ulke_Kodu />
+          </Konteyner>
+        </konteyner_Bilgi>
+        <VergiMuafiyetleri />
+        <HavacilikYakitTurleri />
+        <Gtip>841899900000</Gtip>
+        <Imalatci_firma_bilgisi>HAYIR</Imalatci_firma_bilgisi>
+        <Kalem_sira_no>1</Kalem_sira_no>
+        <Mensei_ulke>720</Mensei_ulke>
+        <Brut_agirlik>44.20</Brut_agirlik>
+        <Net_agirlik>36.80</Net_agirlik>
+        <Tamamlayici_olcu_birimi>C62</Tamamlayici_olcu_birimi>
+        <Istatistiki_miktar>15.00</Istatistiki_miktar>
+        <Uluslararasi_anlasma />
+        <Algilama_birimi_1 />
+        <Algilama_miktari_1>0.0000</Algilama_miktari_1>
+        <Algilama_birimi_2 />
+        <Algilama_miktari_2>0.0000</Algilama_miktari_2>
+        <Muafiyetler_1 />
+        <Muafiyetler_2 />
+        <Muafiyetler_3 />
+        <Algilama_birimi_3 />
+        <Algilama_miktari_3>0.0000</Algilama_miktari_3>
+        <Teslim_sekli>FOB</Teslim_sekli>
+        <Ek_kod />
+        <Ozellik>01</Ozellik>
+        <Fatura_miktari>189.55</Fatura_miktari>
+        <Fatura_miktarinin_dovizi>USD</Fatura_miktarinin_dovizi>
+        <Sinir_gecis_ucreti>0</Sinir_gecis_ucreti>
+        <Navlun_miktari>0.00</Navlun_miktari>
+        <Navlun_miktarinin_dovizi />
+        <Istatistiki_kiymet>189.55</Istatistiki_kiymet>
+        <Sigorta_miktari>0.00</Sigorta_miktari>
+        <Sigorta_miktarinin_dovizi />
+        <Yurt_disi_harcamalar_miktari>0.00</Yurt_disi_harcamalar_miktari>
+        <Yurt_disi_harcamalar_miktarinin_dovizi />
+        <Tarifedeki_tanimi />
+        <Ticari_tanimi>BUZDOLABI AKSAMI</Ticari_tanimi>
+        <Marka>.</Marka>
+        <Numara>MRKU 3605196</Numara>
+        <Cinsi>KN</Cinsi>
+        <Adedi>1.00</Adedi>
+        <Miktar_birimi>C62</Miktar_birimi>
+        <Mahrece_iade />
+        <Ikincil_islem />
+        <Satir_no />
+        <Miktar>15</Miktar>
+        <Kdv_orani />
+        <Kullanilmis_esya />
+        <Aciklama_44>;TED:VESTEL BEYAZ EÞYA SAN.VE TÝC.A.Þ.-VD:BÜYÜKMÜKELLEFLER-VN:9250067278;</Aciklama_44>
+        <Imalatci_Vergino>9250067278</Imalatci_Vergino>
+        <Yurtici_Diger>0.00</Yurtici_Diger>
+        <Yurtici_Banka>0.00</Yurtici_Banka>
+        <Yurtici_Depolama>0.00</Yurtici_Depolama>
+        <Yurtici_Tahliye>0.00</Yurtici_Tahliye>
+        <Yurtici_Liman>0.00</Yurtici_Liman>
+        <Yurtici_Kultur>0.00</Yurtici_Kultur>
+        <Yurtici_Kkdf>0.00</Yurtici_Kkdf>
+        <Yurtici_Cevre>0.00</Yurtici_Cevre>
+        <Yurtici_Diger_Aciklama />
+        <Muafiyet_Aciklamasi />
+        <Referans_Tarihi />
+        <YurtDisi_Komisyon>0.00</YurtDisi_Komisyon>
+        <YurtDisi_Demuraj>0.00</YurtDisi_Demuraj>
+        <YurtDisi_Royalti>0.00</YurtDisi_Royalti>
+        <YurtDisi_Faiz>0.00</YurtDisi_Faiz>
+        <YurtDisi_Diger>0.00</YurtDisi_Diger>
+        <YurtDisi_Komisyon_Dovizi />
+        <YurtDisi_Demuraj_Dovizi />
+        <YurtDisi_Royalti_Dovizi />
+        <YurtDisi_Faiz_Dovizi />
+        <YurtDisi_Diger_Dovizi />
+        <YurtDisi_Diger_Aciklama />
+        <Kalem_Islem_Niteligi />
+        <Giris_Cikis_Amaci />
+        <Giris_Cikis_Amaci_Aciklama />
+        <STM_IlKodu />
+      </kalem>
+      <kalem>
+        <tamamlayici_bilgi />
+        <tcgbacmakapatma_bilgi />
+        <marka_model_bilgi>
+          <Marka>
+            <Marka_Turu>0</Marka_Turu>
+            <Marka_Adi>MARKASIZ</Marka_Adi>
+            <Marka_Kiymeti>1609.41</Marka_Kiymeti>
+            <Silindir_adedi>0</Silindir_adedi>
+          </Marka>
+        </marka_model_bilgi>
+        <konteyner_Bilgi>
+          <Konteyner>
+            <Konteyner_No>MRKU3605196</Konteyner_No>
+            <Ulke_Kodu />
+          </Konteyner>
+        </konteyner_Bilgi>
+        <VergiMuafiyetleri />
+        <HavacilikYakitTurleri />
+        <Gtip>841899900000</Gtip>
+        <Imalatci_firma_bilgisi>EVET</Imalatci_firma_bilgisi>
+        <Kalem_sira_no>2</Kalem_sira_no>
+        <Mensei_ulke>052</Mensei_ulke>
+        <Brut_agirlik>51.60</Brut_agirlik>
+        <Net_agirlik>40.98</Net_agirlik>
+        <Tamamlayici_olcu_birimi>C62</Tamamlayici_olcu_birimi>
+        <Istatistiki_miktar>137.00</Istatistiki_miktar>
+        <Uluslararasi_anlasma />
+        <Algilama_birimi_1 />
+        <Algilama_miktari_1>0.0000</Algilama_miktari_1>
+        <Algilama_birimi_2 />
+        <Algilama_miktari_2>0.0000</Algilama_miktari_2>
+        <Muafiyetler_1>KIHR</Muafiyetler_1>
+        <Muafiyetler_2 />
+        <Muafiyetler_3 />
+        <Algilama_birimi_3 />
+        <Algilama_miktari_3>0.0000</Algilama_miktari_3>
+        <Teslim_sekli>FOB</Teslim_sekli>
+        <Ek_kod />
+        <Ozellik>01</Ozellik>
+        <Fatura_miktari>451.51</Fatura_miktari>
+        <Fatura_miktarinin_dovizi>USD</Fatura_miktarinin_dovizi>
+        <Sinir_gecis_ucreti>0</Sinir_gecis_ucreti>
+        <Navlun_miktari>0.00</Navlun_miktari>
+        <Navlun_miktarinin_dovizi />
+        <Istatistiki_kiymet>451.51</Istatistiki_kiymet>
+        <Sigorta_miktari>0.00</Sigorta_miktari>
+        <Sigorta_miktarinin_dovizi />
+        <Yurt_disi_harcamalar_miktari>0.00</Yurt_disi_harcamalar_miktari>
+        <Yurt_disi_harcamalar_miktarinin_dovizi />
+        <Tarifedeki_tanimi />
+        <Ticari_tanimi>BUZDOLABI AKSAMI</Ticari_tanimi>
+        <Marka>.</Marka>
+        <Numara>MRKU 3605196</Numara>
+        <Cinsi>KN</Cinsi>
+        <Adedi>1.00</Adedi>
+        <Miktar_birimi>C62</Miktar_birimi>
+        <Mahrece_iade />
+        <Ikincil_islem />
+        <Satir_no />
+        <Miktar>137</Miktar>
+        <Kdv_orani />
+        <Kullanilmis_esya />
+        <Aciklama_44>;ÝML:VESTEL BEYAZ EÞYA SAN.VE TÝC.A.Þ.-VD:BÜYÜKMÜKELLEFLER-VN:9250067278;</Aciklama_44>
+        <Imalatci_Vergino>9250067278</Imalatci_Vergino>
+        <Yurtici_Diger>0.00</Yurtici_Diger>
+        <Yurtici_Banka>0.00</Yurtici_Banka>
+        <Yurtici_Depolama>0.00</Yurtici_Depolama>
+        <Yurtici_Tahliye>0.00</Yurtici_Tahliye>
+        <Yurtici_Liman>0.00</Yurtici_Liman>
+        <Yurtici_Kultur>0.00</Yurtici_Kultur>
+        <Yurtici_Kkdf>0.00</Yurtici_Kkdf>
+        <Yurtici_Cevre>0.00</Yurtici_Cevre>
+        <Yurtici_Diger_Aciklama />
+        <Muafiyet_Aciklamasi />
+        <Referans_Tarihi />
+        <YurtDisi_Komisyon>0.00</YurtDisi_Komisyon>
+        <YurtDisi_Demuraj>0.00</YurtDisi_Demuraj>
+        <YurtDisi_Royalti>0.00</YurtDisi_Royalti>
+        <YurtDisi_Faiz>0.00</YurtDisi_Faiz>
+        <YurtDisi_Diger>0.00</YurtDisi_Diger>
+        <YurtDisi_Komisyon_Dovizi />
+        <YurtDisi_Demuraj_Dovizi />
+        <YurtDisi_Royalti_Dovizi />
+        <YurtDisi_Faiz_Dovizi />
+        <YurtDisi_Diger_Dovizi />
+        <YurtDisi_Diger_Aciklama />
+        <Kalem_Islem_Niteligi />
+        <Giris_Cikis_Amaci />
+        <Giris_Cikis_Amaci_Aciklama />
+        <STM_IlKodu />
+      </kalem>
+      <kalem>
+        <tamamlayici_bilgi />
+        <tcgbacmakapatma_bilgi />
+        <marka_model_bilgi>
+          <Marka>
+            <Marka_Turu>0</Marka_Turu>
+            <Marka_Adi>MARKASIZ</Marka_Adi>
+            <Marka_Kiymeti>2071.69</Marka_Kiymeti>
+            <Silindir_adedi>0</Silindir_adedi>
+          </Marka>
+        </marka_model_bilgi>
+        <konteyner_Bilgi>
+          <Konteyner>
+            <Konteyner_No>MRKU3605196</Konteyner_No>
+            <Ulke_Kodu />
+          </Konteyner>
+        </konteyner_Bilgi>
+        <VergiMuafiyetleri />
+        <HavacilikYakitTurleri />
+        <Gtip>845090000000</Gtip>
+        <Imalatci_firma_bilgisi>HAYIR</Imalatci_firma_bilgisi>
+        <Kalem_sira_no>3</Kalem_sira_no>
+        <Mensei_ulke>720</Mensei_ulke>
+        <Brut_agirlik>60.00</Brut_agirlik>
+        <Net_agirlik>49.20</Net_agirlik>
+        <Tamamlayici_olcu_birimi>C62</Tamamlayici_olcu_birimi>
+        <Istatistiki_miktar>110.00</Istatistiki_miktar>
+        <Uluslararasi_anlasma />
+        <Algilama_birimi_1 />
+        <Algilama_miktari_1>0.0000</Algilama_miktari_1>
+        <Algilama_birimi_2 />
+        <Algilama_miktari_2>0.0000</Algilama_miktari_2>
+        <Muafiyetler_1 />
+        <Muafiyetler_2 />
+        <Muafiyetler_3 />
+        <Algilama_birimi_3 />
+        <Algilama_miktari_3>0.0000</Algilama_miktari_3>
+        <Teslim_sekli>FOB</Teslim_sekli>
+        <Ek_kod />
+        <Ozellik>01</Ozellik>
+        <Fatura_miktari>581.20</Fatura_miktari>
+        <Fatura_miktarinin_dovizi>USD</Fatura_miktarinin_dovizi>
+        <Sinir_gecis_ucreti>0</Sinir_gecis_ucreti>
+        <Navlun_miktari>0.00</Navlun_miktari>
+        <Navlun_miktarinin_dovizi />
+        <Istatistiki_kiymet>581.20</Istatistiki_kiymet>
+        <Sigorta_miktari>0.00</Sigorta_miktari>
+        <Sigorta_miktarinin_dovizi />
+        <Yurt_disi_harcamalar_miktari>0.00</Yurt_disi_harcamalar_miktari>
+        <Yurt_disi_harcamalar_miktarinin_dovizi />
+        <Tarifedeki_tanimi />
+        <Ticari_tanimi>ÇAMAÞIR MAKÝNASI AKSAMI</Ticari_tanimi>
+        <Marka>.</Marka>
+        <Numara>MRKU 3605196</Numara>
+        <Cinsi>KN</Cinsi>
+        <Adedi>1.00</Adedi>
+        <Miktar_birimi>C62</Miktar_birimi>
+        <Mahrece_iade />
+        <Ikincil_islem />
+        <Satir_no />
+        <Miktar>110</Miktar>
+        <Kdv_orani />
+        <Kullanilmis_esya />
+        <Aciklama_44>;TED:VESTEL BEYAZ EÞYA SAN.VE TÝC.A.Þ.-VD:BÜYÜKMÜKELLEFLER-VN:9250067278;</Aciklama_44>
+        <Imalatci_Vergino>9250067278</Imalatci_Vergino>
+        <Yurtici_Diger>0.00</Yurtici_Diger>
+        <Yurtici_Banka>0.00</Yurtici_Banka>
+        <Yurtici_Depolama>0.00</Yurtici_Depolama>
+        <Yurtici_Tahliye>0.00</Yurtici_Tahliye>
+        <Yurtici_Liman>0.00</Yurtici_Liman>
+        <Yurtici_Kultur>0.00</Yurtici_Kultur>
+        <Yurtici_Kkdf>0.00</Yurtici_Kkdf>
+        <Yurtici_Cevre>0.00</Yurtici_Cevre>
+        <Yurtici_Diger_Aciklama />
+        <Muafiyet_Aciklamasi />
+        <Referans_Tarihi />
+        <YurtDisi_Komisyon>0.00</YurtDisi_Komisyon>
+        <YurtDisi_Demuraj>0.00</YurtDisi_Demuraj>
+        <YurtDisi_Royalti>0.00</YurtDisi_Royalti>
+        <YurtDisi_Faiz>0.00</YurtDisi_Faiz>
+        <YurtDisi_Diger>0.00</YurtDisi_Diger>
+        <YurtDisi_Komisyon_Dovizi />
+        <YurtDisi_Demuraj_Dovizi />
+        <YurtDisi_Royalti_Dovizi />
+        <YurtDisi_Faiz_Dovizi />
+        <YurtDisi_Diger_Dovizi />
+        <YurtDisi_Diger_Aciklama />
+        <Kalem_Islem_Niteligi />
+        <Giris_Cikis_Amaci />
+        <Giris_Cikis_Amaci_Aciklama />
+        <STM_IlKodu />
+      </kalem>
+      <kalem>
+        <tamamlayici_bilgi />
+        <tcgbacmakapatma_bilgi />
+        <marka_model_bilgi>
+          <Marka>
+            <Marka_Turu>0</Marka_Turu>
+            <Marka_Adi>MARKASIZ</Marka_Adi>
+            <Marka_Kiymeti>9487.99</Marka_Kiymeti>
+            <Silindir_adedi>0</Silindir_adedi>
+          </Marka>
+        </marka_model_bilgi>
+        <konteyner_Bilgi>
+          <Konteyner>
+            <Konteyner_No>MRKU3605196</Konteyner_No>
+            <Ulke_Kodu />
+          </Konteyner>
+        </konteyner_Bilgi>
+        <VergiMuafiyetleri />
+        <HavacilikYakitTurleri />
+        <Gtip>845090000000</Gtip>
+        <Imalatci_firma_bilgisi>EVET</Imalatci_firma_bilgisi>
+        <Kalem_sira_no>4</Kalem_sira_no>
+        <Mensei_ulke>052</Mensei_ulke>
+        <Brut_agirlik>672.20</Brut_agirlik>
+        <Net_agirlik>501.60</Net_agirlik>
+        <Tamamlayici_olcu_birimi>C62</Tamamlayici_olcu_birimi>
+        <Istatistiki_miktar>225.00</Istatistiki_miktar>
+        <Uluslararasi_anlasma />
+        <Algilama_birimi_1 />
+        <Algilama_miktari_1>0.0000</Algilama_miktari_1>
+        <Algilama_birimi_2 />
+        <Algilama_miktari_2>0.0000</Algilama_miktari_2>
+        <Muafiyetler_1>KIHR</Muafiyetler_1>
+        <Muafiyetler_2 />
+        <Muafiyetler_3 />
+        <Algilama_birimi_3 />
+        <Algilama_miktari_3>0.0000</Algilama_miktari_3>
+        <Teslim_sekli>FOB</Teslim_sekli>
+        <Ek_kod />
+        <Ozellik>01</Ozellik>
+        <Fatura_miktari>2661.80</Fatura_miktari>
+        <Fatura_miktarinin_dovizi>USD</Fatura_miktarinin_dovizi>
+        <Sinir_gecis_ucreti>0</Sinir_gecis_ucreti>
+        <Navlun_miktari>0.00</Navlun_miktari>
+        <Navlun_miktarinin_dovizi />
+        <Istatistiki_kiymet>2661.80</Istatistiki_kiymet>
+        <Sigorta_miktari>0.00</Sigorta_miktari>
+        <Sigorta_miktarinin_dovizi />
+        <Yurt_disi_harcamalar_miktari>0.00</Yurt_disi_harcamalar_miktari>
+        <Yurt_disi_harcamalar_miktarinin_dovizi />
+        <Tarifedeki_tanimi />
+        <Ticari_tanimi>ÇAMAÞIR MAKÝNASI AKSAMI</Ticari_tanimi>
+        <Marka>.</Marka>
+        <Numara>MRKU 3605196</Numara>
+        <Cinsi>KN</Cinsi>
+        <Adedi>1.00</Adedi>
+        <Miktar_birimi>C62</Miktar_birimi>
+        <Mahrece_iade />
+        <Ikincil_islem />
+        <Satir_no />
+        <Miktar>225</Miktar>
+        <Kdv_orani />
+        <Kullanilmis_esya />
+        <Aciklama_44>;ÝML:VESTEL BEYAZ EÞYA SAN.VE TÝC.A.Þ.-VD:BÜYÜKMÜKELLEFLER-VN:9250067278;</Aciklama_44>
+        <Imalatci_Vergino>9250067278</Imalatci_Vergino>
+        <Yurtici_Diger>0.00</Yurtici_Diger>
+        <Yurtici_Banka>0.00</Yurtici_Banka>
+        <Yurtici_Depolama>0.00</Yurtici_Depolama>
+        <Yurtici_Tahliye>0.00</Yurtici_Tahliye>
+        <Yurtici_Liman>0.00</Yurtici_Liman>
+        <Yurtici_Kultur>0.00</Yurtici_Kultur>
+        <Yurtici_Kkdf>0.00</Yurtici_Kkdf>
+        <Yurtici_Cevre>0.00</Yurtici_Cevre>
+        <Yurtici_Diger_Aciklama />
+        <Muafiyet_Aciklamasi />
+        <Referans_Tarihi />
+        <YurtDisi_Komisyon>0.00</YurtDisi_Komisyon>
+        <YurtDisi_Demuraj>0.00</YurtDisi_Demuraj>
+        <YurtDisi_Royalti>0.00</YurtDisi_Royalti>
+        <YurtDisi_Faiz>0.00</YurtDisi_Faiz>
+        <YurtDisi_Diger>0.00</YurtDisi_Diger>
+        <YurtDisi_Komisyon_Dovizi />
+        <YurtDisi_Demuraj_Dovizi />
+        <YurtDisi_Royalti_Dovizi />
+        <YurtDisi_Faiz_Dovizi />
+        <YurtDisi_Diger_Dovizi />
+        <YurtDisi_Diger_Aciklama />
+        <Kalem_Islem_Niteligi />
+        <Giris_Cikis_Amaci />
+        <Giris_Cikis_Amaci_Aciklama />
+        <STM_IlKodu />
+      </kalem>
+      <kalem>
+        <tamamlayici_bilgi />
+        <tcgbacmakapatma_bilgi />
+        <marka_model_bilgi>
+          <Marka>
+            <Marka_Turu>0</Marka_Turu>
+            <Marka_Adi>MARKASIZ</Marka_Adi>
+            <Marka_Kiymeti>42.56</Marka_Kiymeti>
+            <Silindir_adedi>0</Silindir_adedi>
+          </Marka>
+        </marka_model_bilgi>
+        <konteyner_Bilgi>
+          <Konteyner>
+            <Konteyner_No>MRKU3605196</Konteyner_No>
+            <Ulke_Kodu />
+          </Konteyner>
+        </konteyner_Bilgi>
+        <VergiMuafiyetleri />
+        <HavacilikYakitTurleri />
+        <Gtip>842290100000</Gtip>
+        <Imalatci_firma_bilgisi>HAYIR</Imalatci_firma_bilgisi>
+        <Kalem_sira_no>5</Kalem_sira_no>
+        <Mensei_ulke>720</Mensei_ulke>
+        <Brut_agirlik>0.06</Brut_agirlik>
+        <Net_agirlik>0.04</Net_agirlik>
+        <Tamamlayici_olcu_birimi>C62</Tamamlayici_olcu_birimi>
+        <Istatistiki_miktar>3.00</Istatistiki_miktar>
+        <Uluslararasi_anlasma />
+        <Algilama_birimi_1 />
+        <Algilama_miktari_1>0.0000</Algilama_miktari_1>
+        <Algilama_birimi_2 />
+        <Algilama_miktari_2>0.0000</Algilama_miktari_2>
+        <Muafiyetler_1 />
+        <Muafiyetler_2 />
+        <Muafiyetler_3 />
+        <Algilama_birimi_3 />
+        <Algilama_miktari_3>0.0000</Algilama_miktari_3>
+        <Teslim_sekli>FOB</Teslim_sekli>
+        <Ek_kod />
+        <Ozellik>01</Ozellik>
+        <Fatura_miktari>11.94</Fatura_miktari>
+        <Fatura_miktarinin_dovizi>USD</Fatura_miktarinin_dovizi>
+        <Sinir_gecis_ucreti>0</Sinir_gecis_ucreti>
+        <Navlun_miktari>0.00</Navlun_miktari>
+        <Navlun_miktarinin_dovizi />
+        <Istatistiki_kiymet>11.94</Istatistiki_kiymet>
+        <Sigorta_miktari>0.00</Sigorta_miktari>
+        <Sigorta_miktarinin_dovizi />
+        <Yurt_disi_harcamalar_miktari>0.00</Yurt_disi_harcamalar_miktari>
+        <Yurt_disi_harcamalar_miktarinin_dovizi />
+        <Tarifedeki_tanimi />
+        <Ticari_tanimi>BULAÞIK MAKINASI AKSAMI</Ticari_tanimi>
+        <Marka>.</Marka>
+        <Numara>MRKU 3605196</Numara>
+        <Cinsi>KN</Cinsi>
+        <Adedi>1.00</Adedi>
+        <Miktar_birimi>C62</Miktar_birimi>
+        <Mahrece_iade />
+        <Ikincil_islem />
+        <Satir_no />
+        <Miktar>3</Miktar>
+        <Kdv_orani />
+        <Kullanilmis_esya />
+        <Aciklama_44>;TED:VESTEL BEYAZ EÞYA SAN.VE TÝC.A.Þ.-VD:BÜYÜKMÜKELLEFLER-VN:9250067278;</Aciklama_44>
+        <Imalatci_Vergino>9250067278</Imalatci_Vergino>
+        <Yurtici_Diger>0.00</Yurtici_Diger>
+        <Yurtici_Banka>0.00</Yurtici_Banka>
+        <Yurtici_Depolama>0.00</Yurtici_Depolama>
+        <Yurtici_Tahliye>0.00</Yurtici_Tahliye>
+        <Yurtici_Liman>0.00</Yurtici_Liman>
+        <Yurtici_Kultur>0.00</Yurtici_Kultur>
+        <Yurtici_Kkdf>0.00</Yurtici_Kkdf>
+        <Yurtici_Cevre>0.00</Yurtici_Cevre>
+        <Yurtici_Diger_Aciklama />
+        <Muafiyet_Aciklamasi />
+        <Referans_Tarihi />
+        <YurtDisi_Komisyon>0.00</YurtDisi_Komisyon>
+        <YurtDisi_Demuraj>0.00</YurtDisi_Demuraj>
+        <YurtDisi_Royalti>0.00</YurtDisi_Royalti>
+        <YurtDisi_Faiz>0.00</YurtDisi_Faiz>
+        <YurtDisi_Diger>0.00</YurtDisi_Diger>
+        <YurtDisi_Komisyon_Dovizi />
+        <YurtDisi_Demuraj_Dovizi />
+        <YurtDisi_Royalti_Dovizi />
+        <YurtDisi_Faiz_Dovizi />
+        <YurtDisi_Diger_Dovizi />
+        <YurtDisi_Diger_Aciklama />
+        <Kalem_Islem_Niteligi />
+        <Giris_Cikis_Amaci />
+        <Giris_Cikis_Amaci_Aciklama />
+        <STM_IlKodu />
+      </kalem>
+      <kalem>
+        <tamamlayici_bilgi />
+        <tcgbacmakapatma_bilgi />
+        <marka_model_bilgi>
+          <Marka>
+            <Marka_Turu>0</Marka_Turu>
+            <Marka_Adi>MARKASIZ</Marka_Adi>
+            <Marka_Kiymeti>200.36</Marka_Kiymeti>
+            <Silindir_adedi>0</Silindir_adedi>
+          </Marka>
+        </marka_model_bilgi>
+        <konteyner_Bilgi>
+          <Konteyner>
+            <Konteyner_No>MRKU3605196</Konteyner_No>
+            <Ulke_Kodu />
+          </Konteyner>
+        </konteyner_Bilgi>
+        <VergiMuafiyetleri />
+        <HavacilikYakitTurleri />
+        <Gtip>842290100000</Gtip>
+        <Imalatci_firma_bilgisi>EVET</Imalatci_firma_bilgisi>
+        <Kalem_sira_no>6</Kalem_sira_no>
+        <Mensei_ulke>052</Mensei_ulke>
+        <Brut_agirlik>27.60</Brut_agirlik>
+        <Net_agirlik>19.27</Net_agirlik>
+        <Tamamlayici_olcu_birimi>C62</Tamamlayici_olcu_birimi>
+        <Istatistiki_miktar>16.00</Istatistiki_miktar>
+        <Uluslararasi_anlasma />
+        <Algilama_birimi_1 />
+        <Algilama_miktari_1>0.0000</Algilama_miktari_1>
+        <Algilama_birimi_2 />
+        <Algilama_miktari_2>0.0000</Algilama_miktari_2>
+        <Muafiyetler_1>KIHR</Muafiyetler_1>
+        <Muafiyetler_2 />
+        <Muafiyetler_3 />
+        <Algilama_birimi_3 />
+        <Algilama_miktari_3>0.0000</Algilama_miktari_3>
+        <Teslim_sekli>FOB</Teslim_sekli>
+        <Ek_kod />
+        <Ozellik>01</Ozellik>
+        <Fatura_miktari>56.21</Fatura_miktari>
+        <Fatura_miktarinin_dovizi>USD</Fatura_miktarinin_dovizi>
+        <Sinir_gecis_ucreti>0</Sinir_gecis_ucreti>
+        <Navlun_miktari>0.00</Navlun_miktari>
+        <Navlun_miktarinin_dovizi />
+        <Istatistiki_kiymet>56.21</Istatistiki_kiymet>
+        <Sigorta_miktari>0.00</Sigorta_miktari>
+        <Sigorta_miktarinin_dovizi />
+        <Yurt_disi_harcamalar_miktari>0.00</Yurt_disi_harcamalar_miktari>
+        <Yurt_disi_harcamalar_miktarinin_dovizi />
+        <Tarifedeki_tanimi />
+        <Ticari_tanimi>BULAÞIK MAKÝNASI AKSAMI</Ticari_tanimi>
+        <Marka>.</Marka>
+        <Numara>MRKU 3605196</Numara>
+        <Cinsi>KN</Cinsi>
+        <Adedi>1.00</Adedi>
+        <Miktar_birimi>C62</Miktar_birimi>
+        <Mahrece_iade />
+        <Ikincil_islem />
+        <Satir_no />
+        <Miktar>16</Miktar>
+        <Kdv_orani />
+        <Kullanilmis_esya />
+        <Aciklama_44>;ÝML:VESTEL BEYAZ EÞYA SAN.VE TÝC.A.Þ.-VD:BÜYÜKMÜKELLEFLER-VN:9250067278;</Aciklama_44>
+        <Imalatci_Vergino>9250067278</Imalatci_Vergino>
+        <Yurtici_Diger>0.00</Yurtici_Diger>
+        <Yurtici_Banka>0.00</Yurtici_Banka>
+        <Yurtici_Depolama>0.00</Yurtici_Depolama>
+        <Yurtici_Tahliye>0.00</Yurtici_Tahliye>
+        <Yurtici_Liman>0.00</Yurtici_Liman>
+        <Yurtici_Kultur>0.00</Yurtici_Kultur>
+        <Yurtici_Kkdf>0.00</Yurtici_Kkdf>
+        <Yurtici_Cevre>0.00</Yurtici_Cevre>
+        <Yurtici_Diger_Aciklama />
+        <Muafiyet_Aciklamasi />
+        <Referans_Tarihi />
+        <YurtDisi_Komisyon>0.00</YurtDisi_Komisyon>
+        <YurtDisi_Demuraj>0.00</YurtDisi_Demuraj>
+        <YurtDisi_Royalti>0.00</YurtDisi_Royalti>
+        <YurtDisi_Faiz>0.00</YurtDisi_Faiz>
+        <YurtDisi_Diger>0.00</YurtDisi_Diger>
+        <YurtDisi_Komisyon_Dovizi />
+        <YurtDisi_Demuraj_Dovizi />
+        <YurtDisi_Royalti_Dovizi />
+        <YurtDisi_Faiz_Dovizi />
+        <YurtDisi_Diger_Dovizi />
+        <YurtDisi_Diger_Aciklama />
+        <Kalem_Islem_Niteligi />
+        <Giris_Cikis_Amaci />
+        <Giris_Cikis_Amaci_Aciklama />
+        <STM_IlKodu />
+      </kalem>
+      <kalem>
+        <tamamlayici_bilgi />
+        <tcgbacmakapatma_bilgi />
+        <marka_model_bilgi>
+          <Marka>
+            <Marka_Turu>0</Marka_Turu>
+            <Marka_Adi>MARKASIZ</Marka_Adi>
+            <Marka_Kiymeti>1149.55</Marka_Kiymeti>
+            <Silindir_adedi>0</Silindir_adedi>
+          </Marka>
+        </marka_model_bilgi>
+        <konteyner_Bilgi>
+          <Konteyner>
+            <Konteyner_No>MRKU3605196</Konteyner_No>
+            <Ulke_Kodu />
+          </Konteyner>
+        </konteyner_Bilgi>
+        <VergiMuafiyetleri />
+        <HavacilikYakitTurleri />
+        <Gtip>851690000019</Gtip>
+        <Imalatci_firma_bilgisi>HAYIR</Imalatci_firma_bilgisi>
+        <Kalem_sira_no>7</Kalem_sira_no>
+        <Mensei_ulke>720</Mensei_ulke>
+        <Brut_agirlik>15.00</Brut_agirlik>
+        <Net_agirlik>11.42</Net_agirlik>
+        <Tamamlayici_olcu_birimi>C62</Tamamlayici_olcu_birimi>
+        <Istatistiki_miktar>100.00</Istatistiki_miktar>
+        <Uluslararasi_anlasma />
+        <Algilama_birimi_1 />
+        <Algilama_miktari_1>0.0000</Algilama_miktari_1>
+        <Algilama_birimi_2 />
+        <Algilama_miktari_2>0.0000</Algilama_miktari_2>
+        <Muafiyetler_1 />
+        <Muafiyetler_2 />
+        <Muafiyetler_3 />
+        <Algilama_birimi_3 />
+        <Algilama_miktari_3>0.0000</Algilama_miktari_3>
+        <Teslim_sekli>FOB</Teslim_sekli>
+        <Ek_kod />
+        <Ozellik>01</Ozellik>
+        <Fatura_miktari>322.50</Fatura_miktari>
+        <Fatura_miktarinin_dovizi>USD</Fatura_miktarinin_dovizi>
+        <Sinir_gecis_ucreti>0</Sinir_gecis_ucreti>
+        <Navlun_miktari>0.00</Navlun_miktari>
+        <Navlun_miktarinin_dovizi />
+        <Istatistiki_kiymet>322.50</Istatistiki_kiymet>
+        <Sigorta_miktari>0.00</Sigorta_miktari>
+        <Sigorta_miktarinin_dovizi />
+        <Yurt_disi_harcamalar_miktari>0.00</Yurt_disi_harcamalar_miktari>
+        <Yurt_disi_harcamalar_miktarinin_dovizi />
+        <Tarifedeki_tanimi />
+        <Ticari_tanimi>FIRIN AKSAMI</Ticari_tanimi>
+        <Marka>.</Marka>
+        <Numara>MRKU 3605196</Numara>
+        <Cinsi>KN</Cinsi>
+        <Adedi>1.00</Adedi>
+        <Miktar_birimi>C62</Miktar_birimi>
+        <Mahrece_iade />
+        <Ikincil_islem />
+        <Satir_no />
+        <Miktar>100</Miktar>
+        <Kdv_orani />
+        <Kullanilmis_esya />
+        <Aciklama_44>;TED:VESTEL BEYAZ EÞYA SAN.VE TÝC.A.Þ.-VD:BÜYÜKMÜKELLEFLER-VN:9250067278;</Aciklama_44>
+        <Imalatci_Vergino>9250067278</Imalatci_Vergino>
+        <Yurtici_Diger>0.00</Yurtici_Diger>
+        <Yurtici_Banka>0.00</Yurtici_Banka>
+        <Yurtici_Depolama>0.00</Yurtici_Depolama>
+        <Yurtici_Tahliye>0.00</Yurtici_Tahliye>
+        <Yurtici_Liman>0.00</Yurtici_Liman>
+        <Yurtici_Kultur>0.00</Yurtici_Kultur>
+        <Yurtici_Kkdf>0.00</Yurtici_Kkdf>
+        <Yurtici_Cevre>0.00</Yurtici_Cevre>
+        <Yurtici_Diger_Aciklama />
+        <Muafiyet_Aciklamasi />
+        <Referans_Tarihi />
+        <YurtDisi_Komisyon>0.00</YurtDisi_Komisyon>
+        <YurtDisi_Demuraj>0.00</YurtDisi_Demuraj>
+        <YurtDisi_Royalti>0.00</YurtDisi_Royalti>
+        <YurtDisi_Faiz>0.00</YurtDisi_Faiz>
+        <YurtDisi_Diger>0.00</YurtDisi_Diger>
+        <YurtDisi_Komisyon_Dovizi />
+        <YurtDisi_Demuraj_Dovizi />
+        <YurtDisi_Royalti_Dovizi />
+        <YurtDisi_Faiz_Dovizi />
+        <YurtDisi_Diger_Dovizi />
+        <YurtDisi_Diger_Aciklama />
+        <Kalem_Islem_Niteligi />
+        <Giris_Cikis_Amaci />
+        <Giris_Cikis_Amaci_Aciklama />
+        <STM_IlKodu />
+      </kalem>
+      <kalem>
+        <tamamlayici_bilgi />
+        <tcgbacmakapatma_bilgi />
+        <marka_model_bilgi>
+          <Marka>
+            <Marka_Turu>0</Marka_Turu>
+            <Marka_Adi>MARKASIZ</Marka_Adi>
+            <Marka_Kiymeti>2382.73</Marka_Kiymeti>
+            <Silindir_adedi>0</Silindir_adedi>
+          </Marka>
+        </marka_model_bilgi>
+        <konteyner_Bilgi>
+          <Konteyner>
+            <Konteyner_No>MRKU3605196</Konteyner_No>
+            <Ulke_Kodu />
+          </Konteyner>
+        </konteyner_Bilgi>
+        <VergiMuafiyetleri />
+        <HavacilikYakitTurleri />
+        <Gtip>851690000019</Gtip>
+        <Imalatci_firma_bilgisi>EVET</Imalatci_firma_bilgisi>
+        <Kalem_sira_no>8</Kalem_sira_no>
+        <Mensei_ulke>052</Mensei_ulke>
+        <Brut_agirlik>82.92</Brut_agirlik>
+        <Net_agirlik>59.43</Net_agirlik>
+        <Tamamlayici_olcu_birimi>C62</Tamamlayici_olcu_birimi>
+        <Istatistiki_miktar>451.00</Istatistiki_miktar>
+        <Uluslararasi_anlasma />
+        <Algilama_birimi_1 />
+        <Algilama_miktari_1>0.0000</Algilama_miktari_1>
+        <Algilama_birimi_2 />
+        <Algilama_miktari_2>0.0000</Algilama_miktari_2>
+        <Muafiyetler_1>KIHR</Muafiyetler_1>
+        <Muafiyetler_2 />
+        <Muafiyetler_3 />
+        <Algilama_birimi_3 />
+        <Algilama_miktari_3>0.0000</Algilama_miktari_3>
+        <Teslim_sekli>FOB</Teslim_sekli>
+        <Ek_kod />
+        <Ozellik>01</Ozellik>
+        <Fatura_miktari>668.46</Fatura_miktari>
+        <Fatura_miktarinin_dovizi>USD</Fatura_miktarinin_dovizi>
+        <Sinir_gecis_ucreti>0</Sinir_gecis_ucreti>
+        <Navlun_miktari>0.00</Navlun_miktari>
+        <Navlun_miktarinin_dovizi />
+        <Istatistiki_kiymet>668.46</Istatistiki_kiymet>
+        <Sigorta_miktari>0.00</Sigorta_miktari>
+        <Sigorta_miktarinin_dovizi />
+        <Yurt_disi_harcamalar_miktari>0.00</Yurt_disi_harcamalar_miktari>
+        <Yurt_disi_harcamalar_miktarinin_dovizi />
+        <Tarifedeki_tanimi />
+        <Ticari_tanimi>FIRIN AKSAMI</Ticari_tanimi>
+        <Marka>.</Marka>
+        <Numara>MRKU 3605196</Numara>
+        <Cinsi>KN</Cinsi>
+        <Adedi>1.00</Adedi>
+        <Miktar_birimi>C62</Miktar_birimi>
+        <Mahrece_iade />
+        <Ikincil_islem />
+        <Satir_no />
+        <Miktar>451</Miktar>
+        <Kdv_orani />
+        <Kullanilmis_esya />
+        <Aciklama_44>;ÝML:VESTEL BEYAZ EÞYA SAN.VE TÝC.A.Þ.-VD:BÜYÜKMÜKELLEFLER-VN:9250067278;</Aciklama_44>
+        <Imalatci_Vergino>9250067278</Imalatci_Vergino>
+        <Yurtici_Diger>0.00</Yurtici_Diger>
+        <Yurtici_Banka>0.00</Yurtici_Banka>
+        <Yurtici_Depolama>0.00</Yurtici_Depolama>
+        <Yurtici_Tahliye>0.00</Yurtici_Tahliye>
+        <Yurtici_Liman>0.00</Yurtici_Liman>
+        <Yurtici_Kultur>0.00</Yurtici_Kultur>
+        <Yurtici_Kkdf>0.00</Yurtici_Kkdf>
+        <Yurtici_Cevre>0.00</Yurtici_Cevre>
+        <Yurtici_Diger_Aciklama />
+        <Muafiyet_Aciklamasi />
+        <Referans_Tarihi />
+        <YurtDisi_Komisyon>0.00</YurtDisi_Komisyon>
+        <YurtDisi_Demuraj>0.00</YurtDisi_Demuraj>
+        <YurtDisi_Royalti>0.00</YurtDisi_Royalti>
+        <YurtDisi_Faiz>0.00</YurtDisi_Faiz>
+        <YurtDisi_Diger>0.00</YurtDisi_Diger>
+        <YurtDisi_Komisyon_Dovizi />
+        <YurtDisi_Demuraj_Dovizi />
+        <YurtDisi_Royalti_Dovizi />
+        <YurtDisi_Faiz_Dovizi />
+        <YurtDisi_Diger_Dovizi />
+        <YurtDisi_Diger_Aciklama />
+        <Kalem_Islem_Niteligi />
+        <Giris_Cikis_Amaci />
+        <Giris_Cikis_Amaci_Aciklama />
+        <STM_IlKodu />
+      </kalem>
+    </Kalemler>
+    <KiymetBildirim />
+    <Sorular_cevaplar>
+      <Soru_Cevap>
+        <Kalem_no>0</Kalem_no>
+        <Soru_no>7780</Soru_no>
+        <Cevap>HAYIR</Cevap>
+      </Soru_Cevap>
+      <Soru_Cevap>
+        <Kalem_no>1</Kalem_no>
+        <Soru_no>2629</Soru_no>
+        <Cevap>HAYIR</Cevap>
+      </Soru_Cevap>
+      <Soru_Cevap>
+        <Kalem_no>2</Kalem_no>
+        <Soru_no>2629</Soru_no>
+        <Cevap>HAYIR</Cevap>
+      </Soru_Cevap>
+      <Soru_Cevap>
+        <Kalem_no>3</Kalem_no>
+        <Soru_no>2629</Soru_no>
+        <Cevap>HAYIR</Cevap>
+      </Soru_Cevap>
+      <Soru_Cevap>
+        <Kalem_no>4</Kalem_no>
+        <Soru_no>2629</Soru_no>
+        <Cevap>HAYIR</Cevap>
+      </Soru_Cevap>
+      <Soru_Cevap>
+        <Kalem_no>5</Kalem_no>
+        <Soru_no>2629</Soru_no>
+        <Cevap>HAYIR</Cevap>
+      </Soru_Cevap>
+      <Soru_Cevap>
+        <Kalem_no>6</Kalem_no>
+        <Soru_no>2629</Soru_no>
+        <Cevap>HAYIR</Cevap>
+      </Soru_Cevap>
+      <Soru_Cevap>
+        <Kalem_no>7</Kalem_no>
+        <Soru_no>2629</Soru_no>
+        <Cevap>HAYIR</Cevap>
+      </Soru_Cevap>
+      <Soru_Cevap>
+        <Kalem_no>8</Kalem_no>
+        <Soru_no>2629</Soru_no>
+        <Cevap>HAYIR</Cevap>
+      </Soru_Cevap>
+    </Sorular_cevaplar>
+    <Dokumanlar>
+      <Dokuman>
+        <Kalem_no>1</Kalem_no>
+        <Kod>0100</Kod>
+        <Dogrulama>V</Dogrulama>
+        <Belge_tarihi>24/05/2017</Belge_tarihi>
+        <Referans>TA02017000012996</Referans>
+        <Vize_Tarihi />
+      </Dokuman>
+      <Dokuman>
+        <Kalem_no>1</Kalem_no>
+        <Kod>9999</Kod>
+        <Dogrulama>V</Dogrulama>
+        <Belge_tarihi>24/05/2017</Belge_tarihi>
+        <Referans>ÝTH EDÝLEN MALIN ÝHRACI</Referans>
+        <Vize_Tarihi />
+      </Dokuman>
+      <Dokuman>
+        <Kalem_no>2</Kalem_no>
+        <Kod>0100</Kod>
+        <Dogrulama>V</Dogrulama>
+        <Belge_tarihi>24/05/2017</Belge_tarihi>
+        <Referans>TA02017000012996</Referans>
+        <Vize_Tarihi />
+      </Dokuman>
+      <Dokuman>
+        <Kalem_no>3</Kalem_no>
+        <Kod>0100</Kod>
+        <Dogrulama>V</Dogrulama>
+        <Belge_tarihi>24/05/2017</Belge_tarihi>
+        <Referans>TA02017000012996</Referans>
+        <Vize_Tarihi />
+      </Dokuman>
+      <Dokuman>
+        <Kalem_no>3</Kalem_no>
+        <Kod>9999</Kod>
+        <Dogrulama>V</Dogrulama>
+        <Belge_tarihi>24/05/2017</Belge_tarihi>
+        <Referans>ÝTH EDÝLEN MALIN ÝHRACI</Referans>
+        <Vize_Tarihi />
+      </Dokuman>
+      <Dokuman>
+        <Kalem_no>4</Kalem_no>
+        <Kod>0100</Kod>
+        <Dogrulama>V</Dogrulama>
+        <Belge_tarihi>24/05/2017</Belge_tarihi>
+        <Referans>TA02017000012996</Referans>
+        <Vize_Tarihi />
+      </Dokuman>
+      <Dokuman>
+        <Kalem_no>5</Kalem_no>
+        <Kod>0100</Kod>
+        <Dogrulama>V</Dogrulama>
+        <Belge_tarihi>24/05/2017</Belge_tarihi>
+        <Referans>TA02017000012996</Referans>
+        <Vize_Tarihi />
+      </Dokuman>
+      <Dokuman>
+        <Kalem_no>5</Kalem_no>
+        <Kod>9999</Kod>
+        <Dogrulama>V</Dogrulama>
+        <Belge_tarihi>24/05/2017</Belge_tarihi>
+        <Referans>ÝTH EDÝLEN MALIN ÝHRACI</Referans>
+        <Vize_Tarihi />
+      </Dokuman>
+      <Dokuman>
+        <Kalem_no>6</Kalem_no>
+        <Kod>0100</Kod>
+        <Dogrulama>V</Dogrulama>
+        <Belge_tarihi>24/05/2017</Belge_tarihi>
+        <Referans>TA02017000012996</Referans>
+        <Vize_Tarihi />
+      </Dokuman>
+      <Dokuman>
+        <Kalem_no>7</Kalem_no>
+        <Kod>0100</Kod>
+        <Dogrulama>V</Dogrulama>
+        <Belge_tarihi>24/05/2017</Belge_tarihi>
+        <Referans>TA02017000012996</Referans>
+        <Vize_Tarihi />
+      </Dokuman>
+      <Dokuman>
+        <Kalem_no>7</Kalem_no>
+        <Kod>9999</Kod>
+        <Dogrulama>V</Dogrulama>
+        <Belge_tarihi>24/05/2017</Belge_tarihi>
+        <Referans>ÝTH EDÝLEN MALIN ÝHRACI</Referans>
+        <Vize_Tarihi />
+      </Dokuman>
+      <Dokuman>
+        <Kalem_no>8</Kalem_no>
+        <Kod>0100</Kod>
+        <Dogrulama>V</Dogrulama>
+        <Belge_tarihi>24/05/2017</Belge_tarihi>
+        <Referans>TA02017000012996</Referans>
+        <Vize_Tarihi />
+      </Dokuman>
+    </Dokumanlar>
+    <Vergiler />
+    <mail1>*****</mail1>
+    <mail2 />
+    <mail3 />
+    <mobil1>*****</mobil1>
+    <mobil2 />
+  </BeyannameBilgi>
+</Gelen>

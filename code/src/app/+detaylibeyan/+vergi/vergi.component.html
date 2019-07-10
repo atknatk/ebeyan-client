@@ -1,0 +1,175 @@
+<dn-loading-content [show]="loading">
+  <div class="dn-content-wrapper">
+    <div class="dn-button-content">
+      <detaylibeyan-button-list [idDetayliBeyan]="idDetayliBeyan" curNav="vergi"></detaylibeyan-button-list>
+    </div>
+    <div class="dn-content">
+      <div class="row">
+
+        <article id="dn-table-widget" class="col-sm-12">
+          <dn-widget color="blueDark" [widgetId]="'vergi-widget'">
+            <header>
+              <div class="jarviswidget-ctrls" role="menu">
+                <detaylibeyan-no-label [idDetayliBeyan]="idDetayliBeyan"></detaylibeyan-no-label>
+              </div>
+              <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+              <h2>Vergi Listesi</h2>
+            </header>
+            <div style="margin-top: -4px;">
+              <div class="widget-body no-padding dn-datatable-widget-body">
+                <fieldset class="margin-top-10">
+                  <div class="form-row form-group no-margin-bottom" style="margin-left: -16px;">
+                    <div class="col-sm-12 col-md-4">
+                      <dn-select2-container [selectedText]="selectedTextKalem"
+                                            [labelRow]="2"
+                                            referenceMode="id"
+                                            [displaySelect]="displaySelectKalem"
+                                            (onSelect)="kalemSelect($event)"
+                                            (onRemove)="kalemRemove($event)"
+                                            [serviceUrl]="kalemUrl">Kalem
+                      </dn-select2-container>
+                    </div>
+                  </div>
+                </fieldset>
+
+                <form [formGroup]="baseForm" novalidate>
+
+                  <div class="margin-top-10">
+                    <div class="col-sm-12 col-md-12 vergi-table-container" style="padding-right: 0;">
+                      <table class="table table-bordered" [formArrayName]="'vergiUser'">
+                        <thead>
+                        <tr>
+                          <th align="center" style="width: 40px; text-align: center">İşlem</th>
+                          <th align="center" style="width: 55px; text-align: center">Kod</th>
+                          <th align="center" style="text-align: center">Açıklama</th>
+                          <th align="center" style="width: 105px;text-align: center">Miktar</th>
+                          <th align="center" style="width: 50px; text-align: center">Oran</th>
+                          <th align="center" style="width: 85px; text-align: center">Ödeme Ş.</th>
+                          <th align="center" style="width: 105px; text-align: center">Vergi Matrahı</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr *ngFor="let vergi of getUserControl().controls; let i=index"
+                            [formGroupName]="i">
+                          <td style="text-align: center">
+                            <button (click)="removeRow(i)" type="button" class="btn btn-sm  btn-danger txt-color-white">
+                              <i
+                                class="fa fa-trash-o"></i></button>
+                          </td>
+                          <td>
+                            <input class="form-control td-inline" formControlName="kod">
+                          </td>
+                          <td>
+                            <input class="form-control td-inline" type="text" formControlName="aciklama">
+                          </td>
+                          <td>
+                            <input class="form-control td-inline" #curr formControlName="miktar">
+                          </td>
+                          <td>
+                            <input class="form-control td-inline" type="text" formControlName="oran">
+                          </td>
+                          <td>
+                            <dn-select2 css="form-control td-inline"
+                                        placeholder=""
+                                        formControlName="vergiOdemeSekil"
+                                        referenceMode="id"
+                                        serviceUrl="vergiodemesekli"
+                                        [displaySelect]="gtbConst.displaySelect"
+                                        [selectedText]="gtbConst.selectedText"></dn-select2>
+                          </td>
+                          <td>
+                            <input class="form-control td-inline" #curr formControlName="vergiMatrahi">
+                          </td>
+                        </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="col-sm-12 col-md-12 vergi-islem-container">
+                      <button class="btn btn-default" style="width: 100%"
+                              (click)="selectedRowMove()">&lt;
+                      </button>
+                      <button class="btn btn-default"
+                              style="width: 100%"
+                              (click)="allRowMove()"
+                              [ngClass]="getGumrukControl().controls.length > 1 ? '' : 'dn-hide'">&lt;&lt;
+                      </button>
+                    </div>
+                    <div class="col-sm-12 col-md-12 vergi-table-container">
+                      <table id="gumruk-table" class="table table-bordered table-striped table-hover"
+                             [formArrayName]="'vergiGumruk'">
+                        <thead>
+                        <tr>
+                          <th align="center" style="width: 55px; text-align: center">Kod</th>
+                          <th align="center" style="text-align: center">Açıklama</th>
+                          <th align="center" style="width: 105px;text-align: center">Miktar</th>
+                          <th align="center" style="width: 50px; text-align: center">Oran</th>
+                          <th align="center" style="width: 85px; text-align: center">Ödeme Ş</th>
+                          <th align="center" style="width: 105px; text-align: center">Vergi Matrahı</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+
+                        <tr *ngFor="let vergi of getGumrukControl().controls; let i=index"
+                            (click)="addThisVergiToArray(vergi.value, $event)"
+                            [class.active]="isVergiSelected(vergi.value)"
+                            [formGroupName]="i">
+                          <td>
+                            <input class="form-control td-inline" formControlName="kod">
+                          </td>
+                          <td>
+                            <input class="form-control td-inline" formControlName="aciklama">
+                          </td>
+                          <td>
+                            <input class="form-control td-inline" #curr formControlName="miktar">
+                          </td>
+                          <td>
+                            <input class="form-control td-inline" formControlName="oran">
+                          </td>
+                          <td>
+                            <dn-select2 css="form-control td-inline"
+                                        placeholder=""
+                                        referenceMode="id"
+                                        formControlName="vergiOdemeSekil"
+                                        serviceUrl="vergiodemesekli"
+                                        [displaySelect]="gtbConst.displaySelect"
+                                        [selectedText]="gtbConst.selectedText"></dn-select2>
+                          </td>
+                          <td>
+                            <input class="form-control td-inline" #curr formControlName="vergiMatrahi">
+                          </td>
+                        </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+
+                  <div class="clearfix"></div>
+                </form>
+
+                <div class="form-actions" style="margin: 0px;">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <button class="btn" type="button"
+                              style="float: left"
+                              (click)="addUserSatir()">
+                        <i class="fa fa-plus"></i>
+                        Satır Ekle
+                      </button>
+                      <button class="btn" type="button"
+                              [disabled]="!getUserControl().valid"
+                              (click)="onSubmit()">
+                        <i class="fa fa-save"></i>
+                        Kaydet
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </dn-widget>
+        </article>
+      </div>
+    </div>
+  </div>
+</dn-loading-content>

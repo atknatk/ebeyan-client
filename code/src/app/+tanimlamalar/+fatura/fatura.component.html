@@ -1,0 +1,74 @@
+<dn-loading-content [show]="loading">
+  <div class="row">
+    <article id="dn-table-widget" class="col-sm-12">
+      <dn-widget color="blueDark" [widgetId]="'vergi-widget'">
+        <header>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+          <h2>E-Fatura Ayarları</h2>
+        </header>
+        <div>
+          <div class="widget-body no-padding dn-datatable-widget-body">
+            <form [formGroup]="baseForm" class="smart-form" novalidate>
+              <div class="margin-top-10">
+                <fieldset>
+                  <div class="form-row form-group no-margin-bottom" style="margin-left: -16px;">
+                    <div class="col-sm-12 col-md-3">
+                      <dn-select2-smart [form]="baseForm"
+                                        serviceUrl="ozelEntegrator"
+                                        formControlName="ozelEntegrator">Entegratör
+                      </dn-select2-smart>
+                    </div>
+                    <div class="col-sm-12 col-md-3">
+                      <dn-smart-input [form]="baseForm"
+                                      formControlName="faturaUsername">Entegratör Kullanıcı Adı
+                      </dn-smart-input>
+                    </div>
+                    <div class="col-sm-12 col-md-3">
+                      <dn-smart-input [form]="baseForm"
+                                      type="password"
+                                      formControlName="faturaPassword">Entegratör Kullanıcı Şifre
+                      </dn-smart-input>
+                    </div>
+                    <div class="col-sm-12 col-md-3">
+                      <dn-smart-input formControlName="senderAlias"
+                                      [form]="baseForm">Gönderici Alias
+                      </dn-smart-input>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+              <!--(click)="addSatir(baseForm.getRawValue())">-->
+              <div class="clearfix"></div>
+              <footer>
+                <button class="btn btn-primary" type="button"
+                        [disabled]="!baseForm.valid"
+                        (click)="onSubmit()">
+                  <i [ngClass]="isEdit ? 'fa fa-edit':'fa fa-save'"></i>
+                  {{isEdit ? 'Güncelle' : 'Kaydet'}}
+                </button>
+
+                <button *ngIf="isEdit"
+                        class="btn btn-danger"
+                        type="button"
+                        [disabled]="!baseForm.valid"
+                        (click)="onRemove()">
+                  <i class="fa fa-trash-o"></i> Sil
+                </button>
+
+                <button class="btn btn-default"
+                        type="button"
+                        [disabled]="!baseForm.valid"
+                        (click)="onReset()">
+                  <i class="fa fa-eraser"></i> Temizle
+                </button>
+
+
+              </footer>
+            </form>
+
+          </div>
+        </div>
+      </dn-widget>
+    </article>
+  </div>
+</dn-loading-content>

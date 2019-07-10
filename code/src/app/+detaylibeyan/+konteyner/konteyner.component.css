@@ -1,0 +1,22 @@
+
+:host >>> .eu-btn-center {
+  margin-top: 5px;
+}
+
+
+:host >>> table{
+  margin-bottom: 0px !important;
+}
+
+:host >>> .table>tbody>tr>td, .table>tbody>tr>th{
+  padding: 0 !important;
+}
+
+
+:host >>> .simple-selection .select2-selected {
+  padding-top: 4px !important;
+}
+
+:host >>> a>.select2-selection-container{
+  margin-bottom: 0px !important;
+}

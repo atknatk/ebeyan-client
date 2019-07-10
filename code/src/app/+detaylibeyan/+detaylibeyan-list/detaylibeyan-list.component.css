@@ -1,0 +1,9 @@
+:host >>> .dt-buttons{
+  float: left !important;
+}
+
+:host >>> .row-selected {
+  background-color: paleturquoise !important;
+}
+
+

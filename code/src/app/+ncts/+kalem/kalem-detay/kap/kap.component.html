@@ -1,0 +1,80 @@
+<dn-loading [show]="loading">
+  <form [formGroup]="baseForm" novalidate>
+
+    <div class="margin-top-10">
+      <fieldset>
+        <div class="form-row form-group no-margin-bottom" style="margin-left: -16px;">
+          <div class="col-sm-12 col-md-4">
+            <dn-input [form]="baseForm"
+                      formControlName="kaplarinMarkaVeNumaralari">Kaplar marka ve No
+            </dn-input>
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <dn-select2-container [form]="baseForm"
+                                  serviceUrl="dil"
+                                  formControlName="dil">Dil
+            </dn-select2-container>
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <dn-select2-container [form]="baseForm"
+                                  serviceUrl="kapKod"
+                                  formControlName="kapKod">Kap Tipi Kodu
+            </dn-select2-container>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset>
+        <div class="form-row form-group no-margin-bottom" style="margin-left: -16px;">
+          <div class="col-sm-12 col-md-4">
+            <dn-input [form]="baseForm"
+                      formControlName="kapAdedi">Kap Adedi
+            </dn-input>
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <dn-input [form]="baseForm"
+                      formControlName="parcaSayisi">Parça Sayısı
+            </dn-input>
+          </div>
+          <div class="col-sm-12 col-md-4" style="padding-left: 2px; ">
+            <button class="btn" type="button" style="float: right; margin-right: 13px;"
+                    [disabled]="!baseForm.valid"
+                    (click)="onSubmit()">
+              <i [ngClass]="isEdit ? 'fa fa-edit':'fa fa-save'"></i>
+              {{isEdit ? 'Güncelle' : 'Kaydet'}}
+            </button>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+    <!--(click)="addSatir(baseForm.getRawValue())">-->
+    <br>
+    <table class="table table-bordered" [formArrayName]="formArrName">
+      <thead>
+      <tr>
+        <th align="center" style="width: 40px; text-align: center">İşlem</th>
+        <th align="center" style="text-align: center">Kaplar marka ve No</th>
+        <th align="center" style="text-align: center">Dil</th>
+        <th align="center" style="text-align: center">Kap Tipi Kodu</th>
+        <th align="center" style="text-align: center">Kap Adedi</th>
+        <th align="center" style="text-align: center">Kap Sayısı</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let row of getControl().controls; let i=index"
+          [formGroupName]="i"
+          (click)="setClickedRow(i)" [class.active]="i == selectedRow">
+        <td>
+          <button (click)="onRemove(i)" type="button" class="btn btn-xs  btn-danger txt-color-white"><i
+            class="fa fa-trash-o"></i></button>
+        </td>
+        <td>{{row.get('kaplarinMarkaVeNumaralari').value}}</td>
+        <td>{{getEnumValue(row.get('dil').value)}}</td>
+        <td>{{getEnumValue(row.get('kapKod').value)}}</td>
+        <td>{{row.get('kapAdedi').value}}</td>
+        <td>{{row.get('parcaSayisi').value}}</td>
+      </tr>
+      </tbody>
+    </table>
+    <div class="clearfix"></div>
+  </form>
+</dn-loading>

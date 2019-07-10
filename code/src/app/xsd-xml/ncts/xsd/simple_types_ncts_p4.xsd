@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" version="1.00">
+  <!--=========================================-->
+  <!--===== NCTS P4 Simple Types -->
+  <!--===== DDNTA 10.00  -->
+  <!--===== XSD version v1.00  -->
+  <!--=========================================-->
+  <!--===== Includes =====-->
+  <xs:include schemaLocation="simple_types.xsd"/>
+  <xs:include schemaLocation="doc.xsd"/>
+  <!--===== Data Item Types =====-->
+</xs:schema>
+

@@ -1,0 +1,77 @@
+<dn-loading-content [show]="false">
+
+  <div class="row">
+
+    <article id="dn-table-widget" class="col-sm-12">
+      <dn-widget color="blueDark" [widgetId]="'vergi-widget'">
+        <header>
+          <div class="jarviswidget-ctrls" role="menu">
+            <!-- <detaylibeyan-no-label [idDetayliBeyan]="idDetayliBeyan"></detaylibeyan-no-label>-->
+            <a href="javascript:void(0)" (click)="print()" class="button-icon" data-placement="bottom" rel="tooltip"
+               title="Yazdır">
+              <i class="fa fa-print"></i>
+            </a>
+          </div>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+          <h2>Detaylı Beyan Görüntüle</h2>
+        </header>
+        <div>
+          <div class="widget-body no-padding dn-datatable-widget-body" style="text-align: center">
+            <canvas id="the-canvas" style="border:1px solid black;" class="page"></canvas>
+            <!--     <pdf-viewer [src]="pdfSrc"
+                             [render-text]="true"
+                             style="display: block;">
+                 </pdf-viewer>-->
+
+          </div>
+        </div>
+      </dn-widget>
+    </article>
+  </div>
+</dn-loading-content>
+
+<!--<pre>{{baseForm.getRawValue() | json}}</pre>-->
+
+
+<!--
+<div id="content">
+
+  <div class="row">
+
+    <article id="dn-table-widget" class="col-sm-12">
+      <dn-widget color="blueDark" [widgetId]="'vergi-widget'">
+        <header>
+          <div class="jarviswidget-ctrls" role="menu">
+            <a (click)="print()" class="button-icon" rel="Yazdır" title="Yazdır" data-placement="bottom">
+              <i class="fa fa-print"></i></a>
+          </div>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+          <h2>Beyanname</h2>
+        </header>
+        <div style="margin-top: -4px;">
+          <div class="widget-body no-padding">
+            <pdf-viewer class="dnPrint"
+                        [src]="pdfSrc"
+                        [show-all]="true"
+                        [render-text]="false"
+                        [original-size]="false"
+                        style="text-align: center; display: block;"></pdf-viewer>
+          </div>
+        </div>
+      </dn-widget>
+    </article>
+  </div>
+
+</div>
+
+&lt;!&ndash;
+<div id="content" style="width: 100%;"
+     style.height="{{pdfHeight}}">
+  <embed style="text-align: center; display: block;"
+         src="{{pdfSrc}}" width="100%"
+         height="100%" alt="pdf">
+</div>
+&ndash;&gt;
+-->
+
+

@@ -1,0 +1,55 @@
+<form [formGroup]="baseForm" novalidate>
+
+  <div class="margin-top-10">
+    <fieldset>
+      <div class="form-row form-group no-margin-bottom" style="margin-left: -16px;">
+        <div class="col-sm-12 col-md-5" style="padding-right: 2px">
+          <dn-input [form]="baseForm"
+                    formControlName="muhurId">Mühür Id
+          </dn-input>
+        </div>
+        <div class="col-sm-12 col-md-5" style="padding-left: 2px; ">
+          <dn-select2-container [form]="baseForm"
+                                serviceUrl="dil"
+                                [labelRow]="3"
+                                [inputRow]="9"
+                                formControlName="dil">Dili
+          </dn-select2-container>
+        </div>
+        <div class="col-sm-12 col-md-2">
+          <button class="btn" type="button" style="float: right; margin-right: 13px;"
+                  [disabled]="!baseForm.valid"
+                  (click)="onSubmit()">
+            <i [ngClass]="isEdit ? 'fa fa-edit':'fa fa-save'"></i>
+            {{isEdit ? 'Güncelle' : 'Kaydet'}}
+          </button>
+        </div>
+      </div>
+    </fieldset>
+  </div>
+  <!--(click)="addSatir(baseForm.getRawValue())">-->
+  <br>
+  <table class="table table-bordered" [formArrayName]="formArrName">
+    <thead>
+    <tr>
+      <th align="center" style="width: 40px; text-align: center">İşlem</th>
+      <th align="center" style="text-align: center">Transit Gümrük İdaresi</th>
+      <th align="center" style="text-align: center">Varış Tarihi</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let row of getControl().controls; let i=index"
+        [formGroupName]="i"
+        (click)="setClickedRow(i)" [class.active]="i == selectedRow">
+      <td>
+        <button (click)="onRemove(i)" type="button" class="btn btn-xs  btn-danger txt-color-white"><i
+          class="fa fa-trash-o"></i></button>
+      </td>
+      <td>{{row.get('muhurId').value}}</td>
+      <td>{{getEnumValue(row.get('dil').value)}}</td>
+
+    </tr>
+    </tbody>
+  </table>
+  <div class="clearfix"></div>
+</form>

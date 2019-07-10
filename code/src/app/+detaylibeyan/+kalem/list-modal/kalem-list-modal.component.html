@@ -1,0 +1,176 @@
+<ng-template #kalemListTemplate>
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" (click)="modalRef.hide()" aria-hidden="true">
+      <i class="fa fa-times fa-lg"></i>
+    </button>
+    <h4 class="modal-title">Kalem Listesi</h4>
+    <!--<small class="font-bold">{{datatableData.userId}} : {{datatableData.name}}
+    </small>-->
+  </div>
+
+  <div class="modal-body kalem-list-modal">
+    <table class="table table-hover no-margins table-responsive table-striped table-bordered">
+      <thead>
+      <tr>
+        <th>İşlem</th>
+        <th>Kalem No</th>
+        <th>TCGB No</th>
+        <th>Menşei Ülke</th>
+        <th>Uluslarasi Anlaşma</th>
+        <th>KDV Oranı</th>
+        <th>Muafiyet 1</th>
+        <th>Muafiyet 2</th>
+        <th>Muafiyet 3</th>
+        <th>Muafiyet 4</th>
+        <th>DİİB Satır Kodu</th>
+        <th>Özellik</th>
+        <th>Ek Kod</th>
+        <th>İmalatçı Firma</th>
+        <th>Mahrece İade</th>
+        <th>İkincil İşlem</th>
+        <th>Açıklamalar</th>
+        <th>İmalatçı Vergi No</th>
+        <th>STM Bağlı İl</th>
+        <th>Numara</th>
+        <th>Adedi</th>
+        <th>Marka</th>
+        <th>Cinsi</th>
+        <th>Ticari Tanımı</th>
+        <th>Tarifedeki Tanımı</th>
+        <th>Kullanılmış Eşya</th>
+        <th>İşlemin Niteliği</th>
+        <th>Eşyanın Giriş/Çıkış Amacı</th>
+        <th>Eşyanın Amacı Açıklama</th>
+        <th>Satışa Esas Birim</th>
+        <th>Satışa Esas Miktar</th>
+        <th>Brüt Ağırlık</th>
+        <th>Net Ağırlık</th>
+        <th>Tamamlayıcı Ölçü Birim</th>
+        <th>Tamamlayıcı Ölçü Miktar</th>
+        <th>Algılama Birim 1</th>
+        <th>Algılama Miktar 1</th>
+        <th>Algılama Birim 2</th>
+        <th>Algılama Miktar 2</th>
+        <th>Algılama Birim 3</th>
+        <th>Algılama Miktar 3</th>
+        <th>Teslim Şekli</th>
+        <th>Ödeme Şekli</th>
+        <th>Fatura</th>
+        <th>Fatura Döviz</th>
+        <th>Navlun</th>
+        <th>Navlun Döviz</th>
+        <th>Sigorta</th>
+        <th>Sigorta Döviz</th>
+
+        <th>KKDF</th>
+        <th>Kültür Bak. Kesinti</th>
+        <th>Liman Giderleri</th>
+        <th>Çevre Katkı Payı</th>
+        <th>Tahmil Tahliye Gider.</th>
+        <th>Depolama Gider</th>
+        <th>Banka Masraf</th>
+        <th>Yurtiçi Diğer</th>
+        <th>Yurtiçi Diğer Açıklama</th>
+
+        <th>Komisyon Tellaliye</th>
+        <th>Komisyon Tellaliye Döviz</th>
+        <th>Demuraj Gider</th>
+        <th>Demuraj Gider Döviz</th>
+        <th>Royalti Lisans</th>
+        <th>Royalti Lisans Döviz</th>
+        <th>Faiz Masraf</th>
+        <th>Faiz Masraf Döviz</th>
+        <th>Yurtdışı Diğer</th>
+        <th>Yurtdışı Diğer Döviz</th>
+        <th>Yurtdışı Diğer Açıklama</th>
+
+
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let kalem of kalemList">
+        <td>
+          <button (click)="editKalem(kalem.kalemNo)" class="btn btn-sm btn-primary">
+            <i class="fa fa-edit"></i>
+          </button>
+        </td>
+        <td>{{kalem.kalemNo}}</td>
+        <td>{{kalem.gtip ? kalem.gtip.id: ''}}</td>
+        <td>{{kalem.menseUlke ? kalem.menseUlke.id : ''}}</td>
+        <td>{{kalem.uluslararasiAnlasmalar ? kalem.uluslararasiAnlasmalar.id : ''}}</td>
+        <td>{{kalem.kdv ? kalem.kdv.id : ''}}</td>
+        <td>{{kalem.muafiyetKod1 ? kalem.muafiyetKod1.id : ''}}</td>
+        <td>{{kalem.muafiyetKod2 ? kalem.muafiyetKod2.id : ''}}</td>
+        <td>{{kalem.muafiyetKod3 ? kalem.muafiyetKod3.id : ''}}</td>
+        <td>{{kalem.muafiyetKod4 ? kalem.muafiyetKod4.id : ''}}</td>
+        <td>{{kalem.diibSatirKod}}</td> <!--TODO-->
+        <td>{{kalem.ozellik ? kalem.ozellik.id : ''}}</td>
+        <td>{{kalem.ekKod}}</td>
+        <td>{{kalem.isImalatciFirma ? kalem.isImalatciFirma.name : ''}}</td>
+        <td>{{kalem.mahreceIade ? kalem.mahreceIade.name : ''}}</td>
+        <td>{{kalem.isIkincilIslem ? kalem.isIkincilIslem.name : ''}}</td>
+        <td>{{kalem.muafiyetAciklama}}</td>
+        <td>{{kalem.imalatciFirma ? kalem.imalatciFirma.vergiNo : ''}}</td>
+        <td>{{kalem.stmBagliIl}}</td>
+        <td>{{kalem.esyaNumara}}</td>
+        <td>{{kalem.esyaAdet}}</td>
+        <td>{{kalem.esyaMarka}}</td>
+        <td>{{kalem.esyaCinsi ? kalem.esyaCinsi.id : ''}}</td>
+        <td>{{kalem.ticariTanimi}}</td>
+        <td>{{kalem.gtip ? kalem.gtip.name : ''}}</td>
+        <td>{{kalem.kullanilmisEsya ? kalem.kullanilmisEsya.id : ''}}</td>
+        <td>{{kalem.isleminNiteligi ? kalem.isleminNiteligi.id : ''}}</td>
+        <td>{{kalem.esyaninGirisCikisAmaci ? kalem.esyaninGirisCikisAmaci.id : ''}}</td>
+        <td>{{kalem.esyaninGirisCikisAmaciAciklama}}</td>
+        <td>{{kalem.miktarBirim ? kalem.miktarBirim.id : ''}}</td>
+        <td>{{kalem.miktar}}</td>
+        <td>{{kalem.brutAgirlik}}</td>
+        <td>{{kalem.netAgirlik}}</td>
+        <td>{{kalem.tamamlayiciOlcuBirim ? kalem.tamamlayiciOlcuBirim.id : ''}}</td>
+        <td>{{kalem.istatistikiMiktar}}</td>
+        <td>{{kalem.algilamaBirimi1? kalem.algilamaBirimi1.id : ''}}</td>
+        <td>{{kalem.algilamaMiktari1}}</td>
+        <td>{{kalem.algilamaBirimi2? kalem.algilamaBirimi2.id : ''}}</td>
+        <td>{{kalem.algilamaMiktari2}}</td>
+        <td>{{kalem.algilamaBirimi3? kalem.algilamaBirimi3.id : ''}}</td>
+        <td>{{kalem.algilamaMiktari3}}</td>
+        <td>{{kalem.teslimSekli? kalem.teslimSekli.id : ''}}</td>
+        <td>{{kalem.odemeSekil? kalem.odemeSekil.id : ''}}</td>
+        <td>{{kalem.fatura | number:'1.2-2'}}</td>
+        <td>{{kalem.faturaDoviz? kalem.faturaDoviz.id : ''}}</td>
+        <td>{{kalem.navlunBedeli| number:'1.2-2'}}</td>
+        <td>{{kalem.navlunBedeliDoviz? kalem.navlunBedeliDoviz.id : ''}}</td>
+        <td>{{kalem.sigortaBedeli| number:'1.2-2'}}</td>
+        <td>{{kalem.sigortaBedeliDoviz? kalem.sigortaBedeliDoviz.id : ''}}</td>
+
+        <td>{{kalem.yurticiKkdf | number:'1.2-2'}}</td>
+        <td>{{kalem.yurticiKulturBakanligiKesinti | number:'1.2-2'}}</td>
+        <td>{{kalem.yurticiLimanGiderleri | number:'1.2-2'}}</td>
+        <td>{{kalem.yurticiCevreKatkiPayi | number:'1.2-2'}}</td>
+        <td>{{kalem.yurticiTahmilTahliyeGider | number:'1.2-2'}}</td>
+        <td>{{kalem.yurticiDepolamaGiderleri | number:'1.2-2'}}</td>
+        <td>{{kalem.yurticiBankaMasraflari | number:'1.2-2'}}</td>
+        <td>{{kalem.yurticiDiger | number:'1.2-2'}}</td>
+        <td>{{kalem.yurticiDigerAciklama }}</td>
+
+        <td>{{kalem.yurtdisiKomisyon | number:'1.2-2'}}</td>
+        <td>{{kalem.yurtdisiKomisyonDoviz? kalem.yurtdisiKomisyonDoviz.id : ''}}</td>
+        <td>{{kalem.yurtdisiDemuraj | number:'1.2-2'}}</td>
+        <td>{{kalem.yurtdisiDemurajDoviz? kalem.yurtdisiDemurajDoviz.id : ''}}</td>
+        <td>{{kalem.yurtdisiRoyalti | number:'1.2-2'}}</td>
+        <td>{{kalem.yurtdisiRoyaltiDoviz? kalem.yurtdisiRoyaltiDoviz.id : ''}}</td>
+        <td>{{kalem.yurtdisiFaiz | number:'1.2-2'}}</td>
+        <td>{{kalem.yurtdisiFaizDoviz? kalem.yurtdisiFaizDoviz.id : ''}}</td>
+        <td>{{kalem.yurtdisiDiger | number:'1.2-2'}}</td>
+        <td>{{kalem.yurtdisiDigerDoviz? kalem.yurtdisiDigerDoviz.id : ''}}</td>
+        <td>{{kalem.digerAciklama}}</td>
+
+
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-white" (click)="modalRef.hide()" data-dismiss="modal">Kapat</button>
+  </div>
+</ng-template>

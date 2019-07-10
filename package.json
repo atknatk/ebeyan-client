@@ -1,0 +1,38 @@
+{
+  "productName": "GTB E-Beyanname",
+  "bundleID": "tr.gov.gtb.EBeyanClient",
+  "companyName": "Gumruk ve Ticaret Bakanlığı",
+  "version": "1.0.4",
+  "repository": {
+    "type": "git",
+    "url": "http://git.klcyazilim.com/dinazor-group/dinazor-client.git"
+  },
+  "description": "Dinazor build dependencies",
+  "scripts": {
+    "build:app": "cd code && npm run build:electron",
+    "patch": "cd script/assets && npm --no-git-tag-version version patch",
+    "remove": "rimraf out & rimraf dist",
+    "copy" : "cpx -v \"script/assets/**/*\" \"out\"",
+    "install:electron" : "cd out && npm install",
+    "dist": "run-s remove build:app patch copy install:electron"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">= 7",
+    "npm": ">= 4"
+  },
+  "devDependencies": {
+    "@types/node": "^9.6.5",
+    "codelyzer": "^4.2.1",
+    "cpx": "^1.5.0",
+    "gulp": "^3.9.1",
+    "npm-run-all": "^4.1.2",
+    "path": "^0.12.7",
+    "rimraf": "^2.6.2",
+    "tslint": "^5.9.1",
+    "typescript": "^2.8.1"
+  },
+  "dependencies": {
+    "electron-updater": "^2.16.1"
+  }
+}

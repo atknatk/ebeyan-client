@@ -1,0 +1,325 @@
+<dn-loading-content [show]="loading">
+
+  <div class="dn-content-wrapper">
+
+    <div class="dn-button-content">
+      <detaylibeyan-button-list [idDetayliBeyan]="idData" curNav="kiymet"></detaylibeyan-button-list>
+    </div>
+    <div class="dn-content">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-2">
+          <div class="well padding-10">
+            <h5 class="margin-top-0">&nbsp; <i class="glyphicon glyphicon-briefcase"></i> Satırlar</h5>
+            <div class="row">
+              <div class="col-lg-12">
+                <ul class="list-group no-margin">
+                  <li class="list-group-item kiymet-no" [ngClass]="kiymet== uniqueNo? 'dn-selected':''"
+                      *ngFor="let kiymet of dataList.keys();let i = index"
+                      (click)="getValue(kiymet)">
+                    <label class="kiymet-no">{{kiymet}}</label>
+                    <i *ngIf="isEditting(kiymet)" class="fa fa-pencil-square-o"
+                       style="float: right; margin-top: 5px;"></i>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-10">
+          <dn-widget color="blueDark"
+                     [togglebutton]="false"
+                     [editbutton]="false"
+                     [fullscreenbutton]="false"
+                     [colorbutton]="false"
+                     [deletebutton]="false">
+
+            <header>
+              <div class="jarviswidget-ctrls" role="menu">
+                <detaylibeyan-no-label [idDetayliBeyan]="idData">Kıymet
+                  No : <b><i>{{uniqueNo}}</i></b> --
+                </detaylibeyan-no-label>
+              </div>
+
+              <span class="widget-icon">
+                        <i class="glyphicon glyphicon-file"></i> </span>
+
+              <h2>Kıymetler</h2>
+            </header>
+
+
+            <form novalidate="novalidate" class="form-horizontal db-widget-body" [formGroup]="baseForm">
+
+              <div class="no-padding">
+
+                <div class="widget-body">
+                  <!--    <fieldset>
+                        <div class="form-row form-group no-margin-bottom kalem-row-height">
+                         <div class="col-sm-12 col-md-4">
+                            <dn-select2-container [form]="baseForm"
+                                                  serviceUrl="firma"
+                                                  formControlName="alici">1.Satıcı
+                            </dn-select2-container>
+                          </div>
+                          <div class="col-sm-12 col-md-4">
+                            <dn-select2-container [form]="baseForm"
+                                                  serviceUrl="firma"
+                                                  formControlName="alici">2a.Alıcı
+                            </dn-select2-container>
+                          </div>
+                          <div class="col-sm-12 col-md-4">
+                            <dn-select2-container [form]="baseForm"
+                                                  serviceUrl="firma"
+                                                  formControlName="alici">2c.Beyan Sahibi
+                            </dn-select2-container>
+                          </div>
+                        </div>
+                      </fieldset>
+                      <hr>-->
+                  <fieldset>
+                    <div class="form-row form-group no-margin-bottom kalem-row-height">
+                      <div class="col-sm-12 col-md-4">
+                        <dn-input #uniquieinput
+                                  [form]="baseForm"
+                                  formControlName="kiymetNo">Kıymet No
+                        </dn-input>
+                      </div>
+                    </div>
+                  </fieldset>
+                  <fieldset>
+                    <div class="form-row form-group no-margin-bottom kalem-row-height">
+                      <div class="col-sm-12 col-md-4">
+                        <dn-select2-container [form]="baseForm"
+                                              serviceUrl="TeslimSekli"
+                                              referenceMode="id"
+                                              formControlName="teslimSekli">Teslim Şekli
+                        </dn-select2-container>
+                      </div>
+                      <div class="col-sm-12 col-md-4">
+                        <dn-input [form]="baseForm"
+                                  formControlName="faturaTarihiSayisi">4.Fatura Tarih/Sayısı
+                        </dn-input>
+                      </div>
+                      <div class="col-sm-12 col-md-4">
+                        <dn-input [form]="baseForm"
+                                  formControlName="sozlesmeTarihiSayisi">5.Sözleşme Tarih/Sayısı
+                        </dn-input>
+                      </div>
+                    </div>
+                  </fieldset>
+                  <fieldset>
+                    <div class="form-row form-group no-margin-bottom kalem-row-height">
+                      <div class="col-sm-12 col-md-12">
+                        <dn-textarea [form]="baseForm"
+                                     serviceUrl="firma"
+                                     [labelRow]="2"
+                                     [rows]="2"
+                                     [inputRow]="10"
+                                     formControlName="gumrukIdaresiKarari">6. Gümrük idaresinin daha önceki kararı
+                        </dn-textarea>
+                      </div>
+                    </div>
+                  </fieldset>
+                  <fieldset class="dn-title-fieldset">
+                    <legend class="dn-title-legend">
+                      7
+                    </legend>
+                    <fieldset>
+                      <div class="no-margin-bottom no-padding-right col-md-4">
+                        <dn-select2-container [form]="baseForm"
+                                              serviceUrl="YesNo"
+                                              [displaySelect]="undefined"
+                                              referenceMode="id"
+                                              [selectedText]="undefined"
+                                              formControlName="aliciSatici">a.Alıcı/Satıcı İlişkisi
+                        </dn-select2-container>
+                      </div>
+                      <div class="no-margin-bottom no-padding-right col-md-4">
+                        <dn-select2-container [form]="baseForm"
+                                              serviceUrl="YesNo"
+                                              referenceMode="id"
+                                              [displaySelect]="undefined"
+                                              [selectedText]="undefined"
+                                              formControlName="munasebet">b.Münasabet
+                        </dn-select2-container>
+                      </div>
+                      <div class="no-margin-bottom no-padding-right col-md-4">
+                        <dn-select2-container [form]="baseForm"
+                                              serviceUrl="YesNo"
+                                              referenceMode="id"
+                                              [displaySelect]="undefined"
+                                              [selectedText]="undefined"
+                                              formControlName="emsal">c.Emsal
+                        </dn-select2-container>
+                      </div>
+                    </fieldset>
+                    <fieldset>
+                      <div class="form-row form-group no-margin-bottom kalem-row-height">
+                        <div class="col-sm-12 col-md-12">
+                          <dn-textarea [form]="baseForm"
+                                       [labelRow]="2"
+                                       [rows]="2"
+                                       [inputRow]="10"
+                                       formControlName="aliciSaticiAyrintilar">Ayrıntılar
+                          </dn-textarea>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </fieldset>
+                  <fieldset class="dn-title-fieldset">
+                    <legend class="dn-title-legend">
+                      8
+                    </legend>
+                    <fieldset>
+                      <div class="no-margin-bottom no-padding-right col-md-4">
+                        <dn-select2-container [form]="baseForm"
+                                              serviceUrl="YesNo"
+                                              referenceMode="id"
+                                              [displaySelect]="undefined"
+                                              [selectedText]="undefined"
+                                              formControlName="kisitlamalar">a.Kısıtlamalar
+                        </dn-select2-container>
+                      </div>
+                      <div class="no-margin-bottom no-padding-right col-md-4">
+                        <dn-select2-container [form]="baseForm"
+                                              serviceUrl="YesNo"
+                                              referenceMode="id"
+                                              [displaySelect]="undefined"
+                                              [selectedText]="undefined"
+                                              formControlName="edim">b.Edim
+                        </dn-select2-container>
+                      </div>
+                    </fieldset>
+                    <fieldset>
+                      <div class="form-row form-group no-margin-bottom kalem-row-height">
+                        <div class="col-sm-12 col-md-12">
+                          <dn-textarea [form]="baseForm"
+                                       [labelRow]="2"
+                                       [rows]="2"
+                                       [inputRow]="10"
+                                       formControlName="kisitlamalarAyrintilar">Ayrıntılar
+                          </dn-textarea>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </fieldset>
+                  <fieldset class="dn-title-fieldset">
+                    <legend class="dn-title-legend">
+                      9
+                    </legend>
+                    <fieldset>
+                      <div class="no-margin-bottom no-padding-right col-md-4">
+                        <dn-select2-container [form]="baseForm"
+                                              serviceUrl="YesNo"
+                                              referenceMode="id"
+                                              [displaySelect]="undefined"
+                                              [selectedText]="undefined"
+                                              formControlName="royalti">a.Royalti
+                        </dn-select2-container>
+                      </div>
+                      <div class="no-margin-bottom no-padding-right col-md-8">
+                        <dn-textarea [form]="baseForm"
+                                     [labelRow]="2"
+                                     [inputRow]="10"
+                                     formControlName="royaltiKosullar">Koşullar
+                        </dn-textarea>
+                      </div>
+                    </fieldset>
+
+                    <fieldset>
+                      <div class="no-margin-bottom no-padding-right margin-top-10 col-md-4">
+                        <dn-select2-container [form]="baseForm"
+                                              serviceUrl="YesNo"
+                                              referenceMode="id"
+                                              [displaySelect]="undefined"
+                                              [selectedText]="undefined"
+                                              formControlName="saticiyaIntikal">b.Satıcıya İntikal
+                        </dn-select2-container>
+                      </div>
+                      <div class="no-margin-bottom no-padding-right col-md-8">
+                        <dn-textarea [form]="baseForm"
+                                     [labelRow]="2"
+                                     [inputRow]="10"
+                                     formControlName="saticiyaIntikalKosullar">Koşullar
+                        </dn-textarea>
+                      </div>
+                    </fieldset>
+                  </fieldset>
+
+                  <fieldset>
+                    <div class="form-row form-group no-margin-bottom kalem-row-height margin-top-10">
+                      <div class="col-sm-12 col-md-4">
+                        <dn-input [form]="baseForm"
+                                  serviceUrl="firma"
+                                  formControlName="sehirYer">Şehir/Yer
+                        </dn-input>
+                      </div>
+                      <div class="col-sm-12 col-md-5"></div>
+                      <div class="col-sm-12 col-md-3" style="display: flex">
+                        <label class="checkbox dnPointer"
+                               style="font-style: italic; color: slateblue; font-weight: bold; margin-top: -3px;"
+                               (click)="openTaahutnameMetniDialog()"><i class="fa fa-lg fa-file-text-o"></i>
+                          26c.Taahütname
+                          Metni</label>&nbsp;&nbsp;
+                        <input style="width: 18px; height: 18px;" type="checkbox" formControlName="taahutname">&nbsp;&nbsp;
+                        <label [ngStyle]="getTaahutnameStyle()" (click)="checkTaahutnameMetniDialog()"
+                               class="checkbox dnPointer">Okudum</label>
+                      </div>
+                    </div>
+                  </fieldset>
+
+                </div>
+
+              </div>
+              <!--<div id="tarife-dialog" [dnJquiDialog]="tarifeDialogOptions">
+
+                <db-kalem-tarife-dialog [baseForm]="baseForm"></db-kalem-tarife-dialog>
+
+              </div>-->
+
+              <div class="form-actions" style="margin-bottom: 0px">
+                <div class="row">
+                  <div class="col-md-6" style="text-align: left">
+                    <!--<button class="btn btn-primary" type="button" (click)="newKiymet()">
+                      <i class="fa fa-plus"></i>
+                      Yeni Kıymet
+                    </button>-->
+                    <button *ngIf="isEdit" class="btn btn-primary" type="button" (click)="newKiymetKalem()">
+                      <i class="fa fa-list"></i>
+                      Kıymet Kalemleri
+                    </button>
+                  </div>
+                  <div class="col-md-6">
+                    <button class="btn btn-default" type="button" (click)="resetForm()">
+                      <i class="fa fa-eraser"></i>
+                      Temizle
+                    </button>
+                    <button class="btn btn-danger" type="button" *ngIf="isEdit" (click)="onDelete()">
+                      <i class="fa fa-save"></i>
+                      Sil
+                    </button>
+                    <button class="btn" type="button" [disabled]="!baseForm.valid" (click)="onSubmit()">
+                      <i [ngClass]="isEdit ? 'fa fa-edit':'fa fa-save'"></i>
+                      {{isEdit ? 'Güncelle':'Kaydet'}}
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </dn-widget>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</dn-loading-content>
+
+
+
+<div id="taahutname-metni-dialog">
+  <div>{{getTaahutnameMetni()}}</div>
+</div>
+
+<div id="kiymet-kalem-dialog">
+  <db-kiymet-kalem #kiymetkalem></db-kiymet-kalem>
+</div>
+

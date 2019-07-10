@@ -1,0 +1,13 @@
+<dn-loading [show]="loading">
+  <div id="content">
+    <dn-crud [crudData]="sampleCrudData"></dn-crud>
+  </div>
+
+  <div id="error-dialog">
+    <ul>
+      <li *ngFor="let item of hataList">
+        {{item}}
+      </li>
+    </ul>
+  </div>
+</dn-loading>

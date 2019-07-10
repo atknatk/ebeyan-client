@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="1.0">
+  <!--    LEVEL 0    -->
+  <xsd:element name="CTRINFDEP" type="t_ctrinfdep"/>
+  <xsd:complexType name="t_ctrinfdep">
+    <xsd:sequence>
+      <xsd:element name="GUID" type="t_guid" minOccurs="1" maxOccurs="1"/>
+      <xsd:element name="TMSTMP" type="t_date" minOccurs="1" maxOccurs="1"/>
+      <xsd:element name="MUAMEM" type="t_muamem" minOccurs="1" maxOccurs="1"/>
+      <xsd:element name="MUATUR" type="t_muatur" minOccurs="0" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+
+  <!--    LEVEL 1    -->
+  <xsd:simpleType name="t_guid">
+    <xsd:restriction base="xsd:string">
+      <xsd:minLength value="1"/>
+      <xsd:maxLength value="128"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="t_muamem">
+    <xsd:restriction base="xsd:string">
+      <xsd:minLength value="1"/>
+      <xsd:maxLength value="16"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="t_muatur">
+    <xsd:restriction base="xsd:string">
+      <xsd:minLength value="1"/>
+      <xsd:maxLength value="16"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+
+  <!--genel simple type -->
+  <xsd:simpleType name="t_date">
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="[0-3][0-9]/[0-1][0-9]/20[0-9][0-9]"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+
+</xsd:schema>

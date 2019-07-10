@@ -1,0 +1,31 @@
+{
+  "name": "GtbEBeyan",
+  "version": "0.0.3",
+  "license": "ISC",
+  "main": "index.js",
+  "description": "Dinazor Framework",
+  "author": "",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "child_process": "^1.0.2",
+    "compression": "^1.6.2",
+    "electron-log": "^2.2.11",
+    "electron-pdf-window": "^1.0.12",
+    "electron-settings": "^3.1.4",
+    "electron-updater": "^2.8.9",
+    "express": "^4.15.3",
+    "fs": "^0.0.1-security",
+    "get-port": "^3.2.0",
+    "http-proxy": "^1.16.2",
+    "jasper-node-client": "^1.0.0",
+    "path": "^0.12.7",
+    "request": "^2.83.0",
+    "url": "^0.11.0"
+  },
+  "devDependencies": {
+    "electron": "^1.8.4"
+  },
+  "scripts": {
+    "start": "electron ."
+  }
+}

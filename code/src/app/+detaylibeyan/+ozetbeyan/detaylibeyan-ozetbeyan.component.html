@@ -1,0 +1,217 @@
+<dn-loading-content [show]="loading">
+
+  <div class="dn-content-wrapper">
+
+    <div class="dn-button-content">
+      <detaylibeyan-button-list [idDetayliBeyan]="idDetayliBeyan" curNav="ozetbeyan"></detaylibeyan-button-list>
+    </div>
+    <div class="dn-content">
+      <div class="row">
+
+        <article id="dn-table-widget" class="col-sm-12">
+          <dn-widget color="blueDark" [widgetId]="'ozetbeyan-widget'">
+            <header>
+              <div class="jarviswidget-ctrls" role="menu">
+                <label *ngIf="detayliBeyanNo !== undefined && detayliBeyanNo != ''"
+                       class="form-control ozetbeyan-header">Detaylı
+                  Beyan No: <b><i>{{detayliBeyanNo}}</i></b></label>
+              </div>
+              <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+              <h2>Özet Beyan Açma Listesi</h2>
+            </header>
+            <div>
+              <div class="widget-body no-padding dn-datatable-widget-body">
+
+                <form [formGroup]="dbOzetbeyanForm" novalidate>
+
+                  <table class="table table-bordered" formArrayName="ozetbeyanList">
+                    <thead>
+                    <tr>
+                      <th align="center" style="width: 130px; text-align: center">İşlem</th>
+                      <th align="center" style="width: 300px; text-align: center">İşlem Kapsamı</th>
+                      <th align="center" style="width: 180px; text-align: center">Özet Beyan</th>
+                      <th align="center" style="width: 105px;text-align: center">Ambar İçi</th>
+                      <th align="center" style="width: 105px;text-align: center">Başka Rejim</th>
+                      <th align="center" style="text-align: center">Açıklama</th>
+
+                    </tr>
+                    </thead>
+                    <tbody *ngFor="let ozby of dbOzetbeyanForm.controls.ozetbeyanList.controls; let i=index"
+                           [formGroupName]="i">
+                    <div style="display: table-row">
+
+                      <td>
+                        <button (click)="addOzetbeyanSatir()"
+                                [disabled]="!ozby.valid"
+                                type="button"
+                                class="btn btn-sm  btn-primary txt-color-white">
+                          <i class="fa fa-plus"></i></button>
+                        <button (click)="removeOzetbeyanSatir(i)" type="button"
+                                class="btn btn-sm  btn-danger txt-color-white"><i
+                          class="fa fa-trash-o"></i></button>
+                        <button (click)="addTasimaSenetSatir(ozby.controls.detayliBeyanTasimaSenetList)"
+                                [ngClass]="ozby.controls.detayliBeyanTasimaSenetList.length > 0 ? 'dn-hide' : ''"
+                                [disabled]="!ozby.valid"
+                                type="button"
+                                class="btn btn-sm  btn-primary txt-color-white" tooltip="Taşıma Senedi Ekle"><i
+                          class="fa fa-pencil-square-o"></i></button>
+                      </td>
+                      <td class="dn-require">
+                        <dn-select2 css="form-control td-inline dn-require"
+                                    placeholder=""
+                                    referenceMode="id"
+                                    formControlName="ozetBeyanIslemKapsami"
+                                    serviceUrl="OzetBeyanAcmaSekli"></dn-select2>
+                      </td>
+                      <td>
+                        <input type="text" class="form-control td-inline" formControlName="ozetBeyanNo">
+                      </td>
+                      <td>
+                        <dn-select2 css="form-control td-inline dn-require"
+                                    placeholder=""
+                                    formControlName="isAmbarIci"
+                                    referenceMode="id"
+                                    serviceUrl="YesNo"></dn-select2>
+                      </td>
+                      <td>
+                        <dn-select2 css="form-control td-inline dn-require"
+                                    placeholder=""
+                                    referenceMode="id"
+                                    formControlName="isBaskaRejim"
+                                    serviceUrl="YesNo"></dn-select2>
+                      </td>
+                      <td><input type="text" class="form-control td-inline" formControlName="aciklama"></td>
+                    </div>
+                    <div class="td-div" style="display: table-row"
+                         *ngIf="ozby.controls.detayliBeyanTasimaSenetList.length > 0">
+                      <td colspan="6">
+                        <table id="senet-table" class="table table-bordered" style="margin-bottom: 0px"
+                               formArrayName="detayliBeyanTasimaSenetList">
+                          <thead>
+                          <tr>
+                            <th align="center" style="width: 130px; text-align: center">İşlem</th>
+                            <th align="center" style="text-align: center">Taşıma Senet No</th>
+                          </tr>
+                          </thead>
+                          <tbody *ngFor="let senet of ozby.controls.detayliBeyanTasimaSenetList.controls; let z=index"
+                                 [formGroupName]="z">
+                          <div style="display: table-row">
+                            <td>
+                              <button (click)="addTasimaSenetSatir(ozby.controls.detayliBeyanTasimaSenetList)"
+                                      type="button"
+                                      class="btn btn-sm  btn-primary txt-color-white"><i
+                                class="fa fa-plus"></i></button>
+                              <button (click)="removeTasimaSenetSatir(ozby.controls.detayliBeyanTasimaSenetList,i)"
+                                      type="button"
+                                      class="btn btn-sm  btn-danger txt-color-white"><i
+                                class="fa fa-trash-o"></i></button>
+                              <button (click)="addTasimaSatirSatir(senet.controls.detayliBeyanTasimaSatirList)"
+                                      type="button"
+                                      [ngClass]="senet.controls.detayliBeyanTasimaSatirList.length > 0 ? 'dn-hide' : ''"
+                                      class="btn btn-sm btn-primary txt-color-white"><i
+                                class="fa fa-pencil-square-o"></i>
+                              </button>
+                            </td>
+                            <td>
+                              <input type="text" class="form-control td-inline" formControlName="tasimaSenetNo">
+<!--
+                              <dn-select2 css="form-control td-inline dn-require"
+                                          placeholder=""
+                                          formControlName="simpleTasimaSenet"
+                                          [displaySelect]="displaySelectTasimaSenet"
+                                          [selectedText]="displaySelectTasimaSenet"
+                                          [serviceUrl]="getTasimaSenetUrl(ozby)"></dn-select2>
+-->
+                            </td>
+                          </div>
+                          <div class="td-div" style="display: table-row"
+                               *ngIf="senet.controls.detayliBeyanTasimaSatirList.length > 0">
+                            <td colspan="10">
+                              <table id="satir-table" class="table table-bordered" style="margin-bottom: 0px"
+                                     formArrayName="detayliBeyanTasimaSatirList">
+                                <thead>
+                                <tr>
+                                  <th align="center" style="width: 130px; text-align: center">İşlem</th>
+                                  <th align="center" style="text-align: center">Satır No</th>
+                                  <th align="center" style="text-align: center">Açılacak Miktar</th>
+                                  <th align="center" style="text-align: center">Ambar Kodu</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr
+                                  *ngFor="let satir of senet.controls.detayliBeyanTasimaSatirList.controls; let k=index"
+                                  [formGroupName]="k">
+                                  <td>
+                                    <button (click)="addTasimaSatirSatir(senet.controls.detayliBeyanTasimaSatirList)"
+                                            type="button"
+                                            class="btn btn-sm  btn-primary txt-color-white"><i
+                                      class="fa fa-plus"></i></button>
+                                    <button
+                                      (click)="removeTasimaSenetSatir(senet.controls.detayliBeyanTasimaSatirList,k)"
+                                      type="button"
+                                      class="btn btn-sm  btn-danger txt-color-white"><i
+                                      class="fa fa-trash-o"></i></button>
+                                  </td>
+                                  <td>
+                                    <input type="text" class="form-control td-inline" formControlName="tasimaSatirNo">
+                                   <!-- <dn-select2 css="form-control td-inline dn-require"
+                                                placeholder=""
+                                                formControlName="simpleTasimaSatir"
+                                                [selectedText]="displaySelectTasimaSatir"
+                                                [displaySelect]="displaySelectTasimaSatir"
+                                                [serviceUrl]="getTasimaSatirUrl(senet)"></dn-select2>-->
+                                  </td>
+                                  <td><input type="text" class="form-control td-inline"
+                                             formControlName="acilacakMiktar">
+                                  <td>
+                                    <dn-select2 css="form-control td-inline"
+                                                placeholder=""
+                                                referenceMode="id"
+                                                formControlName="ambarKodu"
+                                                [selectedText]="gtbConst.selectedText"
+                                                [displaySelect]="gtbConst.displaySelect"
+                                                serviceUrl="ambar"></dn-select2>
+                                  </td>
+                                </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </div>
+                          </tbody>
+                        </table>
+                      </td>
+                    </div>
+                    </tbody>
+                  </table>
+                  <div class="clearfix"></div>
+                </form>
+
+
+                <div class="form-actions" style="margin: 0px;">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <button class="btn" type="button"
+                              [ngClass]="dbOzetbeyanForm.controls.ozetbeyanList.controls.length > 0 ? 'dn-hide' : ''"
+                              (click)="addOzetbeyanSatir()">
+                        <i class="fa fa-plus"></i>
+                        Satır Ekle
+                      </button>
+                      <button class="btn" type="button"
+                              [disabled]="!dbOzetbeyanForm.valid"
+                              (click)="onSubmit()">
+                        <i class="fa fa-save"></i>
+                        Kaydet
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </dn-widget>
+        </article>
+      </div>
+    </div>
+
+  </div>
+</dn-loading-content>

@@ -1,0 +1,45 @@
+{
+  "name": "gtb-ebeyan-electron",
+  "version": "1.0.0",
+  "description": "description",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "install-app-deps",
+    "start": "electron ./app --enable-logging",
+    "dev": "NODE_ENV='development' npm run start",
+    "pack": "build --dir",
+    "dist": "build --win --ia32"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron-builder": "^18.3.0",
+    "electron-prebuilt": "~1.2.X"
+  },
+  "build": {
+    "productName": "Gtb E-Beyanname Uygulaması",
+    "appId": "com.dinazor.gtbebeyan",
+    "asar": true,
+    "win": {
+      "icon": "build/app-icon.ico",
+      "publish": {
+        "provider": "generic",
+        "url": "http://updates.klcyazilim.com/gtbebeyan"
+      },
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "ia32"
+          ]
+        }
+      ]
+    },
+    "nsis": {
+      "oneClick": true,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": false,
+      "installerIcon": "build/app-icon.ico"
+    }
+  }
+}

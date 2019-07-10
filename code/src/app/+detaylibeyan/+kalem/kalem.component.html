@@ -1,0 +1,61 @@
+<dn-loading-content [show]="loading">
+
+  <div class="dn-content-wrapper">
+
+    <div class="dn-button-content">
+      <detaylibeyan-button-list [idDetayliBeyan]="idDetayliBeyan" curNav="kalem"></detaylibeyan-button-list>
+    </div>
+    <div class="dn-content">
+      <div class="row">
+        <detaylibeyan-kontrol-list></detaylibeyan-kontrol-list>
+        <div class="col-sm-12 col-md-12 col-lg-2">
+          <div class="well padding-10">
+            <h5 class="margin-top-0">&nbsp; <i class="glyphicon glyphicon-briefcase"></i> Satırlar</h5>
+            <div class="row">
+              <div class="col-lg-12">
+                <ul class="list-group no-margin">
+                  <li class="list-group-item kalem-no" [ngClass]="kalem.kalemNo== kalemNo? 'dn-selected':''"
+                      *ngFor="let kalem of kalemArr;let i = index"
+                      (click)="getKalemWithSelect(kalem)">
+                    <label class="kalem-no">{{getLabel(kalem.kalemNo)}}</label>
+                    <i *ngIf="isEditting && this.latestKalemNo == kalem.kalemNo" class="fa fa-pencil-square-o"
+                       style="float: right; margin-top: 5px;"></i>
+                  </li>
+                  <li *ngIf="showFooter" class="list-group-item yeni-satir">
+                    <button class="btn btn-primary"
+                            (click)="satirEkleWithConfirm()"
+                            style="width: 100%; height: 100%" type="button">
+                      <i class="fa fa-plus"></i>&nbsp;&nbsp;Yeni Kalem Ekle
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div>
+            <detaylibeyan-ozet [idDetayliBeyan]="idDetayliBeyan"
+                               [kalemList]="kalemList"
+                               [detayliBeyan]="detayliBeyan"></detaylibeyan-ozet>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-10">
+          <detaylibeyan-kalem-base #baseform
+                                   (kalemValueChange)="kalemValueChange($event)"
+                                   (loadedDone)="loadedDone()"
+                                   (gtipChange)="gtipChange($event)"
+                                   (onSubmit)="onSubmit($event)"
+                                   (onShowKalemList)="showKalemList()"
+                                   (onRemove)="onRemove($event)"
+                                   [defaultValues]="defaultValues"></detaylibeyan-kalem-base>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</dn-loading-content>
+
+
+<db-kalem-list #kalemListTemplate></db-kalem-list>
+<firma-modal #firmaModal (hideEvent)="refreshFirma($event)"></firma-modal>
+
+

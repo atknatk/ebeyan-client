@@ -1,0 +1,108 @@
+<wsdl:definitions name="HatBildirHizmeti" targetNamespace="http://Gumruk.BizTalk.Integration"
+                  xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract"
+                  xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+                  xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/"
+                  xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/"
+                  xmlns:tns="http://Gumruk.BizTalk.Integration"
+                  xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing"
+                  xmlns:wsa10="http://www.w3.org/2005/08/addressing"
+                  xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata"
+                  xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy"
+                  xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+                  xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy"
+                  xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+                  xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <wsdl:types>
+    <xs:schema elementFormDefault="qualified" targetNamespace="http://Gumruk.BizTalk.Integration"
+               xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:import namespace="http://LoginKontrol.HatBildirGelen"/>
+      <xs:import namespace="http://schemas.microsoft.com/BizTalk/2003/Any"/>
+      <xs:element name="HatBildir">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element maxOccurs="1" minOccurs="0" ref="q1:Gelen" xmlns:q1="http://LoginKontrol.HatBildirGelen"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="HatBildirResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element maxOccurs="1" minOccurs="0" ref="q2:Root"
+                        xmlns:q2="http://schemas.microsoft.com/BizTalk/2003/Any"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+    <xs:schema elementFormDefault="qualified" targetNamespace="http://LoginKontrol.HatBildirGelen"
+               xmlns:tns="http://LoginKontrol.HatBildirGelen" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:import namespace="http://tempuri.org/"/>
+      <xs:element name="Gelen">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element form="unqualified" maxOccurs="1" minOccurs="0" name="RefID" type="xs:string"/>
+            <xs:element form="unqualified" maxOccurs="1" minOccurs="0" name="KullaniciAdi" type="xs:string"/>
+            <xs:element form="unqualified" maxOccurs="1" minOccurs="0" name="Sifre" type="xs:string"/>
+            <xs:element maxOccurs="1" minOccurs="1" ref="q1:hatBilgi" xmlns:q1="http://tempuri.org/"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+    <xs:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:tns="http://tempuri.org/"
+               xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="hatBilgi" nillable="true" type="tns:hatBilgi"/>
+      <xs:complexType name="hatBilgi">
+        <xs:sequence>
+          <xs:element maxOccurs="1" minOccurs="0" name="Gumruk_idaresi" type="xs:string"/>
+          <xs:element maxOccurs="1" minOccurs="0" name="Kullanici_kodu" type="xs:string"/>
+          <xs:element maxOccurs="1" minOccurs="0" name="Beyanname_no" type="xs:string"/>
+          <xs:element maxOccurs="1" minOccurs="0" name="GuidOf" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+    <xs:schema elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/BizTalk/2003/Any"
+               xmlns:tns="http://schemas.microsoft.com/BizTalk/2003/Any" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="Root">
+        <xs:complexType mixed="true">
+          <xs:sequence>
+            <xs:any/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="HatBildirSoapIn">
+    <wsdl:part element="tns:HatBildir" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="HatBildirSoapOut">
+    <wsdl:part element="tns:HatBildirResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:portType name="Gumruk_Biztalk_EImzaTescil_HatBildir_HatBildirTalepPortSoap">
+    <wsdl:operation name="HatBildir">
+      <wsdl:input message="tns:HatBildirSoapIn" name="HatBildirSoapIn"
+                  wsaw:Action="http://Gumruk.BizTalk.Integration/Gumruk_Biztalk_EImzaTescil_HatBildir_HatBildirTalepPort/HatBildir"/>
+      <wsdl:output message="tns:HatBildirSoapOut" name="HatBildirSoapOut"
+                   wsaw:Action="http://Gumruk.BizTalk.Integration/Gumruk_Biztalk_EImzaTescil_HatBildir_HatBildirTalepPort/HatBildir"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_Gumruk_Biztalk_EImzaTescil_HatBildir_HatBildirTalepPortSoap"
+                type="tns:Gumruk_Biztalk_EImzaTescil_HatBildir_HatBildirTalepPortSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="HatBildir">
+      <soap:operation
+        soapAction="http://Gumruk.BizTalk.Integration/Gumruk_Biztalk_EImzaTescil_HatBildir_HatBildirTalepPort/HatBildir"
+        style="document"/>
+      <wsdl:input name="HatBildirSoapIn">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="HatBildirSoapOut">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="HatBildirHizmeti">
+    <wsdl:port binding="tns:BasicHttpBinding_Gumruk_Biztalk_EImzaTescil_HatBildir_HatBildirTalepPortSoap"
+               name="BasicHttpBinding_Gumruk_Biztalk_EImzaTescil_HatBildir_HatBildirTalepPortSoap">
+      <soap:address location="http://ws.gtb.gov.tr:8080/EXT/Gumruk/EGE/Provider/HatBildirWS"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

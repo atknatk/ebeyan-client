@@ -1,0 +1,475 @@
+<dn-widget
+  color="blueDark"
+  [togglebutton]="false"
+  [editbutton]="false"
+  [fullscreenbutton]="false"
+  [colorbutton]="false"
+  [deletebutton]="false">
+
+  <!--    <header style="margin-top: 5px;">Kalem Bilgileri</header>
+-->
+  <div class="widget-body" style="padding: 0">
+    <article class="col-sm-12 col-md-12 col-lg-12" style="padding: 0">
+      <form id="detayli-beyan" class="smart-form" (ngSubmit)="onSubmit()" [formGroup]="dbForm">
+        <header style="margin-top: 5px;">Genel Bilgiler</header>
+        <fieldset>
+          <div class="row">
+            <dn-smart-input col="2"
+                            formControlName="kalemNo"
+                            [form]="dbForm"
+                            icon="fa fa-key"
+                            disabled>Kalem No
+            </dn-smart-input>
+            <dn-select2-smart serviceUrl="ulke" col="2" formControlName="menseUlke"
+                              referenceMode="id"
+                              [form]="dbForm">34a. Menşe Ülke
+            </dn-select2-smart>
+            <dn-select2-smart serviceUrl="UluslararasiAnlasma" col="2"
+                              formControlName="uluslararasiAnlasmalar"
+                              referenceMode="id"
+                              [form]="dbForm">Uluslararasi Anlaşmalar
+            </dn-select2-smart>
+            <dn-select2-smart serviceUrl="Kdv" col="2" formControlName="kdv"
+                              referenceMode="id"
+                              [form]="dbForm">KDV Oranı
+            </dn-select2-smart>
+            <dn-select2-smart serviceUrl="esyaOzellik" col="2" formControlName="ozellik"
+                              referenceMode="id"
+                              [form]="dbForm">Özellik
+
+            </dn-select2-smart>
+            <dn-smart-input col="2" formControlName="referansTarihi"
+                            mask="dd/mm/yyyy"
+                            [form]="dbForm">Referans Tarihi
+            </dn-smart-input>
+          </div>
+          <div class="row">
+            <dn-select2-smart serviceUrl="MuafiyetKod" col="2" formControlName="muafiyetKod1"
+                              referenceMode="id"
+                              [form]="dbForm">Mufiyet 1
+            </dn-select2-smart>
+            <dn-select2-smart serviceUrl="MuafiyetKod" col="2" formControlName="muafiyetKod2"
+                              referenceMode="id"
+                              [form]="dbForm">Mufiyet 2
+            </dn-select2-smart>
+            <dn-select2-smart serviceUrl="MuafiyetKod" col="2" formControlName="muafiyetKod3"
+                              referenceMode="id"
+                              [form]="dbForm">Mufiyet 3
+            </dn-select2-smart>
+            <dn-select2-smart serviceUrl="MuafiyetKod" col="2" formControlName="muafiyetKod4"
+                              referenceMode="id"
+                              [form]="dbForm">Mufiyet 4
+            </dn-select2-smart>
+            <dn-select2-smart serviceUrl="MuafiyetKod" col="2" formControlName="muafiyetKod5"
+                              referenceMode="id"
+                              [form]="dbForm">Mufiyet 5
+            </dn-select2-smart>
+            <dn-smart-input col="2" formControlName="diibSatirKodu" [form]="dbForm">DİİB Satır Kodu
+            </dn-smart-input>
+          </div>
+          <div class="row">
+            <dn-select2-smart serviceUrl="YesNo" col="2" formControlName="isIkincilIslem"
+                              referenceMode="id"
+                              [displaySelect]="undefined" [selectedText]="undefined" [form]="dbForm">İkincil
+              İşlem Görmüş Ürün
+            </dn-select2-smart>
+            <dn-select2-smart serviceUrl="YesNo" col="2" formControlName="mahreceIade"
+                              referenceMode="id"
+                              [displaySelect]="undefined" [selectedText]="undefined" [form]="dbForm">Mahrece
+              Iade
+            </dn-select2-smart>
+            <dn-select2-smart serviceUrl="YesNo" col="2" formControlName="isImalatciFirma"
+                              referenceMode="id"
+                              [displaySelect]="undefined" [selectedText]="undefined" [form]="dbForm">İmalatçı
+              Firma
+            </dn-select2-smart>
+            <dn-select2-smart serviceUrl="firma"
+                              #firmaSelect
+                              col="2"
+                              [selectedText]="gtbConst.selectedTextFirma"
+                              [displaySelect]="gtbConst.displaySelectFirma"
+                              formControlName="imalatciFirma"
+                              [addNewItemEvent]="firmaModal.show.bind(firmaModal)"
+                              [form]="dbForm">İmalatçı Vergi No
+            </dn-select2-smart>
+            <dn-smart-input col="2" formControlName="stmBagliIl" [form]="dbForm">STM Bağlı İl
+            </dn-smart-input>
+            <dn-smart-input col="2" formControlName="ekKod" [form]="dbForm">Ek Kod
+            </dn-smart-input>
+
+          </div>
+          <div class="row">
+            <dn-smart-textarea formControlName="aciklamalar" col="12">44. Açıklamalar</dn-smart-textarea>
+          </div>
+        </fieldset>
+        <header style="margin-top: 5px;">Eşya Bilgiler</header>
+        <fieldset>
+          <div class="row">
+            <dn-select2-smart serviceUrl="gtip" col="2" formControlName="gtip"
+                              [minimumInputLength]="4"
+                              referenceMode="id"
+                              (onSelect)="changeGtip($event)"
+                              (onRemove)="changeGtip($event)"
+                              #gtipSelect
+                              placeholder="En az 4 rakam giriniz"
+                              [form]="dbForm">33. TGTC No
+            </dn-select2-smart>
+            <dn-smart-input col="2" formControlName="esyaNumara" [form]="dbForm">Numara
+            </dn-smart-input>
+            <dn-smart-input col="2" mask="integer" formControlName="esyaAdet" [form]="dbForm">Adedi
+            </dn-smart-input>
+            <dn-smart-input col="2" formControlName="esyaMarka" [form]="dbForm">Marka</dn-smart-input>
+            <dn-select2-smart serviceUrl="esyaCinsi" col="2"
+                              referenceMode="id"
+                              formControlName="esyaCinsi" [form]="dbForm">Cinsi
+            </dn-select2-smart>
+            <dn-select2-smart serviceUrl="islemNiteligi" col="2"
+                              referenceMode="id"
+                              formControlName="isleminNiteligi"
+                              [form]="dbForm">
+              24.İşlemin Niteliği
+            </dn-select2-smart>
+          </div>
+          <div class="row">
+            <dn-smart-textarea formControlName="ticariTanimi" col="6">Ticari Tanımı</dn-smart-textarea>
+            <dn-smart-textarea formControlName="tarifedekiTanimi" disabled col="6">Tarifedeki Tanımı
+            </dn-smart-textarea>
+          </div>
+          <div class="row">
+            <dn-select2-smart serviceUrl="kullanilmisEsya" col="2"
+                              referenceMode="id"
+                              formControlName="kullanilmisEsya"
+                              [form]="dbForm">
+              Kullanılmış Eşya
+            </dn-select2-smart>
+            <dn-select2-smart serviceUrl="esyaninGirisCikisAmaci" col="2"
+                              referenceMode="id"
+                              formControlName="esyaninGirisCikisAmaci"
+                              [form]="dbForm">
+              Eşyanın Giriş/Çıkış Amacı
+            </dn-select2-smart>
+            <dn-smart-textarea formControlName="esyaninGirisCikisAmaciAciklama" [rows]="1" col="8"> Eşyanın
+              Giriş/Çıkış Amacı Açıklama
+            </dn-smart-textarea>
+          </div>
+          <div class="row">
+            <dn-smart-input col="2" formControlName="miktar" mask="decimal" [form]="dbForm">
+              Satışa Esas Miktar
+            </dn-smart-input>
+            <dn-select2-smart serviceUrl="olcuBirim" col="2"
+                              referenceMode="id"
+                              formControlName="miktarBirim"
+                              [form]="dbForm">
+              Satışa Esas Birim
+            </dn-select2-smart>
+            <dn-smart-input col="2" formControlName="istatistikiMiktar" mask="decimal" [form]="dbForm">
+              41.Tamamlayaci Ölçü Miktar
+            </dn-smart-input>
+            <dn-select2-smart serviceUrl="olcuBirim" col="2"
+                              referenceMode="id"
+                              formControlName="tamamlayiciOlcuBirim"
+                              [form]="dbForm">
+              41.Tamamlayaci Ölçü Birim
+            </dn-select2-smart>
+            <dn-smart-input col="2" formControlName="brutAgirlik" mask="decimal" [form]="dbForm">
+              35. Brüt Ağırlık
+            </dn-smart-input>
+            <dn-smart-input col="2" formControlName="netAgirlik" mask="decimal" [form]="dbForm">
+              38. Net Ağırlık
+            </dn-smart-input>
+          </div>
+          <div class="row">
+            <dn-smart-input col="2" formControlName="algilamaMiktari1" mask="decimal" [form]="dbForm">
+              Algılama Miktar 1
+            </dn-smart-input>
+            <dn-select2-smart serviceUrl="olcuBirim" col="2"
+                              referenceMode="id"
+                              formControlName="algilamaBirimi1"
+                              [form]="dbForm">
+              Algılama Birimi 1
+            </dn-select2-smart>
+            <dn-smart-input col="2" formControlName="algilamaMiktari2"
+                            referenceMode="id"
+                            mask="decimal" [form]="dbForm">
+              Algılama Miktar 2
+            </dn-smart-input>
+            <dn-select2-smart serviceUrl="olcuBirim" col="2"
+                              referenceMode="id"
+                              formControlName="algilamaBirimi2"
+                              [form]="dbForm">
+              Algılama Birimi 2
+            </dn-select2-smart>
+            <dn-smart-input col="2" formControlName="algilamaMiktari3" mask="decimal" [form]="dbForm">
+              Algılama Miktar 3
+            </dn-smart-input>
+            <dn-select2-smart serviceUrl="olcuBirim" col="2"
+                              referenceMode="id"
+                              formControlName="algilamaBirimi3"
+                              [form]="dbForm">
+              Algılama Birimi 3
+            </dn-select2-smart>
+          </div>
+        </fieldset>
+        <header style="margin-top: 5px;">Finansal Bilgiler</header>
+        <fieldset>
+          <div class="row">
+            <dn-smart-input col="2" formControlName="fatura" icon="fa fa-money" [form]="dbForm"
+                            mask="dnCurrency">Fatura
+            </dn-smart-input>
+            <dn-select2-smart serviceUrl="Doviz" col="2" referenceMode="id"
+                              formControlName="faturaDoviz" [form]="dbForm">Fatura Döviz
+            </dn-select2-smart>
+            <dn-smart-input disabled col="2"
+                            [form]="dbForm"
+                            formControlName="faturaTRY"
+                            icon="fa fa-money" mask="dnCurrency">Fatura TRY
+            </dn-smart-input>
+            <dn-smart-input col="2" formControlName="navlunBedeli" icon="fa fa-money" [form]="dbForm"
+                            mask="dnCurrency">Navlun
+            </dn-smart-input>
+            <dn-select2-smart serviceUrl="Doviz" col="2"
+                              referenceMode="id"
+                              formControlName="navlunBedeliDoviz" [form]="dbForm">Navlun Döviz
+            </dn-select2-smart>
+            <dn-smart-input disabled
+                            [form]="dbForm"
+                            formControlName="navlunBedeliTRY"
+                            col="2"
+                            icon="fa fa-money" mask="dnCurrency">Navlun TRY
+            </dn-smart-input>
+          </div>
+          <div class="row">
+            <dn-smart-input col="2" formControlName="sigortaBedeli" icon="fa fa-money" [form]="dbForm"
+                            mask="dnCurrency">Sigorta
+            </dn-smart-input>
+            <dn-select2-smart serviceUrl="Doviz" col="2" referenceMode="id"
+                              formControlName="sigortaBedeliDoviz" [form]="dbForm">
+              Sigorta Döviz
+            </dn-select2-smart>
+            <dn-smart-input disabled col="2"
+                            [form]="dbForm"
+                            formControlName="sigortaBedeliTRY"
+                            icon="fa fa-money" mask="dnCurrency">Sigorta TRY
+            </dn-smart-input>
+            <dn-smart-input col="2" formControlName="istatistikiKiymet" icon="fa fa-money"
+                            [form]="dbForm" mask="dnCurrency">46.İstatistiki Kıymet
+            </dn-smart-input>
+            <!--formControlName="gumrukKiymeti"-->
+            <dn-smart-input col="2"
+                            formControlName="gumrukKiymeti"
+                            icon="fa fa-money"
+                            [form]="dbForm"
+                            disabled mask="dnCurrency">Gümrük Kıymeti
+            </dn-smart-input>
+
+            <dn-select2-smart serviceUrl="teslimSekli" col="2"
+                              referenceMode="id"
+                              formControlName="teslimSekli"
+                              [form]="dbForm">Teslim Şekli
+            </dn-select2-smart>
+          </div>
+
+          <div style="padding: 0px;" formArrayName="detayliBeyanKalemOdemeSekil">
+            <div class="row pushAnimation"
+                 *ngFor="let row of dbForm.controls['detayliBeyanKalemOdemeSekil'].controls; let i=index"
+                 [formGroupName]="i">
+              <div id="repeater-block-odemesekil-{{i}}" style="display: none; ">
+                <div class="col-sm-1" style="width: 2.3333333%; margin-top: 20px;">
+                                    <span class="font-lg"
+                                          style="padding-left: 15px; text-align: center; font-weight: bold">{{i+1}}.</span>
+                </div>
+                <dn-select2-smart serviceUrl="OdemeSekli"
+                                  col="2"
+                                  referenceMode="id"
+                                  formControlName="idOdemeSekil"
+                                  [form]="dbForm">Ödeme Şekli
+                </dn-select2-smart>
+                <dn-smart-input col="2" formControlName="value" icon="fa fa-money" [form]="dbForm"
+                                mask="dnCurrency">Ödeme Tutarı
+                </dn-smart-input>
+                <div class="col-sm-1">
+                  <button (click)="addOdemeSekil()" style="margin-top: 23px; padding: 6px 12px;"
+                          type="button" class="btn btn-primary">
+                    <i class="fa fa-plus"></i><span>&nbsp;Ekle</span>
+                  </button>
+                </div>
+                <div class="col-sm-1">
+                  <button (click)="removeOdemeSekil(i)"
+                          style="margin-top: 23px; padding: 6px 12px;" type="button"
+                          class="btn btn-danger">
+                    <i class="fa fa-trash-o"></i><span>&nbsp;Sil</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div style="margin-left: 13px" class="row"
+                 *ngIf="dbForm.controls['detayliBeyanKalemOdemeSekil'].controls.length == 0">
+              <div class="col-sm-1">
+                <button (click)="addOdemeSekil()" style="margin-top: 23px; padding: 6px 12px;"
+                        type="button" class="btn btn-primary">
+                  <i class="fa fa-plus"></i><span>&nbsp;Ödeme Şekli Ekle</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+
+        </fieldset>
+        <div></div> <!--boş divi silme-->
+        <fieldset>
+          <div class="col-sm-12 col-md-6 col-lg-6">
+            <div class="row">
+              <header style="margin-top: 5px;">Yurtiçi Giderler</header>
+            </div>
+            <div class="row">
+              <dn-smart-input col="5" formControlName="yurticiKkdf" icon="fa fa-money" [form]="dbForm"
+                              mask="dnCurrency">KKDF
+              </dn-smart-input>
+              <dn-smart-input col="5" formControlName="yurticiKulturBakanligiKesinti" icon="fa fa-money"
+                              [form]="dbForm" mask="dnCurrency">Kültür Bak. Kesinti
+              </dn-smart-input>
+            </div>
+            <div class="row">
+              <dn-smart-input col="5" formControlName="yurticiLimanGiderleri" icon="fa fa-money"
+                              [form]="dbForm"
+                              mask="dnCurrency">Liman Giderleri
+              </dn-smart-input>
+              <dn-smart-input col="5" formControlName="yurticiCevreKatkiPayi" icon="fa fa-money"
+                              [form]="dbForm" mask="dnCurrency">Çevre Katkı Payı
+              </dn-smart-input>
+            </div>
+            <div class="row">
+              <dn-smart-input col="5" formControlName="yurticiTahmilTahliyeGider" icon="fa fa-money"
+                              [form]="dbForm"
+                              mask="dnCurrency">Tahmil-Tahliye Gid.
+              </dn-smart-input>
+              <dn-smart-input col="5" formControlName="yurticiDepolamaGiderleri" icon="fa fa-money"
+                              [form]="dbForm" mask="dnCurrency">Depolama Gider
+              </dn-smart-input>
+            </div>
+            <div class="row">
+              <dn-smart-input col="5" formControlName="yurticiBankaMasraflari" icon="fa fa-money"
+                              [form]="dbForm"
+                              mask="dnCurrency">Banka Masrafları
+              </dn-smart-input>
+              <dn-smart-input col="5" formControlName="yurticiDiger" icon="fa fa-money"
+                              [form]="dbForm" mask="dnCurrency">Diğer
+              </dn-smart-input>
+            </div>
+            <div class="row">
+              <dn-smart-input col="5" formControlName="yurticiGiderToplam" icon="fa fa-money"
+                              [form]="dbForm" disabled
+                              mask="dnCurrency">Yurtiçi Gider Top.
+              </dn-smart-input>
+              <dn-smart-textarea [rows]="1" formControlName="yurticiDigerAciklama" col="5">Diğer Açıklama
+              </dn-smart-textarea>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6">
+            <div class="row">
+              <header style="margin-top: 5px;">Yurtdışı Giderler</header>
+            </div>
+            <div class="row">
+              <dn-smart-input col="5" formControlName="yurtdisiKomisyon" icon="fa fa-money" [form]="dbForm"
+                              mask="dnCurrency">Komisyon ve Tellaliye
+              </dn-smart-input>
+              <dn-select2-smart serviceUrl="Doviz" col="5"
+                                referenceMode="id"
+                                formControlName="yurtdisiKomisyonDoviz"
+                                [form]="dbForm">
+                Komisyon ve Tellaliye Kur
+              </dn-select2-smart>
+            </div>
+            <div class="row">
+              <dn-smart-input col="5" formControlName="yurtdisiDemuraj"
+                              referenceMode="id"
+                              icon="fa fa-money" [form]="dbForm"
+                              mask="dnCurrency">Demuraj Giderleri
+              </dn-smart-input>
+              <dn-select2-smart serviceUrl="Doviz" col="5" referenceMode="id"
+                                formControlName="yurtdisiDemurajDoviz"
+                                [form]="dbForm">
+                Demuraj Giderleri Kur
+              </dn-select2-smart>
+            </div>
+            <div class="row">
+              <dn-smart-input col="5" formControlName="yurtdisiRoyalti" icon="fa fa-money" [form]="dbForm"
+                              mask="dnCurrency">Royalti-Lisans
+              </dn-smart-input>
+              <dn-select2-smart serviceUrl="Doviz" col="5"
+                                referenceMode="id"
+                                formControlName="yurtdisiRoyaltiDoviz"
+                                [form]="dbForm">
+                Royalti-Lisans Kur
+              </dn-select2-smart>
+            </div>
+            <div class="row">
+              <dn-smart-input col="5" formControlName="yurtdisiFaiz" icon="fa fa-money" [form]="dbForm"
+                              mask="dnCurrency">Faiz Masrafları
+              </dn-smart-input>
+              <dn-select2-smart serviceUrl="Doviz" referenceMode="id"
+                                col="5" formControlName="yurtdisiFaizDoviz"
+                                [form]="dbForm">
+                Faiz Masrafları Kur
+              </dn-select2-smart>
+            </div>
+            <div class="row">
+              <dn-smart-input col="5" formControlName="yurtdisiDiger" icon="fa fa-money" [form]="dbForm"
+                              mask="dnCurrency">Diğer Masrafları
+              </dn-smart-input>
+              <dn-select2-smart serviceUrl="Doviz"
+                                referenceMode="id"
+                                col="5" formControlName="yurtdisiDigerDoviz"
+                                [form]="dbForm">
+                Diğer Masrafları Kur
+              </dn-select2-smart>
+            </div>
+            <div class="row">
+              <dn-smart-input col="5" formControlName="yurtdisiDigerTRY" icon="fa fa-money" [form]="dbForm"
+                              disabled mask="dnCurrency">Toplam TRY
+              </dn-smart-input>
+              <dn-smart-textarea [rows]="1" formControlName="digerAciklama" col="5">Diğer Açıklama
+              </dn-smart-textarea>
+            </div>
+          </div>
+        </fieldset>
+        <footer *ngIf="showFooter">
+          <button class="btn btn-default pull-left" type="button" (click)="showKalemList()">
+            <i class="fa fa-pencil"></i>
+            Kalem Listesi
+          </button>
+
+
+          <button class="btn btn-primary" type="button" (click)="onSubmit()">
+            <i [ngClass]="isEdit ? 'fa fa-edit':'fa fa-save'"></i>
+            {{isEdit ? 'Güncelle':'Kaydet'}}
+          </button>
+          <button class="btn btn-danger" type="button" *ngIf="isDeletable" (click)="onDelete()">
+            <i class="fa fa-save"></i>
+            Sil
+          </button>
+          <button class="btn btn-default" type="button" (click)="clearForm()">
+            <i class="fa fa-eraser"></i>
+            Temizle
+          </button>
+
+        </footer>
+
+        <footer *ngIf="!showFooter">
+          <button class="btn btn-default pull-left" type="button" (click)="showKalemList()">
+            <i class="fa fa-pencil"></i>
+            Kalem Listesi
+          </button>
+        </footer>
+
+      </form>
+    </article>
+  </div>
+
+</dn-widget>
+
+
+<db-kalem-list #kalemListTemplate></db-kalem-list>
+<firma-modal #firmaModal (hideEvent)="refreshFirma($event)"></firma-modal>
+
+

@@ -1,0 +1,93 @@
+<div id="content">
+
+  <dn-widgets-grid>
+
+    <div class="row">
+      <article class="col-sm-12">
+
+        <dn-widget color="blueDark" [widgetId]="'teminat-widget'">
+          <header>
+            <div class="jarviswidget-ctrls" role="menu">
+              <ncts-no-label [idNcts]="idNctsBeyan"></ncts-no-label>
+            </div>
+            <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+            <h2>Teminat Listesi</h2>
+          </header>
+          <div>
+            <div class="widget-body no-padding dn-datatable-widget-body">
+              <ncts-detay-teminat #teminat></ncts-detay-teminat>
+            </div>
+          </div>
+        </dn-widget>
+      </article>
+      <article class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+
+      </article>
+
+    </div>
+
+    <div class="row">
+      <article class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <dn-widget color="blueDark" [widgetId]="'guzergah-widget'">
+          <header>
+            <div class="jarviswidget-ctrls" role="menu">
+              <ncts-no-label [idNcts]="idNctsBeyan"></ncts-no-label>
+            </div>
+            <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+            <h2>Güzergah Listesi</h2>
+          </header>
+          <div>
+            <div class="widget-body no-padding dn-datatable-widget-body">
+              <ncts-detay-guzergah #guzergah></ncts-detay-guzergah>
+            </div>
+          </div>
+        </dn-widget>
+
+      </article>
+      <article class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <dn-widget color="blueDark" [widgetId]="'muhur-widget'">
+          <header>
+            <div class="jarviswidget-ctrls" role="menu">
+              <ncts-no-label [idNcts]="idNctsBeyan"></ncts-no-label>
+            </div>
+            <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+            <h2>Mühür Listesi</h2>
+          </header>
+          <div>
+            <div class="widget-body no-padding dn-datatable-widget-body">
+              <ncts-detay-muhur #muhur></ncts-detay-muhur>
+            </div>
+          </div>
+        </dn-widget>
+      </article>
+
+    </div>
+
+    <div class="row">
+      <article class="col-sm-12">
+
+        <dn-widget color="blueDark" [widgetId]="'transit-widget'">
+          <header>
+            <div class="jarviswidget-ctrls" role="menu">
+              <ncts-no-label [idNcts]="idNctsBeyan"></ncts-no-label>
+            </div>
+            <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+            <h2>Transit Listesi</h2>
+          </header>
+          <div>
+            <div class="widget-body no-padding dn-datatable-widget-body">
+              <ncts-detay-transit #transit></ncts-detay-transit>
+            </div>
+          </div>
+        </dn-widget>
+      </article>
+      <article class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+
+      </article>
+
+    </div>
+
+  </dn-widgets-grid>
+
+</div>
+

@@ -1,0 +1,303 @@
+<div>
+  <div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-2">
+      <div class="well padding-10">
+        <h5 class="margin-top-0">&nbsp; <i class="glyphicon glyphicon-briefcase"></i> Satırlar</h5>
+        <div class="row">
+          <div class="col-lg-12">
+            <ul class="list-group no-margin">
+              <li class="list-group-item kiymet-no" [ngClass]="kiymetKalem== uniqueNo? 'dn-selected':''"
+                  *ngFor="let kiymetKalem of dataList.keys();let i = index"
+                  (click)="getKiymetKalem(kiymetKalem)">
+                <label class="kiymet-no">{{kiymetKalem}}</label>
+                <i *ngIf="isEditting(kiymetKalem)" class="fa fa-pencil-square-o"
+                   style="float: right; margin-top: 5px;"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-12 col-lg-10">
+      <dn-widget color="blueDark"
+                 [togglebutton]="false"
+                 [editbutton]="false"
+                 [fullscreenbutton]="false"
+                 [colorbutton]="false"
+                 [deletebutton]="false">
+
+        <header>
+          <div class="jarviswidget-ctrls" role="menu">
+            <!-- <detaylibeyan-no-label [idDetayliBeyan]="idDetayliBeyan">
+               Kıymet No : <b><i>{{kiymetNo}}</i></b> &#45;&#45;
+               Kıymet Kalem No : <b><i>{{kiymetNo}}</i></b> &#45;&#45;
+             </detaylibeyan-no-label>-->
+          </div>
+
+          <span class="widget-icon">
+                        <i class="glyphicon glyphicon-file"></i> </span>
+
+          <h2>Kalemler</h2>
+        </header>
+
+
+        <form novalidate="novalidate" class="form-horizontal db-widget-body" [formGroup]="baseForm">
+
+          <div class="no-padding">
+
+            <div class="widget-body">
+              <!--    <fieldset>
+                    <div class="form-row form-group no-margin-bottom kalem-row-height">
+                      <div class="col-sm-12 col-md-4">
+                        <dn-select2-container [form]="baseForm"
+                                              serviceUrl="firma"
+                                              formControlName="alici">1.Satıcı
+                        </dn-select2-container>
+                      </div>
+                      <div class="col-sm-12 col-md-4">
+                        <dn-select2-container [form]="baseForm"
+                                              serviceUrl="firma"
+                                              formControlName="alici">2a.Alıcı
+                        </dn-select2-container>
+                      </div>
+                      <div class="col-sm-12 col-md-4">
+                        <dn-select2-container [form]="baseForm"
+                                              serviceUrl="firma"
+                                              formControlName="alici">2c.Beyan Sahibi
+                        </dn-select2-container>
+                      </div>
+                    </div>
+                  </fieldset>
+                  <hr>-->
+              <fieldset>
+                <div class="form-row form-group no-margin-bottom kalem-row-height">
+                  <div class="col-sm-12 col-md-6">
+                    <dn-input [form]="baseForm"
+                              formControlName="beyannemeKalemNo">Beyanname Kalem No
+                    </dn-input>
+                  </div>
+                  <div class="no-margin-bottom col-md-6">
+                    <dn-input [form]="baseForm"
+                              mask="dnCurrency"
+                              formControlName="dolayliOdeme">Dolaylı Ödm.
+                    </dn-input>
+                  </div>
+                </div>
+              </fieldset>
+              <!--        <fieldset class="dn-title-fieldset">
+                        <legend class="dn-title-legend">
+                          11
+                        </legend>
+                        <fieldset>
+                          <div class="no-margin-bottom no-padding-right col-md-6">
+                            <dn-input [form]="baseForm"
+                                      disabled
+                                      formControlName="munasebet">Top.Fat.Bed
+                            </dn-input>
+                          </div>
+                          <div class="no-margin-bottom no-padding-right col-md-6">
+                            <dn-input [form]="baseForm"
+                                      disabled
+                                      formControlName="munasebet">Döviz Türü
+                            </dn-input>
+                          </div>
+                        </fieldset>
+                        <fieldset>
+                          <div class="no-margin-bottom no-padding-right col-md-6">
+                            <dn-input [form]="baseForm"
+                                      formControlName="munasebet">Dolaylı Ödm.
+                            </dn-input>
+                          </div>
+                          <div class="no-margin-bottom no-padding-right col-md-6">
+                            <dn-input [form]="baseForm"
+                                      disabled
+                                      formControlName="munasebet">Döviz Kuru
+                            </dn-input>
+                          </div>
+                        </fieldset>
+                        <fieldset>
+                          <div class="no-margin-bottom no-padding-right col-md-6"></div>
+                          <div class="no-margin-bottom no-padding-right col-md-6">
+                            <dn-input disabled>12-Toplam A</dn-input>
+                          </div>
+                        </fieldset>
+                      </fieldset>-->
+              <hr>
+              <fieldset>
+                <div class="no-margin-bottom no-padding-right col-md-6">
+                  <dn-input [form]="baseForm"
+                            mask="dnCurrency"
+                            formControlName="komisyon">13a-Komisyon
+                  </dn-input>
+                </div>
+                <div class="no-margin-bottom no-padding-right col-md-6">
+                  <dn-input [form]="baseForm"
+                            mask="dnCurrency"
+                            formControlName="ithalaKatilanMalzeme">14a-İth.Katılan Mal.
+                  </dn-input>
+                </div>
+              </fieldset>
+
+              <fieldset>
+                <div class="no-margin-bottom no-padding-right col-md-6">
+                  <dn-input [form]="baseForm"
+                            mask="dnCurrency"
+                            formControlName="tellaliye">13b-Tellaliye
+                  </dn-input>
+                </div>
+                <div class="no-margin-bottom no-padding-right col-md-6">
+                  <dn-input [form]="baseForm"
+                            mask="dnCurrency"
+                            formControlName="ithalaUretimAraclar">14b-İth.Üretim Arç.
+                  </dn-input>
+                </div>
+              </fieldset>
+              <fieldset>
+                <div class="no-margin-bottom no-padding-right col-md-6">
+                  <dn-input [form]="baseForm"
+                            mask="dnCurrency"
+                            formControlName="kapAmbalajBedeli">13c-Kap Ambalaj Bed.
+                  </dn-input>
+                </div>
+                <div class="no-margin-bottom no-padding-right col-md-6">
+                  <dn-input [form]="baseForm"
+                            mask="dnCurrency"
+                            formControlName="ithalaUretimTuketimMalzemesi">14c-İth.Üretim Tük. Malz
+                  </dn-input>
+                </div>
+              </fieldset>
+              <fieldset>
+                <div class="no-margin-bottom no-padding-right col-md-6">
+                  <dn-input [form]="baseForm"
+                            mask="dnCurrency"
+                            formControlName="royaltiLisans">15-Royalti Lisans
+                  </dn-input>
+                </div>
+                <div class="no-margin-bottom no-padding-right col-md-6">
+                  <dn-input [form]="baseForm"
+                            mask="dnCurrency"
+                            formControlName="planTaslak">14d-Plan Taslak
+                  </dn-input>
+                </div>
+              </fieldset>
+
+              <fieldset>
+                <div class="no-margin-bottom no-padding-right col-md-6">
+                  <dn-input [form]="baseForm"
+                            mask="dnCurrency"
+                            formControlName="dolayliIntikal">16-Dolaylı İntikal
+                  </dn-input>
+                </div>
+                <div class="no-margin-bottom no-padding-right col-md-6">
+                  <dn-input [form]="baseForm"
+                            formControlName="sigorta"
+                            mask="dnCurrency">17b-Sigorta
+                  </dn-input>
+                </div>
+              </fieldset>
+
+              <fieldset>
+                <div class="no-margin-bottom no-padding-right col-md-6">
+                  <dn-input [form]="baseForm"
+                            mask="dnCurrency"
+                            formControlName="nakliye">17a-Nakliye
+                  </dn-input>
+                </div>
+                <div class="no-margin-bottom no-padding-right col-md-6">
+                  <dn-input #toplamb
+                            mask="dnCurrency"
+                            disabled>Toplam B
+                  </dn-input>
+                </div>
+              </fieldset>
+              <hr>
+              <fieldset>
+                <div class="no-margin-bottom no-padding-right col-md-6">
+                  <dn-input [form]="baseForm"
+                            mask="dnCurrency"
+                            formControlName="girisSonrasiNakliye">19-Giriş Son.Nakliye
+                  </dn-input>
+                </div>
+                <div class="no-margin-bottom no-padding-right col-md-6">
+                  <dn-input [form]="baseForm"
+                            formControlName="teknikYardim"
+                            mask="dnCurrency">20-Teknik Yardım
+                  </dn-input>
+                </div>
+              </fieldset>
+              <fieldset>
+                <div class="no-margin-bottom no-padding-right col-md-6">
+                  <dn-input [form]="baseForm"
+                            mask="dnCurrency"
+                            formControlName="digerOdemeler">21a-Diğer Ödemeler
+                  </dn-input>
+                </div>
+                <div class="no-margin-bottom no-padding-right col-md-6">
+                  <dn-input [form]="baseForm"
+                            formControlName="vergiHarcFon"
+                            mask="dnCurrency">22-Vergiler,Harç ve Fon
+                  </dn-input>
+                </div>
+              </fieldset>
+              <fieldset>
+                <div class="no-margin-bottom no-padding-right col-md-6">
+                  <dn-input [form]="baseForm"
+                            formControlName="digerOdemelerNiteligi">21b-D. Ödemeler Niteliği
+                  </dn-input>
+                </div>
+                <div class="no-margin-bottom no-padding-right col-md-6">
+                  <dn-input #toplamc
+                            disabled
+                            mask="dnCurrency">Toplam C
+                  </dn-input>
+                </div>
+              </fieldset>
+              <hr>
+              <fieldset>
+                <div class="no-margin-bottom no-padding-right col-md-6"></div>
+                <div class="no-margin-bottom no-padding-right col-md-6">
+                  <dn-input #toplamgenel
+                            disabled
+                            mask="dnCurrency">Genel Toplam
+                  </dn-input>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+          <!--<div id="tarife-dialog" [dnJquiDialog]="tarifeDialogOptions">
+
+            <db-kalem-tarife-dialog [dbform]="baseForm"></db-kalem-tarife-dialog>
+
+          </div>-->
+
+          <div class="form-actions" style="margin-bottom: 0px">
+            <div class="row">
+              <div class="col-md-6" style="text-align: left">
+                <button *ngIf="isEdit" class="btn btn-primary" type="button" (click)="newKiymet()">
+                  <i class="fa fa-plus"></i>
+                  Yeni Kıymet Kalem
+                </button>
+              </div>
+              <div class="col-md-6">
+                <button class="btn btn-default" type="button" (click)="clearForm()">
+                  <i class="fa fa-eraser"></i>
+                  Temizle
+                </button>
+                <button class="btn btn-danger" type="button" *ngIf="isEdit" (click)="onDelete()">
+                  <i class="fa fa-save"></i>
+                  Sil
+                </button>
+                <button class="btn" type="button" [disabled]="!baseForm.valid" (click)="onSubmit()">
+                  <i [ngClass]="isEdit ? 'fa fa-edit':'fa fa-save'"></i>
+                  {{isEdit ? 'Güncelle':'Kaydet'}}
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </dn-widget>
+    </div>
+  </div>
+</div>
+
+

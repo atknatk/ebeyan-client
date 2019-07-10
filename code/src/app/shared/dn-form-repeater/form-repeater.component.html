@@ -1,0 +1,33 @@
+<form [formGroup]="form" novalidate>
+  <div class="row" [formArrayName]="dnFormArrayName">
+    <div [ngClass]="cssClass">
+      <header *ngIf="showHeader">
+        <h2>{{headerTitle}}</h2>
+      </header>
+      <fieldset>
+        <div class="row" *ngFor="let row of form.controls[dnFormArrayName].controls; let i=index" [formGroupName]="i">
+          <ng-template
+            [ngTemplateOutlet]="itemTemplate"
+            [ngOutletContext]="{ row: row }">
+          </ng-template>
+
+        </div>
+      </fieldset>
+    </div>
+  </div>
+  <div class="clearfix"></div>
+</form>
+
+<button (click)="addChild()">Add</button>
+
+
+<!--<input type="button" value="Add" (click)="addRow()">
+<div class="repeater" *ngFor="let row of repeaterArray">
+  <div class="repeaterRow">
+    <input type="button" value="Remove" (click)="removeRow(row)">
+    <template
+      [ngTemplateOutlet]="itemTemplate"
+      [ngOutletContext]="{ item: row }">
+    </template>
+  </div>
+</div>-->

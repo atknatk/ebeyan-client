@@ -1,0 +1,20 @@
+{
+  "isSuccess": true,
+  "data": [
+    {
+      "id": "P",
+      "code": "P",
+      "name": "Peşin"
+    },
+    {
+      "id": "C",
+      "code": "C",
+      "name": "Çek"
+    },
+    {
+      "id": "S",
+      "code": "S",
+      "name": "Senet"
+    }
+  ]
+}

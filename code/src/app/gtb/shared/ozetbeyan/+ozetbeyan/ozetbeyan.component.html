@@ -1,0 +1,245 @@
+<dn-loading [show]="loading">
+
+
+  <div class="row">
+
+    <!-- NEW COL START -->
+    <article class="col-sm-12 col-md-12 col-lg-12">
+
+      <form class="smart-form" [formGroup]="form">
+        <header>Belge</header>
+
+        <fieldset>
+          <div class="row">
+            <dn-smart-input col="2"
+                            formControlName="refId"
+                            [form]="form"
+                            icon="fa fa-key"
+                            disabled>Ref ID
+            </dn-smart-input>
+            <dn-select2-smart *ngIf="beyanConfig.ozetbeyan === beyanType"
+                              serviceUrl="beyanturu"
+                              col="2"
+                              formControlName="beyanTuru"
+                              [form]="form"
+                              [displaySelect]="gtbConst.displaySelect"
+                              [selectedText]="gtbConst.selectedText"
+                              (onSelect)="beyanTuruChanged($event)"
+                              (onRemove)="beyanTuruRemove($event)">Beyan Türü
+            </dn-select2-smart>
+            <dn-select2-smart serviceUrl="tasimaSekli"
+                              col="2"
+                              formControlName="tasimaSekli"
+                              [form]="form">Taşıma
+              Şekli
+            </dn-select2-smart>
+            <dn-select2-smart serviceUrl="gumrukidaresi" col="2" formControlName="gumrukIdaresi" [form]="form">Gümrük
+              İdaresi
+            </dn-select2-smart>
+            <dn-smart-input *ngIf="beyanConfig.ozetbeyan === beyanType"
+                            col="2"
+                            formControlName="ekBelgeSayisi"
+                            mask="integer"
+                            icon="fa fa-pencil-square-o"
+                            [form]="form">Ek Belge Sayı
+            </dn-smart-input>
+            <dn-smart-input col="1"
+                            formControlName="rejim"
+                            [form]="form"
+                            disabled>Rejim
+            </dn-smart-input>
+          </div>
+          <div class="row">
+            <dn-select2-smart *ngIf="beyanConfig.ozetbeyan === beyanType"
+                              serviceUrl="gumrukidaresi"
+                              col="2"
+                              formControlName="ilkVarisYeri"
+                              [form]="form">İlk
+              Varış/Çıkış Yeri
+            </dn-select2-smart>
+            <dn-smart-input *ngIf="beyanConfig.ozetbeyan === beyanType"
+                            disabled
+                            col="2"
+                            formControlName="kalemSayisi"
+                            [form]="form"
+                            mask="integer"
+                            icon="fa fa-pencil-square-o">Kalem Sayısı
+            </dn-smart-input>
+            <dn-smart-input col="2" formControlName="tescilTarih" [form]="form" icon="fa fa-calendar" disabled>Tescil
+              Tarihi
+            </dn-smart-input>
+            <dn-smart-input col="2" formControlName="onayTarih" [form]="form" icon="fa fa-calendar" disabled>Onay
+              Tarihi
+            </dn-smart-input>
+            <dn-smart-input col="2" formControlName="kapanisTarih" [form]="form" icon="fa fa-calendar" disabled>Kapanış
+              Tarihi
+            </dn-smart-input>
+          </div>
+        </fieldset>
+
+        <header>Yükleme/Boşaltma Bilgileri</header>
+
+        <fieldset>
+          <div class="row">
+            <dn-select2-smart serviceUrl="ulke" col="2" formControlName="yuklemeUlkesi" [form]="form"
+                              [displaySelect]="gtbConst.displaySelect" [selectedText]="gtbConst.selectedText">Yükleme
+              Ülkesi
+            </dn-select2-smart>
+            <dn-select2-smart [serviceUrl]="getLimanUrl()"
+                              [minimumInputLength]="2"
+                              col="2" formControlName="yuklemeLimani" [form]="form">Yükleme
+              Limanı
+            </dn-select2-smart>
+            <dn-select2-smart serviceUrl="ulke" col="2" formControlName="bosaltmaUlkesi" [form]="form">Boşaltma Ülkesi
+            </dn-select2-smart>
+            <dn-select2-smart [serviceUrl]="getLimanUrl()"
+                              [minimumInputLength]="2"
+                              col="2"
+                              formControlName="bosaltmaLimani" [form]="form">
+              Boşaltma Limanı
+            </dn-select2-smart>
+            <dn-smart-input col="2"
+                            formControlName="yuklemeBosaltmaYeri"
+                            [form]="form">Yükleme/Boşaltma Yeri
+            </dn-smart-input>
+          </div>
+        </fieldset>
+
+        <header>Sorumlu</header>
+
+        <fieldset>
+          <div class="row">
+            <dn-select2-smart serviceUrl="firma" col="6" formControlName="beyanSahibi" [form]="form"
+                              [addNewItemEvent]="firmaModal.show.bind(firmaModal)"
+                              #firma
+                              [displaySelect]="gtbConst.displaySelectFirma" [selectedText]="gtbConst.selectedTextFirma">
+              Beyan Sahibi/Temsilci
+            </dn-select2-smart>
+            <dn-select2-smart serviceUrl="firma" col="6" formControlName="tasiyiciFirma" [form]="form"
+                              [addNewItemEvent]="firmaModal.show.bind(firmaModal)"
+                              #firma
+                              [displaySelect]="gtbConst.displaySelectFirma" [selectedText]="gtbConst.selectedTextFirma">
+              Taşıyıcı Firma
+            </dn-select2-smart>
+          </div>
+        </fieldset>
+
+        <header>Taşıtın</header>
+
+        <fieldset>
+          <div class="row">
+            <dn-smart-input col="2"
+                            formControlName="tasitAdi"
+                            icon="fa fa-truck"
+                            [form]="form">Adı
+            </dn-smart-input>
+            <dn-smart-input col="2" formControlName="tasitNumarasi" [form]="form">Numarası</dn-smart-input>
+            <dn-smart-input col="2" formControlName="tasitReferansNumarasi" [form]="form">Referans No</dn-smart-input>
+            <dn-select2-smart serviceUrl="ulke" col="2" formControlName="tasitUlkesi" [form]="form"
+                              [displaySelect]="gtbConst.displaySelect" [selectedText]="gtbConst.selectedText">Ülkesi
+            </dn-select2-smart>
+          </div>
+          <div class="row">
+            <dn-smart-input col="2" formControlName="tasitDorseNo1" [form]="form">Dorse No1</dn-smart-input>
+            <dn-select2-smart serviceUrl="ulke" col="2" formControlName="tasitDorse1Uyruk" [form]="form"
+                              [displaySelect]="gtbConst.displaySelect" [selectedText]="gtbConst.selectedText">Uyruğu
+            </dn-select2-smart>
+            <dn-smart-input col="2" formControlName="tasitDorseNo2" [form]="form">Dorse No2</dn-smart-input>
+            <dn-select2-smart serviceUrl="ulke" col="2" formControlName="tasitDorse2Uyruk" [form]="form"
+                              [displaySelect]="gtbConst.displaySelect" [selectedText]="gtbConst.selectedText">Uyruğu
+            </dn-select2-smart>
+            <dn-smart-input col="2" formControlName="tasitVarisTarih" [form]="form" mask="dnDatetime"
+                            icon="fa fa-calendar">Varış Tarihi
+            </dn-smart-input>
+          </div>
+
+        </fieldset>
+
+        <div *ngIf="beyanConfig.ozetbeyan === beyanType">
+          <header>Referans</header>
+          <fieldset>
+            <div class="row">
+              <dn-smart-input col="2" formControlName="oncekiBeyanNo" [form]="form">Önceki Beyan No</dn-smart-input>
+              <dn-smart-input col="2" formControlName="grupTasimaSenediNo" [form]="form">Grup Taşıma Senedi No
+              </dn-smart-input>
+              <dn-smart-input col="2" formControlName="tirKarneNo" [form]="form">Tır/ATA Karne No</dn-smart-input>
+            </div>
+
+          </fieldset>
+        </div>
+
+        <div *ngIf="beyanConfig.varisbildirimi === beyanType || beyanConfig.cikisbildirimi === beyanType">
+          <header>Diğer</header>
+          <fieldset>
+            <div class="row">
+              <dn-smart-input col="12" formControlName="diger" [form]="form"></dn-smart-input>
+            </div>
+          </fieldset>
+        </div>
+
+        <div *ngIf="beyanConfig.varisbildirimi === beyanType || beyanConfig.cikisbildirimi === beyanType">
+          <header>Varış Çıkış Liman Bilgileri</header>
+          <fieldset>
+            <div class="row" style="margin: 0">
+              <div class="col-sm-12 col-md-12 col-lg-12">
+                <fieldset style="padding: 0px;" [formArrayName]="satirService.getVarisCikisLimaniSatirName(beyanType)">
+                  <div class="row pushAnimation"
+                       style="border-bottom: 1px solid #ddd;"
+                       *ngFor="let row of form.controls[satirService.getVarisCikisLimaniSatirName(beyanType)].controls; let i=index"
+                       [formGroupName]="i">
+                    <div id="repeater-block-varis-cikis-{{i}}" style="display: none; ">
+                      <div class="col-sm-1" style="width: 2.3333333%; margin-top: 20px;">
+                    <span class="font-lg"
+                          style="padding-left: 15px; text-align: center; font-weight: bold">{{i+1}}.</span>
+                      </div>
+                      <dn-select2-smart [serviceUrl]="getLimanUrl()"
+                                        [minimumInputLength]="2"
+                                        col="4" formControlName="limanKod" [form]="form">
+                        Liman
+                      </dn-select2-smart>
+                      <dn-select2-smart serviceUrl="ulke" col="4" formControlName="ulkeKod" [form]="form">
+                        Ülke
+                      </dn-select2-smart>
+                      <dn-smart-input col="2"
+                                      formControlName="hareketTarih"
+                                      mask="datetime"
+                                      [form]="form">hareket Tarihi
+                      </dn-smart-input>
+                      <div class="col-sm-1">
+                        <button (click)="satirService.removeVarisCikisLimani(form,i,beyanType)"
+                                style="margin-top: 23px; padding: 6px 12px;" type="button" class="btn btn-danger">
+                          <i class="fa fa-trash-o"></i><span>&nbsp;&nbsp; Sil</span>
+                        </button>
+                      </div>
+                    </div>
+                    <hr>
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+            <div class="row" style="margin: 0">
+              <div class="col-md-12 col-sm-12 col-lg-12" style="margin-top: 3px;">
+                <button (click)="satirService.addVarisCikisLimaniSatir(form,beyanType,id)" class="btn btn-primary"
+                        style="float: left; padding: 6px 12px" type="button">
+                  <i class="fa fa-plus"></i> &nbsp;&nbsp;Varış Çıkış Limanı Ekle
+                </button>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+        <footer style="margin-bottom: -13px">
+          <button type="button" (click)="onSubmit()" class="btn btn-primary">
+            {{isEdit ? 'Güncelle' : 'Kaydet'}}
+          </button>
+          <button type="button" (click)="clear()" class="btn btn-default">
+            Temizle
+          </button>
+        </footer>
+      </form>
+    </article>
+    <!-- END COL -->
+  </div>
+</dn-loading>
+
+<firma-modal #firmaModal (hideEvent)="refreshFirma($event)"></firma-modal>

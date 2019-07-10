@@ -1,0 +1,121 @@
+<div id="content">
+
+  <div class="row">
+
+    <article id="dn-table-widget" class="col-sm-12">
+      <dn-widget color="blueDark" [widgetId]="'vergi-widget'">
+        <header>
+          <div class="jarviswidget-ctrls" role="menu">
+            <ncts-no-label [idNcts]="idNctsBeyan"></ncts-no-label>
+          </div>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+          <h2>Özet Beyan Açma Listesi</h2>
+        </header>
+        <div>
+          <div class="widget-body no-padding dn-datatable-widget-body">
+
+
+            <form [formGroup]="baseForm" novalidate>
+              <div class="margin-top-10">
+                <fieldset>
+                  <div class="form-row form-group no-margin-bottom" style="margin-left: -16px;">
+                    <div class="col-sm-12 col-md-4">
+                      <dn-select2-container [form]="baseForm"
+                                            formControlName="ozetBeyanAcmaSekli"
+                                            [selectedText]="undefined"
+                                            [displaySelect]="undefined"
+                                            serviceUrl="OzetBeyanAcmaSekli">Açma Şekli
+                      </dn-select2-container>
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                      <dn-select2-container serviceUrl="YesNo"
+                                            [selectedText]="undefined"
+                                            [displaySelect]="undefined"
+                                            formControlName="isEsyaAmbarda"
+                                            [form]="baseForm">Eşya Ambarda Mı
+                      </dn-select2-container>
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                      <dn-input formControlName="ozetBeyanNumarasi" [form]="baseForm">Özet Beyan No</dn-input>
+                    </div>
+                  </div>
+                </fieldset>
+                <fieldset>
+                  <div class="form-row form-group no-margin-bottom" style="margin-left: -16px;">
+                    <div class="col-sm-12 col-md-4">
+                      <dn-input formControlName="tasimaSatiriNo" [form]="baseForm">Taşıma Satır No</dn-input>
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                      <dn-input formControlName="ambarKodu" [form]="baseForm">
+                        Antrepo Kodu
+                      </dn-input>
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                      <dn-input formControlName="tasimaSenediNumarasi" [form]="baseForm">Taşıma Senedi No</dn-input>
+                    </div>
+                  </div>
+                </fieldset>
+                <fieldset>
+                  <div class="form-row form-group no-margin-bottom" style="margin-left: -16px;">
+                    <div class="col-sm-12 col-md-4">
+                      <dn-input formControlName="acilacakKapSayisi" [form]="baseForm">Açılacak Kap Sayısı</dn-input>
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                      <button class="btn" type="button" style="float: right; margin-right: 13px;"
+                              [disabled]="!baseForm.valid"
+                              (click)="onSubmit()">
+                        <i [ngClass]="isEdit ? 'fa fa-edit':'fa fa-save'"></i>
+                        {{isEdit ? 'Güncelle' : 'Kaydet'}}
+                      </button>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+              <!--(click)="addSatir(baseForm.getRawValue())">-->
+
+              <table class="table table-bordered" [formArrayName]="formArrName">
+                <thead>
+                <tr>
+                  <th align="center" style="width: 40px; text-align: center">İşlem</th>
+                  <th align="center" style="text-align: center">Açma Şekli</th>
+                  <th align="center" style="text-align: center">Özet Beyan No</th>
+                  <th align="center" style="text-align: center">Taşıma Senedi No</th>
+                  <th align="center" style="text-align: center">Taşıma Senedi Satır No</th>
+                  <th align="center" style="text-align: center">Açılacak Kap Sayısı</th>
+                  <th align="center" style="text-align: center">Ambar Durumu</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr *ngFor="let row of getControl().controls; let i=index"
+                    [formGroupName]="i"
+                    (click)="setClickedRow(i)" [class.active]="i == selectedRow">
+                  <td>
+                    <button (click)="onRemove(i)" type="button" class="btn btn-xs  btn-danger txt-color-white"><i
+                      class="fa fa-trash-o"></i></button>
+                  </td>
+                  <td>{{getEnumValue(row.get('ozetBeyanAcmaSekli').value)}}</td>
+                  <td>{{row.get('ozetBeyanNumarasi').value}}</td>
+                  <td>{{row.get('tasimaSenediNumarasi').value}}</td>
+                  <td>{{row.get('tasimaSatiriNo').value}}</td>
+                  <td>{{row.get('acilacakKapSayisi').value}}</td>
+                  <td>{{getEnumValue(row.get('isEsyaAmbarda').value)}}</td>
+                </tr>
+                </tbody>
+              </table>
+
+              <div class="clearfix"></div>
+            </form>
+            <div class="form-actions" style="margin: 0px;">
+            </div>
+
+          </div>
+        </div>
+      </dn-widget>
+    </article>
+  </div>
+
+</div>
+
+<pre *ngIf="gtbConst.config.debugState">{{baseForm.getRawValue() | json}}</pre>

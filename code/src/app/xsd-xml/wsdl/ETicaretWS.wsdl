@@ -1,0 +1,72 @@
+<wsdl:definitions name="ETicaretHizmeti" targetNamespace="http://tempuri.org/"
+                  xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract"
+                  xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+                  xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/"
+                  xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org/"
+                  xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing"
+                  xmlns:wsa10="http://www.w3.org/2005/08/addressing"
+                  xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata"
+                  xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy"
+                  xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+                  xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy"
+                  xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+                  xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <wsdl:types>
+    <xs:schema elementFormDefault="qualified" targetNamespace="http://GumrukETApp.RequestSignedMessage"
+               xmlns:tns="http://GumrukETApp.RequestSignedMessage" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="Root">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element maxOccurs="1" minOccurs="0" name="RequestMessage" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+    <xs:schema elementFormDefault="qualified" targetNamespace="http://GumrukETApp.OutputMessageSchema"
+               xmlns:tns="http://GumrukETApp.OutputMessageSchema" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="OutputMessage">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element maxOccurs="1" minOccurs="0" name="Record">
+              <xs:complexType mixed="true">
+                <xs:sequence>
+                  <xs:any/>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="ETicaretSoapIn">
+    <wsdl:part element="q1:Root" name="parameters" xmlns:q1="http://GumrukETApp.RequestSignedMessage"/>
+  </wsdl:message>
+  <wsdl:message name="ETicaretSoapOut">
+    <wsdl:part element="q2:OutputMessage" name="parameters" xmlns:q2="http://GumrukETApp.OutputMessageSchema"/>
+  </wsdl:message>
+  <wsdl:portType name="GumrukETApp_ETOrch_ReceiveInpPort">
+    <wsdl:operation name="MesajGonder">
+      <wsdl:input message="tns:ETicaretSoapIn" name="ETicaretSoapIn" wsaw:Action="MesajGonder"/>
+      <wsdl:output message="tns:ETicaretSoapOut" name="ETicaretSoapOut" wsaw:Action="MesajGonder"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_GumrukETApp_ETOrch_ReceiveInpPort" type="tns:GumrukETApp_ETOrch_ReceiveInpPort">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="MesajGonder">
+      <soap:operation soapAction="MesajGonder" style="document"/>
+      <wsdl:input name="ETicaretSoapIn">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="ETicaretSoapOut">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ETicaretHizmeti">
+    <wsdl:port binding="tns:BasicHttpBinding_GumrukETApp_ETOrch_ReceiveInpPort"
+               name="BasicHttpBinding_GumrukETApp_ETOrch_ReceiveInpPort">
+      <soap:address location="http://ws.gtb.gov.tr:8080/EXT/Gumruk/EGE/Provider/ETicaretWS"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

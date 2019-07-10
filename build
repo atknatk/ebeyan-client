@@ -1,0 +1,58 @@
+NPM_MODULE_DIRECTORY=node_modules
+ARTIFACT_DIRECTORY=artifacts
+version=$1
+
+echo 'Version :' $version
+
+cd code
+
+if [ -d "$NPM_MODULE_DIRECTORY" ]; then
+    echo 'dist folder was removing'
+    rm -rf dist
+    echo 'dist folder was removed'
+else
+  echo 'dist folder not found'
+fi
+
+if [ -d "$ARTIFACT_DIRECTORY" ]; then
+    mkdir $ARTIFACT_DIRECTORY/$version
+else
+    mkdir $ARTIFACT_DIRECTORY
+    mkdir $ARTIFACT_DIRECTORY/$version
+fi
+
+pwd
+npm install
+
+echo 'executing ng localprod'
+npm run build:localprod
+echo 'localprod was succesfully'
+
+sed -i -e "s/{Version}/$version/g" dist/index.html
+sed -i -e "s/0.0.1/$version/g"  $ARTIFACT_DIRECTORY/$version/app/package.json
+
+echo 'electron is creating'
+cp -r electron-builder/* $ARTIFACT_DIRECTORY/$version
+cp -r dist/* $ARTIFACT_DIRECTORY/$version/app
+cd $ARTIFACT_DIRECTORY/$version/app
+#npm i
+cd ../
+#npm i
+#npm run dist
+cd ../../
+#rm -rf $ARTIFACT_DIRECTORY/$version/app $ARTIFACT_DIRECTORY/$version/build $ARTIFACT_DIRECTORY/$version/package.json
+#tar -zcvf gtb_client_win-$version.tar.gz $ARTIFACT_DIRECTORY/$version/dist/win-*
+tar -zcvf gtb_client_win-$version.tar.gz $ARTIFACT_DIRECTORY/$version/*
+mv gtb_client_win-$version.tar.gz $ARTIFACT_DIRECTORY/$version
+rm -rf $ARTIFACT_DIRECTORY/$version/app $ARTIFACT_DIRECTORY/$version/build $ARTIFACT_DIRECTORY/$version/package.json $ARTIFACT_DIRECTORY/$version/electron-build.bat
+#rm -rf $ARTIFACT_DIRECTORY/$version/dist/win-*
+echo 'electron was created'
+
+
+echo 'romeving publish folder from nodejs server'
+rm -rf /var/www/html/gtbebeyan/*
+#echo 'romeved publish folder from nodejs server'
+
+#echo 'publishing'
+cp -r dist/* /var/www/html/gtbebeyan/
+#echo 'published'

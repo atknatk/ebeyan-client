@@ -1,0 +1,272 @@
+<div id="content">
+  <div class="row">
+    <div class="col-sm-12 col-md-12">
+      <!-- Widget ID (each widget will need unique ID)-->
+      <dn-widget color="blueDark" [colorbutton]="false" [editbutton]="false" id="ncts-widget">
+
+        <header>
+          <div class="jarviswidget-ctrls" role="menu">
+            <ncts-no-label [idNcts]="idNctsBeyan"></ncts-no-label>
+          </div>
+          <span class="widget-icon"><i class="fa fa-truck"></i></span>
+          <h2>NCTS Hareket Yanıtı</h2>
+        </header>
+        <div>
+          <div class="widget-body">
+            <form [formGroup]="nctsForm" class="form-horizontal" style="background-color: white">
+              <div class="row">
+                <fieldset>
+                  <!--left side-->
+                  <div class="col-sm-12 col-md-6" style="margin-right: -13px;">
+                    <fieldset class="dn-title-fieldset">
+                      <legend class="dn-title-legend">
+                        Varışa ulaşmayan hareket hakkında bilgi (CC141A)
+                      </legend>
+                      <fieldset>
+                        <div class="no-margin-bottom no-padding-right col-md-6">
+                          <dn-input [form]="nctsForm"
+                                    formControlName="mrn">MRN
+                          </dn-input>
+                        </div>
+                      </fieldset>
+                    </fieldset>
+                    <fieldset class="dn-title-fieldset">
+                      <legend class="dn-title-legend"></legend>
+                      <fieldset>
+                        <div class="no-margin-bottom no-padding-right col-md-6">
+                          <dn-input [form]="nctsForm"
+                                    formControlName="tin">TIN
+                          </dn-input>
+                        </div>
+                      </fieldset>
+                      <fieldset>
+                        <div class="no-margin-bottom no-padding-right col-md-12">
+                          <dn-input [form]="nctsForm"
+                                    [labelRow]="2"
+                                    [inputRow]="10"
+                                    formControlName="tinAd">TIN Ad
+                          </dn-input>
+                        </div>
+                      </fieldset>
+                      <fieldset>
+                        <div class="no-margin-bottom no-padding-right col-md-12">
+                          <dn-input [form]="nctsForm"
+                                    [labelRow]="2"
+                                    [inputRow]="10"
+                                    formControlName="sokakVeNo">Sokak ve No
+                          </dn-input>
+                        </div>
+                      </fieldset>
+                      <fieldset>
+                        <div class="no-margin-bottom no-padding-right col-md-6">
+                          <dn-input [form]="nctsForm"
+                                    formControlName="postaKodu">Posta Kodu
+                          </dn-input>
+                        </div>
+                        <div class="no-margin-bottom no-padding-right col-md-6">
+                          <dn-input [form]="nctsForm"
+                                    formControlName="sehir">Şehir
+                          </dn-input>
+                        </div>
+                      </fieldset>
+
+                      <fieldset>
+                        <div class="no-margin-bottom no-padding-right col-md-6">
+                          <dn-select2-container [form]="nctsForm"
+                                                serviceUrl="NctsUlkeKod"
+                                                formControlName="ulke">Ülke Kodu
+                          </dn-select2-container>
+                        </div>
+                        <div class="no-margin-bottom no-padding-right col-md-6">
+                          <dn-select2-container [form]="nctsForm"
+                                                serviceUrl="dil"
+                                                formControlName="dil">Dil Kodu
+                          </dn-select2-container>
+                        </div>
+                      </fieldset>
+
+                    </fieldset>
+                    <fieldset class="dn-title-fieldset">
+                      <legend class="dn-title-legend">
+                        Hareket gümrük idaresinin yetkili makamı
+                      </legend>
+                      <fieldset>
+                        <div class="no-margin-bottom no-padding-right col-md-6">
+                          <dn-select2-container [form]="nctsForm"
+                                                serviceUrl="gumrukIdaresi"
+                                                formControlName="hareketGumrukIdaresiYetkiliMakami">Kod
+                          </dn-select2-container>
+                        </div>
+                        <div class="no-margin-bottom no-padding-right col-md-6">
+                          <!--   <dn-select2-container [form]="nctsForm"
+                                                   serviceUrl="gumrukIdaresi"
+                                                   [labelRow]="0"
+                                                   formControlName="TemsilIdaresiGumrukIdaresi">Kod
+                             </dn-select2-container>-->
+                        </div>
+                      </fieldset>
+                    </fieldset>
+                    <fieldset class="dn-title-fieldset">
+                      <legend class="dn-title-legend">
+                        (Temsil idaresi) gümrük idaresi
+                      </legend>
+                      <fieldset>
+                        <div class="no-margin-bottom no-padding-right col-md-6">
+                          <dn-select2-container [form]="nctsForm"
+                                                serviceUrl="gumrukIdaresi"
+                                                formControlName="temsilIdaresiGumrukIdaresi">Kod
+                          </dn-select2-container>
+                        </div>
+                        <div class="no-margin-bottom no-padding-right col-md-6">
+                          <!-- <dn-input [form]="nctsForm"
+                                     [labelRow]="0"
+                                     formControlName="temp">Kod
+                           </dn-input>-->
+                        </div>
+                      </fieldset>
+                    </fieldset>
+
+                  </div>
+                  <!--right side-->
+                  <div class="col-sm-12 col-md-6" style="margin-left: -13px;padding-right: 0px;">
+                    <fieldset class="dn-title-fieldset">
+                      <legend class="dn-title-legend">
+                        Varışa ulaşmayan hareket hakkında bilgi (CC141A)
+                      </legend>
+                      <fieldset>
+                        <div class="no-margin-bottom no-padding-right col-md-12">
+                          <dn-select2-container [form]="nctsForm"
+                                                [selectedText]="undefined"
+                                                [displaySelect]="undefined"
+                                                serviceUrl="YesNo"
+                                                [inputRow]="4"
+                                                formControlName="tc11GumrukTarafindanDagitildi">TC11 gümrük tarafından
+                            dağıtıldı
+                          </dn-select2-container>
+                        </div>
+                      </fieldset>
+                      <fieldset>
+                        <div class="no-margin-bottom no-padding-right col-md-12">
+                          <dn-input [form]="nctsForm"
+                                    [mask]="'dd/mm/yyyy'"
+                                    [inputRow]="4"
+                                    formControlName="tarih">Tarih
+                          </dn-input>
+                        </div>
+                      </fieldset>
+                      <fieldset>
+                        <div class="no-margin-bottom no-padding-right col-md-12">
+                          <dn-textarea [form]="nctsForm"
+                                       [rows]="3"
+                                       formControlName="bilgiMetni">Bilgi Metni
+                          </dn-textarea>
+                        </div>
+                      </fieldset>
+                      <fieldset>
+                        <div class="no-margin-bottom margin-top-10 no-padding-right col-md-12">
+                          <dn-select2-container [form]="nctsForm"
+                                                [inputRow]="4"
+                                                serviceUrl="dil"
+                                                formControlName="arastirmaDil">Dil
+                          </dn-select2-container>
+                        </div>
+                      </fieldset>
+                      <fieldset>
+                        <div class="no-margin-bottom no-padding-right col-md-12">
+                          <dn-select2-container [form]="nctsForm"
+                                                [selectedText]="undefined"
+                                                [displaySelect]="undefined"
+                                                serviceUrl="YesNo"
+                                                [inputRow]="4"
+                                                formControlName="isMevcutBilgi">(Kağıt üzerinde) mevcut bilgi
+                          </dn-select2-container>
+                        </div>
+                      </fieldset>
+                    </fieldset>
+                    <fieldset class="dn-title-fieldset">
+                      <legend class="dn-title-legend">
+                        (Gerçek Alıcı) yükümlü
+                      </legend>
+                      <fieldset>
+                        <div class="no-margin-bottom no-padding-right col-md-6">
+                          <dn-input [form]="nctsForm"
+                                    formControlName="yukumluTin">TIN
+                          </dn-input>
+                        </div>
+                      </fieldset>
+                      <fieldset>
+                        <div class="no-margin-bottom no-padding-right col-md-12">
+                          <dn-input [form]="nctsForm"
+                                    [labelRow]="2"
+                                    [inputRow]="10"
+                                    formControlName="yukumluTinAd">TIN Ad
+                          </dn-input>
+                        </div>
+                      </fieldset>
+                      <fieldset>
+                        <div class="no-margin-bottom no-padding-right col-md-12">
+                          <dn-input [form]="nctsForm"
+                                    [labelRow]="2"
+                                    [inputRow]="10"
+                                    formControlName="yukumluSokakVeNo">Sokak ve No
+                          </dn-input>
+                        </div>
+                      </fieldset>
+                      <fieldset>
+                        <div class="no-margin-bottom no-padding-right col-md-6">
+                          <dn-input [form]="nctsForm"
+                                    formControlName="yukumluPostaKodu">Posta Kodu
+                          </dn-input>
+                        </div>
+                        <div class="no-margin-bottom no-padding-right col-md-6">
+                          <dn-input [form]="nctsForm"
+                                    formControlName="yukumluSehir">Şehir
+                          </dn-input>
+                        </div>
+                      </fieldset>
+
+                      <fieldset>
+                        <div class="no-margin-bottom no-padding-right col-md-6">
+                          <dn-select2-container [form]="nctsForm"
+                                                serviceUrl="nctsUlkeKod"
+                                                formControlName="yukumluUlke">Ülke Kodu
+                          </dn-select2-container>
+                        </div>
+                        <div class="no-margin-bottom no-padding-right col-md-6">
+                          <dn-select2-container [form]="nctsForm"
+                                                serviceUrl="dil"
+                                                formControlName="yukumluDil">Dil Kodu
+                          </dn-select2-container>
+                        </div>
+                      </fieldset>
+
+                    </fieldset>
+
+                  </div>
+                </fieldset>
+              </div>
+              <div class="form-actions">
+                <div class="row">
+                  <div class="col-md-12">
+                    <button class="btn btn-default" type="button" (click)="clearForm()">
+                      <i class="fa fa-eraser"></i>
+                      Temizle
+                    </button>
+                    <button class="btn" type="button" (click)="onSubmit()" [disabled]="!nctsForm.valid">
+                      <i [ngClass]="isEdit ? 'fa fa-edit':'fa fa-save'"></i>
+                      {{isEdit ? 'Güncelle':'Kaydet'}}
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </dn-widget>
+    </div>
+  </div>
+</div>
+
+
+<pre *ngIf="gtbConst.config.debugState">{{nctsForm.getRawValue() | json}}</pre>

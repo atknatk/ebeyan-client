@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  targetNamespace="http://tempuri.org">
+  <xs:schema attributeFormDefault="qualified"
+             xmlns:ax21="http://tempuri.org"
+             elementFormDefault="qualified" targetNamespace="http://tempuri.org">
+    <xs:element name="IhracatDosya_Olustur">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element minOccurs="0" name="sServiceUser" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="sServicePass" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="beyanBilgi" nillable="true" type="ax21:BeyanBilgi"/>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:element>
+    <xs:element name="IhracatDosya_OlusturResponse">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" nillable="true" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <xs:schema attributeFormDefault="qualified" elementFormDefault="qualified"
+             targetNamespace="http://ent.eti.havelsan.com/xsd">
+    <xs:complexType name="BeyanBilgi">
+      <xs:sequence>
+        <xs:element minOccurs="0" name="beyanBilgi" nillable="true" type="ax21:BeyannameBilgiBEAN"/>
+      </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="BeyannameBilgiBEAN">
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ACIKLAMALAR" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="ALICI_SATICI_ILISKI" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="AMBALAJ" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="ANTREPO_KODU" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="AY" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="BANKA_KODU" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="BASIT_USUL" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="BIRLIK_KODU" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="BRLK_KAYIT_NUM" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="BRLK_KRIPTO_NUM" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="CIKIS_ARAC_KIM" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="CIKIS_ARAC_TIP" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="CIKIS_ARAC_ULKE" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="ESYA_BULNDGU_YER" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="GDCGI_SEVK_ULKE" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="GIDECEGI_ULKE" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="GIRIS_GUMRUK_IDARESI" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="GUMRUK" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="ISLEM_NITELIK" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="IS_TAKIP_KODU" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="KAP_ADEDI" type="xs:int"/>
+        <xs:element minOccurs="0" name="KONTEYNER" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="KULLANICIADI" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="KULLANICI_KODU" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="ODEME" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="ODEME_SEKLI" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="REFERANS_NO" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="REFID" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="REJIM" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="SIFRE" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="SINIR_ARAC_KIMLIK" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="SINIR_ARAC_TIP" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="SINIR_ARAC_ULKE" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="SINIR_TASIMA_SEKLI" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="TASARLANAN_GUZERGAH" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="TELAFI_EDICI_VERGI" nillable="true" type="xs:decimal"/>
+        <xs:element minOccurs="0" name="TESLIM_SEKLI" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="TESLIM_YERI" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="TICARET_ULKESI" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="TIRKNTYNRSAYISI" type="xs:int"/>
+        <xs:element minOccurs="0" name="TOPLAM_FATURA" nillable="true" type="xs:decimal"/>
+        <xs:element minOccurs="0" name="TOPLAM_FATURA_DOVIZI" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="VARIS_GUMRUK_IDARESI" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="VERGI_TURU" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="VERGI_TUTARI" nillable="true" type="xs:decimal"/>
+        <xs:element minOccurs="0" name="YUKLEME_BOSALTMA_YERI" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="YUK_BELGELERI_SAYISI" type="xs:int"/>
+        <xs:element minOccurs="0" name="dokuman" nillable="true" type="ax21:Dokumanlar"/>
+        <xs:element minOccurs="0" name="firmaBilgi" nillable="true" type="ax21:FirmaBilgi"/>
+        <xs:element minOccurs="0" name="kalem" nillable="true" type="ax21:Kalemler"/>
+        <xs:element minOccurs="0" name="soruCevaplar" nillable="true" type="ax21:SoruCevap"/>
+        <xs:element minOccurs="0" name="vergi" nillable="true" type="ax21:Vergiler"/>
+      </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="Dokumanlar">
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" minOccurs="0" name="dokumanlar" nillable="true" type="ax21:DokumanlarBEAN"/>
+      </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="DokumanlarBEAN">
+      <xs:sequence>
+        <xs:element minOccurs="0" name="BELGE_TARIHI" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="DOGRULAMA" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="KALEM_NO" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="KOD" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="REFERANS" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="VIZE_TARIHI" nillable="true" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="FirmaBilgi">
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" minOccurs="0" name="firmalar" nillable="true" type="ax21:FirmaBilgiBEAN"/>
+      </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="FirmaBilgiBEAN">
+      <xs:sequence>
+        <xs:element minOccurs="0" name="NO" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="TIP" nillable="true" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="Kalemler">
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" minOccurs="0" name="kalemler" nillable="true" type="ax21:KalemlerBEAN"/>
+      </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="KalemlerBEAN">
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ACIKLAMA_44" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="ADEDI" type="xs:int"/>
+        <xs:element minOccurs="0" name="BRUT_AGIRLIK" nillable="true" type="xs:decimal"/>
+        <xs:element minOccurs="0" name="CINSI" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="DOKUMANLAR_EDI" nillable="true" type="ax21:DokumanlarEDI"/>
+        <xs:element minOccurs="0" name="EDINO" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="FATURA_MIKTARI" nillable="true" type="xs:decimal"/>
+        <xs:element minOccurs="0" name="GTIP" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="IMALATCI_FIRMA_BILGISI" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="IMALATCI_TIPI" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="ISTATISTIKI_MIKTAR" nillable="true" type="xs:decimal"/>
+        <xs:element minOccurs="0" name="KALEM_CIF_BF" nillable="true" type="xs:decimal"/>
+        <xs:element minOccurs="0" name="KALEM_CIF_TUTAR" nillable="true" type="xs:decimal"/>
+        <xs:element minOccurs="0" name="KALEM_FOB_BF" nillable="true" type="xs:decimal"/>
+        <xs:element minOccurs="0" name="KALEM_SIRA_NO" type="xs:int"/>
+        <xs:element minOccurs="0" name="KATEGORI" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="KONTEYNER_BILGI" nillable="true" type="ax21:Konteyner"/>
+        <xs:element minOccurs="0" name="KULLANILMIS_ESYA" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="MAHRECE_IADE" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="MARKA" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="MARKA_ADI" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="MARKA_TESCIL_NO" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="MARKA_TURU" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="MENSEI_ULKE" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="MIKTAR" nillable="true" type="xs:decimal"/>
+        <xs:element minOccurs="0" name="MIKTAR_BIRIMI" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="MUAFIYETLER_1" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="MUAFIYETLER_2" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="NET_AGIRLIK" nillable="true" type="xs:decimal"/>
+        <xs:element minOccurs="0" name="NUMARA" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="REFERANS_NO" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="SATIR_NO" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="TAMAMLAYICI_OLCU_BIRIMI" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="TICARI_TANIMI" nillable="true" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="DokumanlarEDI">
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" minOccurs="0" name="dokumanlarEDI" nillable="true"
+                    type="ax21:DokumanlarEDIBEAN"/>
+      </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="DokumanlarEDIBEAN">
+      <xs:sequence>
+        <xs:element minOccurs="0" name="BELGE_TARIHI" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="DOGRULAMA" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="KOD" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="REFERANS" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="TIP" nillable="true" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="Konteyner">
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" minOccurs="0" name="konteyner" nillable="true" type="ax21:KonteynerBEAN"/>
+      </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="KonteynerBEAN">
+      <xs:sequence>
+        <xs:element minOccurs="0" name="KONTEYNER_NO" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="ULKE_NO" nillable="true" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="SoruCevap">
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" minOccurs="0" name="sorularCevaplar" nillable="true"
+                    type="ax21:SoruCevapBEAN"/>
+      </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="SoruCevapBEAN">
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CEVAP" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="KALEM_NO" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="SORU_NO" nillable="true" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="Vergiler">
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" minOccurs="0" name="vergiler" nillable="true" type="ax21:VergilerBEAN"/>
+      </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="VergilerBEAN">
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ACIKLAMA" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="KALEM_NO" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="KOD" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="MIKTAR" nillable="true" type="xs:decimal"/>
+        <xs:element minOccurs="0" name="ODEME_SEKLI" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="ORAN" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="VERGI_MATRAHI" nillable="true" type="xs:decimal"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:schema>
+
+</definitions>

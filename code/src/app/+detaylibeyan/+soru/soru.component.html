@@ -1,0 +1,49 @@
+<dn-loading [show]="loading">
+  <article id="dn-table-widget" class="col-sm-12">
+    <dn-widget color="blueDark" [widgetId]="'dokuman-widget'">
+      <header>
+        <div class="jarviswidget-ctrls" role="menu">
+          <detaylibeyan-no-label [idDetayliBeyan]="idDetayliBeyan"></detaylibeyan-no-label>
+        </div>
+        <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+        <h2>Soru Listesi</h2>
+      </header>
+      <div>
+        <div class="widget-body no-padding dn-datatable-widget-body" style="min-height: 45px;">
+
+
+          <table class="table table-bordered">
+            <thead>
+            <tr>
+              <th align="center" style="text-align: center">Cevaplanan</th>
+              <th align="center" style="text-align: center">Soru No</th>
+              <th align="center" style="text-align: center">Açıklama</th>
+              <th align="center" style="text-align: center">Evet</th>
+              <th align="center" style="text-align: center">Hayır</th>
+              <th align="center" style="width: 92px; text-align: center">Cevap</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let row of soruList; let i=index">
+              <td class="text-center">{{row.cevap}}</td>
+              <td class="text-center">{{row.kod}}</td>
+              <td>{{row.aciklama}}</td>
+              <td class="text-center"><span *ngFor="let evet of row.evetDetayliBeyanSoruIstenenDokumanList;">{{evet.idDokumanKod}}</span>
+              </td>
+              <td class="text-center"><span *ngFor="let hayir of row.hayirDetayliBeyanSoruIstenenDokumanList;">{{hayir.idDokumanKod}}</span>
+              </td>
+              <td class="text-center" *ngIf="row.soruTip == 'Soru'">
+                <span (click)="reply(row,'EVET')" class="label label-info dn-cursor-pointer">Evet</span>
+                <span (click)="reply(row,'HAYIR')" class="label label-success dn-cursor-pointer">Hayır</span>
+              </td>
+              <td class="text-center" *ngIf="row.soruTip != 'Soru'">
+                <span (click)="reply(row,'TAMAM')" class="label label-info dn-cursor-pointer">Tamam</span>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </dn-widget>
+  </article>
+</dn-loading>

@@ -1,0 +1,68 @@
+
+:host >>> table{
+  margin-bottom: 0px !important;
+}
+
+:host >>> .table>tbody>tr>td, .table>tbody>tr>th{
+  padding: 0 !important;
+}
+
+
+:host >>> .simple-selection .select2-selected {
+  padding-top: 4px !important;
+}
+
+:host >>> a>.select2-selection-container{
+  margin-bottom: 0px !important;
+}
+
+:host >>> .vergi-table-container {
+  width: calc((100% - 60px) / 2) !important;
+  padding-right: 1px;
+  padding-left: 1px;
+}
+
+:host >>> .vergi-islem-container {
+  width: 50px !important;
+  padding-right: 1px;
+  padding-left: 1px;
+}
+
+:host >>> dn-select2-container>fieldset>div>label{
+  margin-top: 5px;
+}
+
+
+:host >>> .form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+  background-color: transparent !important;
+  cursor: pointer!important;;
+}
+
+:host >>> .select2-container.readonly ul {
+  background-color: transparent !important;
+  cursor: pointer !important;
+}
+
+
+:host >>> #gumruk-table {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+:host >>> #gumruk-table>tbody>tr {
+  cursor: pointer !important;
+}
+:host >>> tr.selected {
+  background-color: lightgrey;
+}
+
+
+:host >>> .table>tbody>tr.active>td, .table>tbody>tr.active>th, .table>tbody>tr>td.active, .table>tbody>tr>th.active, .table>tfoot>tr.active>td, .table>tfoot>tr.active>th, .table>tfoot>tr>td.active, .table>tfoot>tr>th.active, .table>thead>tr.active>td, .table>thead>tr.active>th, .table>thead>tr>td.active, .table>thead>tr>th.active {
+  background-color: paleturquoise;
+}
+
+.table-hover>tbody>tr:hover {
+  background-color: #ecf3f8;
+}

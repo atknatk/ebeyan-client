@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2006 sp2 U (http://www.altova.com) by xmlspy_ent_2006_1 - - (INTRASOFT International S.A.) -->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" version="1.0">
+	<xsd:element name="AckReqMES16" type="CL27"/>
+	<xsd:element name="DatOfPreMES9">
+		<xsd:simpleType>
+			<xsd:list itemType="Date_6_8"/>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="TimOfPreMES10" type="Time"/>
+	<xsd:simpleType name="CL27">
+		<xsd:restriction base="xsd:nonNegativeInteger">
+			<xsd:enumeration value="0"/>
+			<xsd:enumeration value="1"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="Date_8">
+		<xsd:restriction base="xsd:nonNegativeInteger">
+			<xsd:pattern value="[1-2][0-9]{3}[0][1-9][0][1-9]"/>
+			<xsd:pattern value="[1-2][0-9]{3}[0][1-9][1|2][0-9]"/>
+			<xsd:pattern value="[1-2][0-9]{3}[0][1-9][3][0|1]"/>
+			<xsd:pattern value="[1-2][0-9]{3}[1][0-2][0][1-9]"/>
+			<xsd:pattern value="[1-2][0-9]{3}[1][0-2][1|2][0-9]"/>
+			<xsd:pattern value="[1-2][0-9]{3}[1][0-2][3][0|1]"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="Time_Date_12">
+		<xsd:restriction base="xsd:nonNegativeInteger">
+			<xsd:pattern value="[1-2][0-9]{3}[0][1-9][0][1-9][0-1]{1}[0-9]{1}[0-5]{1}[0-9]{1}"/>
+			<xsd:pattern value="[1-2][0-9]{3}[0][1-9][1|2][0-9][0-1]{1}[0-9]{1}[0-5]{1}[0-9]{1}"/>
+			<xsd:pattern value="[1-2][0-9]{3}[0][1-9][3][0|1][0-1]{1}[0-9]{1}[0-5]{1}[0-9]{1}"/>
+			<xsd:pattern value="[1-2][0-9]{3}[1][0-2][0][1-9][0-1]{1}[0-9]{1}[0-5]{1}[0-9]{1}"/>
+			<xsd:pattern value="[1-2][0-9]{3}[1][0-2][1|2][0-9][0-1]{1}[0-9]{1}[0-5]{1}[0-9]{1}"/>
+			<xsd:pattern value="[1-2][0-9]{3}[1][0-2][3][0|1][0-1]{1}[0-9]{1}[0-5]{1}[0-9]{1}"/>
+			<xsd:pattern value="[1-2][0-9]{3}[0][1-9][0][1-9][2]{1}[0-3]{1}[0-5]{1}[0-9]{1}"/>
+			<xsd:pattern value="[1-2][0-9]{3}[0][1-9][1|2][0-9][2]{1}[0-3]{1}[0-5]{1}[0-9]{1}"/>
+			<xsd:pattern value="[1-2][0-9]{3}[0][1-9][3][0|1][2]{1}[0-3]{1}[0-5]{1}[0-9]{1}"/>
+			<xsd:pattern value="[1-2][0-9]{3}[1][0-2][0][1-9][2]{1}[0-3]{1}[0-5]{1}[0-9]{1}"/>
+			<xsd:pattern value="[1-2][0-9]{3}[1][0-2][1|2][0-9][2]{1}[0-3]{1}[0-5]{1}[0-9]{1}"/>
+			<xsd:pattern value="[1-2][0-9]{3}[1][0-2][3][0|1][2]{1}[0-3]{1}[0-5]{1}[0-9]{1}"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="Date_6_8">
+		<xsd:restriction base="xsd:nonNegativeInteger">
+			<xsd:pattern value="[1-2][0-9]{3}[0][1-9][0][1-9]"/>
+			<xsd:pattern value="[1-2][0-9]{3}[0][1-9][1|2][0-9]"/>
+			<xsd:pattern value="[1-2][0-9]{3}[0][1-9][3][0|1]"/>
+			<xsd:pattern value="[1-2][0-9]{3}[1][0-2][0][1-9]"/>
+			<xsd:pattern value="[1-2][0-9]{3}[1][0-2][1|2][0-9]"/>
+			<xsd:pattern value="[1-2][0-9]{3}[1][0-2][3][0|1]"/>
+			<xsd:pattern value="[0-9]{2}[0][1-9][0][1-9]"/>
+			<xsd:pattern value="[0-9]{2}[0][1-9][1|2][0-9]"/>
+			<xsd:pattern value="[0-9]{2}[0][1-9][3][0|1]"/>
+			<xsd:pattern value="[0-9]{2}[1][0-2][0][1-9]"/>
+			<xsd:pattern value="[0-9]{2}[1][0-2][1|2][0-9]"/>
+			<xsd:pattern value="[0-9]{2}[1][0-2][3][0|1]"/>
+			<!-- 8 digits -->
+			<!-- 6 digits -->
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="Time">
+		<xsd:restriction base="xsd:nonNegativeInteger">
+			<xsd:totalDigits value="4"/>
+			<xsd:pattern value="[0-1]{1}[0-9]{1}[0-5]{1}[0-9]{1}"/>
+			<xsd:pattern value="[2]{1}[0-3]{1}[0-5]{1}[0-9]{1}"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:element name="WaiForDisResEXR67" type="CL27"/>
+	<xsd:element name="StaOfTheSeaOKEXR70" type="CL27"/>
+	<xsd:element name="CanIniByCusHEA94" type="CL27"/>
+	<xsd:element name="TesIndMES18" type="CL27"/>
+	<xsd:element name="ConIndHEA96" type="CL27"/>
+	<xsd:element name="ExpFroECMT24" type="CL27"/>
+	<xsd:element name="SimProFlaHEA132" type="CL27"/>
+	<xsd:element name="AlrInNCTCTL29" type="CL27"/>
+	<xsd:element name="IncFlaINC3" type="CL27"/>
+	<xsd:element name="CanDecHEA93" type="CL27"/>
+	<xsd:element name="AmeTypFlaCL628" type="CL27"/>
+	<xsd:element name="NotValForECVLE1" type="CL27"/>
+	<xsd:element name="RelReqHEA105" type="CL27"/>
+	<xsd:element name="BinItiHEA246" type="CL27"/>
+	<xsd:element name="ComConAR211" type="CL27"/>
+	<xsd:element name="EnqAtDesHEA99" type="CL27"/>
+	<xsd:element name="WaiForDisResERS67" type="CL27"/>
+	<xsd:element name="StaOfTheSeaOKERS70" type="CL27"/>
+	<xsd:element name="StaOfTheSeaOKREM19" type="CL27"/>
+	<xsd:element name="TraNotCL630" type="CL27"/>
+	<xsd:element name="NCTRetCopHEA104" type="CL27"/>
+	<xsd:element name="NotValForECCMG2" type="CL27"/>
+	<xsd:element name="NotValForECVLD1" type="CL27"/>
+	<xsd:element name="TraDed34" type="CL27"/>
+	<xsd:element name="Spa55" type="CL27"/>
+	<xsd:element name="PreFla52" type="CL27"/>
+	<xsd:element name="EECTerLim312" type="CL27"/>
+	<xsd:element name="LimValREF239" type="CL27"/>
+	<xsd:element name="LimValCMP22" type="CL27"/>
+	<xsd:element name="LimValVOU748" type="CL27"/>
+	<xsd:element name="ResUseREF240" type="CL27"/>
+	<xsd:element name="ResUseCMP23" type="CL27"/>
+	<xsd:element name="TIRCarREF29" type="CL27"/>
+	<xsd:element name="TIRCarVOU749" type="CL27"/>
+	<xsd:element name="ComConMT26" type="CL27"/>
+	<xsd:element name="ComConGS28" type="CL27"/>
+	<xsd:element name="HarCopGivToPriREF27" type="CL27"/>
+	<xsd:element name="HarCopGivToPriVOU747" type="CL27"/>
+	<xsd:element name="InfAvaFLU1" type="CL27"/>
+	<xsd:element name="ComConNR22" type="CL27"/>
+	<xsd:element name="ConREM65" type="CL27"/>
+	<xsd:element name="UnlComREM66" type="CL27"/>
+	<xsd:element name="InfAvaENQ703" type="CL27"/>
+	<xsd:element name="TCRDelByCusENQ704" type="CL27"/>
+	<xsd:element name="TraHEA1" type="CL27"/>
+	<xsd:element name="EnqEngAtDesENQ708" type="CL27"/>
+	<xsd:element name="MovUnkAtDes707" type="CL27"/>
+	<xsd:element name="FinOrParShiFlaTDD1" type="CL27"/>
+	<!--xsd:element name = "TraCTAutCL625" type = "CL27"/-->
+	<xsd:element name="GuaNotValCAF626" type="CL27"/>
+	<xsd:element name="StoFlaHEA1" type="CL27"/>
+	<xsd:element name="ComConDC27" type="CL27"/>
+	<xsd:element name="ComConSD25" type="CL27"/>
+	<xsd:element name="ConUnlCL130" type="CL27"/>
+	<xsd:element name="EntRejMotCodGOOITEGDS911" type="CL27"/>
+	<xsd:element name="EntRejMotCodHEA102" type="CL27"/>
+	<xsd:element name="RecAccRECOV370" type="CL27"/>
+	<xsd:element name="RecRetCodING8" type="CL27"/>
+	<xsd:element name="SusGooFlaCL624" type="CL27"/>
+	<xsd:element name="TC11DelENQ155" type="CL27"/>
+	<xsd:element name="TraDoc199" type="CL27"/>
+	<xsd:element name="ExtrHEA982" type="CL27"/>
+	<xsd:element name="IncNotCL629" type="CL27"/>
+	<xsd:element name="NotValForECVLE21" type="CL27"/>
+	<xsd:element name="InfOnPapAvaENQ790" type="CL27"/>
+	<xsd:element name="InfPapAvailINF364" type="CL27"/>
+	<xsd:element name="InfPrinAvailENQ147" type="CL27"/>
+	<xsd:element name="CouHolVarHolDat" type="CL27"/>
+	<xsd:element name="SenGooFlaCL763" type="CL27"/>
+	<xsd:element name="AccDatHEA158" type="Date_8"/>
+	<xsd:element name="AmeAccDatTimHEA111" type="Time_Date_12"/>
+	<xsd:element name="AmeRejDatTimHEA112" type="Time_Date_12"/>
+	<xsd:element name="DatTimAmeHEA113" type="Time_Date_12"/>
+	<xsd:element name="DecRegDatTimHEA115" type="Time_Date_12"/>
+	<xsd:element name="DecSubDatTimHEA118" type="Time_Date_12"/>
+	<xsd:element name="DecDatTimHEA114" type="Time_Date_12"/>
+	<xsd:element name="DecDatTimIMP705" type="Time_Date_12"/>
+	<xsd:element name="DecRegDatIMP708" type="Time_Date_12"/>
+	<xsd:element name="AmeAccDatIMP702" type="Time_Date_12"/>
+	<xsd:element name="ExpDatOfArrFIRENT733" type="Time_Date_12"/>
+	<xsd:element name="DecSubDatTimIMP709" type="Time_Date_12"/>
+	<xsd:element name="ExpDatTimFIRENTCUSOFFIMP225" type="Time_Date_12"/>
+	<xsd:element name="DecRejDatTimHEA116" type="Time_Date_12"/>
+	<xsd:element name="RegDatTimHEA125" type="Time_Date_12"/>
+	<xsd:element name="RejDatTimHEA126" type="Time_Date_12"/>
+	<xsd:element name="NotDatTimHEA104" type="Time_Date_12"/>
+	<xsd:element name="DatOfExiPSX1" type="Date_8"/>
+	<xsd:element name="AmeAccDatHEA602" type="Date_8"/>
+	<xsd:element name="DecRegDatHEA1" type="Date_8"/>
+	<xsd:element name="AccDatREF24" type="Date_8"/>
+	<xsd:element name="IssDatHEA186" type="Date_8"/>
+	<xsd:element name="DatLimResHEA144" type="Date_8"/>
+	<xsd:element name="DatLimERS89" type="Date_8"/>
+	<xsd:element name="ManRegDatHEA418" type="Date_8"/>
+	<xsd:element name="ManRejDatHEA419" type="Date_8"/>
+	<xsd:element name="ExiDatHEA1" type="Date_8"/>
+	<xsd:element name="ExtStoDatEXR68" type="Date_8"/>
+	<xsd:element name="AmdDatHEA599" type="Date_8"/>
+	<xsd:element name="ArrDatHEA140" type="Date_8"/>
+	<xsd:element name="ArrNotDatHEA141" type="Date_8"/>
+	<xsd:element name="DateInfRecNonExitExpFOLUP415" type="Date_8"/>
+	<xsd:element name="DatLimERS69" type="Date_8"/>
+	<xsd:element name="DatOfPreHEA1" type="Date_8"/>
+	<xsd:element name="ExiDatFLU1" type="Date_8"/>
+	<xsd:element name="FolUpDatFLU1" type="Date_8"/>
+	<xsd:element name="EndDatINC6" type="Date_8"/>
+	<xsd:element name="EndDatSHP60" type="Date_8"/>
+	<xsd:element name="ArrRejDatHEA142" type="Date_8"/>
+	<xsd:element name="DatOfCanReqHEA147" type="Date_8"/>
+	<xsd:element name="DatOfCanDecHEA146" type="Date_8"/>
+	<xsd:element name="DatOfCanHEA145" type="Date_8"/>
+	<xsd:element name="ExpDatArrHEA701" type="Date_8"/>
+	<xsd:element name="DecDatHEA383" type="Date_8"/>
+	<xsd:element name="RelReqDatHEA154" type="Date_8"/>
+	<xsd:element name="DatOfRelReqRejHEA155" type="Date_8"/>
+	<xsd:element name="ConDatERS14" type="Date_8"/>
+	<xsd:element name="DisNotDatHEA608" type="Date_8"/>
+	<xsd:element name="GuaNotDatHEA727" type="Date_8"/>
+	<xsd:element name="GooRelDatHEA176" type="Date_8"/>
+	<xsd:element name="NCTEntDat25" type="Date_8"/>
+	<xsd:element name="NCTEntDat85" type="Date_8"/>
+	<xsd:element name="ValDat103" type="Date_8"/>
+	<xsd:element name="ValDatREF242" type="Date_8"/>
+	<xsd:element name="InvDatREF232" type="Date_8"/>
+	<xsd:element name="ValDatCMP16" type="Date_8"/>
+	<xsd:element name="InvDatCMP17" type="Date_8"/>
+	<xsd:element name="SeaStaDat60" type="Date_8"/>
+	<xsd:element name="SeaEndDat61" type="Date_8"/>
+	<xsd:element name="VarHolCouHolDat" type="Date_8"/>
+	<xsd:element name="TCCEntDat84" type="Date_8"/>
+	<xsd:element name="DatOfOTSDivArrAdHEA151" type="Date_8"/>
+	<xsd:element name="PerFroQUE2" type="Date_8"/>
+	<xsd:element name="PerToDatQUE3" type="Date_8"/>
+	<xsd:element name="RecNotDatHEA766" type="Date_8"/>
+	<xsd:element name="LocDatUSA4" type="Date_8"/>
+	<xsd:element name="ArrDatUSA5" type="Date_8"/>
+	<xsd:element name="DatOfRelHEA701" type="Date_8"/>
+	<xsd:element name="DatOfRelUSA6" type="Date_8"/>
+	<xsd:element name="LiaLibDatCMP21" type="Date_8"/>
+	<xsd:element name="LiaLibDatREF238" type="Date_8"/>
+	<xsd:element name="DatOfIssREF25" type="Date_8"/>
+	<xsd:element name="DatOfIssVOU745" type="Date_8"/>
+	<xsd:element name="ExpDatREF26" type="Date_8"/>
+	<xsd:element name="ExpDatVOU746" type="Date_8"/>
+	<xsd:element name="UnlDatREM67" type="Date_8"/>
+	<xsd:element name="DecAccDatHEA1" type="Date_8"/>
+	<xsd:element name="WriOffDatHEA619" type="Date_8"/>
+	<xsd:element name="UnlRemRejDatHEA218" type="Date_8"/>
+	<xsd:element name="CanEnqNotDatHEA751" type="Date_8"/>
+	<xsd:element name="DatOfConNotHEA148" type="Date_8"/>
+	<xsd:element name="RecComDatHEA143" type="Date_8"/>
+	<xsd:element name="DateEnqReqENQ140" type="Date_8"/>
+	<xsd:element name="CollDateRECOV369" type="Date_8"/>
+	<xsd:element name="RecComDatRECOV371" type="Date_8"/>
+	<xsd:element name="DatReqNonArrMovHEA149" type="Date_8"/>
+	<xsd:element name="DatOfInfRecOnNonArrMovENQ702" type="Date_8"/>
+	<xsd:element name="DelDatENQ706" type="Date_8"/>
+	<xsd:element name="EnqDatENQ705" type="Date_8"/>
+	<xsd:element name="EnqRemDatENQ710" type="Date_8"/>
+	<xsd:element name="DatOfEnqResHEA765" type="Date_8"/>
+	<xsd:element name="DatOfPasPAS627" type="Date_8"/>
+	<xsd:element name="DatOfUsaCanHEA700" type="Date_8"/>
+	<xsd:element name="AmeRejDatHEA603" type="Date_8"/>
+	<xsd:element name="DisSolNotDatHEA611" type="Date_8"/>
+	<xsd:element name="EnqNotDatHEA615" type="Date_8"/>
+	<xsd:element name="DecRejDatHEA159" type="Date_8"/>
+	<xsd:element name="OpeHouTimFirPerF64" type="Time"/>
+	<xsd:element name="OpeHouTimFirPerT65" type="Time"/>
+	<xsd:element name="OpeHouTimSecPerF67" type="Time"/>
+	<xsd:element name="OpeHouTimSecPerT68" type="Time"/>
+</xsd:schema>

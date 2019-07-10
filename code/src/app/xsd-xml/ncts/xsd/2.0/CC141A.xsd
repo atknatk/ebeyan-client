@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" version="14.00">
+  <!--=========================================-->
+  <!--===== IE141:E_MOV_RSP  -->
+  <!--===== INFORMATION ABOUT NON-ARRIVED MOVEMENT  -->
+  <!--===== NCTS P4 Phase Definition  -->
+  <!--===== DDNTA 12.00  -->
+  <!--===== XSD version v14.00  -->
+  <!--=========================================-->
+  <!--===== Includes =====-->
+  <xs:include schemaLocation="doc.xsd" />
+  <xs:include schemaLocation="complex_types_ncts.xsd" />
+  <xs:include schemaLocation="simple_types_ncts.xsd" />
+  <xs:include schemaLocation="tcl_ncts.xsd" />
+  <xs:include schemaLocation="simple_types.xsd" />
+  <xs:include schemaLocation="tcl.xsd" />
+  <!--===== Root Element =====-->
+  <xs:element name="CC141A" type="CC141AType" />
+  <!--===== Root Element Content =====-->
+  <xs:complexType name="CC141AType">
+    <xs:sequence>
+      <xs:group ref="MESSAGE" />
+      <xs:element name="HEAHEA" type="HEAHEAType">
+        <xs:annotation>
+          <xs:documentation />
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="TRAPRIPC1" type="TRAPRIPC1Type">
+        <xs:annotation>
+          <xs:documentation />
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="CUSOFFCOMAUT" type="CUSOFFCOMAUTType">
+        <xs:annotation>
+          <xs:documentation />
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="CUSOFFPREOFFRES" type="CUSOFFPREOFFRESType" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation />
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="ENQENQ" type="ENQENQType">
+        <xs:annotation>
+          <xs:documentation />
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="CNECNE" type="CNECNEType" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation />
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <!--===== MESSAGE Content =====-->
+  <xs:group name="MESSAGE">
+    <xs:sequence>
+      <xs:element name="SynIdeMES1" type="SyntaxIdentifier">
+        <xs:annotation>
+          <xs:documentation>
+            <doc:description xmlns:doc="http://ncts.dgtaxud.ec/doc" value="Syntax identifier" />
+            <doc:codeList xmlns:doc="http://ncts.dgtaxud.ec/doc" name="SyntaxIdentifier" />
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="SynVerNumMES2" type="SyntaxVersionNumber">
+        <xs:annotation>
+          <xs:documentation>
+            <doc:description xmlns:doc="http://ncts.dgtaxud.ec/doc" value="Syntax version number" />
+            <doc:codeList xmlns:doc="http://ncts.dgtaxud.ec/doc" name="SyntaxVersionNumber" />
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="MesSenMES3" type="Alphanumeric_Max35">
+        <xs:annotation>
+          <xs:documentation>
+            <doc:description xmlns:doc="http://ncts.dgtaxud.ec/doc" value="Message sender" />
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="SenIdeCodQuaMES4" type="Alphanumeric_Max4" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>
+            <doc:description xmlns:doc="http://ncts.dgtaxud.ec/doc" value="Sender identification code qualifier" />
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="MesRecMES6" type="Alphanumeric_Max35">
+        <xs:annotation>
+          <xs:documentation>
+            <doc:description xmlns:doc="http://ncts.dgtaxud.ec/doc" value="Message recipient" />
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="RecIdeCodQuaMES7" type="Alphanumeric_Max4" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>
+            <doc:description xmlns:doc="http://ncts.dgtaxud.ec/doc" value="Recipient identification code qualifier" />
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="DatOfPreMES9" type="Numeric_6">
+        <xs:annotation>
+          <xs:documentation>
+            <doc:description xmlns:doc="http://ncts.dgtaxud.ec/doc" value="Date of preparation" />
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="TimOfPreMES10" type="Numeric_4">
+        <xs:annotation>
+          <xs:documentation>
+            <doc:description xmlns:doc="http://ncts.dgtaxud.ec/doc" value="Time of preparation" />
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="IntConRefMES11" type="Alphanumeric_Max14">
+        <xs:annotation>
+          <xs:documentation>
+            <doc:description xmlns:doc="http://ncts.dgtaxud.ec/doc" value="Interchange control reference" />
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="RecRefMES12" type="Alphanumeric_Max14" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>
+            <doc:description xmlns:doc="http://ncts.dgtaxud.ec/doc" value="Recipient's reference/password" />
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="RecRefQuaMES13" type="Alphanumeric_2" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>
+            <doc:description xmlns:doc="http://ncts.dgtaxud.ec/doc" value="Recipient's reference/password qualifier" />
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="AppRefMES14" type="Alphanumeric_Max14" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>
+            <doc:description xmlns:doc="http://ncts.dgtaxud.ec/doc" value="Application reference" />
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="PriMES15" type="Alpha_1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>
+            <doc:description xmlns:doc="http://ncts.dgtaxud.ec/doc" value="Priority" />
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="AckReqMES16" type="Flag" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>
+            <doc:description xmlns:doc="http://ncts.dgtaxud.ec/doc" value="Acknowledgement request" />
+            <doc:codeList xmlns:doc="http://ncts.dgtaxud.ec/doc" name="Flag" />
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="ComAgrIdMES17" type="Alphanumeric_Max35" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>
+            <doc:description xmlns:doc="http://ncts.dgtaxud.ec/doc" value="Communications agreement id" />
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="TesIndMES18" type="Flag" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>
+            <doc:description xmlns:doc="http://ncts.dgtaxud.ec/doc" value="Test indicator" />
+            <doc:codeList xmlns:doc="http://ncts.dgtaxud.ec/doc" name="Flag" />
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="MesIdeMES19" type="Alphanumeric_Max14">
+        <xs:annotation>
+          <xs:documentation>
+            <doc:description xmlns:doc="http://ncts.dgtaxud.ec/doc" value="Message identification" />
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="MesTypMES20" type="MessageTypes">
+        <xs:annotation>
+          <xs:documentation>
+            <doc:description xmlns:doc="http://ncts.dgtaxud.ec/doc" value="Message type" />
+            <doc:codeList xmlns:doc="http://ncts.dgtaxud.ec/doc" name="MessageTypes" />
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="ComAccRefMES21" type="Alphanumeric_Max35" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>
+            <doc:description xmlns:doc="http://ncts.dgtaxud.ec/doc" value="Common access reference" />
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="MesSeqNumMES22" type="Numeric_Max2" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>
+            <doc:description xmlns:doc="http://ncts.dgtaxud.ec/doc" value="Message sequence number" />
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="FirAndLasTraMES23" type="FirstLast" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>
+            <doc:description xmlns:doc="http://ncts.dgtaxud.ec/doc" value="First and last transfer" />
+            <doc:codeList xmlns:doc="http://ncts.dgtaxud.ec/doc" name="FirstLast" />
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:group>
+  <xs:complexType name="HEAHEAType">
+    <xs:annotation>
+      <xs:documentation />
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="DocNumHEA5" type="MRNType">
+        <xs:annotation>
+          <xs:documentation>
+            <doc:description xmlns:doc="http://ncts.dgtaxud.ec/doc" value="Document/reference number" />
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TRAPRIPC1Type">
+    <xs:annotation>
+      <xs:documentation />
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="NamPC17" type="TradNameType" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>
+            <doc:description xmlns:doc="http://ncts.dgtaxud.ec/doc" value="Name" />
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="StrAndNumPC122" type="StreetNumType" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>
+            <doc:description xmlns:doc="http://ncts.dgtaxud.ec/doc" value="Street and number" />
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="PosCodPC123" type="PostalCodeType" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>
+            <doc:description xmlns:doc="http://ncts.dgtaxud.ec/doc" value="Postal code" />
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="CitPC124" type="CityType" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>
+            <doc:description xmlns:doc="http://ncts.dgtaxud.ec/doc" value="City" />
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="CouPC125" type="CountryCodeType" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>
+            <doc:description xmlns:doc="http://ncts.dgtaxud.ec/doc" value="Country code" />
+            <doc:codeList xmlns:doc="http://ncts.dgtaxud.ec/doc" name="CountryCodesFullList" type="business" />
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="NADLNGPC" type="LanguageCodeType" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>
+            <doc:description xmlns:doc="http://ncts.dgtaxud.ec/doc" value="NAD LNG" />
+            <doc:codeList xmlns:doc="http://ncts.dgtaxud.ec/doc" name="LanguageCodes" type="business" />
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="TINPC159" type="TINType" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>
+            <doc:description xmlns:doc="http://ncts.dgtaxud.ec/doc" value="TIN" />
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="HITPC126" type="Alphanumeric_Max17" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>
+            <doc:description xmlns:doc="http://ncts.dgtaxud.ec/doc" value="Holder ID TIR" />
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ENQENQType">
+    <xs:annotation>
+      <xs:documentation />
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="TC11DelENQ155" type="Flag">
+        <xs:annotation>
+          <xs:documentation>
+            <doc:description xmlns:doc="http://ncts.dgtaxud.ec/doc" value="TC11 delivered by Customs" />
+            <doc:codeList xmlns:doc="http://ncts.dgtaxud.ec/doc" name="Flag" />
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="TC11DelDatENQ143" type="Numeric_8" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>
+            <doc:description xmlns:doc="http://ncts.dgtaxud.ec/doc" value="Delivery date TC11" />
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="InfoEnq148" type="Alphanumeric_Max140" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>
+            <doc:description xmlns:doc="http://ncts.dgtaxud.ec/doc" value="Information text" />
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="InfoEnq148LNG" type="LanguageCodeType" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>
+            <doc:description xmlns:doc="http://ncts.dgtaxud.ec/doc" value="Information text LNG" />
+            <doc:codeList xmlns:doc="http://ncts.dgtaxud.ec/doc" name="LanguageCodes" type="business" />
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="InfOnPapAvaENQ790" type="Flag">
+        <xs:annotation>
+          <xs:documentation>
+            <doc:description xmlns:doc="http://ncts.dgtaxud.ec/doc" value="Information (on paper) available" />
+            <doc:codeList xmlns:doc="http://ncts.dgtaxud.ec/doc" name="Flag" />
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+

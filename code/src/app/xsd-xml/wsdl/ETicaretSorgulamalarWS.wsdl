@@ -1,0 +1,310 @@
+<wsdl:definitions targetNamespace="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:tns="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="AyrilanTasimaSenediSorgula">
+        <s:complexType>
+          <s:sequence>
+            <s:element maxOccurs="1" minOccurs="0" name="kullaniciAdi" type="s:string"/>
+            <s:element maxOccurs="1" minOccurs="0" name="kullaniciSifre" type="s:string"/>
+            <s:element maxOccurs="1" minOccurs="0" name="beyannameNo" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AyrilanTasimaSenediSorgulaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element maxOccurs="1" minOccurs="0" name="AyrilanTasimaSenediSorgulaResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TasimaSenediHatSorgula">
+        <s:complexType>
+          <s:sequence>
+            <s:element maxOccurs="1" minOccurs="0" name="kullaniciAdi" type="s:string"/>
+            <s:element maxOccurs="1" minOccurs="0" name="kullaniciSifre" type="s:string"/>
+            <s:element maxOccurs="1" minOccurs="0" name="beyannameNo" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TasimaSenediHatSorgulaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element maxOccurs="1" minOccurs="0" name="TasimaSenediHatSorgulaResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ETGBMuayeneMemuruSorgula">
+        <s:complexType>
+          <s:sequence>
+            <s:element maxOccurs="1" minOccurs="0" name="kullaniciAdi" type="s:string"/>
+            <s:element maxOccurs="1" minOccurs="0" name="kullaniciSifre" type="s:string"/>
+            <s:element maxOccurs="1" minOccurs="0" name="beyannameNo" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ETGBMuayeneMemuruSorgulaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element maxOccurs="1" minOccurs="0" name="ETGBMuayeneMemuruSorgulaResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GeciciTescildenTescilNoSorgula">
+        <s:complexType>
+          <s:sequence>
+            <s:element maxOccurs="1" minOccurs="0" name="kullaniciAdi" type="s:string"/>
+            <s:element maxOccurs="1" minOccurs="0" name="kullaniciSifre" type="s:string"/>
+            <s:element maxOccurs="1" minOccurs="0" name="geciciTescilNo" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GeciciTescildenTescilNoSorgulaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element maxOccurs="1" minOccurs="0" name="GeciciTescildenTescilNoSorgulaResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BeyannameDurumSorgula">
+        <s:complexType>
+          <s:sequence>
+            <s:element maxOccurs="1" minOccurs="0" name="kullaniciAdi" type="s:string"/>
+            <s:element maxOccurs="1" minOccurs="0" name="kullaniciSifre" type="s:string"/>
+            <s:element maxOccurs="1" minOccurs="0" name="tescilNo" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BeyannameDurumSorgulaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element maxOccurs="1" minOccurs="0" name="BeyannameDurumSorgulaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema"/>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ServisCevabiSorgulama">
+        <s:complexType>
+          <s:sequence>
+            <s:element maxOccurs="1" minOccurs="0" name="KullaniciAdi" type="s:string"/>
+            <s:element maxOccurs="1" minOccurs="0" name="KullaniciSifre" type="s:string"/>
+            <s:element maxOccurs="1" minOccurs="0" name="KayitNo" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ServisCevabiSorgulamaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element maxOccurs="1" minOccurs="0" name="ServisCevabiSorgulamaResult" type="tns:ServisCevabi"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ServisCevabi">
+        <s:sequence>
+          <s:element maxOccurs="1" minOccurs="0" name="XmlData" type="s:string"/>
+          <s:element maxOccurs="1" minOccurs="0" name="Hatalar" type="tns:ArrayOfHata"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfHata">
+        <s:sequence>
+          <s:element maxOccurs="unbounded" minOccurs="0" name="Hata" nillable="true" type="tns:Hata"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Hata">
+        <s:sequence>
+          <s:element maxOccurs="1" minOccurs="0" name="HataKodu" type="s:string"/>
+          <s:element maxOccurs="1" minOccurs="0" name="HataAciklamasi" type="s:string"/>
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="AyrilanTasimaSenediSorgulaSoapIn">
+    <wsdl:part element="tns:AyrilanTasimaSenediSorgula" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="AyrilanTasimaSenediSorgulaSoapOut">
+    <wsdl:part element="tns:AyrilanTasimaSenediSorgulaResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="TasimaSenediHatSorgulaSoapIn">
+    <wsdl:part element="tns:TasimaSenediHatSorgula" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="TasimaSenediHatSorgulaSoapOut">
+    <wsdl:part element="tns:TasimaSenediHatSorgulaResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="ETGBMuayeneMemuruSorgulaSoapIn">
+    <wsdl:part element="tns:ETGBMuayeneMemuruSorgula" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="ETGBMuayeneMemuruSorgulaSoapOut">
+    <wsdl:part element="tns:ETGBMuayeneMemuruSorgulaResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="GeciciTescildenTescilNoSorgulaSoapIn">
+    <wsdl:part element="tns:GeciciTescildenTescilNoSorgula" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="GeciciTescildenTescilNoSorgulaSoapOut">
+    <wsdl:part element="tns:GeciciTescildenTescilNoSorgulaResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="BeyannameDurumSorgulaSoapIn">
+    <wsdl:part element="tns:BeyannameDurumSorgula" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="BeyannameDurumSorgulaSoapOut">
+    <wsdl:part element="tns:BeyannameDurumSorgulaResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="ServisCevabiSorgulamaSoapIn">
+    <wsdl:part element="tns:ServisCevabiSorgulama" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="ServisCevabiSorgulamaSoapOut">
+    <wsdl:part element="tns:ServisCevabiSorgulamaResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:portType name="EticaretsorgulamalarSoap">
+    <wsdl:operation name="AyrilanTasimaSenediSorgula">
+      <wsdl:input message="tns:AyrilanTasimaSenediSorgulaSoapIn"/>
+      <wsdl:output message="tns:AyrilanTasimaSenediSorgulaSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="TasimaSenediHatSorgula">
+      <wsdl:input message="tns:TasimaSenediHatSorgulaSoapIn"/>
+      <wsdl:output message="tns:TasimaSenediHatSorgulaSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="ETGBMuayeneMemuruSorgula">
+      <wsdl:input message="tns:ETGBMuayeneMemuruSorgulaSoapIn"/>
+      <wsdl:output message="tns:ETGBMuayeneMemuruSorgulaSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GeciciTescildenTescilNoSorgula">
+      <wsdl:input message="tns:GeciciTescildenTescilNoSorgulaSoapIn"/>
+      <wsdl:output message="tns:GeciciTescildenTescilNoSorgulaSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="BeyannameDurumSorgula">
+      <wsdl:input message="tns:BeyannameDurumSorgulaSoapIn"/>
+      <wsdl:output message="tns:BeyannameDurumSorgulaSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="ServisCevabiSorgulama">
+      <wsdl:input message="tns:ServisCevabiSorgulamaSoapIn"/>
+      <wsdl:output message="tns:ServisCevabiSorgulamaSoapOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="EticaretsorgulamalarSoap" type="tns:EticaretsorgulamalarSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="AyrilanTasimaSenediSorgula">
+      <soap:operation soapAction="http://tempuri.org/AyrilanTasimaSenediSorgula" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TasimaSenediHatSorgula">
+      <soap:operation soapAction="http://tempuri.org/TasimaSenediHatSorgula" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ETGBMuayeneMemuruSorgula">
+      <soap:operation soapAction="http://tempuri.org/ETGBMuayeneMemuruSorgula" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GeciciTescildenTescilNoSorgula">
+      <soap:operation soapAction="http://tempuri.org/GeciciTescildenTescilNoSorgula" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BeyannameDurumSorgula">
+      <soap:operation soapAction="http://tempuri.org/BeyannameDurumSorgula" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServisCevabiSorgulama">
+      <soap:operation soapAction="http://tempuri.org/ServisCevabiSorgulama" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="EticaretsorgulamalarSoap12" type="tns:EticaretsorgulamalarSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="AyrilanTasimaSenediSorgula">
+      <soap12:operation soapAction="http://tempuri.org/AyrilanTasimaSenediSorgula" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TasimaSenediHatSorgula">
+      <soap12:operation soapAction="http://tempuri.org/TasimaSenediHatSorgula" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ETGBMuayeneMemuruSorgula">
+      <soap12:operation soapAction="http://tempuri.org/ETGBMuayeneMemuruSorgula" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GeciciTescildenTescilNoSorgula">
+      <soap12:operation soapAction="http://tempuri.org/GeciciTescildenTescilNoSorgula" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BeyannameDurumSorgula">
+      <soap12:operation soapAction="http://tempuri.org/BeyannameDurumSorgula" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServisCevabiSorgulama">
+      <soap12:operation soapAction="http://tempuri.org/ServisCevabiSorgulama" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Eticaretsorgulamalar">
+    <wsdl:port binding="tns:EticaretsorgulamalarSoap" name="EticaretsorgulamalarSoap">
+      <soap:address location="http://ws.gtb.gov.tr:8080/EXT/Gumruk/EGE/Provider/ETicaretSorgulamalarWS"/>
+    </wsdl:port>
+    <wsdl:port binding="tns:EticaretsorgulamalarSoap12" name="EticaretsorgulamalarSoap12">
+      <soap12:address location="http://ws.gtb.gov.tr:8080/EXT/Gumruk/EGE/Provider/ETicaretSorgulamalarWS"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,92 @@
+<dn-loading-content [show]="loading">
+  <div class="dn-content-wrapper">
+    <div class="dn-button-content">
+      <detaylibeyan-button-list [idDetayliBeyan]="idDetayliBeyan" curNav="tamamlayici"></detaylibeyan-button-list>
+    </div>
+    <div class="dn-content">
+      <div class="row">
+
+        <article id="dn-table-widget" class="col-sm-12">
+          <dn-widget color="blueDark" [widgetId]="'tamamlayici-widget'">
+            <header>
+              <div class="jarviswidget-ctrls" role="menu">
+                <detaylibeyan-no-label [idDetayliBeyan]="idDetayliBeyan"></detaylibeyan-no-label>
+              </div>
+              <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+              <h2>Tamamlayıcı Listesi</h2>
+            </header>
+            <div>
+              <div class="widget-body no-padding dn-datatable-widget-body">
+                <form [formGroup]="baseForm" novalidate>
+                  <table class="table table-bordered" [formArrayName]="formArrName">
+                    <thead>
+                    <tr>
+                      <th align="center" style="width: 90px; text-align: center">İşlem</th>
+                      <th align="center" style="width: 300px; text-align: center">Kalem</th>
+                      <th align="center" style="width: 300px; text-align: center">Kod</th>
+                      <th align="center" style="text-align: center">Oran</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr *ngFor="let row of getControl().controls; let i=index" [formGroupName]="i">
+                      <td>
+                        <button (click)="addRow()" type="button" class="btn btn-sm  btn-primary txt-color-white"><i
+                          class="fa fa-plus"></i></button>
+                        <button (click)="removeRow(i)" type="button" class="btn btn-sm  btn-danger txt-color-white"><i
+                          class="fa fa-trash-o"></i></button>
+                      </td>
+                      <td class="dn-reqiured">
+                        <dn-select2 css="form-control td-inline dn-reqiured"
+                                    placeholder=""
+                                    formControlName="simpleDetayliBeyanKalem"
+                                    [serviceUrl]="kalemUrl"
+                                    [displaySelect]="displaySelectKalem"
+                                    [selectedText]="selectedTextKalem"></dn-select2>
+                      </td>
+                      <td>
+                        <dn-select2 css="form-control td-inline"
+                                    placeholder=""
+                                    referenceMode="id"
+                                    formControlName="tamamlayiciBilgiKod"
+                                    serviceUrl="TamamlayiciBilgiKod"
+                                    [displaySelect]="undefined"
+                                    [selectedText]="undefined"></dn-select2>
+                      </td>
+                      <td>
+                        <input class="form-control td-inline" type="text" formControlName="tamamlayiciBilgiOrani">
+                      </td>
+                    </tr>
+                    </tbody>
+                  </table>
+                  <div class="clearfix"></div>
+                </form>
+                <div class="form-actions" style="margin: 0px;">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <button class="btn" type="button"
+                              [ngClass]="getControl().controls.length > 0 ? 'dn-hide' : ''"
+                              (click)="addRow()">
+                        <i class="fa fa-plus"></i>
+                        Satır Ekle
+                      </button>
+                      <button class="btn" type="button"
+                              [disabled]="!getControl().valid"
+                              (click)="onSubmit()">
+                        <i class="fa fa-save"></i>
+                        Kaydet
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </dn-widget>
+        </article>
+      </div>
+    </div>
+  </div>
+</dn-loading-content>
+
+
+<!--<pre>{{baseForm.getRawValue() | json}}</pre>-->

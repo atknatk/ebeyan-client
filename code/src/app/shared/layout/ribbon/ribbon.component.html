@@ -1,0 +1,12 @@
+<!-- RIBBON -->
+<div id="ribbon">
+  <template #tipContent><i class="text-warning fa fa-warning"></i>Dikkat! Tüm ayarlarınız sıfırlanacaktır.Tekrar Giriş yapmanız gerekmektedir.</template>
+
+  <span class="ribbon-button-alignment">
+					<span id="refresh" class="btn btn-ribbon" (click)="resetWidgets()"
+                placement="bottom"
+                [tooltip]="tipContent">
+						<i class="fa fa-refresh"></i>
+					</span>
+				</span>
+</div>

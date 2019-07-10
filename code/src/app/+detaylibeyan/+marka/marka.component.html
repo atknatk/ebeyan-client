@@ -1,0 +1,142 @@
+<dn-loading-content [show]="loading">
+
+  <div class="dn-content-wrapper">
+
+    <div class="dn-button-content">
+      <detaylibeyan-button-list [idDetayliBeyan]="idDetayliBeyan" curNav="marka"></detaylibeyan-button-list>
+    </div>
+    <div class="dn-content">
+      <div class="row">
+
+        <article id="dn-table-widget" class="col-sm-12">
+          <dn-widget color="blueDark" [widgetId]="'vergi-widget'">
+            <header>
+              <div class="jarviswidget-ctrls" role="menu">
+                <detaylibeyan-no-label [idDetayliBeyan]="idDetayliBeyan"></detaylibeyan-no-label>
+              </div>
+              <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+              <h2>Marka Listesi</h2>
+            </header>
+            <div>
+              <div class="widget-body no-padding dn-datatable-widget-body">
+
+
+                <form [formGroup]="baseForm" novalidate>
+
+                  <div class="margin-top-10">
+                    <fieldset>
+                      <div class="form-row form-group no-margin-bottom" style="margin-left: -16px;">
+                        <div class="col-sm-12 col-md-4">
+                          <dn-select2-container [form]="baseForm"
+                                                formControlName="simpleDetayliBeyanKalem"
+                                                [selectedText]="selectedTextKalem"
+                                                [displaySelect]="displaySelectKalem"
+                                                [serviceUrl]="kalemUrl">Kalem
+                          </dn-select2-container>
+                        </div>
+                        <div class="col-sm-12 col-md-4">
+                          <dn-input formControlName="markaTuru" [form]="baseForm">Marka Türü</dn-input>
+                        </div>
+                        <div class="col-sm-12 col-md-4">
+                          <dn-input formControlName="markaTescilNo" [form]="baseForm">M. Tescil No</dn-input>
+                        </div>
+                      </div>
+                    </fieldset>
+                    <fieldset>
+                      <div class="form-row form-group no-margin-bottom" style="margin-left: -16px;">
+                        <div class="col-sm-12 col-md-4">
+                          <dn-input formControlName="markaAdi" [form]="baseForm">Marka Adı</dn-input>
+                        </div>
+                        <div class="col-sm-12 col-md-4">
+                          <dn-input formControlName="markaKiymeti" [form]="baseForm"
+                                    mask="dnCurrency">Kıymeti
+                          </dn-input>
+                        </div>
+                        <div class="col-sm-12 col-md-4">
+                          <dn-input formControlName="referansNo" [form]="baseForm">Referans No</dn-input>
+                        </div>
+                      </div>
+                    </fieldset>
+                    <fieldset>
+                      <div class="form-row form-group no-margin-bottom" style="margin-left: -16px;">
+                        <div class="col-sm-12 col-md-4">
+                          <dn-input formControlName="model" [form]="baseForm">Model</dn-input>
+                        </div>
+                        <div class="col-sm-12 col-md-4">
+                          <dn-input formControlName="motorHacmi" [form]="baseForm">Motor Hacmi</dn-input>
+                        </div>
+                        <div class="col-sm-12 col-md-4">
+                          <dn-input formControlName="modelYili" [form]="baseForm">Model Yılı</dn-input>
+                        </div>
+                      </div>
+                    </fieldset>
+                    <fieldset>
+                      <div class="form-row form-group no-margin-bottom" style="margin-left: -16px;">
+                        <div class="col-sm-12 col-md-4">
+                          <dn-input formControlName="renk" [form]="baseForm">Renk</dn-input>
+                        </div>
+                        <div class="col-sm-12 col-md-4">
+                          <dn-input formControlName="silindirAdedi" [form]="baseForm" [number]="true">Silindir Ad.
+                          </dn-input>
+                        </div>
+                        <div class="col-sm-12 col-md-4">
+                          <button class="btn" type="button" style="float: right; margin-left: 4px;"
+                                  [disabled]="!baseForm.valid"
+                                  (click)="onSubmit()">
+                            <i [ngClass]="isEdit ? 'fa fa-edit':'fa fa-save'"></i>
+                            {{isEdit ? 'Güncelle' : 'Kaydet'}}
+                          </button>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </div>
+                  <!--(click)="addSatir(baseForm.getRawValue())">-->
+
+                  <table class="table table-bordered" [formArrayName]="formArrName">
+                    <thead>
+                    <tr>
+                      <th align="center" style="width: 40px; text-align: center">İşlem</th>
+                      <th align="center" style="text-align: center">Kalem No</th>
+                      <th align="center" style="text-align: center">Marka Adı</th>
+                      <th align="center" style="text-align: center">Marka Türü</th>
+                      <th align="center" style="text-align: center">Marka Tescil No</th>
+                      <th align="center" style="text-align: center">Motor Hacmi</th>
+                      <th align="center" style="text-align: center">Model Yılı</th>
+                      <th align="center" style="text-align: center">Kıymeti</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr *ngFor="let row of getControl().controls; let i=index"
+                        [formGroupName]="i"
+                        (click)="setClickedRow(i)" [class.active]="i == selectedRow">
+                      <td>
+                        <button (click)="onRemove(i)" type="button" class="btn btn-xs  btn-danger txt-color-white"><i
+                          class="fa fa-trash-o"></i></button>
+                      </td>
+                      <td>{{getKalemValue(row.get('simpleDetayliBeyanKalem').value)}}</td>
+                      <td>{{row.get('markaAdi').value}}</td>
+                      <td>{{row.get('markaTuru').value}}</td>
+                      <td>{{row.get('markaTescilNo').value}}</td>
+                      <td>{{row.get('motorHacmi').value}}</td>
+                      <td>{{row.get('modelYili').value}}</td>
+                      <td>{{row.get('markaKiymeti').value}}</td>
+                    </tr>
+                    </tbody>
+                  </table>
+
+                  <div class="clearfix"></div>
+                </form>
+                <div class="form-actions" style="margin: 0px;">
+                </div>
+
+              </div>
+            </div>
+          </dn-widget>
+        </article>
+      </div>
+    </div>
+
+  </div>
+</dn-loading-content>
+
+<!--<pre>{{baseForm.getRawValue() | json}}</pre>-->

@@ -1,0 +1,9 @@
+:host >>> label[class*="col-md-"] {
+  padding-left: 2px !important;
+  padding-right: 2px !important;
+}
+
+:host >>> dn-input input {
+  padding-left: 1px;
+  padding-right: 1px;
+}

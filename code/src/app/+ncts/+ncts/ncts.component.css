@@ -1,0 +1,10 @@
+:host >>> label {
+  padding-left: 4px;
+  padding-right: 0;
+  text-align: left !important;
+}
+
+:host >>> dn-input input{
+  padding-left: 1px;
+  padding-right: 1px;
+}

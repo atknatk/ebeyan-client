@@ -1,0 +1,2678 @@
+<?xml version="1.0"?>
+<Gelen xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://LoginKontrol.KontrolGelen">
+	<RefID xmlns="">T17-00478</RefID>
+	<KullaniciAdi xmlns="">xxxxxxxxxxx</KullaniciAdi>
+	<Sifre xmlns="">xxxxxxxxxxxxxxxxxxxxxxxx</Sifre>
+	<BeyannameBilgi xmlns="http://tempuri.org/">
+		<Beyanname_no />
+		<Rejim>4000</Rejim>
+		<GUMRUK>343100</GUMRUK>
+		<Basitlestirilmis_usul />
+		<Yuk_belgeleri_sayisi>2</Yuk_belgeleri_sayisi>
+		<Kap_adedi>1081</Kap_adedi>
+		<Ticaret_ulkesi>740</Ticaret_ulkesi>
+		<Referans_no>17-00478</Referans_no>
+		<Cikis_ulkesi>720</Cikis_ulkesi>
+		<Gidecegi_ulke />
+		<Gidecegi_sevk_ulkesi>720</Gidecegi_sevk_ulkesi>
+		<Cikistaki_aracin_tipi>4</Cikistaki_aracin_tipi>
+		<Cikistaki_aracin_kimligi>GEMİ</Cikistaki_aracin_kimligi>
+		<Cikistaki_aracin_ulkesi>958</Cikistaki_aracin_ulkesi>
+		<Teslim_sekli>CIF</Teslim_sekli>
+		<Teslim_yeri>İSTANBUL</Teslim_yeri>
+		<Konteyner>EVET</Konteyner>
+		<Sinirdaki_aracin_tipi>3</Sinirdaki_aracin_tipi>
+		<Sinirdaki_aracin_kimligi>GEMİ</Sinirdaki_aracin_kimligi>
+		<Sinirdaki_aracin_ulkesi>958</Sinirdaki_aracin_ulkesi>
+		<Toplam_fatura>96112.73</Toplam_fatura>
+		<Toplam_fatura_dovizi>USD</Toplam_fatura_dovizi>
+		<Toplam_navlun>0</Toplam_navlun>
+		<Toplan_navlun_dovizi />
+		<Sinirdaki_tasima_sekli>10</Sinirdaki_tasima_sekli>
+		<Alici_satici_iliskisi>6</Alici_satici_iliskisi>
+		<Toplam_sigorta>0</Toplam_sigorta>
+		<Toplam_sigorta_dovizi />
+		<Yukleme_bosaltma_yeri>AMBARLI  GÜMRÜK MÜDÜ</Yukleme_bosaltma_yeri>
+		<Toplam_yurt_disi_harcamalar>4010</Toplam_yurt_disi_harcamalar>
+		<Toplam_yurt_disi_harcamalarin_dovizi>TRY</Toplam_yurt_disi_harcamalarin_dovizi>
+		<Toplam_yurt_ici_harcamalar>5214.36</Toplam_yurt_ici_harcamalar>
+		<Odeme_sekli>2</Odeme_sekli>
+		<Banka_kodu>001200538009</Banka_kodu>
+		<Esyanin_bulundugu_yer>KUMPORT</Esyanin_bulundugu_yer>
+		<Varis_gumruk_idaresi />
+		<Antrepo_kodu />
+		<Tasarlanan_guzergah />
+		<Telafi_edici_vergi>0</Telafi_edici_vergi>
+		<Giris_gumruk_idaresi>343100</Giris_gumruk_idaresi>
+		<Islemin_niteligi>11</Islemin_niteligi>
+		<Aciklamalar>VEKALET=xxxxxxxxxxxxxx</Aciklamalar>
+		<Kullanici_kodu>50701495292</Kullanici_kodu>
+		<Referans_tarihi />
+		<Odeme>PESIN</Odeme>
+		<Odeme_araci>B</Odeme_araci>
+		<Musavir_referansi>EVRT17-00478</Musavir_referansi>
+		<Gonderici_vergi_no />
+		<Alici_vergi_no>xxxxxxxxxx</Alici_vergi_no>
+		<Beyan_sahibi_vergi_no>xxxxxxxxxxxxx</Beyan_sahibi_vergi_no>
+		<Musavir_vergi_no>xxxxxxxxxxxxx</Musavir_vergi_no>
+		<Firma_bilgi>
+			<firma>
+				<Tip>Gonderici</Tip>
+				<Ulke_kodu>740</Ulke_kodu>
+				<Faks>-</Faks>
+				<Adi_unvani>xxxxxxxxxxx</Adi_unvani>
+				<Cadde_s_no>xxxxxxxxxxxxxxxxx</Cadde_s_no>
+				<Telefon>-</Telefon>
+			</firma>
+		</Firma_bilgi>
+		<Teminat xsi:nil="true" />
+		<Ozetbeyanlar>
+			<Ozetbeyan>
+				<ozbyacma_bilgi>
+					<tasimasenetleri>
+						<Tasima_senedi_no>HLCUZS11703AOXQ3</Tasima_senedi_no>
+						<tasimasatir_bilgi>
+							<tasimasatirlari>
+								<Tasima_satir_no>1</Tasima_satir_no>
+								<Ambar_kodu />
+								<Acilacak_miktar>1081</Acilacak_miktar>
+							</tasimasatirlari>
+						</tasimasatir_bilgi>
+					</tasimasenetleri>
+				</ozbyacma_bilgi>
+				<Ozetbeyan_no>17343100IM031392</Ozetbeyan_no>
+				<Ozetbeyan_islem_kapsami>2</Ozetbeyan_islem_kapsami>
+				<Ambar_ici>EVET</Ambar_ici>
+				<Baska_rejim>HAYIR</Baska_rejim>
+				<Aciklama />
+			</Ozetbeyan>
+		</Ozetbeyanlar>
+		<Kalemler>
+			<kalem>
+				<tamamlayici_bilgi xsi:nil="true" />
+				<tcgbacmakapatma_bilgi xsi:nil="true" />
+				<marka_model_bilgi xsi:nil="true" />
+				<konteyner_Bilgi>
+					<Konteyner>
+						<Konteyner_No>FCIU9099846</Konteyner_No>
+						<Ulke_Kodu />
+					</Konteyner>
+				</konteyner_Bilgi>
+				<VergiMuafiyetleri xsi:nil="true" />
+				<HavacilikYakitTurleri xsi:nil="true" />
+				<Gtip>850440829000</Gtip>
+				<Imalatci_firma_bilgisi>HAYIR</Imalatci_firma_bilgisi>
+				<Kalem_sira_no>1</Kalem_sira_no>
+				<Mensei_ulke>720</Mensei_ulke>
+				<Brut_agirlik>720.78</Brut_agirlik>
+				<Net_agirlik>720.78</Net_agirlik>
+				<Tamamlayici_olcu_birimi>C62</Tamamlayici_olcu_birimi>
+				<Istatistiki_miktar>7000</Istatistiki_miktar>
+				<Uluslararasi_anlasma />
+				<Algilama_birimi_1 />
+				<Algilama_miktari_1>0</Algilama_miktari_1>
+				<Algilama_birimi_2 />
+				<Algilama_miktari_2>0</Algilama_miktari_2>
+				<Muafiyetler_1 />
+				<Muafiyetler_2 />
+				<Muafiyetler_3 />
+				<Algilama_birimi_3 />
+				<Algilama_miktari_3>0</Algilama_miktari_3>
+				<Ek_kod />
+				<Ozellik>01</Ozellik>
+				<Fatura_miktari>3549</Fatura_miktari>
+				<Fatura_miktarinin_dovizi>USD</Fatura_miktarinin_dovizi>
+				<Sinir_gecis_ucreti>0</Sinir_gecis_ucreti>
+				<Navlun_miktari>0</Navlun_miktari>
+				<Navlun_miktarinin_dovizi>TRY</Navlun_miktarinin_dovizi>
+				<Istatistiki_kiymet>0</Istatistiki_kiymet>
+				<Sigorta_miktari>0</Sigorta_miktari>
+				<Sigorta_miktarinin_dovizi>TRY</Sigorta_miktarinin_dovizi>
+				<Tarifedeki_tanimi />
+				<Ticari_tanimi>ADAPTÖR</Ticari_tanimi>
+				<Marka>-</Marka>
+				<Numara>FCIU9099846</Numara>
+				<Cinsi>KN</Cinsi>
+				<Adedi>1</Adedi>
+				<Miktar_birimi>C62</Miktar_birimi>
+				<Mahrece_iade />
+				<Ikincil_islem />
+				<Satir_no />
+				<Miktar>7000</Miktar>
+				<Kdv_orani>KDV18</Kdv_orani>
+				<Kullanilmis_esya>K1</Kullanilmis_esya>
+				<Aciklama_44 />
+				<Imalatci_Vergino />
+				<Yurtici_Diger>147.7</Yurtici_Diger>
+				<Yurtici_Banka>0</Yurtici_Banka>
+				<Yurtici_Depolama>0</Yurtici_Depolama>
+				<Yurtici_Tahliye>0</Yurtici_Tahliye>
+				<Yurtici_Liman>0</Yurtici_Liman>
+				<Yurtici_Kultur>0</Yurtici_Kultur>
+				<Yurtici_Kkdf>0</Yurtici_Kkdf>
+				<Yurtici_Cevre>0</Yurtici_Cevre>
+				<Yurtici_Diger_Aciklama>y.içi</Yurtici_Diger_Aciklama>
+				<Muafiyet_Aciklamasi />
+				<Referans_Tarihi />
+				<YurtDisi_Komisyon>0</YurtDisi_Komisyon>
+				<YurtDisi_Demuraj>0</YurtDisi_Demuraj>
+				<YurtDisi_Royalti>0</YurtDisi_Royalti>
+				<YurtDisi_Faiz>0</YurtDisi_Faiz>
+				<YurtDisi_Diger>0</YurtDisi_Diger>
+				<YurtDisi_Komisyon_Dovizi />
+				<YurtDisi_Demuraj_Dovizi />
+				<YurtDisi_Royalti_Dovizi />
+				<YurtDisi_Faiz_Dovizi />
+				<YurtDisi_Diger_Dovizi />
+				<YurtDisi_Diger_Aciklama />
+				<Kalem_Islem_Niteligi />
+				<Giris_Cikis_Amaci />
+				<Giris_Cikis_Amaci_Aciklama />
+				<STM_IlKodu />
+			</kalem>
+			<kalem>
+				<tamamlayici_bilgi xsi:nil="true" />
+				<tcgbacmakapatma_bilgi xsi:nil="true" />
+				<marka_model_bilgi xsi:nil="true" />
+				<konteyner_Bilgi>
+					<Konteyner>
+						<Konteyner_No>FCIU9099846</Konteyner_No>
+						<Ulke_Kodu />
+					</Konteyner>
+				</konteyner_Bilgi>
+				<VergiMuafiyetleri xsi:nil="true" />
+				<HavacilikYakitTurleri xsi:nil="true" />
+				<Gtip>850440829000</Gtip>
+				<Imalatci_firma_bilgisi>HAYIR</Imalatci_firma_bilgisi>
+				<Kalem_sira_no>2</Kalem_sira_no>
+				<Mensei_ulke>720</Mensei_ulke>
+				<Brut_agirlik>368.01</Brut_agirlik>
+				<Net_agirlik>368.01</Net_agirlik>
+				<Tamamlayici_olcu_birimi>C62</Tamamlayici_olcu_birimi>
+				<Istatistiki_miktar>2000</Istatistiki_miktar>
+				<Uluslararasi_anlasma />
+				<Algilama_birimi_1 />
+				<Algilama_miktari_1>0</Algilama_miktari_1>
+				<Algilama_birimi_2 />
+				<Algilama_miktari_2>0</Algilama_miktari_2>
+				<Muafiyetler_1 />
+				<Muafiyetler_2 />
+				<Muafiyetler_3 />
+				<Algilama_birimi_3 />
+				<Algilama_miktari_3>0</Algilama_miktari_3>
+				<Ek_kod />
+				<Ozellik>01</Ozellik>
+				<Fatura_miktari>1812</Fatura_miktari>
+				<Fatura_miktarinin_dovizi>USD</Fatura_miktarinin_dovizi>
+				<Sinir_gecis_ucreti>0</Sinir_gecis_ucreti>
+				<Navlun_miktari>0</Navlun_miktari>
+				<Navlun_miktarinin_dovizi>TRY</Navlun_miktarinin_dovizi>
+				<Istatistiki_kiymet>0</Istatistiki_kiymet>
+				<Sigorta_miktari>0</Sigorta_miktari>
+				<Sigorta_miktarinin_dovizi>TRY</Sigorta_miktarinin_dovizi>
+				<Tarifedeki_tanimi />
+				<Ticari_tanimi>ADAPTÖR</Ticari_tanimi>
+				<Marka>-</Marka>
+				<Numara>FCIU9099846</Numara>
+				<Cinsi>KN</Cinsi>
+				<Adedi>1</Adedi>
+				<Miktar_birimi>C62</Miktar_birimi>
+				<Mahrece_iade />
+				<Ikincil_islem />
+				<Satir_no />
+				<Miktar>2000</Miktar>
+				<Kdv_orani />
+				<Kullanilmis_esya>K1</Kullanilmis_esya>
+				<Aciklama_44 />
+				<Imalatci_Vergino />
+				<Yurtici_Diger>75.41</Yurtici_Diger>
+				<Yurtici_Banka>0</Yurtici_Banka>
+				<Yurtici_Depolama>0</Yurtici_Depolama>
+				<Yurtici_Tahliye>0</Yurtici_Tahliye>
+				<Yurtici_Liman>0</Yurtici_Liman>
+				<Yurtici_Kultur>0</Yurtici_Kultur>
+				<Yurtici_Kkdf>0</Yurtici_Kkdf>
+				<Yurtici_Cevre>0</Yurtici_Cevre>
+				<Yurtici_Diger_Aciklama>y.içi</Yurtici_Diger_Aciklama>
+				<Muafiyet_Aciklamasi />
+				<Referans_Tarihi />
+				<YurtDisi_Komisyon>0</YurtDisi_Komisyon>
+				<YurtDisi_Demuraj>0</YurtDisi_Demuraj>
+				<YurtDisi_Royalti>0</YurtDisi_Royalti>
+				<YurtDisi_Faiz>0</YurtDisi_Faiz>
+				<YurtDisi_Diger>0</YurtDisi_Diger>
+				<YurtDisi_Komisyon_Dovizi />
+				<YurtDisi_Demuraj_Dovizi />
+				<YurtDisi_Royalti_Dovizi />
+				<YurtDisi_Faiz_Dovizi />
+				<YurtDisi_Diger_Dovizi />
+				<YurtDisi_Diger_Aciklama />
+				<Kalem_Islem_Niteligi />
+				<Giris_Cikis_Amaci />
+				<Giris_Cikis_Amaci_Aciklama />
+				<STM_IlKodu />
+			</kalem>
+			<kalem>
+				<tamamlayici_bilgi xsi:nil="true" />
+				<tcgbacmakapatma_bilgi xsi:nil="true" />
+				<marka_model_bilgi xsi:nil="true" />
+				<konteyner_Bilgi>
+					<Konteyner>
+						<Konteyner_No>FCIU9099846</Konteyner_No>
+						<Ulke_Kodu />
+					</Konteyner>
+				</konteyner_Bilgi>
+				<VergiMuafiyetleri xsi:nil="true" />
+				<HavacilikYakitTurleri xsi:nil="true" />
+				<Gtip>850440829000</Gtip>
+				<Imalatci_firma_bilgisi>HAYIR</Imalatci_firma_bilgisi>
+				<Kalem_sira_no>3</Kalem_sira_no>
+				<Mensei_ulke>720</Mensei_ulke>
+				<Brut_agirlik>220.76</Brut_agirlik>
+				<Net_agirlik>220.76</Net_agirlik>
+				<Tamamlayici_olcu_birimi>C62</Tamamlayici_olcu_birimi>
+				<Istatistiki_miktar>1000</Istatistiki_miktar>
+				<Uluslararasi_anlasma />
+				<Algilama_birimi_1 />
+				<Algilama_miktari_1>0</Algilama_miktari_1>
+				<Algilama_birimi_2 />
+				<Algilama_miktari_2>0</Algilama_miktari_2>
+				<Muafiyetler_1 />
+				<Muafiyetler_2 />
+				<Muafiyetler_3 />
+				<Algilama_birimi_3 />
+				<Algilama_miktari_3>0</Algilama_miktari_3>
+				<Ek_kod />
+				<Ozellik>01</Ozellik>
+				<Fatura_miktari>1087</Fatura_miktari>
+				<Fatura_miktarinin_dovizi>USD</Fatura_miktarinin_dovizi>
+				<Sinir_gecis_ucreti>0</Sinir_gecis_ucreti>
+				<Navlun_miktari>0</Navlun_miktari>
+				<Navlun_miktarinin_dovizi>TRY</Navlun_miktarinin_dovizi>
+				<Istatistiki_kiymet>0</Istatistiki_kiymet>
+				<Sigorta_miktari>0</Sigorta_miktari>
+				<Sigorta_miktarinin_dovizi>TRY</Sigorta_miktarinin_dovizi>
+				<Tarifedeki_tanimi />
+				<Ticari_tanimi>ADAPTÖR</Ticari_tanimi>
+				<Marka>-</Marka>
+				<Numara>FCIU9099846</Numara>
+				<Cinsi>KN</Cinsi>
+				<Adedi>1</Adedi>
+				<Miktar_birimi>C62</Miktar_birimi>
+				<Mahrece_iade />
+				<Ikincil_islem />
+				<Satir_no />
+				<Miktar>1000</Miktar>
+				<Kdv_orani />
+				<Kullanilmis_esya>K1</Kullanilmis_esya>
+				<Aciklama_44 />
+				<Imalatci_Vergino />
+				<Yurtici_Diger>45.24</Yurtici_Diger>
+				<Yurtici_Banka>0</Yurtici_Banka>
+				<Yurtici_Depolama>0</Yurtici_Depolama>
+				<Yurtici_Tahliye>0</Yurtici_Tahliye>
+				<Yurtici_Liman>0</Yurtici_Liman>
+				<Yurtici_Kultur>0</Yurtici_Kultur>
+				<Yurtici_Kkdf>0</Yurtici_Kkdf>
+				<Yurtici_Cevre>0</Yurtici_Cevre>
+				<Yurtici_Diger_Aciklama>y.içi</Yurtici_Diger_Aciklama>
+				<Muafiyet_Aciklamasi />
+				<Referans_Tarihi />
+				<YurtDisi_Komisyon>0</YurtDisi_Komisyon>
+				<YurtDisi_Demuraj>0</YurtDisi_Demuraj>
+				<YurtDisi_Royalti>0</YurtDisi_Royalti>
+				<YurtDisi_Faiz>0</YurtDisi_Faiz>
+				<YurtDisi_Diger>0</YurtDisi_Diger>
+				<YurtDisi_Komisyon_Dovizi />
+				<YurtDisi_Demuraj_Dovizi />
+				<YurtDisi_Royalti_Dovizi />
+				<YurtDisi_Faiz_Dovizi />
+				<YurtDisi_Diger_Dovizi />
+				<YurtDisi_Diger_Aciklama />
+				<Kalem_Islem_Niteligi />
+				<Giris_Cikis_Amaci />
+				<Giris_Cikis_Amaci_Aciklama />
+				<STM_IlKodu />
+			</kalem>
+			<kalem>
+				<tamamlayici_bilgi xsi:nil="true" />
+				<tcgbacmakapatma_bilgi xsi:nil="true" />
+				<marka_model_bilgi xsi:nil="true" />
+				<konteyner_Bilgi>
+					<Konteyner>
+						<Konteyner_No>FCIU9099846</Konteyner_No>
+						<Ulke_Kodu />
+					</Konteyner>
+				</konteyner_Bilgi>
+				<VergiMuafiyetleri xsi:nil="true" />
+				<HavacilikYakitTurleri xsi:nil="true" />
+				<Gtip>850440829000</Gtip>
+				<Imalatci_firma_bilgisi>HAYIR</Imalatci_firma_bilgisi>
+				<Kalem_sira_no>4</Kalem_sira_no>
+				<Mensei_ulke>720</Mensei_ulke>
+				<Brut_agirlik>404.67</Brut_agirlik>
+				<Net_agirlik>404.67</Net_agirlik>
+				<Tamamlayici_olcu_birimi>C62</Tamamlayici_olcu_birimi>
+				<Istatistiki_miktar>2500</Istatistiki_miktar>
+				<Uluslararasi_anlasma />
+				<Algilama_birimi_1 />
+				<Algilama_miktari_1>0</Algilama_miktari_1>
+				<Algilama_birimi_2 />
+				<Algilama_miktari_2>0</Algilama_miktari_2>
+				<Muafiyetler_1 />
+				<Muafiyetler_2 />
+				<Muafiyetler_3 />
+				<Algilama_birimi_3 />
+				<Algilama_miktari_3>0</Algilama_miktari_3>
+				<Ek_kod />
+				<Ozellik>01</Ozellik>
+				<Fatura_miktari>1992.5</Fatura_miktari>
+				<Fatura_miktarinin_dovizi>USD</Fatura_miktarinin_dovizi>
+				<Sinir_gecis_ucreti>0</Sinir_gecis_ucreti>
+				<Navlun_miktari>0</Navlun_miktari>
+				<Navlun_miktarinin_dovizi>TRY</Navlun_miktarinin_dovizi>
+				<Istatistiki_kiymet>0</Istatistiki_kiymet>
+				<Sigorta_miktari>0</Sigorta_miktari>
+				<Sigorta_miktarinin_dovizi>TRY</Sigorta_miktarinin_dovizi>
+				<Tarifedeki_tanimi />
+				<Ticari_tanimi>ADAPTÖR</Ticari_tanimi>
+				<Marka>-</Marka>
+				<Numara>FCIU9099846</Numara>
+				<Cinsi>KN</Cinsi>
+				<Adedi>1</Adedi>
+				<Miktar_birimi>C62</Miktar_birimi>
+				<Mahrece_iade />
+				<Ikincil_islem />
+				<Satir_no />
+				<Miktar>2500</Miktar>
+				<Kdv_orani />
+				<Kullanilmis_esya>K1</Kullanilmis_esya>
+				<Aciklama_44 />
+				<Imalatci_Vergino />
+				<Yurtici_Diger>82.92</Yurtici_Diger>
+				<Yurtici_Banka>0</Yurtici_Banka>
+				<Yurtici_Depolama>0</Yurtici_Depolama>
+				<Yurtici_Tahliye>0</Yurtici_Tahliye>
+				<Yurtici_Liman>0</Yurtici_Liman>
+				<Yurtici_Kultur>0</Yurtici_Kultur>
+				<Yurtici_Kkdf>0</Yurtici_Kkdf>
+				<Yurtici_Cevre>0</Yurtici_Cevre>
+				<Yurtici_Diger_Aciklama>y.içi</Yurtici_Diger_Aciklama>
+				<Muafiyet_Aciklamasi />
+				<Referans_Tarihi />
+				<YurtDisi_Komisyon>0</YurtDisi_Komisyon>
+				<YurtDisi_Demuraj>0</YurtDisi_Demuraj>
+				<YurtDisi_Royalti>0</YurtDisi_Royalti>
+				<YurtDisi_Faiz>0</YurtDisi_Faiz>
+				<YurtDisi_Diger>0</YurtDisi_Diger>
+				<YurtDisi_Komisyon_Dovizi />
+				<YurtDisi_Demuraj_Dovizi />
+				<YurtDisi_Royalti_Dovizi />
+				<YurtDisi_Faiz_Dovizi />
+				<YurtDisi_Diger_Dovizi />
+				<YurtDisi_Diger_Aciklama />
+				<Kalem_Islem_Niteligi />
+				<Giris_Cikis_Amaci />
+				<Giris_Cikis_Amaci_Aciklama />
+				<STM_IlKodu />
+			</kalem>
+			<kalem>
+				<tamamlayici_bilgi xsi:nil="true" />
+				<tcgbacmakapatma_bilgi xsi:nil="true" />
+				<marka_model_bilgi xsi:nil="true" />
+				<konteyner_Bilgi>
+					<Konteyner>
+						<Konteyner_No>FCIU9099846</Konteyner_No>
+						<Ulke_Kodu />
+					</Konteyner>
+				</konteyner_Bilgi>
+				<VergiMuafiyetleri xsi:nil="true" />
+				<HavacilikYakitTurleri xsi:nil="true" />
+				<Gtip>853190000000</Gtip>
+				<Imalatci_firma_bilgisi>HAYIR</Imalatci_firma_bilgisi>
+				<Kalem_sira_no>5</Kalem_sira_no>
+				<Mensei_ulke>720</Mensei_ulke>
+				<Brut_agirlik>415</Brut_agirlik>
+				<Net_agirlik>415</Net_agirlik>
+				<Tamamlayici_olcu_birimi>C62</Tamamlayici_olcu_birimi>
+				<Istatistiki_miktar>400</Istatistiki_miktar>
+				<Uluslararasi_anlasma />
+				<Algilama_birimi_1 />
+				<Algilama_miktari_1>0</Algilama_miktari_1>
+				<Algilama_birimi_2 />
+				<Algilama_miktari_2>0</Algilama_miktari_2>
+				<Muafiyetler_1 />
+				<Muafiyetler_2 />
+				<Muafiyetler_3 />
+				<Algilama_birimi_3 />
+				<Algilama_miktari_3>0</Algilama_miktari_3>
+				<Ek_kod />
+				<Ozellik>01</Ozellik>
+				<Fatura_miktari>2043.4</Fatura_miktari>
+				<Fatura_miktarinin_dovizi>USD</Fatura_miktarinin_dovizi>
+				<Sinir_gecis_ucreti>0</Sinir_gecis_ucreti>
+				<Navlun_miktari>0</Navlun_miktari>
+				<Navlun_miktarinin_dovizi>TRY</Navlun_miktarinin_dovizi>
+				<Istatistiki_kiymet>0</Istatistiki_kiymet>
+				<Sigorta_miktari>0</Sigorta_miktari>
+				<Sigorta_miktarinin_dovizi>TRY</Sigorta_miktarinin_dovizi>
+				<Tarifedeki_tanimi />
+				<Ticari_tanimi>ALARM PART (Yalnızca elektronik ısı ve duman dedektör kitlerinden değildir)</Ticari_tanimi>
+				<Marka>-</Marka>
+				<Numara>FCIU9099846</Numara>
+				<Cinsi>KN</Cinsi>
+				<Adedi>1</Adedi>
+				<Miktar_birimi>C62</Miktar_birimi>
+				<Mahrece_iade />
+				<Ikincil_islem />
+				<Satir_no />
+				<Miktar>400</Miktar>
+				<Kdv_orani />
+				<Kullanilmis_esya>K1</Kullanilmis_esya>
+				<Aciklama_44 />
+				<Imalatci_Vergino />
+				<Yurtici_Diger>85.04</Yurtici_Diger>
+				<Yurtici_Banka>0</Yurtici_Banka>
+				<Yurtici_Depolama>0</Yurtici_Depolama>
+				<Yurtici_Tahliye>0</Yurtici_Tahliye>
+				<Yurtici_Liman>0</Yurtici_Liman>
+				<Yurtici_Kultur>0</Yurtici_Kultur>
+				<Yurtici_Kkdf>0</Yurtici_Kkdf>
+				<Yurtici_Cevre>0</Yurtici_Cevre>
+				<Yurtici_Diger_Aciklama>y.içi</Yurtici_Diger_Aciklama>
+				<Muafiyet_Aciklamasi />
+				<Referans_Tarihi />
+				<YurtDisi_Komisyon>0</YurtDisi_Komisyon>
+				<YurtDisi_Demuraj>0</YurtDisi_Demuraj>
+				<YurtDisi_Royalti>0</YurtDisi_Royalti>
+				<YurtDisi_Faiz>0</YurtDisi_Faiz>
+				<YurtDisi_Diger>0</YurtDisi_Diger>
+				<YurtDisi_Komisyon_Dovizi />
+				<YurtDisi_Demuraj_Dovizi />
+				<YurtDisi_Royalti_Dovizi />
+				<YurtDisi_Faiz_Dovizi />
+				<YurtDisi_Diger_Dovizi />
+				<YurtDisi_Diger_Aciklama />
+				<Kalem_Islem_Niteligi />
+				<Giris_Cikis_Amaci />
+				<Giris_Cikis_Amaci_Aciklama />
+				<STM_IlKodu />
+			</kalem>
+			<kalem>
+				<tamamlayici_bilgi xsi:nil="true" />
+				<tcgbacmakapatma_bilgi xsi:nil="true" />
+				<marka_model_bilgi xsi:nil="true" />
+				<konteyner_Bilgi>
+					<Konteyner>
+						<Konteyner_No>FCIU9099846</Konteyner_No>
+						<Ulke_Kodu />
+					</Konteyner>
+				</konteyner_Bilgi>
+				<VergiMuafiyetleri xsi:nil="true" />
+				<HavacilikYakitTurleri xsi:nil="true" />
+				<Gtip>854442900000</Gtip>
+				<Imalatci_firma_bilgisi>HAYIR</Imalatci_firma_bilgisi>
+				<Kalem_sira_no>6</Kalem_sira_no>
+				<Mensei_ulke>720</Mensei_ulke>
+				<Brut_agirlik>1178.48</Brut_agirlik>
+				<Net_agirlik>1178.48</Net_agirlik>
+				<Tamamlayici_olcu_birimi>C62</Tamamlayici_olcu_birimi>
+				<Istatistiki_miktar>34200</Istatistiki_miktar>
+				<Uluslararasi_anlasma />
+				<Algilama_birimi_1 />
+				<Algilama_miktari_1>0</Algilama_miktari_1>
+				<Algilama_birimi_2 />
+				<Algilama_miktari_2>0</Algilama_miktari_2>
+				<Muafiyetler_1>NKIST</Muafiyetler_1>
+				<Muafiyetler_2 />
+				<Muafiyetler_3 />
+				<Algilama_birimi_3 />
+				<Algilama_miktari_3>0</Algilama_miktari_3>
+				<Ek_kod />
+				<Ozellik>01</Ozellik>
+				<Fatura_miktari>5802.6</Fatura_miktari>
+				<Fatura_miktarinin_dovizi>USD</Fatura_miktarinin_dovizi>
+				<Sinir_gecis_ucreti>0</Sinir_gecis_ucreti>
+				<Navlun_miktari>0</Navlun_miktari>
+				<Navlun_miktarinin_dovizi>TRY</Navlun_miktarinin_dovizi>
+				<Istatistiki_kiymet>0</Istatistiki_kiymet>
+				<Sigorta_miktari>0</Sigorta_miktari>
+				<Sigorta_miktarinin_dovizi>TRY</Sigorta_miktarinin_dovizi>
+				<Tarifedeki_tanimi />
+				<Ticari_tanimi>KABLO</Ticari_tanimi>
+				<Marka>-</Marka>
+				<Numara>FCIU9099846</Numara>
+				<Cinsi>KN</Cinsi>
+				<Adedi>1</Adedi>
+				<Miktar_birimi>C62</Miktar_birimi>
+				<Mahrece_iade />
+				<Ikincil_islem />
+				<Satir_no />
+				<Miktar>34200</Miktar>
+				<Kdv_orani>KDV18</Kdv_orani>
+				<Kullanilmis_esya>K1</Kullanilmis_esya>
+				<Aciklama_44>AKÜ VE TAKVİYE KABLOLALRINDAN DEĞİLDİR</Aciklama_44>
+				<Imalatci_Vergino />
+				<Yurtici_Diger>241.49</Yurtici_Diger>
+				<Yurtici_Banka>0</Yurtici_Banka>
+				<Yurtici_Depolama>0</Yurtici_Depolama>
+				<Yurtici_Tahliye>0</Yurtici_Tahliye>
+				<Yurtici_Liman>0</Yurtici_Liman>
+				<Yurtici_Kultur>0</Yurtici_Kultur>
+				<Yurtici_Kkdf>0</Yurtici_Kkdf>
+				<Yurtici_Cevre>0</Yurtici_Cevre>
+				<Yurtici_Diger_Aciklama>y.içi</Yurtici_Diger_Aciklama>
+				<Muafiyet_Aciklamasi />
+				<Referans_Tarihi />
+				<YurtDisi_Komisyon>0</YurtDisi_Komisyon>
+				<YurtDisi_Demuraj>0</YurtDisi_Demuraj>
+				<YurtDisi_Royalti>0</YurtDisi_Royalti>
+				<YurtDisi_Faiz>0</YurtDisi_Faiz>
+				<YurtDisi_Diger>0</YurtDisi_Diger>
+				<YurtDisi_Komisyon_Dovizi />
+				<YurtDisi_Demuraj_Dovizi />
+				<YurtDisi_Royalti_Dovizi />
+				<YurtDisi_Faiz_Dovizi />
+				<YurtDisi_Diger_Dovizi />
+				<YurtDisi_Diger_Aciklama />
+				<Kalem_Islem_Niteligi />
+				<Giris_Cikis_Amaci />
+				<Giris_Cikis_Amaci_Aciklama />
+				<STM_IlKodu />
+			</kalem>
+			<kalem>
+				<tamamlayici_bilgi xsi:nil="true" />
+				<tcgbacmakapatma_bilgi xsi:nil="true" />
+				<marka_model_bilgi xsi:nil="true" />
+				<konteyner_Bilgi>
+					<Konteyner>
+						<Konteyner_No>FCIU9099846</Konteyner_No>
+						<Ulke_Kodu />
+					</Konteyner>
+				</konteyner_Bilgi>
+				<VergiMuafiyetleri xsi:nil="true" />
+				<HavacilikYakitTurleri xsi:nil="true" />
+				<Gtip>852190000000</Gtip>
+				<Imalatci_firma_bilgisi>HAYIR</Imalatci_firma_bilgisi>
+				<Kalem_sira_no>7</Kalem_sira_no>
+				<Mensei_ulke>720</Mensei_ulke>
+				<Brut_agirlik>2145.49</Brut_agirlik>
+				<Net_agirlik>2145.49</Net_agirlik>
+				<Tamamlayici_olcu_birimi>C62</Tamamlayici_olcu_birimi>
+				<Istatistiki_miktar>500</Istatistiki_miktar>
+				<Uluslararasi_anlasma />
+				<Algilama_birimi_1 />
+				<Algilama_miktari_1>0</Algilama_miktari_1>
+				<Algilama_birimi_2 />
+				<Algilama_miktari_2>0</Algilama_miktari_2>
+				<Muafiyetler_1>NKIST</Muafiyetler_1>
+				<Muafiyetler_2>TRTBND</Muafiyetler_2>
+				<Muafiyetler_3 />
+				<Algilama_birimi_3 />
+				<Algilama_miktari_3>0</Algilama_miktari_3>
+				<Ek_kod />
+				<Ozellik>01</Ozellik>
+				<Fatura_miktari>10564</Fatura_miktari>
+				<Fatura_miktarinin_dovizi>USD</Fatura_miktarinin_dovizi>
+				<Sinir_gecis_ucreti>0</Sinir_gecis_ucreti>
+				<Navlun_miktari>0</Navlun_miktari>
+				<Navlun_miktarinin_dovizi>TRY</Navlun_miktarinin_dovizi>
+				<Istatistiki_kiymet>0</Istatistiki_kiymet>
+				<Sigorta_miktari>0</Sigorta_miktari>
+				<Sigorta_miktarinin_dovizi>TRY</Sigorta_miktarinin_dovizi>
+				<Tarifedeki_tanimi />
+				<Ticari_tanimi>ANA ELEKTRONİK KART</Ticari_tanimi>
+				<Marka>-</Marka>
+				<Numara>FCIU9099846</Numara>
+				<Cinsi>KN</Cinsi>
+				<Adedi>1</Adedi>
+				<Miktar_birimi>C62</Miktar_birimi>
+				<Mahrece_iade />
+				<Ikincil_islem />
+				<Satir_no />
+				<Miktar>500</Miktar>
+				<Kdv_orani />
+				<Kullanilmis_esya>K1</Kullanilmis_esya>
+				<Aciklama_44 />
+				<Imalatci_Vergino />
+				<Yurtici_Diger>439.65</Yurtici_Diger>
+				<Yurtici_Banka>0</Yurtici_Banka>
+				<Yurtici_Depolama>0</Yurtici_Depolama>
+				<Yurtici_Tahliye>0</Yurtici_Tahliye>
+				<Yurtici_Liman>0</Yurtici_Liman>
+				<Yurtici_Kultur>775.17</Yurtici_Kultur>
+				<Yurtici_Kkdf>0</Yurtici_Kkdf>
+				<Yurtici_Cevre>0</Yurtici_Cevre>
+				<Yurtici_Diger_Aciklama>y.içi</Yurtici_Diger_Aciklama>
+				<Muafiyet_Aciklamasi />
+				<Referans_Tarihi />
+				<YurtDisi_Komisyon>0</YurtDisi_Komisyon>
+				<YurtDisi_Demuraj>0</YurtDisi_Demuraj>
+				<YurtDisi_Royalti>0</YurtDisi_Royalti>
+				<YurtDisi_Faiz>0</YurtDisi_Faiz>
+				<YurtDisi_Diger>0</YurtDisi_Diger>
+				<YurtDisi_Komisyon_Dovizi />
+				<YurtDisi_Demuraj_Dovizi />
+				<YurtDisi_Royalti_Dovizi />
+				<YurtDisi_Faiz_Dovizi />
+				<YurtDisi_Diger_Dovizi />
+				<YurtDisi_Diger_Aciklama />
+				<Kalem_Islem_Niteligi />
+				<Giris_Cikis_Amaci />
+				<Giris_Cikis_Amaci_Aciklama />
+				<STM_IlKodu />
+			</kalem>
+			<kalem>
+				<tamamlayici_bilgi xsi:nil="true" />
+				<tcgbacmakapatma_bilgi xsi:nil="true" />
+				<marka_model_bilgi xsi:nil="true" />
+				<konteyner_Bilgi>
+					<Konteyner>
+						<Konteyner_No>FCIU9099846</Konteyner_No>
+						<Ulke_Kodu />
+					</Konteyner>
+				</konteyner_Bilgi>
+				<VergiMuafiyetleri xsi:nil="true" />
+				<HavacilikYakitTurleri xsi:nil="true" />
+				<Gtip>852190000000</Gtip>
+				<Imalatci_firma_bilgisi>HAYIR</Imalatci_firma_bilgisi>
+				<Kalem_sira_no>8</Kalem_sira_no>
+				<Mensei_ulke>720</Mensei_ulke>
+				<Brut_agirlik>753.48</Brut_agirlik>
+				<Net_agirlik>753.48</Net_agirlik>
+				<Tamamlayici_olcu_birimi>C62</Tamamlayici_olcu_birimi>
+				<Istatistiki_miktar>400</Istatistiki_miktar>
+				<Uluslararasi_anlasma />
+				<Algilama_birimi_1 />
+				<Algilama_miktari_1>0</Algilama_miktari_1>
+				<Algilama_birimi_2 />
+				<Algilama_miktari_2>0</Algilama_miktari_2>
+				<Muafiyetler_1>NKIST</Muafiyetler_1>
+				<Muafiyetler_2>TRTBND</Muafiyetler_2>
+				<Muafiyetler_3 />
+				<Algilama_birimi_3 />
+				<Algilama_miktari_3>0</Algilama_miktari_3>
+				<Ek_kod />
+				<Ozellik>01</Ozellik>
+				<Fatura_miktari>3710</Fatura_miktari>
+				<Fatura_miktarinin_dovizi>USD</Fatura_miktarinin_dovizi>
+				<Sinir_gecis_ucreti>0</Sinir_gecis_ucreti>
+				<Navlun_miktari>0</Navlun_miktari>
+				<Navlun_miktarinin_dovizi>TRY</Navlun_miktarinin_dovizi>
+				<Istatistiki_kiymet>0</Istatistiki_kiymet>
+				<Sigorta_miktari>0</Sigorta_miktari>
+				<Sigorta_miktarinin_dovizi>TRY</Sigorta_miktarinin_dovizi>
+				<Tarifedeki_tanimi />
+				<Ticari_tanimi>ANA ELEKTRONİK KART</Ticari_tanimi>
+				<Marka>-</Marka>
+				<Numara>FCIU9099846</Numara>
+				<Cinsi>KN</Cinsi>
+				<Adedi>1</Adedi>
+				<Miktar_birimi>C62</Miktar_birimi>
+				<Mahrece_iade />
+				<Ikincil_islem />
+				<Satir_no />
+				<Miktar>400</Miktar>
+				<Kdv_orani />
+				<Kullanilmis_esya>K1</Kullanilmis_esya>
+				<Aciklama_44 />
+				<Imalatci_Vergino />
+				<Yurtici_Diger>154.4</Yurtici_Diger>
+				<Yurtici_Banka>0</Yurtici_Banka>
+				<Yurtici_Depolama>0</Yurtici_Depolama>
+				<Yurtici_Tahliye>0</Yurtici_Tahliye>
+				<Yurtici_Liman>0</Yurtici_Liman>
+				<Yurtici_Kultur>272.23</Yurtici_Kultur>
+				<Yurtici_Kkdf>0</Yurtici_Kkdf>
+				<Yurtici_Cevre>0</Yurtici_Cevre>
+				<Yurtici_Diger_Aciklama>y.içi</Yurtici_Diger_Aciklama>
+				<Muafiyet_Aciklamasi />
+				<Referans_Tarihi />
+				<YurtDisi_Komisyon>0</YurtDisi_Komisyon>
+				<YurtDisi_Demuraj>0</YurtDisi_Demuraj>
+				<YurtDisi_Royalti>0</YurtDisi_Royalti>
+				<YurtDisi_Faiz>0</YurtDisi_Faiz>
+				<YurtDisi_Diger>0</YurtDisi_Diger>
+				<YurtDisi_Komisyon_Dovizi />
+				<YurtDisi_Demuraj_Dovizi />
+				<YurtDisi_Royalti_Dovizi />
+				<YurtDisi_Faiz_Dovizi />
+				<YurtDisi_Diger_Dovizi />
+				<YurtDisi_Diger_Aciklama />
+				<Kalem_Islem_Niteligi />
+				<Giris_Cikis_Amaci />
+				<Giris_Cikis_Amaci_Aciklama />
+				<STM_IlKodu />
+			</kalem>
+			<kalem>
+				<tamamlayici_bilgi xsi:nil="true" />
+				<tcgbacmakapatma_bilgi xsi:nil="true" />
+				<marka_model_bilgi xsi:nil="true" />
+				<konteyner_Bilgi>
+					<Konteyner>
+						<Konteyner_No>FCIU9099846</Konteyner_No>
+						<Ulke_Kodu />
+					</Konteyner>
+				</konteyner_Bilgi>
+				<VergiMuafiyetleri xsi:nil="true" />
+				<HavacilikYakitTurleri xsi:nil="true" />
+				<Gtip>852190000000</Gtip>
+				<Imalatci_firma_bilgisi>HAYIR</Imalatci_firma_bilgisi>
+				<Kalem_sira_no>9</Kalem_sira_no>
+				<Mensei_ulke>720</Mensei_ulke>
+				<Brut_agirlik>462.12</Brut_agirlik>
+				<Net_agirlik>462.12</Net_agirlik>
+				<Tamamlayici_olcu_birimi>C62</Tamamlayici_olcu_birimi>
+				<Istatistiki_miktar>200</Istatistiki_miktar>
+				<Uluslararasi_anlasma />
+				<Algilama_birimi_1 />
+				<Algilama_miktari_1>0</Algilama_miktari_1>
+				<Algilama_birimi_2 />
+				<Algilama_miktari_2>0</Algilama_miktari_2>
+				<Muafiyetler_1>NKIST</Muafiyetler_1>
+				<Muafiyetler_2>TRTBND</Muafiyetler_2>
+				<Muafiyetler_3 />
+				<Algilama_birimi_3 />
+				<Algilama_miktari_3>0</Algilama_miktari_3>
+				<Ek_kod />
+				<Ozellik>01</Ozellik>
+				<Fatura_miktari>2275.4</Fatura_miktari>
+				<Fatura_miktarinin_dovizi>USD</Fatura_miktarinin_dovizi>
+				<Sinir_gecis_ucreti>0</Sinir_gecis_ucreti>
+				<Navlun_miktari>0</Navlun_miktari>
+				<Navlun_miktarinin_dovizi>TRY</Navlun_miktarinin_dovizi>
+				<Istatistiki_kiymet>0</Istatistiki_kiymet>
+				<Sigorta_miktari>0</Sigorta_miktari>
+				<Sigorta_miktarinin_dovizi>TRY</Sigorta_miktarinin_dovizi>
+				<Tarifedeki_tanimi />
+				<Ticari_tanimi>ANA ELEKTRONİK KART</Ticari_tanimi>
+				<Marka>-</Marka>
+				<Numara>FCIU9099846</Numara>
+				<Cinsi>KN</Cinsi>
+				<Adedi>1</Adedi>
+				<Miktar_birimi>C62</Miktar_birimi>
+				<Mahrece_iade />
+				<Ikincil_islem />
+				<Satir_no />
+				<Miktar>200</Miktar>
+				<Kdv_orani />
+				<Kullanilmis_esya>K1</Kullanilmis_esya>
+				<Aciklama_44 />
+				<Imalatci_Vergino />
+				<Yurtici_Diger>94.7</Yurtici_Diger>
+				<Yurtici_Banka>0</Yurtici_Banka>
+				<Yurtici_Depolama>0</Yurtici_Depolama>
+				<Yurtici_Tahliye>0</Yurtici_Tahliye>
+				<Yurtici_Liman>0</Yurtici_Liman>
+				<Yurtici_Kultur>166.96</Yurtici_Kultur>
+				<Yurtici_Kkdf>0</Yurtici_Kkdf>
+				<Yurtici_Cevre>0</Yurtici_Cevre>
+				<Yurtici_Diger_Aciklama>y.içi</Yurtici_Diger_Aciklama>
+				<Muafiyet_Aciklamasi />
+				<Referans_Tarihi />
+				<YurtDisi_Komisyon>0</YurtDisi_Komisyon>
+				<YurtDisi_Demuraj>0</YurtDisi_Demuraj>
+				<YurtDisi_Royalti>0</YurtDisi_Royalti>
+				<YurtDisi_Faiz>0</YurtDisi_Faiz>
+				<YurtDisi_Diger>0</YurtDisi_Diger>
+				<YurtDisi_Komisyon_Dovizi />
+				<YurtDisi_Demuraj_Dovizi />
+				<YurtDisi_Royalti_Dovizi />
+				<YurtDisi_Faiz_Dovizi />
+				<YurtDisi_Diger_Dovizi />
+				<YurtDisi_Diger_Aciklama />
+				<Kalem_Islem_Niteligi />
+				<Giris_Cikis_Amaci />
+				<Giris_Cikis_Amaci_Aciklama />
+				<STM_IlKodu />
+			</kalem>
+			<kalem>
+				<tamamlayici_bilgi xsi:nil="true" />
+				<tcgbacmakapatma_bilgi xsi:nil="true" />
+				<marka_model_bilgi xsi:nil="true" />
+				<konteyner_Bilgi>
+					<Konteyner>
+						<Konteyner_No>FCIU9099846</Konteyner_No>
+						<Ulke_Kodu />
+					</Konteyner>
+				</konteyner_Bilgi>
+				<VergiMuafiyetleri xsi:nil="true" />
+				<HavacilikYakitTurleri xsi:nil="true" />
+				<Gtip>852990659000</Gtip>
+				<Imalatci_firma_bilgisi>HAYIR</Imalatci_firma_bilgisi>
+				<Kalem_sira_no>10</Kalem_sira_no>
+				<Mensei_ulke>720</Mensei_ulke>
+				<Brut_agirlik>9578.16</Brut_agirlik>
+				<Net_agirlik>9578.16</Net_agirlik>
+				<Tamamlayici_olcu_birimi>C62</Tamamlayici_olcu_birimi>
+				<Istatistiki_miktar>251049</Istatistiki_miktar>
+				<Uluslararasi_anlasma />
+				<Algilama_birimi_1 />
+				<Algilama_miktari_1>0</Algilama_miktari_1>
+				<Algilama_birimi_2 />
+				<Algilama_miktari_2>0</Algilama_miktari_2>
+				<Muafiyetler_1>NKIST</Muafiyetler_1>
+				<Muafiyetler_2 />
+				<Muafiyetler_3 />
+				<Algilama_birimi_3 />
+				<Algilama_miktari_3>0</Algilama_miktari_3>
+				<Ek_kod />
+				<Ozellik>01</Ozellik>
+				<Fatura_miktari>47160.93</Fatura_miktari>
+				<Fatura_miktarinin_dovizi>USD</Fatura_miktarinin_dovizi>
+				<Sinir_gecis_ucreti>0</Sinir_gecis_ucreti>
+				<Navlun_miktari>0</Navlun_miktari>
+				<Navlun_miktarinin_dovizi>TRY</Navlun_miktarinin_dovizi>
+				<Istatistiki_kiymet>0</Istatistiki_kiymet>
+				<Sigorta_miktari>0</Sigorta_miktari>
+				<Sigorta_miktarinin_dovizi>TRY</Sigorta_miktarinin_dovizi>
+				<Tarifedeki_tanimi />
+				<Ticari_tanimi>KAMERA AKSAMI(Yalnız uydu yayınlarını almaya mahsus cihazlarda kullanılan ana kartlarından değildir)</Ticari_tanimi>
+				<Marka>-</Marka>
+				<Numara>FCIU9099846</Numara>
+				<Cinsi>KN</Cinsi>
+				<Adedi>1</Adedi>
+				<Miktar_birimi>C62</Miktar_birimi>
+				<Mahrece_iade />
+				<Ikincil_islem />
+				<Satir_no />
+				<Miktar>251049</Miktar>
+				<Kdv_orani />
+				<Kullanilmis_esya>K1</Kullanilmis_esya>
+				<Aciklama_44 />
+				<Imalatci_Vergino />
+				<Yurtici_Diger>1962.73</Yurtici_Diger>
+				<Yurtici_Banka>0</Yurtici_Banka>
+				<Yurtici_Depolama>0</Yurtici_Depolama>
+				<Yurtici_Tahliye>0</Yurtici_Tahliye>
+				<Yurtici_Liman>0</Yurtici_Liman>
+				<Yurtici_Kultur>0</Yurtici_Kultur>
+				<Yurtici_Kkdf>0</Yurtici_Kkdf>
+				<Yurtici_Cevre>0</Yurtici_Cevre>
+				<Yurtici_Diger_Aciklama>y.içi</Yurtici_Diger_Aciklama>
+				<Muafiyet_Aciklamasi />
+				<Referans_Tarihi />
+				<YurtDisi_Komisyon>0</YurtDisi_Komisyon>
+				<YurtDisi_Demuraj>0</YurtDisi_Demuraj>
+				<YurtDisi_Royalti>0</YurtDisi_Royalti>
+				<YurtDisi_Faiz>0</YurtDisi_Faiz>
+				<YurtDisi_Diger>0</YurtDisi_Diger>
+				<YurtDisi_Komisyon_Dovizi />
+				<YurtDisi_Demuraj_Dovizi />
+				<YurtDisi_Royalti_Dovizi />
+				<YurtDisi_Faiz_Dovizi />
+				<YurtDisi_Diger_Dovizi />
+				<YurtDisi_Diger_Aciklama />
+				<Kalem_Islem_Niteligi />
+				<Giris_Cikis_Amaci />
+				<Giris_Cikis_Amaci_Aciklama />
+				<STM_IlKodu />
+			</kalem>
+			<kalem>
+				<tamamlayici_bilgi xsi:nil="true" />
+				<tcgbacmakapatma_bilgi xsi:nil="true" />
+				<marka_model_bilgi xsi:nil="true" />
+				<konteyner_Bilgi>
+					<Konteyner>
+						<Konteyner_No>FCIU9099846</Konteyner_No>
+						<Ulke_Kodu />
+					</Konteyner>
+				</konteyner_Bilgi>
+				<VergiMuafiyetleri xsi:nil="true" />
+				<HavacilikYakitTurleri xsi:nil="true" />
+				<Gtip>852290499000</Gtip>
+				<Imalatci_firma_bilgisi>HAYIR</Imalatci_firma_bilgisi>
+				<Kalem_sira_no>11</Kalem_sira_no>
+				<Mensei_ulke>720</Mensei_ulke>
+				<Brut_agirlik>475.65</Brut_agirlik>
+				<Net_agirlik>475.65</Net_agirlik>
+				<Tamamlayici_olcu_birimi>C62</Tamamlayici_olcu_birimi>
+				<Istatistiki_miktar>7000</Istatistiki_miktar>
+				<Uluslararasi_anlasma />
+				<Algilama_birimi_1 />
+				<Algilama_miktari_1>0</Algilama_miktari_1>
+				<Algilama_birimi_2 />
+				<Algilama_miktari_2>0</Algilama_miktari_2>
+				<Muafiyetler_1>NKIST</Muafiyetler_1>
+				<Muafiyetler_2 />
+				<Muafiyetler_3 />
+				<Algilama_birimi_3 />
+				<Algilama_miktari_3>0</Algilama_miktari_3>
+				<Ek_kod />
+				<Ozellik>01</Ozellik>
+				<Fatura_miktari>2342</Fatura_miktari>
+				<Fatura_miktarinin_dovizi>USD</Fatura_miktarinin_dovizi>
+				<Sinir_gecis_ucreti>0</Sinir_gecis_ucreti>
+				<Navlun_miktari>0</Navlun_miktari>
+				<Navlun_miktarinin_dovizi>TRY</Navlun_miktarinin_dovizi>
+				<Istatistiki_kiymet>0</Istatistiki_kiymet>
+				<Sigorta_miktari>0</Sigorta_miktari>
+				<Sigorta_miktarinin_dovizi>TRY</Sigorta_miktarinin_dovizi>
+				<Tarifedeki_tanimi />
+				<Ticari_tanimi>DVR AKSAMI</Ticari_tanimi>
+				<Marka>-</Marka>
+				<Numara>FCIU9099846</Numara>
+				<Cinsi>KN</Cinsi>
+				<Adedi>1</Adedi>
+				<Miktar_birimi>C62</Miktar_birimi>
+				<Mahrece_iade />
+				<Ikincil_islem />
+				<Satir_no />
+				<Miktar>7000</Miktar>
+				<Kdv_orani />
+				<Kullanilmis_esya>K1</Kullanilmis_esya>
+				<Aciklama_44 />
+				<Imalatci_Vergino />
+				<Yurtici_Diger>97.47</Yurtici_Diger>
+				<Yurtici_Banka>0</Yurtici_Banka>
+				<Yurtici_Depolama>0</Yurtici_Depolama>
+				<Yurtici_Tahliye>0</Yurtici_Tahliye>
+				<Yurtici_Liman>0</Yurtici_Liman>
+				<Yurtici_Kultur>0</Yurtici_Kultur>
+				<Yurtici_Kkdf>0</Yurtici_Kkdf>
+				<Yurtici_Cevre>0</Yurtici_Cevre>
+				<Yurtici_Diger_Aciklama>y.içi</Yurtici_Diger_Aciklama>
+				<Muafiyet_Aciklamasi />
+				<Referans_Tarihi />
+				<YurtDisi_Komisyon>0</YurtDisi_Komisyon>
+				<YurtDisi_Demuraj>0</YurtDisi_Demuraj>
+				<YurtDisi_Royalti>0</YurtDisi_Royalti>
+				<YurtDisi_Faiz>0</YurtDisi_Faiz>
+				<YurtDisi_Diger>0</YurtDisi_Diger>
+				<YurtDisi_Komisyon_Dovizi />
+				<YurtDisi_Demuraj_Dovizi />
+				<YurtDisi_Royalti_Dovizi />
+				<YurtDisi_Faiz_Dovizi />
+				<YurtDisi_Diger_Dovizi />
+				<YurtDisi_Diger_Aciklama />
+				<Kalem_Islem_Niteligi />
+				<Giris_Cikis_Amaci />
+				<Giris_Cikis_Amaci_Aciklama />
+				<STM_IlKodu />
+			</kalem>
+			<kalem>
+				<tamamlayici_bilgi xsi:nil="true" />
+				<tcgbacmakapatma_bilgi xsi:nil="true" />
+				<marka_model_bilgi xsi:nil="true" />
+				<konteyner_Bilgi>
+					<Konteyner>
+						<Konteyner_No>FCIU9099846</Konteyner_No>
+						<Ulke_Kodu />
+					</Konteyner>
+				</konteyner_Bilgi>
+				<VergiMuafiyetleri xsi:nil="true" />
+				<HavacilikYakitTurleri xsi:nil="true" />
+				<Gtip>702000800000</Gtip>
+				<Imalatci_firma_bilgisi>HAYIR</Imalatci_firma_bilgisi>
+				<Kalem_sira_no>12</Kalem_sira_no>
+				<Mensei_ulke>720</Mensei_ulke>
+				<Brut_agirlik>27.04</Brut_agirlik>
+				<Net_agirlik>27.04</Net_agirlik>
+				<Tamamlayici_olcu_birimi>C62</Tamamlayici_olcu_birimi>
+				<Istatistiki_miktar>1850</Istatistiki_miktar>
+				<Uluslararasi_anlasma />
+				<Algilama_birimi_1 />
+				<Algilama_miktari_1>0</Algilama_miktari_1>
+				<Algilama_birimi_2 />
+				<Algilama_miktari_2>0</Algilama_miktari_2>
+				<Muafiyetler_1 />
+				<Muafiyetler_2 />
+				<Muafiyetler_3 />
+				<Algilama_birimi_3 />
+				<Algilama_miktari_3>0</Algilama_miktari_3>
+				<Ek_kod />
+				<Ozellik>01</Ozellik>
+				<Fatura_miktari>133.12</Fatura_miktari>
+				<Fatura_miktarinin_dovizi>USD</Fatura_miktarinin_dovizi>
+				<Sinir_gecis_ucreti>0</Sinir_gecis_ucreti>
+				<Navlun_miktari>0</Navlun_miktari>
+				<Navlun_miktarinin_dovizi>TRY</Navlun_miktarinin_dovizi>
+				<Istatistiki_kiymet>0</Istatistiki_kiymet>
+				<Sigorta_miktari>0</Sigorta_miktari>
+				<Sigorta_miktarinin_dovizi>TRY</Sigorta_miktarinin_dovizi>
+				<Tarifedeki_tanimi />
+				<Ticari_tanimi>CAMDAN EŞYA</Ticari_tanimi>
+				<Marka>-</Marka>
+				<Numara>FCIU9099846</Numara>
+				<Cinsi>KN</Cinsi>
+				<Adedi>1</Adedi>
+				<Miktar_birimi>C62</Miktar_birimi>
+				<Mahrece_iade />
+				<Ikincil_islem />
+				<Satir_no />
+				<Miktar>1850</Miktar>
+				<Kdv_orani />
+				<Kullanilmis_esya>K1</Kullanilmis_esya>
+				<Aciklama_44 />
+				<Imalatci_Vergino />
+				<Yurtici_Diger>5.54</Yurtici_Diger>
+				<Yurtici_Banka>0</Yurtici_Banka>
+				<Yurtici_Depolama>0</Yurtici_Depolama>
+				<Yurtici_Tahliye>0</Yurtici_Tahliye>
+				<Yurtici_Liman>0</Yurtici_Liman>
+				<Yurtici_Kultur>0</Yurtici_Kultur>
+				<Yurtici_Kkdf>0</Yurtici_Kkdf>
+				<Yurtici_Cevre>0</Yurtici_Cevre>
+				<Yurtici_Diger_Aciklama>y.içi</Yurtici_Diger_Aciklama>
+				<Muafiyet_Aciklamasi />
+				<Referans_Tarihi />
+				<YurtDisi_Komisyon>0</YurtDisi_Komisyon>
+				<YurtDisi_Demuraj>0</YurtDisi_Demuraj>
+				<YurtDisi_Royalti>0</YurtDisi_Royalti>
+				<YurtDisi_Faiz>0</YurtDisi_Faiz>
+				<YurtDisi_Diger>0</YurtDisi_Diger>
+				<YurtDisi_Komisyon_Dovizi />
+				<YurtDisi_Demuraj_Dovizi />
+				<YurtDisi_Royalti_Dovizi />
+				<YurtDisi_Faiz_Dovizi />
+				<YurtDisi_Diger_Dovizi />
+				<YurtDisi_Diger_Aciklama />
+				<Kalem_Islem_Niteligi />
+				<Giris_Cikis_Amaci />
+				<Giris_Cikis_Amaci_Aciklama />
+				<STM_IlKodu />
+			</kalem>
+			<kalem>
+				<tamamlayici_bilgi xsi:nil="true" />
+				<tcgbacmakapatma_bilgi xsi:nil="true" />
+				<marka_model_bilgi xsi:nil="true" />
+				<konteyner_Bilgi>
+					<Konteyner>
+						<Konteyner_No>FCIU9099846</Konteyner_No>
+						<Ulke_Kodu />
+					</Konteyner>
+				</konteyner_Bilgi>
+				<VergiMuafiyetleri xsi:nil="true" />
+				<HavacilikYakitTurleri xsi:nil="true" />
+				<Gtip>847160709014</Gtip>
+				<Imalatci_firma_bilgisi>HAYIR</Imalatci_firma_bilgisi>
+				<Kalem_sira_no>13</Kalem_sira_no>
+				<Mensei_ulke>720</Mensei_ulke>
+				<Brut_agirlik>1325.34</Brut_agirlik>
+				<Net_agirlik>1325.34</Net_agirlik>
+				<Tamamlayici_olcu_birimi>C62</Tamamlayici_olcu_birimi>
+				<Istatistiki_miktar>26000</Istatistiki_miktar>
+				<Uluslararasi_anlasma />
+				<Algilama_birimi_1 />
+				<Algilama_miktari_1>0</Algilama_miktari_1>
+				<Algilama_birimi_2 />
+				<Algilama_miktari_2>0</Algilama_miktari_2>
+				<Muafiyetler_1 />
+				<Muafiyetler_2 />
+				<Muafiyetler_3 />
+				<Algilama_birimi_3 />
+				<Algilama_miktari_3>0</Algilama_miktari_3>
+				<Ek_kod />
+				<Ozellik>01</Ozellik>
+				<Fatura_miktari>6890</Fatura_miktari>
+				<Fatura_miktarinin_dovizi>USD</Fatura_miktarinin_dovizi>
+				<Sinir_gecis_ucreti>0</Sinir_gecis_ucreti>
+				<Navlun_miktari>0</Navlun_miktari>
+				<Navlun_miktarinin_dovizi>TRY</Navlun_miktarinin_dovizi>
+				<Istatistiki_kiymet>0</Istatistiki_kiymet>
+				<Sigorta_miktari>0</Sigorta_miktari>
+				<Sigorta_miktarinin_dovizi>TRY</Sigorta_miktarinin_dovizi>
+				<Tarifedeki_tanimi />
+				<Ticari_tanimi>MOUSE</Ticari_tanimi>
+				<Marka>-</Marka>
+				<Numara>FCIU9099846</Numara>
+				<Cinsi>KN</Cinsi>
+				<Adedi>1</Adedi>
+				<Miktar_birimi>C62</Miktar_birimi>
+				<Mahrece_iade />
+				<Ikincil_islem />
+				<Satir_no />
+				<Miktar>26000</Miktar>
+				<Kdv_orani />
+				<Kullanilmis_esya>K1</Kullanilmis_esya>
+				<Aciklama_44 />
+				<Imalatci_Vergino />
+				<Yurtici_Diger>286.75</Yurtici_Diger>
+				<Yurtici_Banka>0</Yurtici_Banka>
+				<Yurtici_Depolama>0</Yurtici_Depolama>
+				<Yurtici_Tahliye>0</Yurtici_Tahliye>
+				<Yurtici_Liman>0</Yurtici_Liman>
+				<Yurtici_Kultur>0</Yurtici_Kultur>
+				<Yurtici_Kkdf>0</Yurtici_Kkdf>
+				<Yurtici_Cevre>0</Yurtici_Cevre>
+				<Yurtici_Diger_Aciklama>y.içi</Yurtici_Diger_Aciklama>
+				<Muafiyet_Aciklamasi />
+				<Referans_Tarihi />
+				<YurtDisi_Komisyon>0</YurtDisi_Komisyon>
+				<YurtDisi_Demuraj>0</YurtDisi_Demuraj>
+				<YurtDisi_Royalti>0</YurtDisi_Royalti>
+				<YurtDisi_Faiz>0</YurtDisi_Faiz>
+				<YurtDisi_Diger>0</YurtDisi_Diger>
+				<YurtDisi_Komisyon_Dovizi />
+				<YurtDisi_Demuraj_Dovizi />
+				<YurtDisi_Royalti_Dovizi />
+				<YurtDisi_Faiz_Dovizi />
+				<YurtDisi_Diger_Dovizi />
+				<YurtDisi_Diger_Aciklama />
+				<Kalem_Islem_Niteligi />
+				<Giris_Cikis_Amaci />
+				<Giris_Cikis_Amaci_Aciklama />
+				<STM_IlKodu />
+			</kalem>
+			<kalem>
+				<tamamlayici_bilgi xsi:nil="true" />
+				<tcgbacmakapatma_bilgi xsi:nil="true" />
+				<marka_model_bilgi xsi:nil="true" />
+				<konteyner_Bilgi>
+					<Konteyner>
+						<Konteyner_No>FCIU9099846</Konteyner_No>
+						<Ulke_Kodu />
+					</Konteyner>
+				</konteyner_Bilgi>
+				<VergiMuafiyetleri xsi:nil="true" />
+				<HavacilikYakitTurleri xsi:nil="true" />
+				<Gtip>401699979019</Gtip>
+				<Imalatci_firma_bilgisi>HAYIR</Imalatci_firma_bilgisi>
+				<Kalem_sira_no>14</Kalem_sira_no>
+				<Mensei_ulke>720</Mensei_ulke>
+				<Brut_agirlik>902.56</Brut_agirlik>
+				<Net_agirlik>902.56</Net_agirlik>
+				<Tamamlayici_olcu_birimi>C62</Tamamlayici_olcu_birimi>
+				<Istatistiki_miktar>107000</Istatistiki_miktar>
+				<Uluslararasi_anlasma />
+				<Algilama_birimi_1 />
+				<Algilama_miktari_1>0</Algilama_miktari_1>
+				<Algilama_birimi_2 />
+				<Algilama_miktari_2>0</Algilama_miktari_2>
+				<Muafiyetler_1>NKIST</Muafiyetler_1>
+				<Muafiyetler_2 />
+				<Muafiyetler_3 />
+				<Algilama_birimi_3 />
+				<Algilama_miktari_3>0</Algilama_miktari_3>
+				<Ek_kod />
+				<Ozellik>01</Ozellik>
+				<Fatura_miktari>4444.05</Fatura_miktari>
+				<Fatura_miktarinin_dovizi>USD</Fatura_miktarinin_dovizi>
+				<Sinir_gecis_ucreti>0</Sinir_gecis_ucreti>
+				<Navlun_miktari>0</Navlun_miktari>
+				<Navlun_miktarinin_dovizi>TRY</Navlun_miktarinin_dovizi>
+				<Istatistiki_kiymet>0</Istatistiki_kiymet>
+				<Sigorta_miktari>0</Sigorta_miktari>
+				<Sigorta_miktarinin_dovizi>TRY</Sigorta_miktarinin_dovizi>
+				<Tarifedeki_tanimi />
+				<Ticari_tanimi>KAUÇUKTAN EŞYA</Ticari_tanimi>
+				<Marka>-</Marka>
+				<Numara>FCIU9099846</Numara>
+				<Cinsi>KN</Cinsi>
+				<Adedi>1</Adedi>
+				<Miktar_birimi>C62</Miktar_birimi>
+				<Mahrece_iade />
+				<Ikincil_islem />
+				<Satir_no />
+				<Miktar>107000</Miktar>
+				<Kdv_orani />
+				<Kullanilmis_esya>K1</Kullanilmis_esya>
+				<Aciklama_44 />
+				<Imalatci_Vergino />
+				<Yurtici_Diger>184.95</Yurtici_Diger>
+				<Yurtici_Banka>0</Yurtici_Banka>
+				<Yurtici_Depolama>0</Yurtici_Depolama>
+				<Yurtici_Tahliye>0</Yurtici_Tahliye>
+				<Yurtici_Liman>0</Yurtici_Liman>
+				<Yurtici_Kultur>0</Yurtici_Kultur>
+				<Yurtici_Kkdf>0</Yurtici_Kkdf>
+				<Yurtici_Cevre>0</Yurtici_Cevre>
+				<Yurtici_Diger_Aciklama>y.içi</Yurtici_Diger_Aciklama>
+				<Muafiyet_Aciklamasi />
+				<Referans_Tarihi />
+				<YurtDisi_Komisyon>0</YurtDisi_Komisyon>
+				<YurtDisi_Demuraj>0</YurtDisi_Demuraj>
+				<YurtDisi_Royalti>0</YurtDisi_Royalti>
+				<YurtDisi_Faiz>0</YurtDisi_Faiz>
+				<YurtDisi_Diger>0</YurtDisi_Diger>
+				<YurtDisi_Komisyon_Dovizi />
+				<YurtDisi_Demuraj_Dovizi />
+				<YurtDisi_Royalti_Dovizi />
+				<YurtDisi_Faiz_Dovizi />
+				<YurtDisi_Diger_Dovizi />
+				<YurtDisi_Diger_Aciklama />
+				<Kalem_Islem_Niteligi />
+				<Giris_Cikis_Amaci />
+				<Giris_Cikis_Amaci_Aciklama />
+				<STM_IlKodu />
+			</kalem>
+			<kalem>
+				<tamamlayici_bilgi xsi:nil="true" />
+				<tcgbacmakapatma_bilgi xsi:nil="true" />
+				<marka_model_bilgi xsi:nil="true" />
+				<konteyner_Bilgi>
+					<Konteyner>
+						<Konteyner_No>FCIU9099846</Konteyner_No>
+						<Ulke_Kodu />
+					</Konteyner>
+				</konteyner_Bilgi>
+				<VergiMuafiyetleri xsi:nil="true" />
+				<HavacilikYakitTurleri xsi:nil="true" />
+				<Gtip>731815520000</Gtip>
+				<Imalatci_firma_bilgisi>HAYIR</Imalatci_firma_bilgisi>
+				<Kalem_sira_no>15</Kalem_sira_no>
+				<Mensei_ulke>720</Mensei_ulke>
+				<Brut_agirlik>462.3</Brut_agirlik>
+				<Net_agirlik>462.3</Net_agirlik>
+				<Tamamlayici_olcu_birimi>C62</Tamamlayici_olcu_birimi>
+				<Istatistiki_miktar>1400900</Istatistiki_miktar>
+				<Uluslararasi_anlasma />
+				<Algilama_birimi_1 />
+				<Algilama_miktari_1>0</Algilama_miktari_1>
+				<Algilama_birimi_2 />
+				<Algilama_miktari_2>0</Algilama_miktari_2>
+				<Muafiyetler_1 />
+				<Muafiyetler_2 />
+				<Muafiyetler_3 />
+				<Algilama_birimi_3 />
+				<Algilama_miktari_3>0</Algilama_miktari_3>
+				<Ek_kod />
+				<Ozellik>01</Ozellik>
+				<Fatura_miktari>1912.01</Fatura_miktari>
+				<Fatura_miktarinin_dovizi>USD</Fatura_miktarinin_dovizi>
+				<Sinir_gecis_ucreti>0</Sinir_gecis_ucreti>
+				<Navlun_miktari>0</Navlun_miktari>
+				<Navlun_miktarinin_dovizi>TRY</Navlun_miktarinin_dovizi>
+				<Istatistiki_kiymet>0</Istatistiki_kiymet>
+				<Sigorta_miktari>0</Sigorta_miktari>
+				<Sigorta_miktarinin_dovizi>TRY</Sigorta_miktarinin_dovizi>
+				<Tarifedeki_tanimi />
+				<Ticari_tanimi>VİDA</Ticari_tanimi>
+				<Marka>-</Marka>
+				<Numara>FCIU9099846</Numara>
+				<Cinsi>KN</Cinsi>
+				<Adedi>1</Adedi>
+				<Miktar_birimi>C62</Miktar_birimi>
+				<Mahrece_iade />
+				<Ikincil_islem />
+				<Satir_no />
+				<Miktar>1400900</Miktar>
+				<Kdv_orani />
+				<Kullanilmis_esya>K1</Kullanilmis_esya>
+				<Aciklama_44>2004-20 TEBLİĞİ UYARINCA EK KIYMET VE GÖZETİM FARKI Y.DIŞI GİDERE EKLENMİŞTİR.2012-3 GENELGE İLE İHTİRAZI KAYIT YAPILMAYACAĞINI TAAHÜT EDERİZ</Aciklama_44>
+				<Imalatci_Vergino />
+				<Yurtici_Diger>79.57</Yurtici_Diger>
+				<Yurtici_Banka>0</Yurtici_Banka>
+				<Yurtici_Depolama>0</Yurtici_Depolama>
+				<Yurtici_Tahliye>0</Yurtici_Tahliye>
+				<Yurtici_Liman>0</Yurtici_Liman>
+				<Yurtici_Kultur>0</Yurtici_Kultur>
+				<Yurtici_Kkdf>0</Yurtici_Kkdf>
+				<Yurtici_Cevre>0</Yurtici_Cevre>
+				<Yurtici_Diger_Aciklama>y.içi</Yurtici_Diger_Aciklama>
+				<Muafiyet_Aciklamasi />
+				<Referans_Tarihi />
+				<YurtDisi_Komisyon>0</YurtDisi_Komisyon>
+				<YurtDisi_Demuraj>0</YurtDisi_Demuraj>
+				<YurtDisi_Royalti>0</YurtDisi_Royalti>
+				<YurtDisi_Faiz>0</YurtDisi_Faiz>
+				<YurtDisi_Diger>4010</YurtDisi_Diger>
+				<YurtDisi_Komisyon_Dovizi />
+				<YurtDisi_Demuraj_Dovizi />
+				<YurtDisi_Royalti_Dovizi />
+				<YurtDisi_Faiz_Dovizi />
+				<YurtDisi_Diger_Dovizi>TRY</YurtDisi_Diger_Dovizi>
+				<YurtDisi_Diger_Aciklama />
+				<Kalem_Islem_Niteligi />
+				<Giris_Cikis_Amaci />
+				<Giris_Cikis_Amaci_Aciklama />
+				<STM_IlKodu />
+			</kalem>
+			<kalem>
+				<tamamlayici_bilgi xsi:nil="true" />
+				<tcgbacmakapatma_bilgi xsi:nil="true" />
+				<marka_model_bilgi xsi:nil="true" />
+				<konteyner_Bilgi>
+					<Konteyner>
+						<Konteyner_No>FCIU9099846</Konteyner_No>
+						<Ulke_Kodu />
+					</Konteyner>
+				</konteyner_Bilgi>
+				<VergiMuafiyetleri xsi:nil="true" />
+				<HavacilikYakitTurleri xsi:nil="true" />
+				<Gtip>853669300000</Gtip>
+				<Imalatci_firma_bilgisi>HAYIR</Imalatci_firma_bilgisi>
+				<Kalem_sira_no>16</Kalem_sira_no>
+				<Mensei_ulke>720</Mensei_ulke>
+				<Brut_agirlik>3.55</Brut_agirlik>
+				<Net_agirlik>3.55</Net_agirlik>
+				<Tamamlayici_olcu_birimi>C62</Tamamlayici_olcu_birimi>
+				<Istatistiki_miktar>22000</Istatistiki_miktar>
+				<Uluslararasi_anlasma />
+				<Algilama_birimi_1 />
+				<Algilama_miktari_1>0</Algilama_miktari_1>
+				<Algilama_birimi_2 />
+				<Algilama_miktari_2>0</Algilama_miktari_2>
+				<Muafiyetler_1 />
+				<Muafiyetler_2 />
+				<Muafiyetler_3 />
+				<Algilama_birimi_3 />
+				<Algilama_miktari_3>0</Algilama_miktari_3>
+				<Ek_kod />
+				<Ozellik>01</Ozellik>
+				<Fatura_miktari>17.5</Fatura_miktari>
+				<Fatura_miktarinin_dovizi>USD</Fatura_miktarinin_dovizi>
+				<Sinir_gecis_ucreti>0</Sinir_gecis_ucreti>
+				<Navlun_miktari>0</Navlun_miktari>
+				<Navlun_miktarinin_dovizi>TRY</Navlun_miktarinin_dovizi>
+				<Istatistiki_kiymet>0</Istatistiki_kiymet>
+				<Sigorta_miktari>0</Sigorta_miktari>
+				<Sigorta_miktarinin_dovizi>TRY</Sigorta_miktarinin_dovizi>
+				<Tarifedeki_tanimi />
+				<Ticari_tanimi>SOKET</Ticari_tanimi>
+				<Marka>-</Marka>
+				<Numara>FCIU9099846</Numara>
+				<Cinsi>KN</Cinsi>
+				<Adedi>1</Adedi>
+				<Miktar_birimi>C62</Miktar_birimi>
+				<Mahrece_iade />
+				<Ikincil_islem />
+				<Satir_no />
+				<Miktar>22000</Miktar>
+				<Kdv_orani />
+				<Kullanilmis_esya>K1</Kullanilmis_esya>
+				<Aciklama_44 />
+				<Imalatci_Vergino />
+				<Yurtici_Diger>0.73</Yurtici_Diger>
+				<Yurtici_Banka>0</Yurtici_Banka>
+				<Yurtici_Depolama>0</Yurtici_Depolama>
+				<Yurtici_Tahliye>0</Yurtici_Tahliye>
+				<Yurtici_Liman>0</Yurtici_Liman>
+				<Yurtici_Kultur>0</Yurtici_Kultur>
+				<Yurtici_Kkdf>0</Yurtici_Kkdf>
+				<Yurtici_Cevre>0</Yurtici_Cevre>
+				<Yurtici_Diger_Aciklama>y.içi</Yurtici_Diger_Aciklama>
+				<Muafiyet_Aciklamasi />
+				<Referans_Tarihi />
+				<YurtDisi_Komisyon>0</YurtDisi_Komisyon>
+				<YurtDisi_Demuraj>0</YurtDisi_Demuraj>
+				<YurtDisi_Royalti>0</YurtDisi_Royalti>
+				<YurtDisi_Faiz>0</YurtDisi_Faiz>
+				<YurtDisi_Diger>0</YurtDisi_Diger>
+				<YurtDisi_Komisyon_Dovizi />
+				<YurtDisi_Demuraj_Dovizi />
+				<YurtDisi_Royalti_Dovizi />
+				<YurtDisi_Faiz_Dovizi />
+				<YurtDisi_Diger_Dovizi />
+				<YurtDisi_Diger_Aciklama />
+				<Kalem_Islem_Niteligi />
+				<Giris_Cikis_Amaci />
+				<Giris_Cikis_Amaci_Aciklama />
+				<STM_IlKodu />
+			</kalem>
+			<kalem>
+				<tamamlayici_bilgi xsi:nil="true" />
+				<tcgbacmakapatma_bilgi xsi:nil="true" />
+				<marka_model_bilgi xsi:nil="true" />
+				<konteyner_Bilgi>
+					<Konteyner>
+						<Konteyner_No>FCIU9099846</Konteyner_No>
+						<Ulke_Kodu />
+					</Konteyner>
+				</konteyner_Bilgi>
+				<VergiMuafiyetleri xsi:nil="true" />
+				<HavacilikYakitTurleri xsi:nil="true" />
+				<Gtip>392690979018</Gtip>
+				<Imalatci_firma_bilgisi>HAYIR</Imalatci_firma_bilgisi>
+				<Kalem_sira_no>17</Kalem_sira_no>
+				<Mensei_ulke>720</Mensei_ulke>
+				<Brut_agirlik>76.61</Brut_agirlik>
+				<Net_agirlik>76.61</Net_agirlik>
+				<Tamamlayici_olcu_birimi>C62</Tamamlayici_olcu_birimi>
+				<Istatistiki_miktar>5500</Istatistiki_miktar>
+				<Uluslararasi_anlasma />
+				<Algilama_birimi_1 />
+				<Algilama_miktari_1>0</Algilama_miktari_1>
+				<Algilama_birimi_2 />
+				<Algilama_miktari_2>0</Algilama_miktari_2>
+				<Muafiyetler_1>NKIST</Muafiyetler_1>
+				<Muafiyetler_2>DKVMF</Muafiyetler_2>
+				<Muafiyetler_3 />
+				<Algilama_birimi_3 />
+				<Algilama_miktari_3>0</Algilama_miktari_3>
+				<Ek_kod />
+				<Ozellik>01</Ozellik>
+				<Fatura_miktari>377.22</Fatura_miktari>
+				<Fatura_miktarinin_dovizi>USD</Fatura_miktarinin_dovizi>
+				<Sinir_gecis_ucreti>0</Sinir_gecis_ucreti>
+				<Navlun_miktari>0</Navlun_miktari>
+				<Navlun_miktarinin_dovizi>TRY</Navlun_miktarinin_dovizi>
+				<Istatistiki_kiymet>0</Istatistiki_kiymet>
+				<Sigorta_miktari>0</Sigorta_miktari>
+				<Sigorta_miktarinin_dovizi>TRY</Sigorta_miktarinin_dovizi>
+				<Tarifedeki_tanimi />
+				<Ticari_tanimi>PLASTİK EŞYA(yalnız manşonlu ve tıkaç şeklindeki kulak koruyucularından değildir)</Ticari_tanimi>
+				<Marka>-</Marka>
+				<Numara>FCIU9099846</Numara>
+				<Cinsi>KN</Cinsi>
+				<Adedi>1</Adedi>
+				<Miktar_birimi>C62</Miktar_birimi>
+				<Mahrece_iade />
+				<Ikincil_islem />
+				<Satir_no />
+				<Miktar>5500</Miktar>
+				<Kdv_orani>KDV18</Kdv_orani>
+				<Kullanilmis_esya>K1</Kullanilmis_esya>
+				<Aciklama_44>'2017/5 Teb.Gıd.Yem Bitki Gıda Tem.Eden Mad.Ek Listeler Kap.Değildir'</Aciklama_44>
+				<Imalatci_Vergino />
+				<Yurtici_Diger>15.71</Yurtici_Diger>
+				<Yurtici_Banka>0</Yurtici_Banka>
+				<Yurtici_Depolama>0</Yurtici_Depolama>
+				<Yurtici_Tahliye>0</Yurtici_Tahliye>
+				<Yurtici_Liman>0</Yurtici_Liman>
+				<Yurtici_Kultur>0</Yurtici_Kultur>
+				<Yurtici_Kkdf>0</Yurtici_Kkdf>
+				<Yurtici_Cevre>0</Yurtici_Cevre>
+				<Yurtici_Diger_Aciklama>y.içi</Yurtici_Diger_Aciklama>
+				<Muafiyet_Aciklamasi />
+				<Referans_Tarihi />
+				<YurtDisi_Komisyon>0</YurtDisi_Komisyon>
+				<YurtDisi_Demuraj>0</YurtDisi_Demuraj>
+				<YurtDisi_Royalti>0</YurtDisi_Royalti>
+				<YurtDisi_Faiz>0</YurtDisi_Faiz>
+				<YurtDisi_Diger>0</YurtDisi_Diger>
+				<YurtDisi_Komisyon_Dovizi />
+				<YurtDisi_Demuraj_Dovizi />
+				<YurtDisi_Royalti_Dovizi />
+				<YurtDisi_Faiz_Dovizi />
+				<YurtDisi_Diger_Dovizi />
+				<YurtDisi_Diger_Aciklama />
+				<Kalem_Islem_Niteligi />
+				<Giris_Cikis_Amaci />
+				<Giris_Cikis_Amaci_Aciklama />
+				<STM_IlKodu />
+			</kalem>
+		</Kalemler>
+		<Sorular_cevaplar>
+			<Soru_Cevap>
+				<Kalem_no>1</Kalem_no>
+				<Soru_no>5057</Soru_no>
+				<Cevap>HAYIR</Cevap>
+			</Soru_Cevap>
+			<Soru_Cevap>
+				<Kalem_no>1</Kalem_no>
+				<Soru_no>4329</Soru_no>
+				<Cevap>EVET</Cevap>
+			</Soru_Cevap>
+			<Soru_Cevap>
+				<Kalem_no>2</Kalem_no>
+				<Soru_no>5057</Soru_no>
+				<Cevap>HAYIR</Cevap>
+			</Soru_Cevap>
+			<Soru_Cevap>
+				<Kalem_no>2</Kalem_no>
+				<Soru_no>4329</Soru_no>
+				<Cevap>EVET</Cevap>
+			</Soru_Cevap>
+			<Soru_Cevap>
+				<Kalem_no>3</Kalem_no>
+				<Soru_no>5057</Soru_no>
+				<Cevap>HAYIR</Cevap>
+			</Soru_Cevap>
+			<Soru_Cevap>
+				<Kalem_no>3</Kalem_no>
+				<Soru_no>4329</Soru_no>
+				<Cevap>EVET</Cevap>
+			</Soru_Cevap>
+			<Soru_Cevap>
+				<Kalem_no>4</Kalem_no>
+				<Soru_no>5057</Soru_no>
+				<Cevap>HAYIR</Cevap>
+			</Soru_Cevap>
+			<Soru_Cevap>
+				<Kalem_no>4</Kalem_no>
+				<Soru_no>4329</Soru_no>
+				<Cevap>EVET</Cevap>
+			</Soru_Cevap>
+			<Soru_Cevap>
+				<Kalem_no>5</Kalem_no>
+				<Soru_no>3730</Soru_no>
+				<Cevap>HAYIR</Cevap>
+			</Soru_Cevap>
+			<Soru_Cevap>
+				<Kalem_no>6</Kalem_no>
+				<Soru_no>4293</Soru_no>
+				<Cevap>HAYIR</Cevap>
+			</Soru_Cevap>
+			<Soru_Cevap>
+				<Kalem_no>7</Kalem_no>
+				<Soru_no>5057</Soru_no>
+				<Cevap>HAYIR</Cevap>
+			</Soru_Cevap>
+			<Soru_Cevap>
+				<Kalem_no>7</Kalem_no>
+				<Soru_no>4329</Soru_no>
+				<Cevap>EVET</Cevap>
+			</Soru_Cevap>
+			<Soru_Cevap>
+				<Kalem_no>7</Kalem_no>
+				<Soru_no>5039</Soru_no>
+				<Cevap>EVET</Cevap>
+			</Soru_Cevap>
+			<Soru_Cevap>
+				<Kalem_no>8</Kalem_no>
+				<Soru_no>5057</Soru_no>
+				<Cevap>HAYIR</Cevap>
+			</Soru_Cevap>
+			<Soru_Cevap>
+				<Kalem_no>8</Kalem_no>
+				<Soru_no>4329</Soru_no>
+				<Cevap>EVET</Cevap>
+			</Soru_Cevap>
+			<Soru_Cevap>
+				<Kalem_no>8</Kalem_no>
+				<Soru_no>5039</Soru_no>
+				<Cevap>EVET</Cevap>
+			</Soru_Cevap>
+			<Soru_Cevap>
+				<Kalem_no>9</Kalem_no>
+				<Soru_no>5057</Soru_no>
+				<Cevap>HAYIR</Cevap>
+			</Soru_Cevap>
+			<Soru_Cevap>
+				<Kalem_no>9</Kalem_no>
+				<Soru_no>4329</Soru_no>
+				<Cevap>EVET</Cevap>
+			</Soru_Cevap>
+			<Soru_Cevap>
+				<Kalem_no>9</Kalem_no>
+				<Soru_no>5039</Soru_no>
+				<Cevap>EVET</Cevap>
+			</Soru_Cevap>
+			<Soru_Cevap>
+				<Kalem_no>10</Kalem_no>
+				<Soru_no>4293</Soru_no>
+				<Cevap>HAYIR</Cevap>
+			</Soru_Cevap>
+			<Soru_Cevap>
+				<Kalem_no>10</Kalem_no>
+				<Soru_no>4264</Soru_no>
+				<Cevap>HAYIR</Cevap>
+			</Soru_Cevap>
+			<Soru_Cevap>
+				<Kalem_no>15</Kalem_no>
+				<Soru_no>4293</Soru_no>
+				<Cevap>HAYIR</Cevap>
+			</Soru_Cevap>
+			<Soru_Cevap>
+				<Kalem_no>17</Kalem_no>
+				<Soru_no>5035</Soru_no>
+				<Cevap>HAYIR</Cevap>
+			</Soru_Cevap>
+			<Soru_Cevap>
+				<Kalem_no>17</Kalem_no>
+				<Soru_no>5048</Soru_no>
+				<Cevap>HAYIR</Cevap>
+			</Soru_Cevap>
+			<Soru_Cevap>
+				<Kalem_no>17</Kalem_no>
+				<Soru_no>4293</Soru_no>
+				<Cevap>HAYIR</Cevap>
+			</Soru_Cevap>
+			<Soru_Cevap>
+				<Kalem_no>17</Kalem_no>
+				<Soru_no>4168</Soru_no>
+				<Cevap>HAYIR</Cevap>
+			</Soru_Cevap>
+		</Sorular_cevaplar>
+		<Dokumanlar>
+			<Dokuman>
+				<Kalem_no>1</Kalem_no>
+				<Kod>0100</Kod>
+				<Dogrulama>V</Dogrulama>
+				<Belge_tarihi>15/03/2017</Belge_tarihi>
+				<Referans>OS201703009-10-11-12-13-14-15-16</Referans>
+			</Dokuman>
+			<Dokuman>
+				<Kalem_no>1</Kalem_no>
+				<Kod>0103</Kod>
+				<Dogrulama>V</Dogrulama>
+				<Belge_tarihi>20/04/2017</Belge_tarihi>
+				<Referans>E-İMZALIDIR</Referans>
+			</Dokuman>
+			<Dokuman>
+				<Kalem_no>1</Kalem_no>
+				<Kod>0105</Kod>
+				<Dogrulama>V</Dogrulama>
+				<Belge_tarihi>28/03/2017</Belge_tarihi>
+				<Referans>1117H18718-16.03.17-18275-05.04.17-19027</Referans>
+			</Dokuman>
+			<Dokuman>
+				<Kalem_no>1</Kalem_no>
+				<Kod>0969</Kod>
+				<Dogrulama>V</Dogrulama>
+				<Belge_tarihi>18/04/2017</Belge_tarihi>
+				<Referans>17243061410969003654984/1</Referans>
+			</Dokuman>
+			<Dokuman>
+				<Kalem_no>2</Kalem_no>
+				<Kod>0100</Kod>
+				<Dogrulama>V</Dogrulama>
+				<Belge_tarihi>15/03/2017</Belge_tarihi>
+				<Referans>OS201703009-10-11-12-13-14-15-16</Referans>
+			</Dokuman>
+			<Dokuman>
+				<Kalem_no>2</Kalem_no>
+				<Kod>0105</Kod>
+				<Dogrulama>V</Dogrulama>
+				<Belge_tarihi>28/03/2017</Belge_tarihi>
+				<Referans>1117H18718-16.03.17-18275-05.04.17-19027</Referans>
+			</Dokuman>
+			<Dokuman>
+				<Kalem_no>2</Kalem_no>
+				<Kod>0969</Kod>
+				<Dogrulama>V</Dogrulama>
+				<Belge_tarihi>18/04/2017</Belge_tarihi>
+				<Referans>17243061410969003654983/1</Referans>
+			</Dokuman>
+			<Dokuman>
+				<Kalem_no>3</Kalem_no>
+				<Kod>0100</Kod>
+				<Dogrulama>V</Dogrulama>
+				<Belge_tarihi>15/03/2017</Belge_tarihi>
+				<Referans>OS201703009-10-11-12-13-14-15-16</Referans>
+			</Dokuman>
+			<Dokuman>
+				<Kalem_no>3</Kalem_no>
+				<Kod>0105</Kod>
+				<Dogrulama>V</Dogrulama>
+				<Belge_tarihi>28/03/2017</Belge_tarihi>
+				<Referans>1117H18718-16.03.17-18275-05.04.17-19027</Referans>
+			</Dokuman>
+			<Dokuman>
+				<Kalem_no>3</Kalem_no>
+				<Kod>0969</Kod>
+				<Dogrulama>V</Dogrulama>
+				<Belge_tarihi>20/04/2017</Belge_tarihi>
+				<Referans>17243061410969003729317/1</Referans>
+			</Dokuman>
+			<Dokuman>
+				<Kalem_no>4</Kalem_no>
+				<Kod>0100</Kod>
+				<Dogrulama>V</Dogrulama>
+				<Belge_tarihi>15/03/2017</Belge_tarihi>
+				<Referans>OS201703009-10-11-12-13-14-15-16</Referans>
+			</Dokuman>
+			<Dokuman>
+				<Kalem_no>4</Kalem_no>
+				<Kod>0105</Kod>
+				<Dogrulama>V</Dogrulama>
+				<Belge_tarihi>28/03/2017</Belge_tarihi>
+				<Referans>1117H18718-16.03.17-18275-05.04.17-19027</Referans>
+			</Dokuman>
+			<Dokuman>
+				<Kalem_no>4</Kalem_no>
+				<Kod>0969</Kod>
+				<Dogrulama>V</Dogrulama>
+				<Belge_tarihi>18/04/2017</Belge_tarihi>
+				<Referans>17243061410969003654982/1</Referans>
+			</Dokuman>
+			<Dokuman>
+				<Kalem_no>5</Kalem_no>
+				<Kod>0100</Kod>
+				<Dogrulama>V</Dogrulama>
+				<Belge_tarihi>15/03/2017</Belge_tarihi>
+				<Referans>OS201703009-10-11-12-13-14-15-16</Referans>
+			</Dokuman>
+			<Dokuman>
+				<Kalem_no>5</Kalem_no>
+				<Kod>0105</Kod>
+				<Dogrulama>V</Dogrulama>
+				<Belge_tarihi>28/03/2017</Belge_tarihi>
+				<Referans>1117H18718-16.03.17-18275-05.04.17-19027</Referans>
+			</Dokuman>
+			<Dokuman>
+				<Kalem_no>5</Kalem_no>
+				<Kod>9999</Kod>
+				<Dogrulama>V</Dogrulama>
+				<Belge_tarihi>18/04/2017</Belge_tarihi>
+				<Referans>242013015773484 KAPSAMDIŞI</Referans>
+			</Dokuman>
+			<Dokuman>
+				<Kalem_no>6</Kalem_no>
+				<Kod>0100</Kod>
+				<Dogrulama>V</Dogrulama>
+				<Belge_tarihi>15/03/2017</Belge_tarihi>
+				<Referans>OS201703009-10-11-12-13-14-15-16</Referans>
+			</Dokuman>
+			<Dokuman>
+				<Kalem_no>6</Kalem_no>
+				<Kod>0105</Kod>
+				<Dogrulama>V</Dogrulama>
+				<Belge_tarihi>28/03/2017</Belge_tarihi>
+				<Referans>1117H18718-16.03.17-18275-05.04.17-19027</Referans>
+			</Dokuman>
+			<Dokuman>
+				<Kalem_no>7</Kalem_no>
+				<Kod>0100</Kod>
+				<Dogrulama>V</Dogrulama>
+				<Belge_tarihi>15/03/2017</Belge_tarihi>
+				<Referans>OS201703009-10-11-12-13-14-15-16</Referans>
+			</Dokuman>
+			<Dokuman>
+				<Kalem_no>7</Kalem_no>
+				<Kod>0105</Kod>
+				<Dogrulama>V</Dogrulama>
+				<Belge_tarihi>28/03/2017</Belge_tarihi>
+				<Referans>1117H18718-16.03.17-18275-05.04.17-19027</Referans>
+			</Dokuman>
+			<Dokuman>
+				<Kalem_no>7</Kalem_no>
+				<Kod>9999</Kod>
+				<Dogrulama>V</Dogrulama>
+				<Belge_tarihi>20/11/2015</Belge_tarihi>
+				<Referans>34734079/555-99/22141-TRT BANDROL MUAF YAZISI</Referans>
+			</Dokuman>
+			<Dokuman>
+				<Kalem_no>7</Kalem_no>
+				<Kod>0969</Kod>
+				<Dogrulama>V</Dogrulama>
+				<Belge_tarihi>18/04/2017</Belge_tarihi>
+				<Referans>17243061410969003655030/1</Referans>
+			</Dokuman>
+			<Dokuman>
+				<Kalem_no>7</Kalem_no>
+				<Kod>0888</Kod>
+				<Dogrulama>V</Dogrulama>
+				<Belge_tarihi>20/04/2017</Belge_tarihi>
+				<Referans>17243142610888003734364/1</Referans>
+			</Dokuman>
+			<Dokuman>
+				<Kalem_no>7</Kalem_no>
+				<Kod>9999</Kod>
+				<Dogrulama>V</Dogrulama>
+				<Belge_tarihi>20/04/2017</Belge_tarihi>
+				<Referans>7980019 KÜLTÜR KESİNTİ FONU</Referans>
+			</Dokuman>
+			<Dokuman>
+				<Kalem_no>8</Kalem_no>
+				<Kod>0100</Kod>
+				<Dogrulama>V</Dogrulama>
+				<Belge_tarihi>15/03/2017</Belge_tarihi>
+				<Referans>OS201703009-10-11-12-13-14-15-16</Referans>
+			</Dokuman>
+			<Dokuman>
+				<Kalem_no>8</Kalem_no>
+				<Kod>0105</Kod>
+				<Dogrulama>V</Dogrulama>
+				<Belge_tarihi>28/03/2017</Belge_tarihi>
+				<Referans>1117H18718-16.03.17-18275-05.04.17-19027</Referans>
+			</Dokuman>
+			<Dokuman>
+				<Kalem_no>8</Kalem_no>
+				<Kod>9999</Kod>
+				<Dogrulama>V</Dogrulama>
+				<Belge_tarihi>20/11/2015</Belge_tarihi>
+				<Referans>34734079/555-99/22141-TRT BANDROL MUAF YAZISI</Referans>
+			</Dokuman>
+			<Dokuman>
+				<Kalem_no>8</Kalem_no>
+				<Kod>0888</Kod>
+				<Dogrulama>V</Dogrulama>
+				<Belge_tarihi>20/04/2017</Belge_tarihi>
+				<Referans>17243142610888003734364/2</Referans>
+			</Dokuman>
+			<Dokuman>
+				<Kalem_no>8</Kalem_no>
+				<Kod>0969</Kod>
+				<Dogrulama>V</Dogrulama>
+				<Belge_tarihi>18/04/2017</Belge_tarihi>
+				<Referans>17243061410969003655028/1</Referans>
+			</Dokuman>
+			<Dokuman>
+				<Kalem_no>8</Kalem_no>
+				<Kod>9999</Kod>
+				<Dogrulama>V</Dogrulama>
+				<Belge_tarihi>20/04/2017</Belge_tarihi>
+				<Referans>7980019 KÜLTÜR KESİNTİ FONU</Referans>
+			</Dokuman>
+			<Dokuman>
+				<Kalem_no>9</Kalem_no>
+				<Kod>0100</Kod>
+				<Dogrulama>V</Dogrulama>
+				<Belge_tarihi>15/03/2017</Belge_tarihi>
+				<Referans>OS201703009-10-11-12-13-14-15-16</Referans>
+			</Dokuman>
+			<Dokuman>
+				<Kalem_no>9</Kalem_no>
+				<Kod>0105</Kod>
+				<Dogrulama>V</Dogrulama>
+				<Belge_tarihi>28/03/2017</Belge_tarihi>
+				<Referans>1117H18718-16.03.17-18275-05.04.17-19027</Referans>
+			</Dokuman>
+			<Dokuman>
+				<Kalem_no>9</Kalem_no>
+				<Kod>9999</Kod>
+				<Dogrulama>V</Dogrulama>
+				<Belge_tarihi>20/11/2015</Belge_tarihi>
+				<Referans>34734079/555-99/22141-TRT BANDROL MUAF YAZISI</Referans>
+			</Dokuman>
+			<Dokuman>
+				<Kalem_no>9</Kalem_no>
+				<Kod>0888</Kod>
+				<Dogrulama>V</Dogrulama>
+				<Belge_tarihi>20/04/2017</Belge_tarihi>
+				<Referans>17243142610888003734364/3</Referans>
+			</Dokuman>
+			<Dokuman>
+				<Kalem_no>9</Kalem_no>
+				<Kod>0969</Kod>
+				<Dogrulama>V</Dogrulama>
+				<Belge_tarihi>18/04/2017</Belge_tarihi>
+				<Referans>17243061410969003655029/1</Referans>
+			</Dokuman>
+			<Dokuman>
+				<Kalem_no>9</Kalem_no>
+				<Kod>9999</Kod>
+				<Dogrulama>V</Dogrulama>
+				<Belge_tarihi>20/04/2017</Belge_tarihi>
+				<Referans>7980019 KÜLTÜR KESİNTİ FONU</Referans>
+			</Dokuman>
+			<Dokuman>
+				<Kalem_no>10</Kalem_no>
+				<Kod>0100</Kod>
+				<Dogrulama>V</Dogrulama>
+				<Belge_tarihi>15/03/2017</Belge_tarihi>
+				<Referans>OS201703009-10-11-12-13-14-15-16</Referans>
+			</Dokuman>
+			<Dokuman>
+				<Kalem_no>10</Kalem_no>
+				<Kod>0105</Kod>
+				<Dogrulama>V</Dogrulama>
+				<Belge_tarihi>28/03/2017</Belge_tarihi>
+				<Referans>1117H18718-16.03.17-18275-05.04.17-19027</Referans>
+			</Dokuman>
+			<Dokuman>
+				<Kalem_no>11</Kalem_no>
+				<Kod>0100</Kod>
+				<Dogrulama>V</Dogrulama>
+				<Belge_tarihi>15/03/2017</Belge_tarihi>
+				<Referans>OS201703009-10-11-12-13-14-15-16</Referans>
+			</Dokuman>
+			<Dokuman>
+				<Kalem_no>11</Kalem_no>
+				<Kod>0105</Kod>
+				<Dogrulama>V</Dogrulama>
+				<Belge_tarihi>28/03/2017</Belge_tarihi>
+				<Referans>1117H18718-16.03.17-18275-05.04.17-19027</Referans>
+			</Dokuman>
+			<Dokuman>
+				<Kalem_no>12</Kalem_no>
+				<Kod>0100</Kod>
+				<Dogrulama>V</Dogrulama>
+				<Belge_tarihi>15/03/2017</Belge_tarihi>
+				<Referans>OS201703009-10-11-12-13-14-15-16</Referans>
+			</Dokuman>
+			<Dokuman>
+				<Kalem_no>12</Kalem_no>
+				<Kod>0105</Kod>
+				<Dogrulama>V</Dogrulama>
+				<Belge_tarihi>28/03/2017</Belge_tarihi>
+				<Referans>1117H18718-16.03.17-18275-05.04.17-19027</Referans>
+			</Dokuman>
+			<Dokuman>
+				<Kalem_no>13</Kalem_no>
+				<Kod>0100</Kod>
+				<Dogrulama>V</Dogrulama>
+				<Belge_tarihi>15/03/2017</Belge_tarihi>
+				<Referans>OS201703009-10-11-12-13-14-15-16</Referans>
+			</Dokuman>
+			<Dokuman>
+				<Kalem_no>13</Kalem_no>
+				<Kod>0105</Kod>
+				<Dogrulama>V</Dogrulama>
+				<Belge_tarihi>28/03/2017</Belge_tarihi>
+				<Referans>1117H18718-16.03.17-18275-05.04.17-19027</Referans>
+			</Dokuman>
+			<Dokuman>
+				<Kalem_no>14</Kalem_no>
+				<Kod>0100</Kod>
+				<Dogrulama>V</Dogrulama>
+				<Belge_tarihi>15/03/2017</Belge_tarihi>
+				<Referans>OS201703009-10-11-12-13-14-15-16</Referans>
+			</Dokuman>
+			<Dokuman>
+				<Kalem_no>14</Kalem_no>
+				<Kod>0105</Kod>
+				<Dogrulama>V</Dogrulama>
+				<Belge_tarihi>28/03/2017</Belge_tarihi>
+				<Referans>1117H18718-16.03.17-18275-05.04.17-19027</Referans>
+			</Dokuman>
+			<Dokuman>
+				<Kalem_no>15</Kalem_no>
+				<Kod>0100</Kod>
+				<Dogrulama>V</Dogrulama>
+				<Belge_tarihi>15/03/2017</Belge_tarihi>
+				<Referans>OS201703009-10-11-12-13-14-15-16</Referans>
+			</Dokuman>
+			<Dokuman>
+				<Kalem_no>15</Kalem_no>
+				<Kod>0105</Kod>
+				<Dogrulama>V</Dogrulama>
+				<Belge_tarihi>28/03/2017</Belge_tarihi>
+				<Referans>1117H18718-16.03.17-18275-05.04.17-19027</Referans>
+			</Dokuman>
+			<Dokuman>
+				<Kalem_no>16</Kalem_no>
+				<Kod>0100</Kod>
+				<Dogrulama>V</Dogrulama>
+				<Belge_tarihi>15/03/2017</Belge_tarihi>
+				<Referans>OS201703009-10-11-12-13-14-15-16</Referans>
+			</Dokuman>
+			<Dokuman>
+				<Kalem_no>16</Kalem_no>
+				<Kod>0105</Kod>
+				<Dogrulama>V</Dogrulama>
+				<Belge_tarihi>28/03/2017</Belge_tarihi>
+				<Referans>1117H18718-16.03.17-18275-05.04.17-19027</Referans>
+			</Dokuman>
+			<Dokuman>
+				<Kalem_no>17</Kalem_no>
+				<Kod>0100</Kod>
+				<Dogrulama>V</Dogrulama>
+				<Belge_tarihi>15/03/2017</Belge_tarihi>
+				<Referans>OS201703009-10-11-12-13-14-15-16</Referans>
+			</Dokuman>
+			<Dokuman>
+				<Kalem_no>17</Kalem_no>
+				<Kod>0105</Kod>
+				<Dogrulama>V</Dogrulama>
+				<Belge_tarihi>28/03/2017</Belge_tarihi>
+				<Referans>1117H18718-16.03.17-18275-05.04.17-19027</Referans>
+			</Dokuman>
+			<Dokuman>
+				<Kalem_no>17</Kalem_no>
+				<Kod>9999</Kod>
+				<Dogrulama>V</Dogrulama>
+				<Belge_tarihi>18/04/2017</Belge_tarihi>
+				<Referans>232013015773484 KAPSAMDIŞI</Referans>
+			</Dokuman>
+		</Dokumanlar>
+		<Vergiler>
+			<Vergi>
+				<Kalem_no>1</Kalem_no>
+				<Kod>10</Kod>
+				<Miktar>429.69</Miktar>
+				<Oran>3.3</Oran>
+				<Odeme_sekli>P</Odeme_sekli>
+				<Vergi_matrahi>13020.93</Vergi_matrahi>
+			</Vergi>
+			<Vergi>
+				<Kalem_no>1</Kalem_no>
+				<Kod>40</Kod>
+				<Miktar>2460.05</Miktar>
+				<Oran>18</Oran>
+				<Odeme_sekli>P</Odeme_sekli>
+				<Vergi_matrahi>13666.92</Vergi_matrahi>
+			</Vergi>
+			<Vergi>
+				<Kalem_no>1</Kalem_no>
+				<Kod>89</Kod>
+				<Miktar>68.6</Miktar>
+				<Oran>0</Oran>
+				<Odeme_sekli>P</Odeme_sekli>
+				<Vergi_matrahi>0</Vergi_matrahi>
+			</Vergi>
+			<Vergi>
+				<Kalem_no>2</Kalem_no>
+				<Kod>10</Kod>
+				<Miktar>219.39</Miktar>
+				<Oran>3.3</Oran>
+				<Odeme_sekli>P</Odeme_sekli>
+				<Vergi_matrahi>6648.05</Vergi_matrahi>
+			</Vergi>
+			<Vergi>
+				<Kalem_no>2</Kalem_no>
+				<Kod>40</Kod>
+				<Miktar>1249.71</Miktar>
+				<Oran>18</Oran>
+				<Odeme_sekli>P</Odeme_sekli>
+				<Vergi_matrahi>6942.85</Vergi_matrahi>
+			</Vergi>
+			<Vergi>
+				<Kalem_no>3</Kalem_no>
+				<Kod>10</Kod>
+				<Miktar>131.61</Miktar>
+				<Oran>3.3</Oran>
+				<Odeme_sekli>P</Odeme_sekli>
+				<Vergi_matrahi>3988.09</Vergi_matrahi>
+			</Vergi>
+			<Vergi>
+				<Kalem_no>3</Kalem_no>
+				<Kod>40</Kod>
+				<Miktar>749.69</Miktar>
+				<Oran>18</Oran>
+				<Odeme_sekli>P</Odeme_sekli>
+				<Vergi_matrahi>4164.94</Vergi_matrahi>
+			</Vergi>
+			<Vergi>
+				<Kalem_no>4</Kalem_no>
+				<Kod>10</Kod>
+				<Miktar>241.24</Miktar>
+				<Oran>3.3</Oran>
+				<Odeme_sekli>P</Odeme_sekli>
+				<Vergi_matrahi>7310.28</Vergi_matrahi>
+			</Vergi>
+			<Vergi>
+				<Kalem_no>4</Kalem_no>
+				<Kod>40</Kod>
+				<Miktar>1374.2</Miktar>
+				<Oran>18</Oran>
+				<Odeme_sekli>P</Odeme_sekli>
+				<Vergi_matrahi>7634.44</Vergi_matrahi>
+			</Vergi>
+			<Vergi>
+				<Kalem_no>5</Kalem_no>
+				<Kod>10</Kod>
+				<Miktar>164.93</Miktar>
+				<Oran>2.2</Oran>
+				<Odeme_sekli>P</Odeme_sekli>
+				<Vergi_matrahi>7497.03</Vergi_matrahi>
+			</Vergi>
+			<Vergi>
+				<Kalem_no>5</Kalem_no>
+				<Kod>40</Kod>
+				<Miktar>1394.46</Miktar>
+				<Oran>18</Oran>
+				<Odeme_sekli>P</Odeme_sekli>
+				<Vergi_matrahi>7747</Vergi_matrahi>
+			</Vergi>
+			<Vergi>
+				<Kalem_no>6</Kalem_no>
+				<Kod>10</Kod>
+				<Miktar>702.54</Miktar>
+				<Oran>3.3</Oran>
+				<Odeme_sekli>P</Odeme_sekli>
+				<Vergi_matrahi>21289.16</Vergi_matrahi>
+			</Vergi>
+			<Vergi>
+				<Kalem_no>6</Kalem_no>
+				<Kod>40</Kod>
+				<Miktar>4001.97</Miktar>
+				<Oran>18</Oran>
+				<Odeme_sekli>P</Odeme_sekli>
+				<Vergi_matrahi>22233.19</Vergi_matrahi>
+			</Vergi>
+			<Vergi>
+				<Kalem_no>7</Kalem_no>
+				<Kod>10</Kod>
+				<Miktar>5387.4</Miktar>
+				<Oran>13.9</Oran>
+				<Odeme_sekli>P</Odeme_sekli>
+				<Vergi_matrahi>38758.26</Vergi_matrahi>
+			</Vergi>
+			<Vergi>
+				<Kalem_no>7</Kalem_no>
+				<Kod>40</Kod>
+				<Miktar>8711.93</Miktar>
+				<Oran>18</Oran>
+				<Odeme_sekli>P</Odeme_sekli>
+				<Vergi_matrahi>48399.63</Vergi_matrahi>
+			</Vergi>
+			<Vergi>
+				<Kalem_no>7</Kalem_no>
+				<Kod>52</Kod>
+				<Miktar>3039.1522</Miktar>
+				<Oran />
+				<Odeme_sekli>P</Odeme_sekli>
+				<Vergi_matrahi>45360.48</Vergi_matrahi>
+			</Vergi>
+			<Vergi>
+				<Kalem_no>8</Kalem_no>
+				<Kod>10</Kod>
+				<Miktar>1892.02</Miktar>
+				<Oran>13.9</Oran>
+				<Odeme_sekli>P</Odeme_sekli>
+				<Vergi_matrahi>13611.62</Vergi_matrahi>
+			</Vergi>
+			<Vergi>
+				<Kalem_no>8</Kalem_no>
+				<Kod>40</Kod>
+				<Miktar>3059.57</Miktar>
+				<Oran>18</Oran>
+				<Odeme_sekli>P</Odeme_sekli>
+				<Vergi_matrahi>16997.6</Vergi_matrahi>
+			</Vergi>
+			<Vergi>
+				<Kalem_no>8</Kalem_no>
+				<Kod>52</Kod>
+				<Miktar>1067.3281</Miktar>
+				<Oran />
+				<Odeme_sekli>P</Odeme_sekli>
+				<Vergi_matrahi>15930.27</Vergi_matrahi>
+			</Vergi>
+			<Vergi>
+				<Kalem_no>9</Kalem_no>
+				<Kod>10</Kod>
+				<Miktar>1160.4</Miktar>
+				<Oran>13.9</Oran>
+				<Odeme_sekli>P</Odeme_sekli>
+				<Vergi_matrahi>8348.22</Vergi_matrahi>
+			</Vergi>
+			<Vergi>
+				<Kalem_no>9</Kalem_no>
+				<Kod>40</Kod>
+				<Miktar>1876.48</Miktar>
+				<Oran>18</Oran>
+				<Odeme_sekli>P</Odeme_sekli>
+				<Vergi_matrahi>10424.89</Vergi_matrahi>
+			</Vergi>
+			<Vergi>
+				<Kalem_no>9</Kalem_no>
+				<Kod>52</Kod>
+				<Miktar>654.6088</Miktar>
+				<Oran />
+				<Odeme_sekli>P</Odeme_sekli>
+				<Vergi_matrahi>9770.28</Vergi_matrahi>
+			</Vergi>
+			<Vergi>
+				<Kalem_no>10</Kalem_no>
+				<Kod>10</Kod>
+				<Miktar>5190.86</Miktar>
+				<Oran>3</Oran>
+				<Odeme_sekli>P</Odeme_sekli>
+				<Vergi_matrahi>173028.74</Vergi_matrahi>
+			</Vergi>
+			<Vergi>
+				<Kalem_no>10</Kalem_no>
+				<Kod>40</Kod>
+				<Miktar>32432.82</Miktar>
+				<Oran>18</Oran>
+				<Odeme_sekli>P</Odeme_sekli>
+				<Vergi_matrahi>180182.33</Vergi_matrahi>
+			</Vergi>
+			<Vergi>
+				<Kalem_no>11</Kalem_no>
+				<Kod>10</Kod>
+				<Miktar>343.7</Miktar>
+				<Oran>4</Oran>
+				<Odeme_sekli>P</Odeme_sekli>
+				<Vergi_matrahi>8592.56</Vergi_matrahi>
+			</Vergi>
+			<Vergi>
+				<Kalem_no>11</Kalem_no>
+				<Kod>40</Kod>
+				<Miktar>1626.07</Miktar>
+				<Oran>18</Oran>
+				<Odeme_sekli>P</Odeme_sekli>
+				<Vergi_matrahi>9033.73</Vergi_matrahi>
+			</Vergi>
+			<Vergi>
+				<Kalem_no>12</Kalem_no>
+				<Kod>10</Kod>
+				<Miktar>14.65</Miktar>
+				<Oran>3</Oran>
+				<Odeme_sekli>P</Odeme_sekli>
+				<Vergi_matrahi>488.4</Vergi_matrahi>
+			</Vergi>
+			<Vergi>
+				<Kalem_no>12</Kalem_no>
+				<Kod>40</Kod>
+				<Miktar>91.55</Miktar>
+				<Oran>18</Oran>
+				<Odeme_sekli>P</Odeme_sekli>
+				<Vergi_matrahi>508.59</Vergi_matrahi>
+			</Vergi>
+			<Vergi>
+				<Kalem_no>13</Kalem_no>
+				<Kod>10</Kod>
+				<Miktar>0</Miktar>
+				<Oran>0</Oran>
+				<Odeme_sekli>P</Odeme_sekli>
+				<Vergi_matrahi>25278.72</Vergi_matrahi>
+			</Vergi>
+			<Vergi>
+				<Kalem_no>13</Kalem_no>
+				<Kod>40</Kod>
+				<Miktar>4601.78</Miktar>
+				<Oran>18</Oran>
+				<Odeme_sekli>P</Odeme_sekli>
+				<Vergi_matrahi>25565.47</Vergi_matrahi>
+			</Vergi>
+			<Vergi>
+				<Kalem_no>14</Kalem_no>
+				<Kod>10</Kod>
+				<Miktar>407.62</Miktar>
+				<Oran>2.5</Oran>
+				<Odeme_sekli>P</Odeme_sekli>
+				<Vergi_matrahi>16304.78</Vergi_matrahi>
+			</Vergi>
+			<Vergi>
+				<Kalem_no>14</Kalem_no>
+				<Kod>40</Kod>
+				<Miktar>3041.52</Miktar>
+				<Oran>18</Oran>
+				<Odeme_sekli>P</Odeme_sekli>
+				<Vergi_matrahi>16897.35</Vergi_matrahi>
+			</Vergi>
+			<Vergi>
+				<Kalem_no>15</Kalem_no>
+				<Kod>10</Kod>
+				<Miktar>407.92</Miktar>
+				<Oran>3.7</Oran>
+				<Odeme_sekli>P</Odeme_sekli>
+				<Vergi_matrahi>11024.97</Vergi_matrahi>
+			</Vergi>
+			<Vergi>
+				<Kalem_no>15</Kalem_no>
+				<Kod>40</Kod>
+				<Miktar>2072.24</Miktar>
+				<Oran>18</Oran>
+				<Odeme_sekli>P</Odeme_sekli>
+				<Vergi_matrahi>11512.46</Vergi_matrahi>
+			</Vergi>
+			<Vergi>
+				<Kalem_no>16</Kalem_no>
+				<Kod>10</Kod>
+				<Miktar>0</Miktar>
+				<Oran>0</Oran>
+				<Odeme_sekli>P</Odeme_sekli>
+				<Vergi_matrahi>64.21</Vergi_matrahi>
+			</Vergi>
+			<Vergi>
+				<Kalem_no>16</Kalem_no>
+				<Kod>40</Kod>
+				<Miktar>11.69</Miktar>
+				<Oran>18</Oran>
+				<Odeme_sekli>P</Odeme_sekli>
+				<Vergi_matrahi>64.94</Vergi_matrahi>
+			</Vergi>
+			<Vergi>
+				<Kalem_no>17</Kalem_no>
+				<Kod>10</Kod>
+				<Miktar>89.96</Miktar>
+				<Oran>6.5</Oran>
+				<Odeme_sekli>P</Odeme_sekli>
+				<Vergi_matrahi>1383.98</Vergi_matrahi>
+			</Vergi>
+			<Vergi>
+				<Kalem_no>17</Kalem_no>
+				<Kod>40</Kod>
+				<Miktar>268.14</Miktar>
+				<Oran>18</Oran>
+				<Odeme_sekli>P</Odeme_sekli>
+				<Vergi_matrahi>1489.65</Vergi_matrahi>
+			</Vergi>
+		</Vergiler>
+		<KiymetBildirim>
+			<Kiymet>
+				<TeslimSekli>CIF</TeslimSekli>
+				<FaturaTarihiSayisi>15.03.2017/OS201703009-10-11-12-13-14-15-16</FaturaTarihiSayisi>
+				<SozlesmeTarihiSayisi />
+				<GumrukIdaresiKarari />
+				<AliciSatici>YOK</AliciSatici>
+				<AliciSaticiAyrintilar />
+				<Kisitlamalar>HAYIR</Kisitlamalar>
+				<Edim>HAYIR</Edim>
+				<KisitlamalarAyrintilar />
+				<Royalti>HAYIR</Royalti>
+				<RoyaltiKosullar />
+				<SaticiyaIntikal>HAYIR</SaticiyaIntikal>
+				<SaticiyaIntikalKosullar />
+				<SehirYer>ISTANBUL</SehirYer>
+				<Taahutname>EVET</Taahutname>
+				<KiymetKalemler>
+					<KiymetKalem>
+						<KiymetKalemNo>1</KiymetKalemNo>
+						<BeyannameKalemNo>1</BeyannameKalemNo>
+						<DolayliOdeme>0</DolayliOdeme>
+						<Komisyon>0</Komisyon>
+						<Tellaliye>0</Tellaliye>
+						<KapAmbalajBedeli>0</KapAmbalajBedeli>
+						<IthalaKatilanMalzeme>0</IthalaKatilanMalzeme>
+						<IthalaUretimAraclar>0</IthalaUretimAraclar>
+						<IthalaUretimTuketimMalzemesi>0</IthalaUretimTuketimMalzemesi>
+						<PlanTaslak>0</PlanTaslak>
+						<RoyaltiLisans>0</RoyaltiLisans>
+						<DolayliIntikal>0</DolayliIntikal>
+						<Nakliye>0</Nakliye>
+						<Sigorta>0</Sigorta>
+						<GirisSonrasiNakliye>0</GirisSonrasiNakliye>
+						<TeknikYardim>0</TeknikYardim>
+						<DigerOdemeler>0</DigerOdemeler>
+						<DigerOdemelerNiteligi />
+						<VergiHarcFon>0</VergiHarcFon>
+					</KiymetKalem>
+					<KiymetKalem>
+						<KiymetKalemNo>2</KiymetKalemNo>
+						<BeyannameKalemNo>2</BeyannameKalemNo>
+						<DolayliOdeme>0</DolayliOdeme>
+						<Komisyon>0</Komisyon>
+						<Tellaliye>0</Tellaliye>
+						<KapAmbalajBedeli>0</KapAmbalajBedeli>
+						<IthalaKatilanMalzeme>0</IthalaKatilanMalzeme>
+						<IthalaUretimAraclar>0</IthalaUretimAraclar>
+						<IthalaUretimTuketimMalzemesi>0</IthalaUretimTuketimMalzemesi>
+						<PlanTaslak>0</PlanTaslak>
+						<RoyaltiLisans>0</RoyaltiLisans>
+						<DolayliIntikal>0</DolayliIntikal>
+						<Nakliye>0</Nakliye>
+						<Sigorta>0</Sigorta>
+						<GirisSonrasiNakliye>0</GirisSonrasiNakliye>
+						<TeknikYardim>0</TeknikYardim>
+						<DigerOdemeler>0</DigerOdemeler>
+						<DigerOdemelerNiteligi />
+						<VergiHarcFon>0</VergiHarcFon>
+					</KiymetKalem>
+					<KiymetKalem>
+						<KiymetKalemNo>3</KiymetKalemNo>
+						<BeyannameKalemNo>3</BeyannameKalemNo>
+						<DolayliOdeme>0</DolayliOdeme>
+						<Komisyon>0</Komisyon>
+						<Tellaliye>0</Tellaliye>
+						<KapAmbalajBedeli>0</KapAmbalajBedeli>
+						<IthalaKatilanMalzeme>0</IthalaKatilanMalzeme>
+						<IthalaUretimAraclar>0</IthalaUretimAraclar>
+						<IthalaUretimTuketimMalzemesi>0</IthalaUretimTuketimMalzemesi>
+						<PlanTaslak>0</PlanTaslak>
+						<RoyaltiLisans>0</RoyaltiLisans>
+						<DolayliIntikal>0</DolayliIntikal>
+						<Nakliye>0</Nakliye>
+						<Sigorta>0</Sigorta>
+						<GirisSonrasiNakliye>0</GirisSonrasiNakliye>
+						<TeknikYardim>0</TeknikYardim>
+						<DigerOdemeler>0</DigerOdemeler>
+						<DigerOdemelerNiteligi />
+						<VergiHarcFon>0</VergiHarcFon>
+					</KiymetKalem>
+					<KiymetKalem>
+						<KiymetKalemNo>4</KiymetKalemNo>
+						<BeyannameKalemNo>4</BeyannameKalemNo>
+						<DolayliOdeme>0</DolayliOdeme>
+						<Komisyon>0</Komisyon>
+						<Tellaliye>0</Tellaliye>
+						<KapAmbalajBedeli>0</KapAmbalajBedeli>
+						<IthalaKatilanMalzeme>0</IthalaKatilanMalzeme>
+						<IthalaUretimAraclar>0</IthalaUretimAraclar>
+						<IthalaUretimTuketimMalzemesi>0</IthalaUretimTuketimMalzemesi>
+						<PlanTaslak>0</PlanTaslak>
+						<RoyaltiLisans>0</RoyaltiLisans>
+						<DolayliIntikal>0</DolayliIntikal>
+						<Nakliye>0</Nakliye>
+						<Sigorta>0</Sigorta>
+						<GirisSonrasiNakliye>0</GirisSonrasiNakliye>
+						<TeknikYardim>0</TeknikYardim>
+						<DigerOdemeler>0</DigerOdemeler>
+						<DigerOdemelerNiteligi />
+						<VergiHarcFon>0</VergiHarcFon>
+					</KiymetKalem>
+					<KiymetKalem>
+						<KiymetKalemNo>5</KiymetKalemNo>
+						<BeyannameKalemNo>5</BeyannameKalemNo>
+						<DolayliOdeme>0</DolayliOdeme>
+						<Komisyon>0</Komisyon>
+						<Tellaliye>0</Tellaliye>
+						<KapAmbalajBedeli>0</KapAmbalajBedeli>
+						<IthalaKatilanMalzeme>0</IthalaKatilanMalzeme>
+						<IthalaUretimAraclar>0</IthalaUretimAraclar>
+						<IthalaUretimTuketimMalzemesi>0</IthalaUretimTuketimMalzemesi>
+						<PlanTaslak>0</PlanTaslak>
+						<RoyaltiLisans>0</RoyaltiLisans>
+						<DolayliIntikal>0</DolayliIntikal>
+						<Nakliye>0</Nakliye>
+						<Sigorta>0</Sigorta>
+						<GirisSonrasiNakliye>0</GirisSonrasiNakliye>
+						<TeknikYardim>0</TeknikYardim>
+						<DigerOdemeler>0</DigerOdemeler>
+						<DigerOdemelerNiteligi />
+						<VergiHarcFon>0</VergiHarcFon>
+					</KiymetKalem>
+					<KiymetKalem>
+						<KiymetKalemNo>6</KiymetKalemNo>
+						<BeyannameKalemNo>6</BeyannameKalemNo>
+						<DolayliOdeme>0</DolayliOdeme>
+						<Komisyon>0</Komisyon>
+						<Tellaliye>0</Tellaliye>
+						<KapAmbalajBedeli>0</KapAmbalajBedeli>
+						<IthalaKatilanMalzeme>0</IthalaKatilanMalzeme>
+						<IthalaUretimAraclar>0</IthalaUretimAraclar>
+						<IthalaUretimTuketimMalzemesi>0</IthalaUretimTuketimMalzemesi>
+						<PlanTaslak>0</PlanTaslak>
+						<RoyaltiLisans>0</RoyaltiLisans>
+						<DolayliIntikal>0</DolayliIntikal>
+						<Nakliye>0</Nakliye>
+						<Sigorta>0</Sigorta>
+						<GirisSonrasiNakliye>0</GirisSonrasiNakliye>
+						<TeknikYardim>0</TeknikYardim>
+						<DigerOdemeler>0</DigerOdemeler>
+						<DigerOdemelerNiteligi />
+						<VergiHarcFon>0</VergiHarcFon>
+					</KiymetKalem>
+					<KiymetKalem>
+						<KiymetKalemNo>7</KiymetKalemNo>
+						<BeyannameKalemNo>7</BeyannameKalemNo>
+						<DolayliOdeme>0</DolayliOdeme>
+						<Komisyon>0</Komisyon>
+						<Tellaliye>0</Tellaliye>
+						<KapAmbalajBedeli>0</KapAmbalajBedeli>
+						<IthalaKatilanMalzeme>0</IthalaKatilanMalzeme>
+						<IthalaUretimAraclar>0</IthalaUretimAraclar>
+						<IthalaUretimTuketimMalzemesi>0</IthalaUretimTuketimMalzemesi>
+						<PlanTaslak>0</PlanTaslak>
+						<RoyaltiLisans>0</RoyaltiLisans>
+						<DolayliIntikal>0</DolayliIntikal>
+						<Nakliye>0</Nakliye>
+						<Sigorta>0</Sigorta>
+						<GirisSonrasiNakliye>0</GirisSonrasiNakliye>
+						<TeknikYardim>0</TeknikYardim>
+						<DigerOdemeler>0</DigerOdemeler>
+						<DigerOdemelerNiteligi />
+						<VergiHarcFon>0</VergiHarcFon>
+					</KiymetKalem>
+					<KiymetKalem>
+						<KiymetKalemNo>8</KiymetKalemNo>
+						<BeyannameKalemNo>8</BeyannameKalemNo>
+						<DolayliOdeme>0</DolayliOdeme>
+						<Komisyon>0</Komisyon>
+						<Tellaliye>0</Tellaliye>
+						<KapAmbalajBedeli>0</KapAmbalajBedeli>
+						<IthalaKatilanMalzeme>0</IthalaKatilanMalzeme>
+						<IthalaUretimAraclar>0</IthalaUretimAraclar>
+						<IthalaUretimTuketimMalzemesi>0</IthalaUretimTuketimMalzemesi>
+						<PlanTaslak>0</PlanTaslak>
+						<RoyaltiLisans>0</RoyaltiLisans>
+						<DolayliIntikal>0</DolayliIntikal>
+						<Nakliye>0</Nakliye>
+						<Sigorta>0</Sigorta>
+						<GirisSonrasiNakliye>0</GirisSonrasiNakliye>
+						<TeknikYardim>0</TeknikYardim>
+						<DigerOdemeler>0</DigerOdemeler>
+						<DigerOdemelerNiteligi />
+						<VergiHarcFon>0</VergiHarcFon>
+					</KiymetKalem>
+					<KiymetKalem>
+						<KiymetKalemNo>9</KiymetKalemNo>
+						<BeyannameKalemNo>9</BeyannameKalemNo>
+						<DolayliOdeme>0</DolayliOdeme>
+						<Komisyon>0</Komisyon>
+						<Tellaliye>0</Tellaliye>
+						<KapAmbalajBedeli>0</KapAmbalajBedeli>
+						<IthalaKatilanMalzeme>0</IthalaKatilanMalzeme>
+						<IthalaUretimAraclar>0</IthalaUretimAraclar>
+						<IthalaUretimTuketimMalzemesi>0</IthalaUretimTuketimMalzemesi>
+						<PlanTaslak>0</PlanTaslak>
+						<RoyaltiLisans>0</RoyaltiLisans>
+						<DolayliIntikal>0</DolayliIntikal>
+						<Nakliye>0</Nakliye>
+						<Sigorta>0</Sigorta>
+						<GirisSonrasiNakliye>0</GirisSonrasiNakliye>
+						<TeknikYardim>0</TeknikYardim>
+						<DigerOdemeler>0</DigerOdemeler>
+						<DigerOdemelerNiteligi />
+						<VergiHarcFon>0</VergiHarcFon>
+					</KiymetKalem>
+					<KiymetKalem>
+						<KiymetKalemNo>10</KiymetKalemNo>
+						<BeyannameKalemNo>10</BeyannameKalemNo>
+						<DolayliOdeme>0</DolayliOdeme>
+						<Komisyon>0</Komisyon>
+						<Tellaliye>0</Tellaliye>
+						<KapAmbalajBedeli>0</KapAmbalajBedeli>
+						<IthalaKatilanMalzeme>0</IthalaKatilanMalzeme>
+						<IthalaUretimAraclar>0</IthalaUretimAraclar>
+						<IthalaUretimTuketimMalzemesi>0</IthalaUretimTuketimMalzemesi>
+						<PlanTaslak>0</PlanTaslak>
+						<RoyaltiLisans>0</RoyaltiLisans>
+						<DolayliIntikal>0</DolayliIntikal>
+						<Nakliye>0</Nakliye>
+						<Sigorta>0</Sigorta>
+						<GirisSonrasiNakliye>0</GirisSonrasiNakliye>
+						<TeknikYardim>0</TeknikYardim>
+						<DigerOdemeler>0</DigerOdemeler>
+						<DigerOdemelerNiteligi />
+						<VergiHarcFon>0</VergiHarcFon>
+					</KiymetKalem>
+					<KiymetKalem>
+						<KiymetKalemNo>11</KiymetKalemNo>
+						<BeyannameKalemNo>11</BeyannameKalemNo>
+						<DolayliOdeme>0</DolayliOdeme>
+						<Komisyon>0</Komisyon>
+						<Tellaliye>0</Tellaliye>
+						<KapAmbalajBedeli>0</KapAmbalajBedeli>
+						<IthalaKatilanMalzeme>0</IthalaKatilanMalzeme>
+						<IthalaUretimAraclar>0</IthalaUretimAraclar>
+						<IthalaUretimTuketimMalzemesi>0</IthalaUretimTuketimMalzemesi>
+						<PlanTaslak>0</PlanTaslak>
+						<RoyaltiLisans>0</RoyaltiLisans>
+						<DolayliIntikal>0</DolayliIntikal>
+						<Nakliye>0</Nakliye>
+						<Sigorta>0</Sigorta>
+						<GirisSonrasiNakliye>0</GirisSonrasiNakliye>
+						<TeknikYardim>0</TeknikYardim>
+						<DigerOdemeler>0</DigerOdemeler>
+						<DigerOdemelerNiteligi />
+						<VergiHarcFon>0</VergiHarcFon>
+					</KiymetKalem>
+					<KiymetKalem>
+						<KiymetKalemNo>12</KiymetKalemNo>
+						<BeyannameKalemNo>12</BeyannameKalemNo>
+						<DolayliOdeme>0</DolayliOdeme>
+						<Komisyon>0</Komisyon>
+						<Tellaliye>0</Tellaliye>
+						<KapAmbalajBedeli>0</KapAmbalajBedeli>
+						<IthalaKatilanMalzeme>0</IthalaKatilanMalzeme>
+						<IthalaUretimAraclar>0</IthalaUretimAraclar>
+						<IthalaUretimTuketimMalzemesi>0</IthalaUretimTuketimMalzemesi>
+						<PlanTaslak>0</PlanTaslak>
+						<RoyaltiLisans>0</RoyaltiLisans>
+						<DolayliIntikal>0</DolayliIntikal>
+						<Nakliye>0</Nakliye>
+						<Sigorta>0</Sigorta>
+						<GirisSonrasiNakliye>0</GirisSonrasiNakliye>
+						<TeknikYardim>0</TeknikYardim>
+						<DigerOdemeler>0</DigerOdemeler>
+						<DigerOdemelerNiteligi />
+						<VergiHarcFon>0</VergiHarcFon>
+					</KiymetKalem>
+					<KiymetKalem>
+						<KiymetKalemNo>13</KiymetKalemNo>
+						<BeyannameKalemNo>13</BeyannameKalemNo>
+						<DolayliOdeme>0</DolayliOdeme>
+						<Komisyon>0</Komisyon>
+						<Tellaliye>0</Tellaliye>
+						<KapAmbalajBedeli>0</KapAmbalajBedeli>
+						<IthalaKatilanMalzeme>0</IthalaKatilanMalzeme>
+						<IthalaUretimAraclar>0</IthalaUretimAraclar>
+						<IthalaUretimTuketimMalzemesi>0</IthalaUretimTuketimMalzemesi>
+						<PlanTaslak>0</PlanTaslak>
+						<RoyaltiLisans>0</RoyaltiLisans>
+						<DolayliIntikal>0</DolayliIntikal>
+						<Nakliye>0</Nakliye>
+						<Sigorta>0</Sigorta>
+						<GirisSonrasiNakliye>0</GirisSonrasiNakliye>
+						<TeknikYardim>0</TeknikYardim>
+						<DigerOdemeler>0</DigerOdemeler>
+						<DigerOdemelerNiteligi />
+						<VergiHarcFon>0</VergiHarcFon>
+					</KiymetKalem>
+					<KiymetKalem>
+						<KiymetKalemNo>14</KiymetKalemNo>
+						<BeyannameKalemNo>14</BeyannameKalemNo>
+						<DolayliOdeme>0</DolayliOdeme>
+						<Komisyon>0</Komisyon>
+						<Tellaliye>0</Tellaliye>
+						<KapAmbalajBedeli>0</KapAmbalajBedeli>
+						<IthalaKatilanMalzeme>0</IthalaKatilanMalzeme>
+						<IthalaUretimAraclar>0</IthalaUretimAraclar>
+						<IthalaUretimTuketimMalzemesi>0</IthalaUretimTuketimMalzemesi>
+						<PlanTaslak>0</PlanTaslak>
+						<RoyaltiLisans>0</RoyaltiLisans>
+						<DolayliIntikal>0</DolayliIntikal>
+						<Nakliye>0</Nakliye>
+						<Sigorta>0</Sigorta>
+						<GirisSonrasiNakliye>0</GirisSonrasiNakliye>
+						<TeknikYardim>0</TeknikYardim>
+						<DigerOdemeler>0</DigerOdemeler>
+						<DigerOdemelerNiteligi />
+						<VergiHarcFon>0</VergiHarcFon>
+					</KiymetKalem>
+					<KiymetKalem>
+						<KiymetKalemNo>15</KiymetKalemNo>
+						<BeyannameKalemNo>15</BeyannameKalemNo>
+						<DolayliOdeme>0</DolayliOdeme>
+						<Komisyon>0</Komisyon>
+						<Tellaliye>0</Tellaliye>
+						<KapAmbalajBedeli>0</KapAmbalajBedeli>
+						<IthalaKatilanMalzeme>0</IthalaKatilanMalzeme>
+						<IthalaUretimAraclar>0</IthalaUretimAraclar>
+						<IthalaUretimTuketimMalzemesi>0</IthalaUretimTuketimMalzemesi>
+						<PlanTaslak>0</PlanTaslak>
+						<RoyaltiLisans>0</RoyaltiLisans>
+						<DolayliIntikal>0</DolayliIntikal>
+						<Nakliye>0</Nakliye>
+						<Sigorta>0</Sigorta>
+						<GirisSonrasiNakliye>0</GirisSonrasiNakliye>
+						<TeknikYardim>0</TeknikYardim>
+						<DigerOdemeler>0</DigerOdemeler>
+						<DigerOdemelerNiteligi />
+						<VergiHarcFon>0</VergiHarcFon>
+					</KiymetKalem>
+					<KiymetKalem>
+						<KiymetKalemNo>16</KiymetKalemNo>
+						<BeyannameKalemNo>16</BeyannameKalemNo>
+						<DolayliOdeme>0</DolayliOdeme>
+						<Komisyon>0</Komisyon>
+						<Tellaliye>0</Tellaliye>
+						<KapAmbalajBedeli>0</KapAmbalajBedeli>
+						<IthalaKatilanMalzeme>0</IthalaKatilanMalzeme>
+						<IthalaUretimAraclar>0</IthalaUretimAraclar>
+						<IthalaUretimTuketimMalzemesi>0</IthalaUretimTuketimMalzemesi>
+						<PlanTaslak>0</PlanTaslak>
+						<RoyaltiLisans>0</RoyaltiLisans>
+						<DolayliIntikal>0</DolayliIntikal>
+						<Nakliye>0</Nakliye>
+						<Sigorta>0</Sigorta>
+						<GirisSonrasiNakliye>0</GirisSonrasiNakliye>
+						<TeknikYardim>0</TeknikYardim>
+						<DigerOdemeler>0</DigerOdemeler>
+						<DigerOdemelerNiteligi />
+						<VergiHarcFon>0</VergiHarcFon>
+					</KiymetKalem>
+					<KiymetKalem>
+						<KiymetKalemNo>17</KiymetKalemNo>
+						<BeyannameKalemNo>17</BeyannameKalemNo>
+						<DolayliOdeme>0</DolayliOdeme>
+						<Komisyon>0</Komisyon>
+						<Tellaliye>0</Tellaliye>
+						<KapAmbalajBedeli>0</KapAmbalajBedeli>
+						<IthalaKatilanMalzeme>0</IthalaKatilanMalzeme>
+						<IthalaUretimAraclar>0</IthalaUretimAraclar>
+						<IthalaUretimTuketimMalzemesi>0</IthalaUretimTuketimMalzemesi>
+						<PlanTaslak>0</PlanTaslak>
+						<RoyaltiLisans>0</RoyaltiLisans>
+						<DolayliIntikal>0</DolayliIntikal>
+						<Nakliye>0</Nakliye>
+						<Sigorta>0</Sigorta>
+						<GirisSonrasiNakliye>0</GirisSonrasiNakliye>
+						<TeknikYardim>0</TeknikYardim>
+						<DigerOdemeler>0</DigerOdemeler>
+						<DigerOdemelerNiteligi />
+						<VergiHarcFon>0</VergiHarcFon>
+					</KiymetKalem>
+				</KiymetKalemler>
+			</Kiymet>
+		</KiymetBildirim>
+		<mail1>ccccccccccccc@ccccccccc.com</mail1>
+		<mobil1>+905xxxxxx</mobil1>
+	</BeyannameBilgi>
+</Gelen>

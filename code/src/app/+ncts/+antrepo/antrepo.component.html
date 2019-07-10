@@ -1,0 +1,107 @@
+<div id="content">
+
+  <div class="row">
+
+    <article id="dn-table-widget" class="col-sm-12">
+      <dn-widget color="blueDark" [widgetId]="'vergi-widget'">
+        <header>
+          <div class="jarviswidget-ctrls" role="menu">
+            <ncts-no-label [idNcts]="idNctsBeyan"></ncts-no-label>
+          </div>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+          <h2>Antrepo Listesi</h2>
+        </header>
+        <div>
+          <div class="widget-body no-padding dn-datatable-widget-body">
+
+
+            <form [formGroup]="baseForm" novalidate>
+
+              <div class="margin-top-10">
+                <fieldset>
+                  <div class="form-row form-group no-margin-bottom" style="margin-left: -16px;">
+                    <div class="col-sm-12 col-md-4">
+                      <dn-input [form]="baseForm"
+                                formControlName="antrepoBeyannamesiNumarasi">Antrepo Beyanname No
+                      </dn-input>
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                      <dn-input formControlName="acilacakKalemNo" [form]="baseForm">Açılacak Kalem No</dn-input>
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                      <dn-input formControlName="markaTescilNo" [form]="baseForm">Açan NCTS Kalem No</dn-input>
+                    </div>
+                  </div>
+                </fieldset>
+                <fieldset>
+                  <div class="form-row form-group no-margin-bottom" style="margin-left: -16px;">
+                    <div class="col-sm-12 col-md-4">
+                      <dn-input formControlName="miktar" [form]="baseForm">Miktar</dn-input>
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                      <dn-input formControlName="miktarBirimi" [form]="baseForm"
+                                mask="dnCurrency">Miktar Birim
+                      </dn-input>
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                      <dn-input formControlName="aciklama" [form]="baseForm">Açıklama</dn-input>
+                    </div>
+                  </div>
+                </fieldset>
+                <fieldset>
+                  <div class="form-row form-group no-margin-bottom" style="margin-left: -16px;">
+                    <div class="col-sm-12 col-md-4"></div>
+                    <div class="col-sm-12 col-md-4"></div>
+                    <div class="col-sm-12 col-md-4">
+                      <button class="btn" type="button" style="float: right; margin-right: 13px;"
+                              [disabled]="!baseForm.valid"
+                              (click)="onSubmit()">
+                        <i [ngClass]="isEdit ? 'fa fa-edit':'fa fa-save'"></i>
+                        {{isEdit ? 'Güncelle' : 'Kaydet'}}
+                      </button>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+              <!--(click)="addSatir(baseForm.getRawValue())">-->
+              <br>
+              <table class="table table-bordered" [formArrayName]="formArrName">
+                <thead>
+                <tr>
+                  <th align="center" style="width: 40px; text-align: center">İşlem</th>
+                  <th align="center" style="text-align: center">Beyanname No</th>
+                  <th align="center" style="text-align: center">Açılan Kalem No</th>
+                  <th align="center" style="text-align: center">Açılan Miktar</th>
+                  <th align="center" style="text-align: center">Açıklama</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr *ngFor="let row of getControl().controls; let i=index"
+                    [formGroupName]="i"
+                    (click)="setClickedRow(i)" [class.active]="i == selectedRow">
+                  <td>
+                    <button (click)="onRemove(i)" type="button" class="btn btn-xs  btn-danger txt-color-white"><i
+                      class="fa fa-trash-o"></i></button>
+                  </td>
+                  <td>{{row.get('antrepoBeyannamesiNumarasi').value}}</td>
+                  <td>{{row.get('acilacakKalemNo').value}}</td>
+                  <td>{{row.get('miktar').value}}</td>
+                  <td>{{row.get('aciklama').value}}</td>
+                </tr>
+                </tbody>
+              </table>
+
+              <div class="clearfix"></div>
+            </form>
+            <div class="form-actions" style="margin: 0px;">
+            </div>
+
+          </div>
+        </div>
+      </dn-widget>
+    </article>
+  </div>
+
+</div>
+
+<pre *ngIf="gtbConst.config.debugState">{{baseForm.getRawValue() | json}}</pre>

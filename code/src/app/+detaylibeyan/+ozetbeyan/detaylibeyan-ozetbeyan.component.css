@@ -1,0 +1,45 @@
+
+
+:host >>> .eu-btn-center{
+  margin-top: 5px;
+}
+
+:host >>> table{
+  margin-bottom: 0px !important;
+}
+
+:host >>> .simple-selection .select2-selected {
+  padding-top: 4px !important;
+}
+
+:host >>> a>.select2-selection-container{
+  margin-bottom: -11px !important;
+}
+
+:host >>> .ozetbeyan-header{
+  border-color: #45474b!important;
+  background: #4c4f53!important;
+  color: #fff!important;
+}
+
+:host >>> .ts-btn-center{
+  margin-top: 5px;
+}
+
+:host >>>  table.table-bordered tbody td, table.table-bordered tbody th {
+  padding: 0;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+
+:host >>> #senet-table>thead>tr>th{
+  background-color: cornflowerblue !important;
+  text-align: center !important;
+}
+
+:host >>> #satir-table>thead>tr>th{
+  background-color: darkturquoise !important;
+  text-align: center !important;
+}
+

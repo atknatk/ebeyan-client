@@ -1,0 +1,84 @@
+:host >>> .button-nav {
+  display: block;
+  box-sizing: border-box;
+}
+
+:host >>> .button-nav ul {
+  width: 100%;
+  padding: 40px 28px 25px 0;
+  padding: 0;
+  margin: 0;
+  font-size: 13px;
+  line-height: .5em;
+  list-style: none;
+  position: relative;
+}
+
+:host >>> .button-nav ul li a {
+  line-height: normal;
+  font-size: 14px;
+  padding: 10px 10px 10px 11px;
+  color: #c0bbb7;
+  display: block;
+  font-weight: 400;
+  text-decoration: none !important;
+  position: relative;
+}
+
+:host >>> .button-nav > ul > li > a > i {
+  margin-right: 5px;
+  width: 15px;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+}
+
+:host >>> .button-nav > ul > li > a > span > em {
+  font-size: 9px;
+  display: block;
+  padding: 2px;
+  position: absolute;
+  top: 6px;
+  right: 36px;
+  text-decoration: none;
+  font-style: normal;
+  background: #ddd;
+  color: #333;
+  min-width: 13px;
+  border-radius: 50%;
+  max-height: 13px;
+  line-height: 8px;
+  font-weight: 700;
+  vertical-align: baseline;
+  white-space: nowrap;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, .1);
+}
+
+:host >>> .button-nav ul span.button-item-parent {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+:host >>> .button-nav ul .active > a {
+  color: #fff !important;
+  position: relative;
+}
+
+:host >>> .button-nav ul li.active > a:before {
+  content: "\f0d9";
+  font-family: FontAwesome;
+  display: block;
+  height: 27px;
+  line-height: normal;
+  width: 27px;
+  position: absolute;
+  right: -21px;
+  font-size: 20px;
+  color: #eee;
+}
+
+:host >>> .button-nav ul li a:hover {
+  color: #fff
+}

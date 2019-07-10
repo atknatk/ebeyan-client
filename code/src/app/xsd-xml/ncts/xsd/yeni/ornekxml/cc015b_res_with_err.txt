@@ -1,0 +1,11 @@
+<CC015B_RES>
+  <GUID>111111111111111111</GUID>
+  <ERR>
+     <PROC>validatecc015b_tr validation failed</PROC>
+     <VAL>
+         <VAL_MAIN>err</VAL_MAIN>
+         <VAL_GUA>err</VAL_GUA>	
+         <VAL_ITE>err</VAL_ITE>	 
+     </VAL>
+  </ERR>
+</CC015B_RES>

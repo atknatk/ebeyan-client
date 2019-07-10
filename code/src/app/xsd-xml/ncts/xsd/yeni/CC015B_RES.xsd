@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="1.0">
+  <!--    LEVEL 0    -->
+  <xsd:element name="CC015B_RES" type="t_cc015b_res"/>
+  <xsd:complexType name="t_cc015b_res">
+    <xsd:sequence>
+      <xsd:element name="GUID" type="t_guid" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="INSTANCEID" type="t_instanceid" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="LRN" type="t_lrn" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="TMSTMP" type="t_date" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="ERR" type="t_err" minOccurs="0" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+
+  <!--    LEVEL 1    -->
+  <xsd:complexType name="t_err">
+    <xsd:sequence>
+      <xsd:element name="TEC" type="t_err_exp" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="PROC" type="t_err_exp" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="VAL" type="t_val" minOccurs="0" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+
+  <!--    LEVEL 2    -->
+  <xsd:complexType name="t_val">
+    <xsd:sequence>
+      <xsd:element name="VAL_MAIN" type="t_err_exp" minOccurs="0" maxOccurs="999"/>
+      <xsd:element name="VAL_GUA" type="t_err_exp" minOccurs="0" maxOccurs="999"/>
+      <xsd:element name="VAL_ITE" type="t_err_exp" minOccurs="0" maxOccurs="999"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+
+  <!--    LEVEL 3    -->
+  <!--info-->
+  <xsd:simpleType name="t_guid">
+    <xsd:restriction base="xsd:string">
+      <xsd:minLength value="1"/>
+      <xsd:maxLength value="128"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="t_instanceid">
+    <xsd:restriction base="xsd:string">
+      <xsd:minLength value="1"/>
+      <xsd:maxLength value="50"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="t_lrn">
+    <xsd:restriction base="xsd:string">
+      <xsd:minLength value="1"/>
+      <xsd:maxLength value="24"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="t_err_exp">
+    <xsd:restriction base="xsd:string">
+      <xsd:minLength value="1"/>
+      <xsd:maxLength value="1000"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <!--
+  <xsd:simpleType name="">
+      <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="0"/>
+          <xsd:enumeration value="1"/>
+      </xsd:restriction>
+  </xsd:simpleType>
+  -->
+
+  <!--genel simple type -->
+  <xsd:simpleType name="t_date">
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="[0-3][0-9]/[0-1][0-9]/20[0-9][0-9]"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="t_01">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="0"/>
+      <xsd:enumeration value="1"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+
+</xsd:schema>

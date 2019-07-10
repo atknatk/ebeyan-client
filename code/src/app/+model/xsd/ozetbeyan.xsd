@@ -1,0 +1,225 @@
+<xs:schema xmlns:tns="http://www.gumruk.gov.tr/" elementFormDefault="qualified"
+           targetNamespace="http://www.gumruk.gov.tr/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="OzetBeyanBilgisi" nillable="true" type="tns:OzetBeyanBilgisi"/>
+  <xs:complexType name="OzetBeyanBilgisi">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="BeyanSahibiVergiNo" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="BeyanTuru" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="Diger" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="DorseNo1" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="DorseNo1Uyrugu" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="DorseNo2" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="DorseNo2Uyrugu" type="xs:string"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="EkBelgeSayisi" type="xs:int"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="EmniyetGuvenlik" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="GrupTasimaSenediNo" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="GumrukIdaresi" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="KullaniciKodu" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="Kurye" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="LimanYerAdiBos" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="LimanYerAdiYuk" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="OncekiBeyanNo" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="PlakaSeferNo" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="ReferansNumarasi" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="RefNo" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="Rejim" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="TasimaSekli" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="TasimaSenetleri" type="tns:ArrayOfTasimaSenediBilgisi"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="OzbyAcmalar" type="tns:ArrayOfOzbyAcmaBilgisi"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="TasitinAdi" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="TasitinUgradigiUlkeler" type="tns:ArrayOfTasitinUgradigiUlkeBilgisi"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="TasiyiciFirma" type="tns:FirmaBilgisi"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="TasiyiciVergiNo" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="TirAtaKarneNo" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="UlkeKodu" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="UlkeKoduBos" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="UlkeKoduYuk" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="YuklemeBosaltmaYeri" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="VarisCikisGumrukIdaresi" type="xs:string"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="VarisTarihSaati" type="xs:dateTime"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="XmlRefId" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfTasimaSenediBilgisi">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TasimaSenediBilgisi" nillable="true"
+                  type="tns:TasimaSenediBilgisi"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TasimaSenediBilgisi">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="AcentaAdi" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="AcentaVergiNo" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="AliciAdi" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="AliciVergiNo" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="AmbarHariciMi" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="BildirimTarafiAdi" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="BildirimTarafiVergiNo" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="DuzenlendigiUlke" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="EmniyetGuvenlikT" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="EsyaninBulunduguYer" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="FaturaDoviz" type="xs:string"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="FaturaToplami" type="xs:double"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="GondericiAdi" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="GondericiVergiNo" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="GrupMu" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="Ihracatlar" type="tns:ArrayOfIhracatBilgisi"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="KonteynerMi" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="NavlunDoviz" type="xs:string"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="NavlunTutari" type="xs:double"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="OdemeSekli" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="OncekiSeferNumarasi" type="xs:string"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="OncekiSeferTarihi" type="xs:dateTime"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="OzetBeyanNo" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="RoroMu" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="SenetSiraNo" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="AktarmaYapilacakMi" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="AktarmaTipi" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="TasimaSatirlari" type="tns:ArrayOfTasimaSatiriBilgisi"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="TasimaSenediNo" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="UgranilanUlkeler" type="tns:ArrayOfUgranilanUlkeBilgisi"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfIhracatBilgisi">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="IhracatBilgisi" nillable="true" type="tns:IhracatBilgisi"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="IhracatBilgisi">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="BrutAgirlik" type="xs:double"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="KapAdedi" type="xs:int"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="Numarasi" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="ParcaliMi" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="Tipi" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfTasimaSatiriBilgisi">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TasimaSatiriBilgisi" nillable="true"
+                  type="tns:TasimaSatiriBilgisi"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TasimaSatiriBilgisi">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="BrutAgirlik" type="xs:double"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="EsyaBilgileri" type="tns:ArrayOfEsyaBilgisi"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="KapAdedi" type="xs:int"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="KapCinsi" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="KonteynerTipi" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="MarkaNo" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="MuhurNumarasi" type="xs:string"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="NetAgirlik" type="xs:double"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="OlcuBirimi" type="xs:string"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="SatirNo" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfEsyaBilgisi">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EsyaBilgisi" nillable="true" type="tns:EsyaBilgisi"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="EsyaBilgisi">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="BmEsyaKodu" type="xs:string"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="BrutAgirlik" type="xs:double"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="EsyaKodu" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="EsyaninTanimi" type="xs:string"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="KalemFiyati" type="xs:double"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="KalemFiyatiDoviz" type="xs:string"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="KalemSiraNo" type="xs:int"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="NetAgirlik" type="xs:double"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="OlcuBirimi" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfUgranilanUlkeBilgisi">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="UgranilanUlkeBilgisi" nillable="true"
+                  type="tns:UgranilanUlkeBilgisi"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="UgranilanUlkeBilgisi">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="LimanYerAdi" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="UlkeKodu" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfOzbyAcmaBilgisi">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OzbyAcmaBilgisi" nillable="true"
+                  type="tns:OzbyAcmaBilgisi"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="OzbyAcmaBilgisi">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="AcmaSekli" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="AmbardaMi" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="BeyannameNo" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="BaskaRejimleAcilacakMi" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="Aciklama" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="DahiliNoAcma" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="OzbyAcmaSenetleri" type="tns:ArrayOfOzbyAcmaSenetBilgisi"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfOzbyAcmaSenetBilgisi">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OzbyAcmaSenetBilgisi" nillable="true"
+                  type="tns:OzbyAcmaSenetBilgisi"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="OzbyAcmaSenetBilgisi">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="dahiliNoAcilanSenet" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="AcilanSenetNo" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="DahiliNoAcilanSenet" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="OzbyAcmaSatirlari" type="tns:ArrayOfOzbyAcmaSatirBilgisi"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfOzbyAcmaSatirBilgisi">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OzbyAcmaSatirBilgisi" nillable="true"
+                  type="tns:OzbyAcmaSatirBilgisi"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="OzbyAcmaSatirBilgisi">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="AmbarKodu" type="xs:string"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="AmbardakiMiktar" type="xs:double"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="AcilacakMiktar" type="xs:double"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="MarkaNo" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="EsyaCinsi" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="Birim" type="xs:string"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="ToplamMiktar" type="xs:double"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="KapatilanMiktar" type="xs:double"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="OlcuBirimi" type="xs:string"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="AcmaSatirNo" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfTasitinUgradigiUlkeBilgisi">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TasitinUgradigiUlkeBilgisi" nillable="true"
+                  type="tns:TasitinUgradigiUlkeBilgisi"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TasitinUgradigiUlkeBilgisi">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="HareketTarihSaati" type="xs:dateTime"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="LimanYerAdi" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="UlkeKodu" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="FirmaBilgisi">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="AdiUnvani" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="CadSNo" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="Fax" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="IlIlce" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="KimlikNo" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="KimlikTuru" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="PostaKodu" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="Tel" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="UlkeKodu" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="VergiDairesikodu" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

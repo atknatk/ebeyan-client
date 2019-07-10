@@ -1,0 +1,1834 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xsd:include schemaLocation="doc.xsd"/>
+  <xsd:include schemaLocation="complex_types_ncts.xsd"/>
+  <xsd:include schemaLocation="simple_types_ncts.xsd"/>
+  <xsd:include schemaLocation="tcl_ncts.xsd"/>
+  <xsd:include schemaLocation="simple_types.xsd"/>
+  <xsd:include schemaLocation="tcl.xsd"/>
+  <xsd:group name="CCxxxB">
+    <xsd:sequence>
+      <xsd:element ref="SynIdeMES1"/>
+      <xsd:element ref="SynVerNumMES2"/>
+      <xsd:element ref="MesSenMES3"/>
+      <xsd:element ref="SenIdeCodQuaMES4" minOccurs="0"/>
+      <xsd:element ref="MesRecMES6"/>
+      <xsd:element ref="RecIdeCodQuaMES7" minOccurs="0"/>
+      <xsd:element ref="DatOfPreMES9"/>
+      <xsd:element ref="TimOfPreMES10"/>
+      <xsd:element ref="IntConRefMES11"/>
+      <xsd:element ref="RecRefMES12" minOccurs="0"/>
+      <xsd:element ref="RecRefQuaMES13" minOccurs="0"/>
+      <xsd:element ref="AppRefMES14" minOccurs="0"/>
+      <xsd:element ref="PriMES15" minOccurs="0"/>
+      <xsd:element ref="AckReqMES16" minOccurs="0"/>
+      <xsd:element ref="ComAgrIdMES17" minOccurs="0"/>
+      <xsd:element ref="TesIndMES18" minOccurs="0"/>
+      <xsd:element ref="MesIdeMES19"/>
+      <xsd:element ref="MesTypMES20"/>
+      <xsd:element ref="ComAccRefMES21" minOccurs="0"/>
+      <xsd:element ref="MesSeqNumMES22" minOccurs="0"/>
+      <xsd:element ref="FirAndLasTraMES23" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:group>
+  <xsd:element name="CC015B">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:group ref="CCxxxB"/>
+        <xsd:element ref="HEAHEA"/>
+        <xsd:element ref="TRAPRIPC1"/>
+        <xsd:element ref="TRACONCO1" minOccurs="0"/>
+        <xsd:element ref="TRACONCE1" minOccurs="0"/>
+        <xsd:element ref="TRAAUTCONTRA" minOccurs="0"/>
+        <xsd:element ref="CUSOFFDEPEPT"/>
+        <xsd:element ref="CUSOFFTRARNS" minOccurs="0" maxOccurs="9"/>
+        <xsd:element ref="CUSOFFDESEST"/>
+        <xsd:element ref="CONRESERS" minOccurs="0"/>
+        <xsd:element ref="REPREP" minOccurs="0"/>
+        <xsd:element ref="SEAINFSLI" minOccurs="0"/>
+        <xsd:element ref="GUAGUA" maxOccurs="9"/>
+        <xsd:element ref="GOOITEGDS" maxOccurs="999"/>
+        <xsd:element ref="ITI" minOccurs="0" maxOccurs="99"/>
+        <xsd:element ref="CARTRA100" minOccurs="0"/>
+        <xsd:element ref="TRACORSEC037" minOccurs="0"/>
+        <xsd:element ref="TRACONSEC029" minOccurs="0"/>
+        <xsd:element ref="OB" minOccurs="0" maxOccurs="1"/>
+        <xsd:element ref="AB" minOccurs="0" maxOccurs="1"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="SEAINFSLI">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="SeaNumSLI2"/>
+        <xsd:element ref="SEAIDSID" maxOccurs="99"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="GUAGUA">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="GuaTypGUA1"/>
+        <xsd:element ref="GUAREFREF" minOccurs="0" maxOccurs="99"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="GUAREFREF">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="GuaRefNumGRNREF1" minOccurs="0"/>
+        <xsd:element ref="OthGuaRefREF4" minOccurs="0"/>
+        <xsd:element ref="AccCodREF6" minOccurs="0"/>
+        <xsd:element ref="CurREF8" minOccurs="0"/>
+        <xsd:element ref="AmoConREF7" minOccurs="0"/>
+        <xsd:element ref="VALLIMECVLE" minOccurs="0"/>
+        <xsd:element ref="VALLIMNONECLIM" minOccurs="0" maxOccurs="99"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="GOOITEGDS">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="IteNumGDS7"/>
+        <xsd:element ref="ComCodTarCodGDS10" minOccurs="0"/>
+        <xsd:element ref="DecTypGDS15" minOccurs="0"/>
+        <xsd:element ref="GooDesGDS23"/>
+        <xsd:element ref="GooDesGDS23LNG" minOccurs="0"/>
+        <xsd:element ref="GroMasGDS46" minOccurs="0"/>
+        <xsd:element ref="NetMasGDS48" minOccurs="0"/>
+        <xsd:element ref="CouOfDisGDS58" minOccurs="0"/>
+        <xsd:element ref="CouOfDesGDS59" minOccurs="0"/>
+        <xsd:element ref="MetOfPayGDI12" minOccurs="0"/>
+        <xsd:element ref="ComRefNumGIM1" minOccurs="0"/>
+        <xsd:element ref="UNDanGooCodGDI1" minOccurs="0"/>
+        <xsd:element ref="IhrBeyanNo" minOccurs="0"/>
+        <xsd:element ref="IhrBeyanTip" minOccurs="0"/>
+        <xsd:element ref="IhrBeyanParcali" minOccurs="0"/>
+        <xsd:element ref="PREADMREFAR2" minOccurs="0" maxOccurs="9"/>
+        <xsd:element ref="PRODOCDC2" minOccurs="0" maxOccurs="99"/>
+        <xsd:element ref="SPEMENMT2" minOccurs="0" maxOccurs="99"/>
+        <xsd:element ref="TRACONCO2" minOccurs="0"/>
+        <xsd:element ref="TRACONCE2" minOccurs="0"/>
+        <xsd:element ref="CONNR2" minOccurs="0" maxOccurs="99"/>
+        <xsd:element ref="PACGS2" maxOccurs="99"/>
+        <xsd:element ref="SGICODSD2" minOccurs="0" maxOccurs="9"/>
+        <xsd:element ref="TRACORSECGOO021" minOccurs="0"/>
+        <xsd:element ref="TRACONSECGOO013" minOccurs="0"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="HEAHEA">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="RefNumHEA4"/>
+        <xsd:element ref="TypOfDecHEA24"/>
+        <xsd:element ref="CouOfDesCodHEA30" minOccurs="0"/>
+        <xsd:element ref="AgrLocOfGooCodHEA38" minOccurs="0"/>
+        <xsd:element ref="AgrLocOfGooHEA39" minOccurs="0"/>
+        <xsd:element ref="AgrLocOfGooHEA39LNG" minOccurs="0"/>
+        <xsd:element ref="AutLocOfGooCodHEA41" minOccurs="0"/>
+        <xsd:element ref="PlaOfLoaCodHEA46" minOccurs="0"/>
+        <xsd:element ref="CouOfDisCodHEA55" minOccurs="0"/>
+        <xsd:element ref="CusSubPlaHEA66" minOccurs="0"/>
+        <xsd:element ref="InlTraModHEA75" minOccurs="0"/>
+        <xsd:element ref="TraModAtBorHEA76" minOccurs="0"/>
+        <xsd:element ref="IdeOfMeaOfTraAtDHEA78" minOccurs="0"/>
+        <xsd:element ref="IdeOfMeaOfTraAtDHEA78LNG" minOccurs="0"/>
+        <xsd:element ref="NatOfMeaOfTraAtDHEA80" minOccurs="0"/>
+        <xsd:element ref="IdeOfMeaOfTraCroHEA85" minOccurs="0"/>
+        <xsd:element ref="IdeOfMeaOfTraCroHEA85LNG" minOccurs="0"/>
+        <xsd:element ref="NatOfMeaOfTraCroHEA87" minOccurs="0"/>
+        <xsd:element ref="TypOfMeaOfTraCroHEA88" minOccurs="0"/>
+        <xsd:element ref="ConIndHEA96"/>
+        <xsd:element ref="DiaLanIndAtDepHEA254" minOccurs="0"/>
+        <xsd:element ref="NCTSAccDocHEA601LNG"/>
+        <xsd:element ref="TotNumOfIteHEA305"/>
+        <xsd:element ref="TotNumOfPacHEA306" minOccurs="0"/>
+        <xsd:element ref="TotGroMasHEA307"/>
+        <xsd:element ref="DecDatHEA383"/>
+        <xsd:element ref="DecPlaHEA394"/>
+        <xsd:element ref="DecPlaHEA394LNG" minOccurs="0"/>
+        <xsd:element ref="SpeCirIndHEA1" minOccurs="0"/>
+        <xsd:element ref="TraChaMetOfPayHEA1" minOccurs="0"/>
+        <xsd:element ref="ComRefNumHEA" minOccurs="0"/>
+        <xsd:element ref="SecHEA358" minOccurs="0"/>
+        <xsd:element ref="ConRefNumHEA" minOccurs="0"/>
+        <xsd:element ref="CodPlUnHEA357" minOccurs="0"/>
+        <xsd:element ref="CodPlUnHEA357LNG" minOccurs="0"/>
+        <xsd:element ref="TruckId2" minOccurs="0"/>
+        <xsd:element ref="TruckId3" minOccurs="0"/>
+        <xsd:element ref="DamgaVergi" minOccurs="0"/>
+        <xsd:element ref="MusavirKimlikNo" minOccurs="0"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="TRAPRIPC1">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="NamPC17" minOccurs="0"/>
+        <xsd:element ref="StrAndNumPC122" minOccurs="0"/>
+        <xsd:element ref="PosCodPC123" minOccurs="0"/>
+        <xsd:element ref="CitPC124" minOccurs="0"/>
+        <xsd:element ref="CouPC125" minOccurs="0"/>
+        <xsd:element ref="NADLNGPC" minOccurs="0"/>
+        <xsd:element ref="TINPC159" minOccurs="0"/>
+        <xsd:element ref="HITPC126" minOccurs="0"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="TRACONCO1">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="NamCO17"/>
+        <xsd:element ref="StrAndNumCO122"/>
+        <xsd:element ref="PosCodCO123"/>
+        <xsd:element ref="CitCO124"/>
+        <xsd:element ref="CouCO125"/>
+        <xsd:element ref="NADLNGCO" minOccurs="0"/>
+        <xsd:element ref="TINCO159" minOccurs="0"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="TRACONCE1">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="NamCE17"/>
+        <xsd:element ref="StrAndNumCE122"/>
+        <xsd:element ref="PosCodCE123"/>
+        <xsd:element ref="CitCE124"/>
+        <xsd:element ref="CouCE125"/>
+        <xsd:element ref="NADLNGCE" minOccurs="0"/>
+        <xsd:element ref="TINCE159" minOccurs="0"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="TRAAUTCONTRA">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="TINTRA59"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="CUSOFFDEPEPT">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="RefNumEPT1"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="CUSOFFTRARNS">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="RefNumRNS1"/>
+        <xsd:element ref="ArrTimTRACUS085" minOccurs="0"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="CUSOFFDESEST">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="RefNumEST1"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="CONRESERS">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="ConResCodERS16"/>
+        <xsd:element ref="DatLimERS69"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="REPREP">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="NamREP5"/>
+        <xsd:element ref="RepCapREP18" minOccurs="0"/>
+        <xsd:element ref="RepCapREP18LNG" minOccurs="0"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="ITI">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="CouOfRouCodITI1"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="CARTRA100">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="NamCARTRA121" minOccurs="0"/>
+        <xsd:element ref="StrAndNumCARTRA254" minOccurs="0"/>
+        <xsd:element ref="PosCodCARTRA121" minOccurs="0"/>
+        <xsd:element ref="CitCARTRA789" minOccurs="0"/>
+        <xsd:element ref="CouCodCARTRA587" minOccurs="0"/>
+        <xsd:element ref="NADCARTRA121" minOccurs="0"/>
+        <xsd:element ref="TINCARTRA254" minOccurs="0"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="TRACORSEC037">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="NamTRACORSEC041" minOccurs="0"/>
+        <xsd:element ref="StrNumTRACORSEC043" minOccurs="0"/>
+        <xsd:element ref="PosCodTRACORSEC042" minOccurs="0"/>
+        <xsd:element ref="CitTRACORSEC038" minOccurs="0"/>
+        <xsd:element ref="CouCodTRACORSEC039" minOccurs="0"/>
+        <xsd:element ref="TRACORSEC037LNG" minOccurs="0"/>
+        <xsd:element ref="TINTRACORSEC044" minOccurs="0"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="TRACONSEC029">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="NameTRACONSEC033" minOccurs="0"/>
+        <xsd:element ref="StrNumTRACONSEC035" minOccurs="0"/>
+        <xsd:element ref="PosCodTRACONSEC034" minOccurs="0"/>
+        <xsd:element ref="CitTRACONSEC030" minOccurs="0"/>
+        <xsd:element ref="CouCodTRACONSEC031" minOccurs="0"/>
+        <xsd:element ref="TRACONSEC029LNG" minOccurs="0"/>
+        <xsd:element ref="TINTRACONSEC036" minOccurs="0"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="CONNR2">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="ConNumNR21"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="PACGS2">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="MarNumOfPacGS21" minOccurs="0"/>
+        <xsd:element ref="MarNumOfPacGS21LNG" minOccurs="0"/>
+        <xsd:element ref="KinOfPacGS23"/>
+        <xsd:element ref="NumOfPacGS24" minOccurs="0"/>
+        <xsd:element ref="NumOfPieGS25" minOccurs="0"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="PREADMREFAR2">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="PreDocTypAR21"/>
+        <xsd:element ref="PreDocRefAR26"/>
+        <xsd:element ref="PreDocRefLNG" minOccurs="0"/>
+        <xsd:element ref="ComOfInfAR29" minOccurs="0"/>
+        <xsd:element ref="ComOfInfAR29LNG" minOccurs="0"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="PRODOCDC2">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="DocTypDC21"/>
+        <xsd:element ref="DocRefDC23" minOccurs="0"/>
+        <xsd:element ref="DocRefDCLNG" minOccurs="0"/>
+        <xsd:element ref="ComOfInfDC25" minOccurs="0"/>
+        <xsd:element ref="ComOfInfDC25LNG" minOccurs="0"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="SEAIDSID">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="SeaIdeSID1"/>
+        <xsd:element ref="SeaIdeSID1LNG" minOccurs="0"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="SGICODSD2">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="SenGooCodSD22" minOccurs="0"/>
+        <xsd:element ref="SenQuaSD23"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="SPEMENMT2">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="AddInfMT21" minOccurs="0"/>
+        <xsd:element ref="AddInfMT21LNG" minOccurs="0"/>
+        <xsd:element ref="AddInfCodMT23" minOccurs="0"/>
+        <xsd:element ref="ExpFroECMT24" minOccurs="0"/>
+        <xsd:element ref="ExpFroCouMT25" minOccurs="0"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="TRACONCE2">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="NamCE27"/>
+        <xsd:element ref="StrAndNumCE222"/>
+        <xsd:element ref="PosCodCE223"/>
+        <xsd:element ref="CitCE224"/>
+        <xsd:element ref="CouCE225"/>
+        <xsd:element ref="NADLNGGICE" minOccurs="0"/>
+        <xsd:element ref="TINCE259" minOccurs="0"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="TRACONCO2">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="NamCO27"/>
+        <xsd:element ref="StrAndNumCO222"/>
+        <xsd:element ref="PosCodCO223"/>
+        <xsd:element ref="CitCO224"/>
+        <xsd:element ref="CouCO225"/>
+        <xsd:element ref="NADLNGGTCO" minOccurs="0"/>
+        <xsd:element ref="TINCO259" minOccurs="0"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="TRACONSECGOO013">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="NamTRACONSECGOO017" minOccurs="0"/>
+        <xsd:element ref="StrNumTRACONSECGOO019" minOccurs="0"/>
+        <xsd:element ref="PosCodTRACONSECGOO018" minOccurs="0"/>
+        <xsd:element ref="CityTRACONSECGOO014" minOccurs="0"/>
+        <xsd:element ref="CouCodTRACONSECGOO015" minOccurs="0"/>
+        <xsd:element ref="TRACONSECGOO013LNG" minOccurs="0"/>
+        <xsd:element ref="TINTRACONSECGOO020" minOccurs="0"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="TRACORSECGOO021">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="NamTRACORSECGOO025" minOccurs="0"/>
+        <xsd:element ref="StrNumTRACORSECGOO027" minOccurs="0"/>
+        <xsd:element ref="PosCodTRACORSECGOO026" minOccurs="0"/>
+        <xsd:element ref="CitTRACORSECGOO022" minOccurs="0"/>
+        <xsd:element ref="CouCodTRACORSECGOO023" minOccurs="0"/>
+        <xsd:element ref="TRACORSECGOO021LNG" minOccurs="0"/>
+        <xsd:element ref="TINTRACORSECGOO028" minOccurs="0"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="VALLIMECVLE">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="NotValForECVLE1"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="VALLIMNONECLIM">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="NotValForOthConPLIM2"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="OB">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="ACMA" minOccurs="0" maxOccurs="99"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="ACMA">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="DisInd" minOccurs="0"/>
+        <xsd:element ref="Idsoext" minOccurs="0"/>
+        <xsd:element ref="WareInd" minOccurs="0"/>
+        <xsd:element ref="Ltitref" minOccurs="0"/>
+        <xsd:element ref="WareCod" minOccurs="0"/>
+        <xsd:element ref="TitlNum" minOccurs="0"/>
+        <xsd:element ref="DisQty" minOccurs="0"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="AB">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="ACMA2" minOccurs="0" maxOccurs="99"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="ACMA2">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="Iddtext" minOccurs="0"/>
+        <xsd:element ref="Nartnumart" minOccurs="0"/>
+        <xsd:element ref="Nartnumart1" minOccurs="0"/>
+        <xsd:element ref="Qamv" minOccurs="0"/>
+        <xsd:element ref="Lamvecom" minOccurs="0"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="AccCodREF6">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:length value="4"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="AddInfCodMT23">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="5"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="AddInfMT21">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="70"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="AddInfMT21LNG">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:length value="2"/>
+        <xsd:pattern value="[^0-9]*"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="AgrLocOfGooCodHEA38">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="17"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="AgrLocOfGooHEA39">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="35"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="AgrLocOfGooHEA39LNG">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:length value="2"/>
+        <xsd:pattern value="[^0-9]*"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="AppRefMES14">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="14"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="ArrTimTRACUS085">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:nonNegativeInteger">
+        <xsd:totalDigits value="12"/>
+        <xsd:pattern value="[1-9][0-9]*"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="AutLocOfGooCodHEA41">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="17"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="CitCARTRA789">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="35"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="CitCE124">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="35"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="CitCE224">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="35"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="CitCO124">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="35"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="CitCO224">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="35"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="CitPC124">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="35"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="CitTRACONSEC030">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="35"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="CitTRACORSEC038">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="35"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="CitTRACORSECGOO022">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="35"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="CityTRACONSECGOO014">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="35"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="CodPlUnHEA357">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="35"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="CodPlUnHEA357LNG">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:length value="2"/>
+        <xsd:pattern value="[^0-9]*"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="ComAccRefMES21">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="35"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="ComAgrIdMES17">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="35"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="ComCodTarCodGDS10">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="22"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="ComOfInfAR29">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="26"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="ComOfInfAR29LNG">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:length value="2"/>
+        <xsd:pattern value="[^0-9]*"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="ComOfInfDC25">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="26"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="ComOfInfDC25LNG">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:length value="2"/>
+        <xsd:pattern value="[^0-9]*"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="ComRefNumGIM1">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="70"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="ComRefNumHEA">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="70"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="ConNumNR21">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="17"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="ConRefNumHEA">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="35"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="ConResCodERS16">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:length value="2"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="CouCE125">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:length value="2"/>
+        <xsd:pattern value="[^0-9]*"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="CouCE225">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:length value="2"/>
+        <xsd:pattern value="[^0-9]*"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="CouCO125">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:length value="2"/>
+        <xsd:pattern value="[^0-9]*"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="CouCO225">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:length value="2"/>
+        <xsd:pattern value="[^0-9]*"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="CouCodCARTRA587">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:length value="2"/>
+        <xsd:pattern value="[^0-9]*"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="CouCodTRACONSEC031">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:length value="2"/>
+        <xsd:pattern value="[^0-9]*"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="CouCodTRACONSECGOO015">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:length value="2"/>
+        <xsd:pattern value="[^0-9]*"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="CouCodTRACORSEC039">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:length value="2"/>
+        <xsd:pattern value="[^0-9]*"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="CouCodTRACORSECGOO023">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:length value="2"/>
+        <xsd:pattern value="[^0-9]*"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="CouOfDesCodHEA30">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:length value="2"/>
+        <xsd:pattern value="[^0-9]*"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="CouOfDesGDS59">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:length value="2"/>
+        <xsd:pattern value="[^0-9]*"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="CouOfDisCodHEA55">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:length value="2"/>
+        <xsd:pattern value="[^0-9]*"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="CouOfDisGDS58">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:length value="2"/>
+        <xsd:pattern value="[^0-9]*"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="CouOfRouCodITI1">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:length value="2"/>
+        <xsd:pattern value="[^0-9]*"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="CouPC125">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:length value="2"/>
+        <xsd:pattern value="[^0-9]*"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="CusSubPlaHEA66">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="17"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="DecPlaHEA394">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="35"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="DecPlaHEA394LNG">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:length value="2"/>
+        <xsd:pattern value="[^0-9]*"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="DecTypGDS15">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="9"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="DiaLanIndAtDepHEA254">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:length value="2"/>
+        <xsd:pattern value="[^0-9]*"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="DocRefDC23">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="35"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="DocRefDCLNG">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:length value="2"/>
+        <xsd:pattern value="[^0-9]*"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="DocTypDC21">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="4"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="ExpFroCouMT25">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:length value="2"/>
+        <xsd:pattern value="[^0-9]*"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="GooDesGDS23">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="280"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="GooDesGDS23LNG">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:length value="2"/>
+        <xsd:pattern value="[^0-9]*"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="GroMasGDS46">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:decimal">
+        <xsd:totalDigits value="11"/>
+        <xsd:fractionDigits value="3"/>
+        <xsd:pattern value="(0(\.[0-9]{0,3})|[1-9][0-9]*(\.[0-9]+)?)"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="GuaRefNumGRNREF1">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="24"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="CurREF8">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="3"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="AmoConREF7">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:nonNegativeInteger">
+        <xsd:totalDigits value="6"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="DamgaVergi">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:decimal">
+        <xsd:totalDigits value="10"/>
+        <xsd:fractionDigits value="2"/>
+        <xsd:pattern value="(0(\.[0-9]{0,3})|[1-9][0-9]*(\.[0-9]+)?)"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="IhrBeyanNo">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="25"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="IhrBeyanTip">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="9"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="IhrBeyanParcali">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="9"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="TruckId2">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="50"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="TruckId3">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="50"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="DisInd">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="9"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="Idsoext">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="16"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="WareInd">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="9"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="Ltitref">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="100"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="WareCod">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="20"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="TitlNum">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:nonNegativeInteger">
+        <xsd:totalDigits value="6"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="DisQty">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:nonNegativeInteger">
+        <xsd:totalDigits value="6"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="Iddtext">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="20"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="Nartnumart">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:nonNegativeInteger">
+        <xsd:totalDigits value="3"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="Nartnumart1">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:nonNegativeInteger">
+        <xsd:totalDigits value="3"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="Qamv">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:decimal">
+        <xsd:totalDigits value="16"/>
+        <xsd:fractionDigits value="2"/>
+        <xsd:pattern value="(0(\.[0-9]{0,3})|[1-9][0-9]*(\.[0-9]+)?)"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="Lamvecom">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="100"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="GuaTypGUA1">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:length value="1"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="IdeOfMeaOfTraAtDHEA78">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="27"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="IdeOfMeaOfTraAtDHEA78LNG">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:length value="2"/>
+        <xsd:pattern value="[^0-9]*"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="IdeOfMeaOfTraCroHEA85">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="27"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="IdeOfMeaOfTraCroHEA85LNG">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:length value="2"/>
+        <xsd:pattern value="[^0-9]*"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="InlTraModHEA75">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:nonNegativeInteger">
+        <xsd:totalDigits value="2"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="IntConRefMES11">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="14"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="IteNumGDS7">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:nonNegativeInteger">
+        <xsd:totalDigits value="5"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="KinOfPacGS23">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="3"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="MarNumOfPacGS21">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="42"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="MarNumOfPacGS21LNG">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:length value="2"/>
+        <xsd:pattern value="[^0-9]*"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="MesIdeMES19">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="14"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="MesRecMES6">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="35"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="MesSenMES3">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="35"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="MesSeqNumMES22">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:nonNegativeInteger">
+        <xsd:totalDigits value="2"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="MetOfPayGDI12">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:length value="1"/>
+        <xsd:pattern value="[^0-9]*"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="NADCARTRA121">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:length value="2"/>
+        <xsd:pattern value="[^0-9]*"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="NADLNGCE">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:length value="2"/>
+        <xsd:pattern value="[^0-9]*"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="NADLNGGICE">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:length value="2"/>
+        <xsd:pattern value="[^0-9]*"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="NADLNGGTCO">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:length value="2"/>
+        <xsd:pattern value="[^0-9]*"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="NADLNGPC">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:length value="2"/>
+        <xsd:pattern value="[^0-9]*"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="NamCARTRA121">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="35"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="NamCE17">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="35"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="NamCE27">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="35"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="NamCO17">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="35"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="NamCO27">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="35"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="NameTRACONSEC033">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="35"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="NamPC17">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="35"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="NamREP5">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="35"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="NamTRACONSECGOO017">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="35"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="NamTRACORSEC041">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="35"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="NamTRACORSECGOO025">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="35"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="NatOfMeaOfTraAtDHEA80">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:length value="2"/>
+        <xsd:pattern value="[^0-9]*"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="NatOfMeaOfTraCroHEA87">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:length value="2"/>
+        <xsd:pattern value="[^0-9]*"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="NCTSAccDocHEA601LNG">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:length value="2"/>
+        <xsd:pattern value="[^0-9]*"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="NetMasGDS48">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:decimal">
+        <xsd:totalDigits value="11"/>
+        <xsd:fractionDigits value="3"/>
+        <xsd:pattern value="(0(\.[0-9]{0,3})|[1-9][0-9]*(\.[0-9]+)?)"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="NumOfPacGS24">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:nonNegativeInteger">
+        <xsd:totalDigits value="5"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="NumOfPieGS25">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:nonNegativeInteger">
+        <xsd:totalDigits value="5"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="OthGuaRefREF4">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="35"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="PlaOfLoaCodHEA46">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="17"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="PosCodCARTRA121">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="9"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="PosCodCE123">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="9"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="PosCodCE223">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="9"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="PosCodCO123">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="9"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="PosCodCO223">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="9"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="PosCodPC123">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="9"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="PosCodTRACONSEC034">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="9"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="PosCodTRACONSECGOO018">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="9"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="PosCodTRACORSEC042">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="9"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="PosCodTRACORSECGOO026">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="9"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="PreDocRefAR26">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="35"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="PreDocRefLNG">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:length value="2"/>
+        <xsd:pattern value="[^0-9]*"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="PriMES15">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:length value="1"/>
+        <xsd:pattern value="[^0-9]*"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="RecIdeCodQuaMES7">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="4"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="RecRefMES12">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="14"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="RecRefQuaMES13">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:length value="2"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="RefNumEPT1">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:length value="8"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="RefNumEST1">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:length value="8"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="RefNumHEA4">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="22"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="RefNumRNS1">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:length value="8"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="RepCapREP18">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="35"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="RepCapREP18LNG">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:length value="2"/>
+        <xsd:pattern value="[^0-9]*"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="SeaIdeSID1">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="20"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="SeaIdeSID1LNG">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:length value="2"/>
+        <xsd:pattern value="[^0-9]*"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="SeaNumSLI2">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:nonNegativeInteger">
+        <xsd:totalDigits value="4"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="SenIdeCodQuaMES4">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="4"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="SenQuaSD23">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:decimal">
+        <xsd:totalDigits value="11"/>
+        <xsd:fractionDigits value="3"/>
+        <xsd:pattern value="(0(\.[0-9]{0,3})|[1-9][0-9]*(\.[0-9]+)?)"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="SpeCirIndHEA1">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:length value="1"/>
+        <xsd:pattern value="[^0-9]*"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="StrAndNumCARTRA254">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="35"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="StrAndNumCE122">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="35"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="StrAndNumCE222">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="35"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="StrAndNumCO122">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="35"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="StrAndNumCO222">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="35"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="StrAndNumPC122">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="35"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="StrNumTRACONSEC035">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="35"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="StrNumTRACONSECGOO019">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="35"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="StrNumTRACORSEC043">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="35"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="StrNumTRACORSECGOO027">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="35"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="TINCARTRA254">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="17"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="TINCE159">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="17"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="TINCE259">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="17"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="TINCO159">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="17"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="TINCO259">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="17"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="TINPC159">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="17"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="HITPC126">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="17"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="TINTRA59">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="17"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="TINTRACONSEC036">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="17"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="TINTRACONSECGOO020">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="17"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="TINTRACORSEC044">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="17"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="TINTRACORSECGOO028">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="17"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="TotGroMasHEA307">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:decimal">
+        <xsd:totalDigits value="11"/>
+        <xsd:fractionDigits value="3"/>
+        <xsd:pattern value="(0(\.[0-9]{0,3})|[1-9][0-9]*(\.[0-9]+)?)"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="TotNumOfIteHEA305">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:nonNegativeInteger">
+        <xsd:totalDigits value="5"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="TotNumOfPacHEA306">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:nonNegativeInteger">
+        <xsd:totalDigits value="7"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="TraChaMetOfPayHEA1">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:length value="1"/>
+        <xsd:pattern value="[^0-9]*"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="NADLNGCO">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:length value="2"/>
+        <xsd:pattern value="[^0-9]*"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="TRACONSEC029LNG">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:length value="2"/>
+        <xsd:pattern value="[^0-9]*"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="TRACONSECGOO013LNG">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:length value="2"/>
+        <xsd:pattern value="[^0-9]*"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="TRACORSEC037LNG">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:length value="2"/>
+        <xsd:pattern value="[^0-9]*"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="TRACORSECGOO021LNG">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:length value="2"/>
+        <xsd:pattern value="[^0-9]*"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="TraModAtBorHEA76">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:nonNegativeInteger">
+        <xsd:totalDigits value="2"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="TypOfDecHEA24">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="9"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="TypOfMeaOfTraCroHEA88">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:nonNegativeInteger">
+        <xsd:totalDigits value="2"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="UNDanGooCodGDI1">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:length value="4"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+
+  <xsd:element name="MusavirKimlikNo">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:maxLength value="17"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+
+
+</xsd:schema>

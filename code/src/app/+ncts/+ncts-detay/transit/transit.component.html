@@ -1,0 +1,55 @@
+<form [formGroup]="baseForm" novalidate>
+
+  <div class="margin-top-10">
+    <fieldset>
+      <div class="form-row form-group no-margin-bottom" style="margin-left: -16px;">
+        <div class="col-sm-12 col-md-6">
+          <dn-select2-container [form]="baseForm"
+                                [labelRow]="5"
+                                [inputRow]="7"
+                                serviceUrl="gumrukIdaresi"
+                                formControlName="transitGumrukIdaresi">Transit Gümrük İd.
+          </dn-select2-container>
+        </div>
+        <div class="col-sm-12 col-md-5">
+          <dn-input [form]="baseForm"
+                    [mask]="'dd/mm/yyyy'"
+                    formControlName="varisTarihSaat">Varış Tarihi
+          </dn-input>
+        </div>
+        <div class="col-sm-12 col-md-1">
+          <button class="btn" type="button" style="float: right; margin-right: 13px;"
+                  [disabled]="!baseForm.valid"
+                  (click)="onSubmit()">
+            <i [ngClass]="isEdit ? 'fa fa-edit':'fa fa-save'"></i>
+            {{isEdit ? 'Güncelle' : 'Kaydet'}}
+          </button>
+        </div>
+      </div>
+    </fieldset>
+  </div>
+  <!--(click)="addSatir(baseForm.getRawValue())">-->
+  <br>
+  <table class="table table-bordered" [formArrayName]="formArrName">
+    <thead>
+    <tr>
+      <th align="center" style="width: 40px; text-align: center">İşlem</th>
+      <th align="center" style="text-align: center">Transit Gümrük İdaresi</th>
+      <th align="center" style="text-align: center">Varış Tarihi</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let row of getControl().controls; let i=index"
+        [formGroupName]="i"
+        (click)="setClickedRow(i)" [class.active]="i == selectedRow">
+      <td>
+        <button (click)="onRemove(i)" type="button" class="btn btn-xs  btn-danger txt-color-white"><i
+          class="fa fa-trash-o"></i></button>
+      </td>
+      <td>{{getEnumValue(row.get('transitGumrukIdaresi').value)}}</td>
+      <td>{{row.get('varisTarihSaat').value}}</td>
+    </tr>
+    </tbody>
+  </table>
+  <div class="clearfix"></div>
+</form>

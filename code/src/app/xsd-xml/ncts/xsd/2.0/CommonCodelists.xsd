@@ -1,0 +1,177 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<xsd:schema xmlns:xsd = "http://www.w3.org/2001/XMLSchema"
+	 version = "1.0"
+	 elementFormDefault = "qualified">
+	<xsd:element name = "ActRecINT1" type = "CL32"/>
+	<xsd:element name = "ActRecMER7" type = "CL32"/>
+	<xsd:element name = "CouSysUNaTypCSU662" type = "CL79"/>
+	<xsd:element name = "DisSolNotCod153" type = "CL69"/>
+	<xsd:element name = "DisSolNotCodHEA610" type = "CL69"/>
+	<xsd:element name = "ErrTypDER1" type = "CL23"/>
+	<xsd:element name = "ErrTypER11" type = "CL49"/>
+	<xsd:element name = "ErrTypINT6" type = "CL23"/>
+	<xsd:element name = "ErrTypMER8" type = "CL23"/>
+	<xsd:element name = "ErrTypSER2" type = "CL23"/>
+	<xsd:element name = "FirAndLasTraMES23" type = "CL28"/>
+	<xsd:element name = "IntSegTagINT3" type = "CL33"/>
+	<xsd:element name = "MesContAgMER5" type = "CL37"/>
+	<xsd:element name = "MesRelNoMER4" type = "CL36"/>
+	<xsd:element name = "MesSegMER9" type = "CL34"/>
+	<xsd:element name = "MesVerMER3" type = "CL35"/>
+	<xsd:element name = "Mon85" type = "CL26"/>
+	<xsd:element name = "Mon99" type = "CL26"/>
+	<xsd:element name = "MonSER641" type = "CL26"/>
+	<xsd:element name = "Ope288" type = "CL24"/>
+	<xsd:element name = "SenGooCod309" type = "CL64"/>
+	<xsd:element name = "SenGooCodGDS213" type = "CL64"/>
+	<xsd:element name = "SenGooCodSD22" type = "CL64"/>
+	<xsd:element name = "SenGooGDS314" type = "CL64"/>
+	<xsd:element name = "SenGooGodGDS11" type = "CL64"/>
+	<xsd:element name = "SynIdeMES1" type = "CL21"/>
+	<xsd:element name = "SynVerNumMES2" type = "CL22"/>
+	
+	<xsd:simpleType name = "CL21">
+		<xsd:restriction base = "xsd:string">
+			<xsd:enumeration value = "UNOC"/>
+			<xsd:enumeration value = "UNOD"/>
+			<xsd:enumeration value = "UNOH"/>
+			<xsd:enumeration value = "UNOE"/>
+			<xsd:enumeration value = "UNOF"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name = "CL22">
+		<xsd:restriction base = "xsd:string">
+			<xsd:enumeration value = "3"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name = "CL23">
+		<xsd:restriction base = "xsd:string">
+			<xsd:enumeration value = "12"/>
+			<xsd:enumeration value = "13"/>
+			<xsd:enumeration value = "14"/>
+			<xsd:enumeration value = "15"/>
+			<xsd:enumeration value = "16"/>
+			<xsd:enumeration value = "18"/>
+			<xsd:enumeration value = "19"/>
+			<xsd:enumeration value = "2"/>
+			<xsd:enumeration value = "21"/>
+			<xsd:enumeration value = "22"/>
+			<xsd:enumeration value = "23"/>
+			<xsd:enumeration value = "26"/>
+			<xsd:enumeration value = "28"/>
+			<xsd:enumeration value = "29"/>
+			<xsd:enumeration value = "3"/>
+			<xsd:enumeration value = "32"/>
+			<xsd:enumeration value = "33"/>
+			<xsd:enumeration value = "35"/>
+			<xsd:enumeration value = "36"/>
+			<xsd:enumeration value = "37"/>
+			<xsd:enumeration value = "38"/>
+			<xsd:enumeration value = "39"/>
+			<xsd:enumeration value = "40"/>
+			<xsd:enumeration value = "6"/>
+			<xsd:enumeration value = "7"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name = "CL24">
+		<xsd:restriction base = "xsd:string">
+			<xsd:enumeration value = "C"/>
+			<xsd:enumeration value = "D"/>
+			<xsd:enumeration value = "U"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name = "CL26">
+		<xsd:restriction base = "xsd:string">
+			<xsd:enumeration value = "01"/>
+			<xsd:enumeration value = "02"/>
+			<xsd:enumeration value = "03"/>
+			<xsd:enumeration value = "04"/>
+			<xsd:enumeration value = "05"/>
+			<xsd:enumeration value = "06"/>
+			<xsd:enumeration value = "07"/>
+			<xsd:enumeration value = "08"/>
+			<xsd:enumeration value = "09"/>
+			<xsd:enumeration value = "10"/>
+			<xsd:enumeration value = "11"/>
+			<xsd:enumeration value = "12"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name = "CL28">
+		<xsd:restriction base = "xsd:string">
+			<xsd:enumeration value = "F"/>
+			<xsd:enumeration value = "L"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name = "CL32">
+		<xsd:restriction base = "xsd:string">
+			<xsd:enumeration value = "4"/>
+			<xsd:enumeration value = "7"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name = "CL33">
+		<xsd:restriction base = "xsd:string">
+			<xsd:enumeration value = "UNB"/>
+			<xsd:enumeration value = "UNZ"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name = "CL34">
+		<xsd:restriction base = "xsd:string">
+			<xsd:enumeration value = "UNH"/>
+			<xsd:enumeration value = "UNT"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name = "CL35">
+		<xsd:restriction base = "xsd:string">
+			<xsd:enumeration value = "D"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name = "CL36">
+		<xsd:restriction base = "xsd:string">
+			<xsd:enumeration value = "96B"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name = "CL37">
+		<xsd:restriction base = "xsd:string">
+			<xsd:enumeration value = "UN"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name = "CL49">
+		<xsd:restriction base = "xsd:string">
+			<xsd:enumeration value = "12"/>
+			<xsd:enumeration value = "13"/>
+			<xsd:enumeration value = "14"/>
+			<xsd:enumeration value = "15"/>
+			<xsd:enumeration value = "19"/>
+			<xsd:enumeration value = "26"/>
+			<xsd:enumeration value = "35"/>
+			<xsd:enumeration value = "37"/>
+			<xsd:enumeration value = "38"/>
+			<xsd:enumeration value = "39"/>
+			<xsd:enumeration value = "40"/>
+			<xsd:enumeration value = "90"/>
+			<xsd:enumeration value = "91"/>
+			<xsd:enumeration value = "92"/>
+			<xsd:enumeration value = "93"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name = "CL64">
+		<xsd:restriction base = "xsd:string">
+			<xsd:enumeration value = "1"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name = "CL69">
+		<xsd:restriction base = "xsd:string">
+			<xsd:enumeration value = "0"/>
+			<xsd:enumeration value = "1"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name = "CL79">
+		<xsd:restriction base = "xsd:string">
+			<xsd:enumeration value = "N"/>
+			<xsd:enumeration value = "S"/>
+			<xsd:enumeration value = "U"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

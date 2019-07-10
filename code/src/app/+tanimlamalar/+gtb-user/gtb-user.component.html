@@ -1,0 +1,129 @@
+<dn-loading-content [show]="loading">
+  <div class="row">
+    <article id="dn-table-widget" class="col-sm-12">
+      <dn-widget color="blueDark" [widgetId]="'vergi-widget'">
+        <header>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+          <h2>Gümrük Kullanıcı Listesi</h2>
+        </header>
+        <div>
+          <div class="widget-body no-padding dn-datatable-widget-body">
+            <form [formGroup]="baseForm" class="smart-form" novalidate>
+              <fieldset>
+                <div class="form-row form-group no-margin-bottom" style="margin-left: -16px;">
+                  <div class="col-sm-12 col-md-2">
+                    <dn-select2-smart [form]="baseForm"
+                                      serviceUrl="user"
+                                      [selectedText]="gtbConst.displaySelectUser"
+                                      [displaySelect]="gtbConst.displaySelectUser"
+                                      formControlName="user">Kullanıcı Adı
+                    </dn-select2-smart>
+                  </div>
+                  <div class="col-sm-12 col-md-2">
+                    <dn-smart-input [form]="baseForm"
+                                    inputCss="dn-reqiured"
+                                    formControlName="bilgeKullaniciAdi">Bilge Kullanıcı Adı
+                    </dn-smart-input>
+                  </div>
+                  <div class="col-sm-12 col-md-2">
+                    <dn-smart-input [form]="baseForm"
+                                    type="password"
+                                    inputCss="dn-reqiured"
+                                    formControlName="bilgeSifre">Bilge Kullanıcı Şifre
+                    </dn-smart-input>
+                  </div>
+                  <div class="col-sm-12 col-md-2">
+                    <dn-smart-input formControlName="nctsSifre"
+                                    type="password"
+                                    [form]="baseForm">NCTS Şifre
+                    </dn-smart-input>
+                  </div>
+                  <div class="col-sm-12 col-md-2">
+                    <dn-smart-input formControlName="phoneTab"
+                                    inputCss="dn-reqiured"
+                                    type="text"
+                                    [form]="baseForm">Cep Telefonu 1
+                    </dn-smart-input>
+                  </div>
+                  <div class="col-sm-12 col-md-2">
+                    <dn-smart-input formControlName="phoneTab2"
+                                    type="text"
+                                    [form]="baseForm">Cep Telefonu 2
+                    </dn-smart-input>
+                  </div>
+
+                </div>
+                <div class="form-row form-group no-margin-bottom" style="margin-left: -16px;">
+                  <div class="col-sm-12 col-md-2">
+                    <dn-smart-input formControlName="mailTab"
+                                    type="text"
+                                    inputCss="dn-reqiured"
+                                    [form]="baseForm">Mail 1
+                    </dn-smart-input>
+                  </div>
+                  <div class="col-sm-12 col-md-2">
+                    <dn-smart-input formControlName="mailTab2"
+                                    type="text"
+                                    [form]="baseForm">Mail 2
+                    </dn-smart-input>
+                  </div>
+                  <div class="col-sm-12 col-md-2">
+                    <dn-smart-input formControlName="mailTab3"
+                                    type="text"
+                                    [form]="baseForm">Mail 3
+                    </dn-smart-input>
+                  </div>
+                  <div class="col-sm-12 col-md-2">
+                  </div>
+                  <div class="col-sm-12 col-md-2">
+                  </div>
+
+                  <div class="col-sm-12 col-md-2">
+                    <button class="btn btn-primary" type="button" style="
+                      padding: 6px 12px; float: right; margin-right: 13px; margin-top: 13px;  width:50%;"
+                            [disabled]="!baseForm.valid"
+                            (click)="onSubmit()">
+                      <i [ngClass]="isEdit ? 'fa fa-edit':'fa fa-save'"></i>
+                      {{isEdit ? 'Güncelle' : 'Kaydet'}}
+                    </button>
+                  </div>
+                </div>
+              </fieldset>
+              <!--(click)="addSatir(baseForm.getRawValue())">-->
+
+              <table class="table table-bordered">
+                <thead>
+                <tr>
+                  <th align="center" style="width: 40px; text-align: center">İşlem</th>
+                  <th align="center" style="text-align: center">Kullanıcı</th>
+                  <th align="center" style="text-align: center">Bilge Kullanıcı Adı</th>
+                  <th align="center" style="text-align: center">Mail</th>
+                  <th align="center" style="text-align: center">Telefon</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr *ngFor="let row of users; let i=index"
+                    (click)="setClickedRow(i)" [class.active]="i == selectedRow">
+                  <td>
+                    <button (click)="onRemove(row.id)" type="button" class="btn btn-xs  btn-danger txt-color-white"><i
+                      class="fa fa-trash-o"></i></button>
+                  </td>
+                  <td>{{row.user.name}} {{row.user.surname}}</td>
+                  <td>{{row.bilgeKullaniciAdi}}</td>
+                  <td>{{row.mailTab}}</td>
+                  <td>{{row.phoneTab}}</td>
+                </tr>
+                </tbody>
+              </table>
+
+              <div class="clearfix"></div>
+            </form>
+            <div class="form-actions" style="margin: 0px;">
+            </div>
+
+          </div>
+        </div>
+      </dn-widget>
+    </article>
+  </div>
+</dn-loading-content>

@@ -1,0 +1,14 @@
+<ACK>
+  <GUID>111111111111111111</GUID>
+  <MSGTYPE>CC014A</MSGTYPE>
+  <TMSTMP>10/02/2016</TMSTMP>
+  <OPESTATU>-1</DOCSTATU>
+  <ERR>
+     <TEC>tec err</TEC>
+     <VAL>
+         <VAL_MAIN>err</VAL_MAIN>
+         <VAL_GUA>err</VAL_GUA>	
+         <VAL_ITE>err</VAL_ITE>	 
+     </VAL>
+  </ERR>
+</ACK>

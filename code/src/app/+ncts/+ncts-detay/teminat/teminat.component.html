@@ -1,0 +1,98 @@
+<form [formGroup]="baseForm" novalidate>
+
+  <div class="margin-top-10">
+    <fieldset>
+      <div class="form-row form-group no-margin-bottom" style="margin-left: -16px;">
+        <div class="col-sm-12 col-md-4">
+          <dn-select2-container [form]="baseForm"
+                                serviceUrl="nctsTeminatTip"
+                                formControlName="nctsTeminatTip">Teminat Tip
+          </dn-select2-container>
+        </div>
+        <div class="col-sm-12 col-md-4">
+          <dn-input formControlName="grn" [form]="baseForm">GRN</dn-input>
+        </div>
+        <div class="col-sm-12 col-md-4">
+          <dn-input formControlName="digerTeminatReferansi" [form]="baseForm">Diğer Teminat Referansı</dn-input>
+        </div>
+      </div>
+    </fieldset>
+    <fieldset>
+      <div class="form-row form-group no-margin-bottom" style="margin-left: -16px;">
+        <div class="col-sm-12 col-md-4">
+          <dn-input formControlName="erisimKodu" [form]="baseForm">Erişim Kodu</dn-input>
+        </div>
+        <div class="col-sm-12 col-md-4">
+          <dn-select2-container formControlName="ecIcinGecerliDegil"
+                                [form]="baseForm"
+                                [displaySelect]="undefined"
+                                [selectedText]="undefined"
+                                serviceUrl="YesNo">Ec için Geçerli Değil
+          </dn-select2-container>
+        </div>
+        <div class="col-sm-12 col-md-4">
+          <dn-select2-container formControlName="ulkeGecerliDegil"
+                                [form]="baseForm"
+                                serviceUrl="NctsUlkeKod">Ülke Geçerli Değiş
+          </dn-select2-container>
+        </div>
+      </div>
+    </fieldset>
+    <fieldset>
+      <div class="form-row form-group no-margin-bottom" style="margin-left: -16px;">
+        <div class="col-sm-12 col-md-4">
+          <dn-select2-container formControlName="paraBirimi"
+                                [form]="baseForm"
+                                serviceUrl="doviz">Para Birimi
+          </dn-select2-container>
+        </div>
+        <div class="col-sm-12 col-md-4">
+          <dn-input formControlName="miktar" [form]="baseForm">Miktar</dn-input>
+        </div>
+        <div class="col-sm-12 col-md-4">
+          <button class="btn" type="button" style="float: right; margin-right: 13px;"
+                  [disabled]="!baseForm.valid"
+                  (click)="onSubmit()">
+            <i [ngClass]="isEdit ? 'fa fa-edit':'fa fa-save'"></i>
+            {{isEdit ? 'Güncelle' : 'Kaydet'}}
+          </button>
+        </div>
+      </div>
+    </fieldset>
+  </div>
+  <!--(click)="addSatir(baseForm.getRawValue())">-->
+  <br>
+  <table class="table table-bordered" [formArrayName]="formArrName">
+    <thead>
+    <tr>
+      <th align="center" style="width: 40px; text-align: center">İşlem</th>
+      <th align="center" style="text-align: center">Teminat Tipi</th>
+      <th align="center" style="text-align: center">GRN</th>
+      <th align="center" style="text-align: center">Diğer Teminat Referansı</th>
+      <th align="center" style="text-align: center">EC içim geçerli değil</th>
+      <th align="center" style="text-align: center">Ülke geçerli değil</th>
+      <th align="center" style="text-align: center">Para Birimi</th>
+      <th align="center" style="text-align: center">Miktar</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let row of getControl().controls; let i=index"
+        [formGroupName]="i"
+        (click)="setClickedRow(i)" [class.active]="i == selectedRow">
+      <td>
+        <button (click)="onRemove(i)" type="button" class="btn btn-xs  btn-danger txt-color-white"><i
+          class="fa fa-trash-o"></i></button>
+      </td>
+      <td>{{getEnumValue(row.get('nctsTeminatTip').value)}}</td>
+      <td>{{row.get('grn').value}}</td>
+      <td>{{row.get('digerTeminatReferansi').value}}</td>
+      <td>{{getEnumValue(row.get('ecIcinGecerliDegil').value)}}</td>
+      <td>{{getEnumValue(row.get('ulkeGecerliDegil').value)}}</td>
+      <td>{{getEnumValue(row.get('paraBirimi').value)}}</td>
+      <td>{{row.get('miktar').value}}</td>
+    </tr>
+    </tbody>
+  </table>
+
+  <div class="clearfix"></div>
+</form>

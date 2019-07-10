@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" version="14.00">
+  <!--=========================================-->
+  <!--===== Technical Code Lists -->
+  <!--===== NCTS P4 Domain Definition  -->
+  <!--===== DDNTA 12.00  -->
+  <!--===== XSD version v14.00  -->
+  <!--=========================================-->
+  <!--===== Includes =====-->
+  <xs:include schemaLocation="doc.xsd"/>
+</xs:schema>
+
